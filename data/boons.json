@@ -1,0 +1,46 @@
+{
+  "ath": [
+    {
+      "name": "free climber",
+      "text": "When climbing or falling, treat it as though it were half as high."
+    },
+    {
+      "name": "gymnast",
+      "text": "If you aren't Restricted or in a choke point, add your athletics score to combat.",
+      "tags": ["fight style"]
+    },
+    {
+      "name": "parkour",
+      "text": "You can climb up to AGI+athletics metres in one round. You can wall run twice as far as you can long jump, and you can wall jump twice as high as you can high jump."
+    },
+    {
+      "name": "rider",
+      "text": "Your steed gets +1 to AGI checks."
+    },
+    {
+      "name": "sprint",
+      "text": "If you have no Fatigue, take +3 to athletics and fight checks ueor and take 1 Fatigue aeor.",
+      "tags": ["modifier"]
+    },
+    {
+      "name": "stubborn",
+      "text": "You have +1 focus."
+    },
+    {
+      "name": "warm up",
+      "text": "Whenever you do an athletics check during battle, get +1 athletics ueob."
+    }
+    
+  ],
+
+  "fight": [],
+
+  "knowledge": [],
+
+  "magic": [],
+
+  "stealth": [],
+
+  "vigilance": []
+
+}
