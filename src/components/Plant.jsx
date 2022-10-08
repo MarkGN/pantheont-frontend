@@ -15,6 +15,12 @@ function Plant(props) {
       {colorsFromString(props.colors)}
     </p>
     <p>
+      {props.effect}
+    </p>
+    <p>
+      {props.tags}
+    </p>
+    <p>
       {props.description}
     </p>
   </div>

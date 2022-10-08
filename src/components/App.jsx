@@ -14,7 +14,8 @@ function App() {
           <Skill name="animate vine" />
           <Skill name="aquatic" />
         </div>
-        {plants.actives.map((data) => <Plant colors={data.colors} description={data.description} effect={data.effect} name={data.name}  />)}
+        {/* TODO concat everything in plants.keys or something? */}
+        {(plants.actives.concat(plants.ampers, plants.dampers, plants.preservatives)).map((data) => <Plant colors={data.colors} description={data.description} effect={data.effect} name={data.name} tags={data.tags} />)}
 
         <p>
           Request data about Pantheont boons.

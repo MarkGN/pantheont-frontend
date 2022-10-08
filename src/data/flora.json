@@ -164,14 +164,12 @@
     {
       "name": "Aokla",
       "colors": "GP",
-      "description": "A fern that can be ingested directly and is a mild euphoriant",
-      "effect": "wrath"
+      "description": "A fern that can be ingested directly and is a mild euphoriant"
     },
     {
       "name": "Blast pod leaf",
       "colors": "YG",
       "description": "A pod that fills with something pressurised and explosive that goes off on contact. Farmed by kaiju as a cheap trap.",
-      "effect": "wrath",
       "tags": [
         "trap"
       ]
@@ -179,14 +177,12 @@
     {
       "name": "Chokeweed leaf",
       "colors": "RG",
-      "description": "Animate vines. No special abilities, but it grows very profusely.",
-      "effect": "wrath"
+      "description": "Animate vines. No special abilities, but it grows very profusely."
     },
     {
       "name": "Dash corn",
       "colors": "RY",
       "description": "Much like maize, except that its ears grow absurdly fast (eg one per day); however, they rot just as fast. Farmed by kaiju as sustenance for minions.",
-      "effect": "wrath",
       "tags": [
         "cornucopic"
       ]
@@ -195,7 +191,6 @@
       "name": "Firelace",
       "colors": "RB",
       "description": "pink flowers that burst into flame on contact. Farmed by kaiju as a cheap trap.",
-      "effect": "wrath",
       "tags": [
         "animate vine"
       ]
@@ -203,14 +198,12 @@
     {
       "name": "Jepo weed",
       "colors": "RO",
-      "description": "A tough grass.",
-      "effect": "wrath"
+      "description": "A tough grass."
     },
     {
       "name": "Kaicheri leaf",
       "colors": "OG",
       "description": "Unaggressive, with broad leaves and small white flowers",
-      "effect": "wrath",
       "tags": [
         "animate vine"
       ]
@@ -219,7 +212,6 @@
       "name": "Maiden's touch",
       "colors": "YP",
       "description": "Unaggressive seaweed with long tendrils that drain magic on touch.",
-      "effect": "wrath",
       "tags": [
         "animate vine",
         "aquatic"
@@ -228,22 +220,19 @@
     {
       "name": "Yellow fern",
       "colors": "YB",
-      "description": "",
-      "effect": "wrath"
+      "description": ""
     }
   ],
   "dampers": [
     {
       "name": "Blue cap",
       "colors": "GB",
-      "description": "A mushroom with blue spots; quite toxic unless boiled.",
-      "effect": "wrath"
+      "description": "A mushroom with blue spots; quite toxic unless boiled."
     },
     {
       "name": "Inzun",
       "colors": "RO",
       "description": "With yellow flowers that grow into red berries. The vines drain ability to use magic.",
-      "effect": "wrath",
       "tags": [
         "animate vine"
       ]
@@ -251,14 +240,12 @@
     {
       "name": "Glueshroom",
       "colors": "OY: a mushroom that secretes a powerful adhesive when squeezed",
-      "description": "",
-      "effect": "wrath"
+      "description": ""
     },
     {
       "name": "Hezucoral",
       "colors": "RP",
       "description": "Plant that accretes minerals out of water and creates semi-mineral structural matrices. The foundation of most aquatic nexi; needs nexus magic to grow effectively.",
-      "effect": "wrath",
       "tags": [
         "aquatic"
       ]
@@ -267,7 +254,6 @@
       "name": "Horizon mushroom",
       "colors": "RG",
       "description": "An extremely fast-growing mushroom that's quite nutritious.",
-      "effect": "wrath",
       "tags": [
         "cornucopic"
       ]
@@ -276,7 +262,6 @@
       "name": "Noi wan",
       "colors": "YG",
       "description": "A toadstool that twists gravity when stepped on; fully grown ones can launch a person into the air. Farmed by kaiju as low-effort ladders.",
-      "effect": "wrath",
       "tags": [
         "trap"
       ]
@@ -284,26 +269,22 @@
     {
       "name": "Pora stalk",
       "colors": "YB",
-      "description": "A toadstool that's quite poisonous without an active ingredient.",
-      "effect": "wrath"
+      "description": "A toadstool that's quite poisonous without an active ingredient."
     },
     {
       "name": "Scarlet cap",
       "colors": "RY",
-      "description": "A mushroom with a pure red top",
-      "effect": "wrath"
+      "description": "A mushroom with a pure red top"
     },
     {
       "name": "Sea reed stem",
       "colors": "BP",
-      "description": "Like reeds, but salt tolerant.",
-      "effect": "wrath"
+      "description": "Like reeds, but salt tolerant."
     },
     {
       "name": "Vampire bramble root",
       "colors": "RB",
       "description": "With thorns that inflict Bleeding on any hit.",
-      "effect": "wrath",
       "tags": [
         "animate vine"
       ]
@@ -311,22 +292,19 @@
     {
       "name": "Yunzo root",
       "colors": "OP",
-      "description": "Grassy weed much like that stuff Fang said she made dumplings out of.",
-      "effect": "wrath"
+      "description": "Grassy weed much like that stuff Fang said she made dumplings out of."
     }
   ],
   "preservatives": [
     {
       "name": "Bluewood sap",
       "colors": "RB",
-      "description": "A tree with blue-tinged wood.",
-      "effect": "wrath"
+      "description": "A tree with blue-tinged wood."
     },
     {
       "name": "Crabweed sap",
       "colors": "OG",
       "description": "With bright pink flowers; grabs its victims' ankles and holds them there",
-      "effect": "wrath",
       "tags": [
         "animate vine",
         "aquatic"
@@ -336,7 +314,6 @@
       "name": "Honeycup honey",
       "colors": "RP",
       "description": "A flower that rapidly produces a cupful of honey.",
-      "effect": "wrath",
       "tags": [
         "cornucopic"
       ]
@@ -344,14 +321,12 @@
     {
       "name": "Jaut sap",
       "colors": "YG",
-      "description": "",
-      "effect": "wrath"
+      "description": ""
     },
     {
       "name": "Kobal sap",
       "colors": "RO",
       "description": "A tree whose (mundane) fruit grows absurdly quickly",
-      "effect": "wrath",
       "tags": [
         "cornucopic"
       ]
@@ -359,14 +334,12 @@
     {
       "name": "Modaga sap",
       "colors": "YP",
-      "description": "A cactus-like plant. The sap is mildly hallucinogenic by itself.",
-      "effect": "wrath"
+      "description": "A cactus-like plant. The sap is mildly hallucinogenic by itself."
     },
     {
       "name": "Nezema resin",
       "colors": "OB",
       "description": "With broad leaves that secretes a very sticky resin that's an absolute bitch to get off.",
-      "effect": "wrath",
       "tags": [
         "animate vine"
       ]
@@ -374,14 +347,12 @@
     {
       "name": "Shaika",
       "colors": "RG",
-      "description": "A tree that grows fruits of many neighbouring species (\"At least one of them has to work, right?\").",
-      "effect": "wrath"
+      "description": "A tree that grows fruits of many neighbouring species (\"At least one of them has to work, right?\")."
     },
     {
       "name": "Sea cap",
       "colors": "BP",
       "description": "A mushroom.",
-      "effect": "wrath",
       "tags": [
         "aquatic"
       ]
@@ -389,8 +360,7 @@
     {
       "name": "Stone root",
       "colors": "RY",
-      "description": "A plant that incorporates rock into its structural matrix. Very tough, used by kaiju to build stuff. Uses a mixture of minerals: quartz, calcite, aragonite, hydroxyapatite, etc. Other plants grow in cracks, making it more of a biocomposite matrix.",
-      "effect": "wrath"
+      "description": "A plant that incorporates rock into its structural matrix. Very tough, used by kaiju to build stuff. Uses a mixture of minerals: quartz, calcite, aragonite, hydroxyapatite, etc. Other plants grow in cracks, making it more of a biocomposite matrix."
     }
   ]
 }

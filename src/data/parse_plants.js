@@ -10,6 +10,7 @@ function parse_plant(line, regex, isActive) {
     let [meta, ...description] = rest.split('.');
     description = description.join('.').trim();
     let [colors, ... tags] = meta.split(';');
+    let effect;
     if (isActive) {
       colors = colors.split(": ");
       effect = colors[1];
