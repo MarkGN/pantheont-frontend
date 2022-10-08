@@ -70,7 +70,10 @@
       "name": "Merflower petal",
       "colors": "OP",
       "description": "Water lily with black and white petals",
-      "effect": "water walking"
+      "effect": "water walking",
+      "tags": [
+        "aquatic"
+      ]
     },
     {
       "name": "Mie laz flower",
@@ -177,7 +180,10 @@
     {
       "name": "Chokeweed leaf",
       "colors": "RG",
-      "description": "Animate vines. No special abilities, but it grows very profusely."
+      "description": "No special abilities, but it grows very profusely.",
+      "tags": [
+        "animate vine"
+      ]
     },
     {
       "name": "Dash corn",

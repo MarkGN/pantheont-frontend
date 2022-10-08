@@ -7,22 +7,24 @@ function colorsFromString(s) {
 }
 
 function Plant(props) {
-  return <div class="plant">
-    <h3>
-      {props.name}
-    </h3>
-    <p>
-      {colorsFromString(props.colors)}
-    </p>
-    <p>
-      {props.effect}
-    </p>
-    <p>
-      {props.tags}
-    </p>
-    <p>
-      {props.description}
-    </p>
+  return <div class="plant col-3">
+    <div class="plant-interior">
+      <h3>
+        {props.name}
+      </h3>
+      <p>
+        {colorsFromString(props.colors)}
+      </p>
+      <p>
+        {props.effect}
+      </p>
+      <p>
+        {props.tags}
+      </p>
+      <p>
+        {props.description}
+      </p>
+    </div>
   </div>
 }
 

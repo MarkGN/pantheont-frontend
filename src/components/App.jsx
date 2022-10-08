@@ -5,6 +5,9 @@ const plants = require("../data/flora.json")
 function App() {
   return (
     <div className="App">
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+      </head>
       <header className="App-header">
         <p>
           Request data about Hezulim flora, aka paikera.
@@ -15,7 +18,9 @@ function App() {
           <Skill name="aquatic" />
         </div>
         {/* TODO concat everything in plants.keys or something? */}
-        {(plants.actives.concat(plants.ampers, plants.dampers, plants.preservatives)).map((data) => <Plant colors={data.colors} description={data.description} effect={data.effect} name={data.name} tags={data.tags} />)}
+        <div class="row">
+          {(plants.actives.concat(plants.ampers, plants.dampers, plants.preservatives)).map((data) => <Plant colors={data.colors} description={data.description} effect={data.effect} name={data.name} tags={data.tags} />)}
+        </div>
 
         <p>
           Request data about Pantheont boons.
