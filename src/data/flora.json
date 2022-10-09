@@ -9,7 +9,7 @@
     {
       "name": "Anaitsa berry",
       "colors": "YP",
-      "description": "Bush with bright yellow berries",
+      "description": "Bush with bright yellow berries.",
       "effect": "paralytic"
     },
     {
@@ -21,13 +21,13 @@
     {
       "name": "Che plat nut",
       "colors": "GY",
-      "description": "Inanimate flowering vine with very many very thin white petals",
+      "description": "Inanimate flowering vine with very many very thin white petals.",
       "effect": "abortifacient"
     },
     {
       "name": "Chuche leaf",
       "colors": "OY",
-      "description": "Tree with gum-like leaves",
+      "description": "Tree with gum-like leaves.",
       "effect": "disjunction, fortify magic"
     },
     {
@@ -69,7 +69,7 @@
     {
       "name": "Merflower petal",
       "colors": "OP",
-      "description": "Water lily with black and white petals",
+      "description": "Water lily with black and white petals. Url at https://images.nightcafe.studio/jobs/hDof37IcXGSF45zZu0UO/hDof37IcXGSF45zZu0UO--2--axhgg.jpg?tr=w-1600,c-at_max",
       "effect": "water walking",
       "tags": [
         "aquatic"
@@ -87,7 +87,7 @@
     {
       "name": "Mindai grass",
       "colors": "GO",
-      "description": "Grass-like weed",
+      "description": "Grass-like weed.",
       "effect": "contraceptive"
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "Sea glove",
       "colors": "OR",
-      "description": "Fleshy plant, seaweed meets cactus",
+      "description": "Fleshy plant, seaweed meets cactus.",
       "effect": "water breathing",
       "tags": [
         "aquatic"
@@ -120,7 +120,7 @@
     {
       "name": "Sea wort",
       "colors": "OB",
-      "description": "Seaweed with red flowers",
+      "description": "Seaweed with red flowers.",
       "effect": "swift swim",
       "tags": [
         "aquatic"
@@ -141,7 +141,7 @@
     {
       "name": "Tetan petal",
       "colors": "BO",
-      "description": "Small red flower",
+      "description": "Small red flower with orange spots.",
       "effect": "sense magic"
     },
     {
@@ -167,7 +167,7 @@
     {
       "name": "Aokla",
       "colors": "GP",
-      "description": "A fern that can be ingested directly and is a mild euphoriant"
+      "description": "A fern that can be ingested directly and is a mild euphoriant."
     },
     {
       "name": "Blast pod leaf",
@@ -175,6 +175,15 @@
       "description": "A pod that fills with something pressurised and explosive that goes off on contact. Farmed by kaiju as a cheap trap.",
       "tags": [
         "trap"
+      ]
+    },
+    {
+      "name": "Carmineroot",
+      "colors": "RB",
+      "description": "Its roots are edible and grow profusely, extending beyond the reach of its vines.",
+      "tags": [
+        "animate vine",
+        "cornucopic"
       ]
     },
     {
@@ -195,7 +204,7 @@
     },
     {
       "name": "Firelace",
-      "colors": "RB",
+      "colors": "RO",
       "description": "Pink flowers that burst into flame on contact. Farmed by kaiju as a cheap trap.",
       "tags": [
         "animate vine"
@@ -203,13 +212,13 @@
     },
     {
       "name": "Jepo weed",
-      "colors": "RO",
+      "colors": "RP",
       "description": "A tough grass."
     },
     {
       "name": "Kaicheri leaf",
       "colors": "OG",
-      "description": "Unaggressive, with broad leaves and small white flowers",
+      "description": "Unaggressive, with broad leaves and small white flowers.",
       "tags": [
         "animate vine"
       ]
@@ -280,7 +289,7 @@
     {
       "name": "Scarlet cap",
       "colors": "RY",
-      "description": "A mushroom with a pure red top"
+      "description": "A mushroom with a pure red top."
     },
     {
       "name": "Sea reed stem",
@@ -304,13 +313,13 @@
   "preservatives": [
     {
       "name": "Bluewood sap",
-      "colors": "RB",
+      "colors": "YB",
       "description": "A tree with blue-tinged wood."
     },
     {
       "name": "Crabweed sap",
       "colors": "OG",
-      "description": "With bright pink flowers; grabs its victims' ankles and holds them there",
+      "description": "With bright pink flowers; grabs its victims' ankles and holds them there.",
       "tags": [
         "animate vine",
         "aquatic"
@@ -327,7 +336,7 @@
     {
       "name": "Jaut sap",
       "colors": "YG",
-      "description": ""
+      "description": "A very thorny tree, whose thorns often cause allergic reactions."
     },
     {
       "name": "Kobal sap",
@@ -351,9 +360,12 @@
       ]
     },
     {
-      "name": "Shaika",
+      "name": "Shaika sap",
       "colors": "RG",
-      "description": "A tree that grows fruits of many neighbouring species (\"At least one of them has to work, right?\")."
+      "description": "A tree that grows fruits of many neighbouring species (\"At least one of them has to work, right?\").",
+      "tags": [
+        "cornucopic"
+      ]
     },
     {
       "name": "Sea cap",
