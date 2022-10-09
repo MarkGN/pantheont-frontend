@@ -6,9 +6,10 @@ function colorsFromString(s) {
   return lookup[s[0]] + ", " + lookup[s[1]];
 }
 
+// TODO this should show the reagent type somewhere
 function Plant(props) {
-  return <div class="plant col-3">
-    <div class="plant-interior">
+  return <div className="plant col-3">
+    <div className="plant-interior">
       <h3>
         {props.name}
       </h3>
