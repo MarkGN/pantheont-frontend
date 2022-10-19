@@ -25,7 +25,7 @@ function Plant(props) {
       <h3>
         {props.name}
       </h3>
-      {styledColorsFromString(props.colors)}
+      {props.reagentType} {styledColorsFromString(props.colors)}
       <p>
         {props.effect}
       </p>
