@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pantheont-frontend/static/css/main.0de0ef68.css",
-    "main.js": "/pantheont-frontend/static/js/main.df1d46ab.js",
+    "main.css": "/pantheont-frontend/static/css/main.846c969b.css",
+    "main.js": "/pantheont-frontend/static/js/main.db482a10.js",
     "static/js/787.f472d18a.chunk.js": "/pantheont-frontend/static/js/787.f472d18a.chunk.js",
     "index.html": "/pantheont-frontend/index.html",
-    "main.0de0ef68.css.map": "/pantheont-frontend/static/css/main.0de0ef68.css.map",
-    "main.df1d46ab.js.map": "/pantheont-frontend/static/js/main.df1d46ab.js.map",
+    "main.846c969b.css.map": "/pantheont-frontend/static/css/main.846c969b.css.map",
+    "main.db482a10.js.map": "/pantheont-frontend/static/js/main.db482a10.js.map",
     "787.f472d18a.chunk.js.map": "/pantheont-frontend/static/js/787.f472d18a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0de0ef68.css",
-    "static/js/main.df1d46ab.js"
+    "static/css/main.846c969b.css",
+    "static/js/main.db482a10.js"
   ]
 }
