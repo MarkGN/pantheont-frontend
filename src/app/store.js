@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import tagFilterReducer from '../components/tagFilterSlice'
+import tagFilterReducer from '../components/plantFilterSlice'
 
 export default configureStore({
   reducer: {
