@@ -5,7 +5,7 @@ import PlantSort from "./PlantSort";
 import { useSelector } from 'react-redux'
 import PlantColorFilter from "./PlantColorFilter";
 
-const rawPlants = require("../data/flora.json");
+const rawPlants = require("../../data/flora.json");
 const reagentTypes = ["active", "amper", "damper", "preservative"];
 const plants = reagentTypes.map(r => {
   return rawPlants[r+"s"].map(plant => {
@@ -13,7 +13,6 @@ const plants = reagentTypes.map(r => {
   });
 }).flat();
 const tags = "animate vine;aquatic;cornucopic;trap".split(";");
-// const colors = "red,orange,yellow,green,blue,purple".split(",");
 
 function PlantSearch () {
   const colorsChecked = useSelector((state) => state.tagFilter.colors);
