@@ -29,8 +29,6 @@ function PlantSearch () {
     return {1:(plant1.name>plant2.name)-0.5, 2:(plant1.reagentType === plant2.reagentType ? plant1.name>plant2.name : plant1.reagentType > plant2.reagentType)-0.5}[radioIndices.sort];
   }
 
-  console.log(JSON.stringify(plants[0]));
-
   return <div>
     {tags.map((tag, tagIx) => {
       return <PlantFilter key={tagIx} ixUpdate={(radioIx)=>{

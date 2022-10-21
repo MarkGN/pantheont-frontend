@@ -38,38 +38,38 @@ function parseBoonFile() {
       const skills = "athletics,fight,knowledge,magic,stealth,vigilance".split(",");
       const boons=[];
       lines.forEach(line => {
-        // console.log(line);
         if (skills.includes(line.toLowerCase())) {
           skill = line.toLowerCase();
-          // console.log(skill);
         }
         if (skill && line.includes(":")) {
           let [name, ...text] = line.split(": ");
-          // console.log(name)
-          // console.log(text)
+          text = text.join(": "); 
           const tags = [];
-          if (text[0][0] === "(") {
-            console.log(text[0])
-            const [tag, ... text2] = line.split(")");
-            tags.push(tag.slice(1));
-            text = text2;
+          if (name.includes("&")) {
+            name=name.replace("&","");
+            tags.push("civilian");
           }
-          boons.push({name:name, skill:skill, tags:tags, text:text[0]});
-          // console.log(skill, name, text);
-          // console.log({name:name, skill:skill, tags:tags, text:text});
+          if (name.includes("^")) {
+            name=name.replace("^","");
+            tags.push("social");
+          }
+          if (text[0] === "(") {
+            console.log(text)
+            const [tag, ... text2] = text.split(") ");
+            tags.push(tag.slice(1));
+            text = text2.join(") ");
+          }
+          text = text[0].toUpperCase()+text.slice(1);
+          boons.push({name:name, skill:skill, tags:tags, text:text});
         }
       });
       const myJson = JSON.stringify(boons, null, 2);
-      console.log(myJson);
-      fs.writeFile('data/boons.json', myJson, 'utf8', () => {
+      fs.writeFile('src/data/boons.json', myJson, 'utf8', () => {
         console.log("done");
       });
-      console.log(boons);
-      // console.log(myJson);
     });
   });
 }
-parseBoonFile();
 
 function parsePlantFile() {
   fs.open(floraTextFile, 'r', (err, file) => {
@@ -114,10 +114,11 @@ function parsePlantFile() {
       }
       // console.log(actives, ampers, dampers, preservatives);
       const myJson = JSON.stringify({actives:actives, ampers:ampers, dampers:dampers, preservatives:preservatives}, null, 2);
-      fs.writeFile('data/flora.json', myJson, 'utf8', () => {
+      fs.writeFile('src/data/flora.json', myJson, 'utf8', () => {
         console.log("done");
       });
     });
   });
 }
 
+parseBoonFile();

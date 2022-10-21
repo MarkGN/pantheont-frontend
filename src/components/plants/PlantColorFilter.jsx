@@ -9,7 +9,7 @@ export default function PlantColorFilter(props) {
   const dispatch = useDispatch();
   return <div className="plant-filter">
     {colors.map(color => {
-      return <div><label for={color}>{color}</label> <input id={color} type="checkbox" defaultChecked onClick={()=>{
+      return <div key={color}><label htmlFor={color}>{color}</label> <input id={color} type="checkbox" defaultChecked onClick={()=>{
         dispatch(toggleColorCheckIx(color));
         // dispatch(setTagRadioIx([props.name, Number(props.ix)]))
       }} ></input></div>

@@ -8,6 +8,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.boon {
+  border: 0px;
+  border-style: none;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
+.boon-interior {
+  background-color: #ffddcc;
+  border-color: black;
+  border-style: solid;
+  margin: 5px;
+  padding: 5px;
+}
+
 .card-holder {
   margin: 5px;
 }

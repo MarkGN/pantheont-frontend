@@ -1,0 +1,355 @@
+[
+  {
+    "name": "Free climber",
+    "skill": "athletics",
+    "tags": [],
+    "text": "When climbing or falling, treat it as though it were half as high."
+  },
+  {
+    "name": "Gymnast",
+    "skill": "athletics",
+    "tags": [
+      "fight style"
+    ],
+    "text": "If you aren't Restricted or in a choke point, add your athletics score to combat."
+  },
+  {
+    "name": "Mark athletic",
+    "skill": "athletics",
+    "tags": [
+      "mark tribal"
+    ],
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Parkour",
+    "skill": "athletics",
+    "tags": [],
+    "text": "You can climb up to AGI+athletics metres in one round. You can wall run twice as far as you can long jump, and you can wall jump twice as high as you can high jump."
+  },
+  {
+    "name": "Rider",
+    "skill": "athletics",
+    "tags": [],
+    "text": "Your steed gets +1 to AGI checks."
+  },
+  {
+    "name": "Second wind",
+    "skill": "athletics",
+    "tags": [],
+    "text": "Negate the check penalty from up to 2 Fatigue."
+  },
+  {
+    "name": "Sprint",
+    "skill": "athletics",
+    "tags": [
+      "modifier"
+    ],
+    "text": "If you have no Fatigue, take +3 to athletics and fight checks ueor and take 1 Fatigue aeor."
+  },
+  {
+    "name": "Stubborn",
+    "skill": "athletics",
+    "tags": [],
+    "text": "+1 focus."
+  },
+  {
+    "name": "Warm up",
+    "skill": "athletics",
+    "tags": [],
+    "text": "Whenever you do an athletics check during battle, get +1 athletics ueob."
+  },
+  {
+    "name": "Anbinden",
+    "skill": "fight",
+    "tags": [
+      "modifier"
+    ],
+    "text": "On landing a melee hit and when not flanked, enter blade bind with the target for one round. While blade bound, you can't be intercepted from clashing with them, and the check is POW+fight symmetric, not AGI+fight. This is chainable."
+  },
+  {
+    "name": "Disarm",
+    "skill": "fight",
+    "tags": [
+      "modifier"
+    ],
+    "text": "Instead of inflicting damage, you knock the weapon from your opponent's hand."
+  },
+  {
+    "name": "Fighting withdrawal",
+    "skill": "fight",
+    "tags": [
+      "modifier"
+    ],
+    "text": "When attacked, move away from the opponent and bring them with you. Works even if you both attack each other."
+  },
+  {
+    "name": "Giant slayer",
+    "skill": "fight",
+    "tags": [],
+    "text": "Negate up to 3 size classes for purposes of damage reduction when fighting larger opponents."
+  },
+  {
+    "name": "Leadership",
+    "skill": "fight",
+    "tags": [
+      "social",
+      "move"
+    ],
+    "text": "A target ally gets +1 ueor. Multiple instances of this don't stack."
+  },
+  {
+    "name": "Mark fight",
+    "skill": "fight",
+    "tags": [
+      "mark tribal"
+    ],
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Overwhelming",
+    "skill": "fight",
+    "tags": [],
+    "text": "If a single hit inflicts at least 2/3 of a target's maximum focus (rounded up), it incapacitates them."
+  },
+  {
+    "name": "Pain tolerant",
+    "skill": "fight",
+    "tags": [],
+    "text": "Negate the check penalty from up to 2 points of Injury."
+  },
+  {
+    "name": "Reckless attack",
+    "skill": "fight",
+    "tags": [
+      "modifier"
+    ],
+    "text": "Take -1 to any clashes, and the outcome is a crit, including for the opponent. NB: this is clash-specific."
+  },
+  {
+    "name": "Taunt",
+    "skill": "fight",
+    "tags": [
+      "social"
+    ],
+    "text": "When you defend an ally, intercept all opponents attacking her."
+  },
+  {
+    "name": "Trample",
+    "skill": "fight",
+    "tags": [],
+    "text": "If opponents intercept and if max(defender.POW)+num_defenders < POW, they pre-empt rather than interrupt."
+  },
+  {
+    "name": "Wind up",
+    "skill": "fight",
+    "tags": [
+      "modifier"
+    ],
+    "text": "This round, take -3. Next round, take +2."
+  },
+  {
+    "name": "First aid",
+    "skill": "knowledge",
+    "tags": [
+      "move"
+    ],
+    "text": "Check MET+knowledge vs 10; on success, resolve Bleeding for a target; on failure, the patient takes a point of Weakness. Also, (move) when you or anyone else takes a long rest, check MET+knowledge vs 15; on a success, they resolve an additional point of Weakness. A patient may only receive one attempt of this move per long rest, and you may only give it to one patient. An ally without this boon can assist you with either move."
+  },
+  {
+    "name": "Forager",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "While travelling, you may check MET+knowledge vs 20. On success, find paikera along the way."
+  },
+  {
+    "name": "Intuitive",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "1 time per session you may ask the GM an out-of-character question. He shouldn't answer outright, but should give a good hint, advice, or Socratic counter-question."
+  },
+  {
+    "name": "Kinbakushi",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "Ordinarily, to wriggle out of being tied up is AGI+ath vs MET+knowledge, either escaping or taking 1 Injury and alerting anyone nearby. With this, instead the penalty is that they can't try again and must be untied, and you get +5 to tying checks (including when you're the one tied up)."
+  },
+  {
+    "name": "Lockpicking",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "Can pick locks, with a MET+knowledge check if there's time pressure or a trap or something."
+  },
+  {
+    "name": "Mark knowledge",
+    "skill": "knowledge",
+    "tags": [
+      "mark tribal"
+    ],
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Proficiency",
+    "skill": "knowledge",
+    "tags": [
+      "civilian"
+    ],
+    "text": "+2 to checks related to some non-adventurer task."
+  },
+  {
+    "name": "Seductive",
+    "skill": "knowledge",
+    "tags": [
+      "social"
+    ],
+    "text": "Check MAS+knowledge vs END+knowledge to get someone to do something they really don't want."
+  },
+  {
+    "name": "Streetwise",
+    "skill": "knowledge",
+    "tags": [
+      "social"
+    ],
+    "text": "You know a guy who knows a guy."
+  },
+  {
+    "name": "Tea lover",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. If this stacks, you may prepare additional doses. Unused doses expire in the morning."
+  },
+  {
+    "name": "Combat caster",
+    "skill": "magic",
+    "tags": [
+      "fight style"
+    ],
+    "text": "When fighting with spells, you may add $magic to your combat."
+  },
+  {
+    "name": "Irongut",
+    "skill": "magic",
+    "tags": [],
+    "text": "You may drink an additional potion per battle without side effects."
+  },
+  {
+    "name": "Manaburn",
+    "skill": "magic",
+    "tags": [
+      "modifier"
+    ],
+    "text": "Trade in a +1 magic token for +3 magic ueor."
+  },
+  {
+    "name": "Mark magic",
+    "skill": "magic",
+    "tags": [
+      "mark tribal"
+    ],
+    "text": "Whenever you beat someone at a check involving this skill or successfully cast a spell at them, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Multitasker",
+    "skill": "magic",
+    "tags": [],
+    "text": "You can brew up to three potions in parallel."
+  },
+  {
+    "name": "Spellbook",
+    "skill": "magic",
+    "tags": [],
+    "text": "Pick a colour: you may learn and cast spells of that colour; but take -1 when casting spells not of that colour."
+  },
+  {
+    "name": "Aim",
+    "skill": "stealth",
+    "tags": [
+      "move"
+    ],
+    "text": "Pick a target unaware of you; next round, if you backstab, negate the head shot penalty. "
+  },
+  {
+    "name": "Forgettable",
+    "skill": "stealth",
+    "tags": [],
+    "text": "Gain a sneak attack whenever you attack someone who is neither attacking nor defending."
+  },
+  {
+    "name": "Inventive",
+    "skill": "stealth",
+    "tags": [
+      "prereq Trap maker"
+    ],
+    "text": "You may make two different styles of traps, wherein whenever a trap is revealed, only other traps of the same style are revealed."
+  },
+  {
+    "name": "Mark stealth",
+    "skill": "stealth",
+    "tags": [
+      "mark tribal"
+    ],
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Ninjutsu",
+    "skill": "stealth",
+    "tags": [
+      "fight style"
+    ],
+    "text": "When you land a successful sneak attack, you aren't revealed, although the victim can probably figure out there's an attacker nearby and you must make another check to inflict another sneak attack."
+  },
+  {
+    "name": "Pickpocket",
+    "skill": "stealth",
+    "tags": [
+      "modifier"
+    ],
+    "text": "If you pass a stealth check, instead of hiding or sneak attacking, you can take an item from the target that they aren't wearing. If they also aren't holding it, you aren't revealed."
+  },
+  {
+    "name": "Trap maker",
+    "skill": "stealth",
+    "tags": [],
+    "text": "You may make hidden traps as per the Traps page."
+  },
+  {
+    "name": "Ventriloquist",
+    "skill": "stealth",
+    "tags": [],
+    "text": "Can project voice with a MAS+stealth vs MET+vigilance check, to give a false location or make listeners think someone else is speaking."
+  },
+  {
+    "name": "Lip reader",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "Check hidden MET+vigilance vs 10 to read lips."
+  },
+  {
+    "name": "Mark vigilance",
+    "skill": "vigilance",
+    "tags": [
+      "mark tribal"
+    ],
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Marksman",
+    "skill": "vigilance",
+    "tags": [
+      "fight style"
+    ],
+    "text": "During ranged engagements, add your vigilance to your combat, and you have Suppress."
+  },
+  {
+    "name": "Scotopic",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "You have darkvision 10m: take no penalty from darkness."
+  },
+  {
+    "name": "Snipe",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "When shooting into melee, damage from friendly fire is capped at 4."
+  }
+]
