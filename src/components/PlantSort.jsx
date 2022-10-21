@@ -4,10 +4,11 @@ import { setSortRadioIx } from './plantFilterSlice'
 
 export default function PlantSort() {
   const dispatch = useDispatch();
-  return <div>
-    <label htmlFor="alpha">Alphabetical</label> <input defaultChecked={false} id="alpha" name="sort" onClick={()=>{
+  return <div className="plant-filter">
+    <label htmlFor="alpha">Alphabetical </label> <input defaultChecked={false} id="alpha" name="sort" onClick={()=>{
       dispatch(setSortRadioIx(1));
     }} type="radio" />
+    <br />
     <label htmlFor="reagent-alpha">Reagent-alphabetical</label> <input defaultChecked={true} id="reagent-alpha" name="sort" onClick={()=>{
       dispatch(setSortRadioIx(2));
     }} type="radio" />

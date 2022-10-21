@@ -18,9 +18,8 @@ function styledColorsFromString(s) {
   </p>
 }
 
-// TODO this should show the reagent type somewhere
 function Plant(props) {
-  return <div className="plant col-3">
+  return <div className="plant col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div className="plant-interior">
       <h3>
         {props.name}

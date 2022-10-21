@@ -1,16 +1,14 @@
 import React from "react";
 
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { setTagRadioIx } from './plantFilterSlice'
 
 function PlantFilterLabel(props) {
   const id = "pf "+props.name+props.ix;
   const dispatch = useDispatch();
-  const radioIx = useSelector((state) => state.tagFilter.value);
   return <div>
     <label htmlFor={id}>{props.label}</label> <input defaultChecked={props.defaultChecked} id={id} name={"plant-filter-"+props.name} onClick={()=>{
-      dispatch(setTagRadioIx([props.name, Number(props.ix)]))
-      console.log(radioIx, props.name);
+      dispatch(setTagRadioIx([props.name, Number(props.ix)]));
     }} type="radio" />
   </div>;
 }
