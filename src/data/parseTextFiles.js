@@ -54,7 +54,6 @@ function parseBoonFile() {
             tags.push("social");
           }
           if (text[0] === "(") {
-            console.log(text)
             const [tag, ... text2] = text.split(") ");
             tags.push(tag.slice(1));
             text = text2.join(") ");

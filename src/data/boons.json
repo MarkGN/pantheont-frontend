@@ -48,6 +48,14 @@
     "text": "If you have no Fatigue, take +3 to athletics and fight checks ueor and take 1 Fatigue aeor."
   },
   {
+    "name": "Stoic",
+    "skill": "athletics",
+    "tags": [
+      "armour tribal"
+    ],
+    "text": "Take no athletics penalty from Armour."
+  },
+  {
     "name": "Stubborn",
     "skill": "athletics",
     "tags": [],
@@ -88,6 +96,14 @@
     "skill": "fight",
     "tags": [],
     "text": "Negate up to 3 size classes for purposes of damage reduction when fighting larger opponents."
+  },
+  {
+    "name": "Lancer",
+    "skill": "fight",
+    "tags": [
+      "rider tribal"
+    ],
+    "text": "When you close from ranged to melee while mounted, inflict a crit"
   },
   {
     "name": "Leadership",
@@ -147,6 +163,15 @@
       "modifier"
     ],
     "text": "This round, take -3. Next round, take +2."
+  },
+  {
+    "name": "Calming",
+    "skill": "knowledge",
+    "tags": [
+      "social",
+      "rider tribal"
+    ],
+    "text": "Your mount doesn't bolt when hit."
   },
   {
     "name": "First aid",
@@ -249,10 +274,12 @@
     "text": "Whenever you beat someone at a check involving this skill or successfully cast a spell at them, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
-    "name": "Multitasker",
+    "name": "Shapeshifter",
     "skill": "magic",
-    "tags": [],
-    "text": "You can brew up to three potions in parallel."
+    "tags": [
+      "prereq: Red spellbook"
+    ],
+    "text": "Per level of magic, you may learn an animal shape that you may assume as a spell. (eg if this is your third magic boon, you may immediately learn up to 3 animals, and then 1 more for each subsequent skill-up.) To learn a shape has the same requirements as learning a new spell in terms of time and money."
   },
   {
     "name": "Spellbook",
@@ -266,7 +293,15 @@
     "tags": [
       "move"
     ],
-    "text": "Pick a target unaware of you; next round, if you backstab, negate the head shot penalty. "
+    "text": "Pick a target unaware of you; next round, if you sneak attack, it is a crit. "
+  },
+  {
+    "name": "Careful",
+    "skill": "stealth",
+    "tags": [
+      "armour tribal"
+    ],
+    "text": "Take no stealth penalty from Armour."
   },
   {
     "name": "Forgettable",
@@ -278,7 +313,7 @@
     "name": "Inventive",
     "skill": "stealth",
     "tags": [
-      "prereq Trap maker"
+      "prereq: Trap maker"
     ],
     "text": "You may make two different styles of traps, wherein whenever a trap is revealed, only other traps of the same style are revealed."
   },
