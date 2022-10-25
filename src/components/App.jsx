@@ -3,7 +3,7 @@ import BoonSearch from "./boons/BoonSearch";
 import PlantSearch from "./plants/PlantSearch";
 
 function App() {
-  const [searchState, setSearchState] = useState(<PlantSearch/>)
+  const [searchState, setSearchState] = useState(<BoonSearch/>)
 
   return (
     <div className="App">

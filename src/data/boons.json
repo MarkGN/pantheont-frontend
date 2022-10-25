@@ -244,6 +244,12 @@
     "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. If this stacks, you may prepare additional doses. Unused doses expire in the morning."
   },
   {
+    "name": "Bookworm",
+    "skill": "magic",
+    "tags": [],
+    "text": "You may learn twice as many spells."
+  },
+  {
     "name": "Combat caster",
     "skill": "magic",
     "tags": [
@@ -285,7 +291,7 @@
     "name": "Spellbook",
     "skill": "magic",
     "tags": [],
-    "text": "Pick a colour: you may learn and cast spells of that colour; but take -1 when casting spells not of that colour."
+    "text": "Pick a colour: you may learn and cast spells of that colour."
   },
   {
     "name": "Aim",
