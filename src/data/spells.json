@@ -1,0 +1,374 @@
+[
+  {
+    "name": "Abort",
+    "color": "red",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Terminate pregnancy. Illegal in much of the world, so the potion is much more popular, since that gives the mage plausible deniability."
+  },
+  {
+    "name": "Aid childbirth",
+    "color": "red",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Labour becomes very easy and free of complications. No particular drawback. Very popular civilian magic."
+  },
+  {
+    "name": "Disintegrate",
+    "color": "red",
+    "tags": [],
+    "text": "You can tear crystalline matter to dust. +3 combat and 5 AP, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard."
+  },
+  {
+    "name": "Fertilise",
+    "color": "red",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Target plant grows 10% faster for 24 hours. Not channelled."
+  },
+  {
+    "name": "Hydrokinesis",
+    "color": "red",
+    "tags": [],
+    "text": "You gain some telekinetic power over water nearby. +3 combat, +3 ranged. Take an additional +5 to all physical while in water."
+  },
+  {
+    "name": "Kollakinesis",
+    "color": "red",
+    "tags": [],
+    "text": "You gain some telekinetic power over glue nearby, including the ability to conjure small amounts. +3 combat, +2 ranged, Net. Can conjure glue, soften it, etc. TODO If casters counter movers, what counters casters?"
+  },
+  {
+    "name": "Mouseform",
+    "color": "red",
+    "tags": [],
+    "text": "-10 size."
+  },
+  {
+    "name": "Ogreform",
+    "color": "red",
+    "tags": [],
+    "text": "+2 size, +2 combat, but can't use a weapon."
+  },
+  {
+    "name": "Panikinesis",
+    "color": "red",
+    "tags": [],
+    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 Net. Good for repairs."
+  },
+  {
+    "name": "Photokinesis",
+    "color": "red",
+    "tags": [],
+    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +4 armour, +3 ranged. Can conjure illumination of whatever colour; can also suppress light."
+  },
+  {
+    "name": "Pyrokinesis",
+    "color": "red",
+    "tags": [],
+    "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5 combat, +4 ranged; create a POW=[POW roll vs 10] fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
+  },
+  {
+    "name": "Reshape",
+    "color": "red",
+    "tags": [],
+    "text": "Noncom, can shape crystalline (ie metal, rock, etc) matter. (Red magic lacks precision; if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. Mass is conserved, not volume."
+  },
+  {
+    "name": "Telekinesis",
+    "color": "red",
+    "tags": [],
+    "text": "You gain some general but relatively weak telekinesis. +3 combat, +4 ranged. Can pick up, push, or pull items from long range. Carry capacity capped at half your weight, so you can't fly, but can propel self for +5 to jumps."
+  },
+  {
+    "name": "Transmute",
+    "color": "red",
+    "tags": [],
+    "text": "Can temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories for $level minutes. TODO level-gate the possible materials: original, various base materials, certain rarer and more expensive materials. Metal merchants "
+  },
+  {
+    "name": "Water breathing, walking n",
+    "color": "red",
+    "tags": [],
+    "text": "You and up to n allies don't drown, sink. At high level, water breathing is actually oxygen creation or unbreathing, so that smoke inhalation and hard vacuum also don't kill you."
+  },
+  {
+    "name": "Antimagic shell",
+    "color": "orange",
+    "tags": [],
+    "text": "Anyone engaging you has -5 magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong? I guess orange is a rather specialised colour."
+  },
+  {
+    "name": "Boost",
+    "color": "orange",
+    "tags": [],
+    "text": "Assist an ally's spellcasting, ie their casting attribute counts as min(attr, you.MAS)+5."
+  },
+  {
+    "name": "Disenchant",
+    "color": "orange",
+    "tags": [],
+    "text": "Break an enchantment of requirement equal or lower to this plus 5. Does not affect spells that are permanent without enchantment, such as curses."
+  },
+  {
+    "name": "Disjunction",
+    "color": "orange",
+    "tags": [],
+    "text": "Even the lightest touch cancels magic. +10 vs summons."
+  },
+  {
+    "name": "Enchant",
+    "color": "orange",
+    "tags": [
+      "slow"
+    ],
+    "text": "The time limit of some other spell of equal or lower requirement becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, transmutation, bound summons, etc, but not a flamethrower. This doesn't negate \"Only k instances may be active at a time\". This can't make enchanted gear "
+  },
+  {
+    "name": "Meditate",
+    "color": "orange",
+    "tags": [],
+    "text": "Enter a magical combat trance and open your mind to higher states. +3 combat, take +1 magic aeor, capped at +$magic."
+  },
+  {
+    "name": "Mirror",
+    "color": "orange",
+    "tags": [],
+    "text": "Copy a spell of level up to $n that was cast last round, of any colour. This includes combat spells. You must pay any additional costs."
+  },
+  {
+    "name": "Antigrav",
+    "color": "yellow",
+    "tags": [
+      "high-level"
+    ],
+    "text": "Negate the force of gravity on yourself and up to $level allies or objects of equal or lesser size. Can use this for pseudo flight, but landing is the tricky part. You don't negate the weight of any of your gear, if that matters, only living biological material."
+  },
+  {
+    "name": "Bubble",
+    "color": "yellow",
+    "tags": [
+      "high-level"
+    ],
+    "text": "Cordon yourself and some nearby area into an ad hoc pocket dimension, such that nobody can enter or leave. There must be a keystone on the outside (ie the non-you side); if it is destroyed, or you are incapacitated, the spell fizzles."
+  },
+  {
+    "name": "Create pocket dimension",
+    "color": "yellow",
+    "tags": [
+      "slow",
+      "world-building"
+    ],
+    "text": "Create a small, short-lived extra dimension. Combined with enchanting to create a dimensional warehouse: you bind multiple dimensions to a manite layer, breach them, and you have a DW. Most also have control systems, using purple: if you don't, a thief can steal your cargo."
+  },
+  {
+    "name": "Create wormhole",
+    "color": "yellow",
+    "tags": [
+      "slow",
+      "world-building"
+    ],
+    "text": "Create a pocket dimension with two access points that can be moved freely."
+  },
+  {
+    "name": "Dimensional breach",
+    "color": "yellow",
+    "tags": [
+      "high-level",
+      "world-building"
+    ],
+    "text": "Tunnel into an alternate dimension with similar world coordinates"
+  },
+  {
+    "name": "Flashstep",
+    "color": "yellow",
+    "tags": [],
+    "text": "+3 combat, negate ranged part of engagement if you could reach them by walking toward them. +5 to chase checks."
+  },
+  {
+    "name": "Gravity tilt",
+    "color": "yellow",
+    "tags": [],
+    "text": "+5 to climb; can pulse for +3 combat, +4 ranged."
+  },
+  {
+    "name": "Hammerspace",
+    "color": "yellow",
+    "tags": [],
+    "text": "Access a pocket dimension that can fit up to -5 size categories of stuff (ie 1/30 your volume, so like a couple litres); its access point is locked to your position. For each extra level, one extra size category."
+  },
+  {
+    "name": "Stasis",
+    "color": "yellow",
+    "tags": [
+      "slow"
+    ],
+    "text": "Time does not pass within a space equal to your size+$level. Must be channelled (or more usefully, enchanted)."
+  },
+  {
+    "name": "Time warp",
+    "color": "yellow",
+    "tags": [
+      "high-level",
+      "world-building"
+    ],
+    "text": "Create a pocket dimension with two apertures with different coordinates in time. This is an entire Thing."
+  },
+  {
+    "name": "Biomancy",
+    "color": "blue",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, etc"
+  },
+  {
+    "name": "Danger sense",
+    "color": "blue",
+    "tags": [],
+    "text": "+3, +10 vigilance vs sneak attacks; can wake from normal sleep for this ('normal' excludes drugged, enchanted, comatose, etc). Cancelled with next spell, so needs to be reapplied constantly."
+  },
+  {
+    "name": "Encrypt",
+    "color": "blue",
+    "tags": [
+      "slow",
+      "high-level"
+    ],
+    "text": "Hard-scramble information indefinitely, unless a passphrase or other slipknot is applied. This isn't a veil, it's obvious that information is there, it just can't be parsed, eg writing will still be visible but be rendered as lorem ipsum. Combined with DWs such that if you don't have the key, you absolutely can't get at the cargo, and if you just try to smash the door, it'll collapse the dimension and you'll never get the cargo. Encryption can be disenchanted; but it's often combined with other enchantments, such that if you break the encryption, you'll destroy the entire item anyway."
+  },
+  {
+    "name": "Geomancy",
+    "color": "blue",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Identify composition of crystals"
+  },
+  {
+    "name": "Meteomancy",
+    "color": "blue",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Predict the weather, 1 day into the future within 1km per level."
+  },
+  {
+    "name": "Necromancy n",
+    "color": "blue",
+    "tags": [
+      "slow"
+    ],
+    "text": "Speak with the dead. Each unique caster may speak with each corpse for up to n minutes; the corpse may or may not be cooperative. This is one of the reasons killing people isn't a great idea: corpses tend to be pretty enthusiastic about getting revenge on their killers."
+  },
+  {
+    "name": "Olfamancy",
+    "color": "blue",
+    "tags": [
+      "slow"
+    ],
+    "text": "Gain enhanced smell: you can identify species, identity, and any injuries of anyone nearby who's left a scent trail within the past few days. You don't know the name or face of anyone you smell, but if you know them from elsewhere, you can match the two."
+  },
+  {
+    "name": "Passive perception",
+    "color": "blue",
+    "tags": [
+      "world-building"
+    ],
+    "text": "Spells that you cast once early in the day and remain active until you draw a weapon or cast another spell, which is kind of necessary for perception when you don't know you'll need it. And perhaps you can have it flare up and give a short-term bonus if you're pretty sure something's there. Boon?"
+  },
+  {
+    "name": "Scotopic",
+    "color": "blue",
+    "tags": [],
+    "text": "You and up to $level allies can see in the dark."
+  },
+  {
+    "name": "Tag, track",
+    "color": "blue",
+    "tags": [],
+    "text": "Tag up to $level items with a hash of your choosing; you can detect the direction (but not distance) to a tagged item if you know its hash, if it's within n*100m."
+  },
+  {
+    "name": "Telesophy",
+    "color": "blue",
+    "tags": [],
+    "text": "Send messages to anyone on the T-soph network."
+  },
+  {
+    "name": "Watcher",
+    "color": "blue",
+    "tags": [
+      "slow"
+    ],
+    "text": "Create a Watcher that attaches to an incapacitated target. Once per day, you may share their senses for up to 1 minute. You can do this remotely, although obviously they might just be on the toilet or daydreaming or something. They are not typically aware of this. You aren't aware of their thoughts, memories, or other non-sensory data. The Watcher is weak to orange magic and can be killed by any sort of dispel effect, regardless of whether you're targeting it. Per level, you gain an additional sense: audio, video, smell, taste, touch, proprioception, pain, balance, hunger, thermo ... although as long as you have audiovideo you can probably figure out the others. A person may host no more than one Watcher at a time."
+  },
+  {
+    "name": "X-ray vision",
+    "color": "blue",
+    "tags": [],
+    "text": "See through solid objects, up to 10cm per level. Specifically, your vision skips ahead up to 10cm from the first opaque object, so if there are two sheets of paper spaced 5cm apart you can see through both, but you can't if they're 15cm apart. In the former case, you're aware of the first piece, like how you can see the palm of a hand you put over one eye."
+  },
+  {
+    "name": "Bind wisp",
+    "color": "purple",
+    "tags": [],
+    "text": "Take control of a wisp. They're very powerful servants, but there's a catch: they feed on the spells energy, gradually becoming stronger without upper limit. Eventually, they //will// break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
+  },
+  {
+    "name": "Compromise",
+    "color": "purple",
+    "tags": [
+      "slow",
+      "high-level"
+    ],
+    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1 round. You steal their senses during. You can't act yourself at the same time, and you don't generally know ahead of time whether they're in a position to do anything you care about. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
+  },
+  {
+    "name": "Confusion",
+    "color": "purple",
+    "tags": [
+      "high-level"
+    ],
+    "text": "Make other characters attack each other. Because this is extremely powerful, it should probably have a very easy save. The point is to counter large troop concentrations: above 10 or so, each additional combatant is as likely to teamkill as to change the outcome. So, say it's MAS+magic+num_enemies vs MAS+magic+20, single check; on success, anyone who tries to engage or advance instead engages the nearest viable target. TODO this is awkward, because there are 3 outcomes: you hit the caster, you hit your buddy, and your buddy or the caster hits you. Can I rework this? You just flat-out engage anyone in front of you? Call it wrath? Gate it? Is that any better than checking? Implement it as a veil?"
+  },
+  {
+    "name": "Create curse",
+    "color": "purple",
+    "tags": [
+      "slow"
+    ],
+    "text": "A magical parasite that infests a victim and inflicts some nuisancesome condition until removed."
+  },
+  {
+    "name": "Erokinesis",
+    "color": "purple",
+    "tags": [
+      "slow"
+    ],
+    "text": "Make someone fall in or out of love. Technically only lasts while channelled, but it has long-term effects"
+  },
+  {
+    "name": "Necrokinesis",
+    "color": "purple",
+    "tags": [],
+    "text": "Animate up to $level nearby corpses. "
+  },
+  {
+    "name": "Pacify animate vines",
+    "color": "purple",
+    "tags": [
+      "high-level"
+    ],
+    "text": "I had the notion that this might be species-specific or otherwise require a lot of separate spells so that players can't really get it and trivialise an enemy type. After all, it's a big all-to-nothing effect. But, it does kind of need to exist, as a softlock picker."
+  }
+]

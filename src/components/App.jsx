@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BoonSearch from "./boons/BoonSearch";
 import PlantSearch from "./plants/PlantSearch";
+import Search from "./Search";
 
 function App() {
   const [searchState, setSearchState] = useState(<BoonSearch/>)
@@ -12,6 +13,7 @@ function App() {
       <div className="tab">
         <button className="tablinks" onClick={()=>setSearchState(<BoonSearch />)}>Boons</button>
         <button className="tablinks" onClick={()=>setSearchState(<PlantSearch />)}>Paikera</button>
+        <button className="tablinks" onClick={()=>setSearchState(<Search contentType="plant" />)}>Search</button>
         {/* <button className="tablinks" onClick={(event)=>{
           event.stopPropagation();
           setSearchState(<div />);

@@ -2,8 +2,10 @@
 const { end } = require("@popperjs/core");
 const fs = require ("node:fs");
 
+// Sue me for hard-coding these, these are my scrapbook files
 const boonTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Boons.txt";
-const floraTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Hezulim/Flora.txt"; // Sue me for hard-coding this, this is my scrapbook file
+const floraTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Hezulim/Flora.txt";
+const spellTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Spells.txt";
 
 function parsePlant(line, regex, isActive) {
   if (regex.test(line)) {
@@ -71,53 +73,104 @@ function parseBoonFile() {
 }
 
 function parsePlantFile() {
-  fs.open(floraTextFile, 'r', (err, file) => {
+
+
+  const activeRegEx = new RegExp(".*:.*:.*\..*");
+  const reagentRegEx = new RegExp(".*:.*\..*");
+  var i;
+  const actives = [];
+  const ampers = [];
+  const dampers = [];
+  const preservatives = [];
+  for (i = activeIx; i < amperIx; i++) {
+    const entry = parsePlant(lines[i], activeRegEx, true);
+    if (entry) {
+      actives.push(entry);
+    }
+  }
+  // TODO these three next parts and arguably the previous violate DRY
+  for (i = amperIx; i < damperIx; i++) {
+    const entry = parsePlant(lines[i], reagentRegEx, false);
+
+  fs.open(plantTextFile, 'r', (err, file) => {
     fs.readFile(file, {encoding: 'utf-8'}, (err, data) => {
       const lines = data.split(/\r?\n/);
-      const activeIx = lines.indexOf("== Active ==");
-      const amperIx = lines.indexOf("== Amper ==")
-      const damperIx = lines.indexOf("== Damper ==")
-      const preservativeIx = lines.indexOf("== Preservative ==")
-      const activeRegEx = new RegExp(".*:.*:.*\..*");
-      const reagentRegEx = new RegExp(".*:.*\..*");
-      const vineRegEx = new RegExp("(.* animate vine.*|.*Animate vine.*)");
-      var i;
-      const actives = [];
-      const ampers = [];
-      const dampers = [];
-      const preservatives = [];
-      for (i = activeIx; i < amperIx; i++) {
-        const entry = parsePlant(lines[i], activeRegEx, true);
-        if (entry) {
-          actives.push(entry);
+      let reagentType = "";
+      const reagentTypes = "active,amper,damper,preservative".split(",");
+      const plants=[];
+      lines.forEach(line => {
+        const rt = line.substring(4,line.length-4).toLowerCase();
+        if (reagentTypes.includes(rt)) {
+          reagentType = rt;
+          console.log(reagentType);
         }
-      }
-      // TODO these three next parts and arguably the previous violate DRY
-      for (i = amperIx; i < damperIx; i++) {
-        const entry = parsePlant(lines[i], reagentRegEx, false);
-        if (entry) {
-          ampers.push(entry);
+        if (reagentType && line.includes(":")) {
+          let [name, ...text] = line.split(": ");
+          text = text.join(": "); 
+          const tags = [];
+          const tagKeys = {"#":"slow", "$":"high-level", "&":"civilian", "^":"social","*":"world-building"};
+          Object.entries(tagKeys).forEach(([key,value]) => {
+            if (name.includes(key)) {
+              name=name.replace(key,"").trim();
+              tags.push(value);
+            }
+          });
+          if (text[0] === "(") {
+            const [tag, ... text2] = text.split(") ");
+            tags.push(tag.slice(1));
+            text = text2.join(") ");
+          }
+          text = text[0].toUpperCase()+text.slice(1);
+          spells.push({name:name, color:color, tags:tags, text:text});
         }
-      }
-      for (i = damperIx; i < preservativeIx; i++) {
-        const entry = parsePlant(lines[i], reagentRegEx, false);
-        if (entry) {
-          dampers.push(entry);
-        }
-      }
-      for (i = preservativeIx; i < lines.length; i++) {
-        const entry = parsePlant(lines[i], reagentRegEx, false);
-        if (entry) {
-          preservatives.push(entry);
-        }
-      }
-      // console.log(actives, ampers, dampers, preservatives);
-      const myJson = JSON.stringify({actives:actives, ampers:ampers, dampers:dampers, preservatives:preservatives}, null, 2);
-      fs.writeFile('src/data/flora.json', myJson, 'utf8', () => {
+      });
+      const myJson = JSON.stringify(spells, null, 2);
+      fs.writeFile('src/data/spells.json', myJson, 'utf8', () => {
         console.log("done");
       });
     });
   });
 }
 
-parseBoonFile();
+function parseSpellFile() {
+  fs.open(spellTextFile, 'r', (err, file) => {
+    fs.readFile(file, {encoding: 'utf-8'}, (err, data) => {
+      const lines = data.split(/\r?\n/);
+      let color = "";
+      const colors = "red,orange,yellow,green,blue,purple".split(",");
+      const spells=[];
+      lines.forEach(line => {
+        const col = line.substring(4,line.length-4).toLowerCase();
+        if (colors.includes(col)) {
+          color = col;
+          console.log(color);
+        }
+        if (color && line.includes(":")) {
+          let [name, ...text] = line.split(": ");
+          text = text.join(": "); 
+          const tags = [];
+          const tagKeys = {"#":"slow", "$":"high-level", "&":"civilian", "^":"social","*":"world-building"};
+          Object.entries(tagKeys).forEach(([key,value]) => {
+            if (name.includes(key)) {
+              name=name.replace(key,"").trim();
+              tags.push(value);
+            }
+          });
+          if (text[0] === "(") {
+            const [tag, ... text2] = text.split(") ");
+            tags.push(tag.slice(1));
+            text = text2.join(") ");
+          }
+          text = text[0].toUpperCase()+text.slice(1);
+          spells.push({name:name, color:color, tags:tags, text:text});
+        }
+      });
+      const myJson = JSON.stringify(spells, null, 2);
+      fs.writeFile('src/data/spells.json', myJson, 'utf8', () => {
+        console.log("done");
+      });
+    });
+  });
+}
+
+parseSpellFile();
