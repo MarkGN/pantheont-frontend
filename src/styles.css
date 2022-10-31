@@ -24,6 +24,14 @@ body {
   padding: 5px;
 }
 
+.content-card {
+  border: 0px;
+  border-style: none;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
 .card-holder {
   margin: 5px;
 }
@@ -59,6 +67,22 @@ header {
 
 .plant-interior {
   background-color: #eeffcc;
+  border-color: black;
+  border-style: solid;
+  margin: 5px;
+  padding: 5px;
+}
+
+.spell {
+  border: 0px;
+  border-style: none;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
+.spell-interior {
+  background-color: #ccddff;
   border-color: black;
   border-style: solid;
   margin: 5px;

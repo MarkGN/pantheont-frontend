@@ -37,7 +37,7 @@ function PlantSearch () {
         setFilterIndices(indices);
       }} name={tag}/>;
     })}
-    <PlantColorFilter todo="this" />
+    <PlantColorFilter />
     <PlantSort />
     {/* TODO it would be nice if these didn't all have to be level: when one Plant has elements on multiple lines and thus has more height, it shouldn't push the entire next line down, only the one directly under it. Like Tumblr, which does this by rendering columns; but there should be a nice one-liner, surely. */}
     {/* TODO what we need is tooltips, particularly for the tags. And of course a file listing tags. And tabs, or at least a drop-down, so you can search multiple files. That might be more sensible: if you want to search boons, you have similar filters, for/against specific tags and whether to group by skill. Tabs and drop-downs are pretty similar. */}

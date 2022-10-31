@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default function Card(props) {
-  return <div className="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
-    <div className="card-interior">
+  return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div className={props.contentType+"-interior"}>
       <h3>{props.name}</h3>
+      {props.text.map(line => <p key={line}>{line}</p>)}
       <p>{props.tags}</p>
-      {props.text.map(line => <p>{line}</p>)}
     </div>
   </div>
 }
