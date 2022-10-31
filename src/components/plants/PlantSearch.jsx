@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Plant from "./Plant";
 import PlantFilter from "./PlantFilter";
 import PlantSort from "./PlantSort";
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
 import PlantColorFilter from "./PlantColorFilter";
 
 const rawPlants = require("../../data/flora.json");

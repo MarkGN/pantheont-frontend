@@ -41,6 +41,10 @@ code {
     monospace;
 }
 
+.filter {
+  width: 100%;
+}
+
 header {
   margin: 20px;
   text-align: center;
