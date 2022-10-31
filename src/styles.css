@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 .boon {
@@ -41,13 +42,23 @@ code {
     monospace;
 }
 
-.filter {
+.filter-bar {
   width: 100%;
+}
+
+.filter-input {
+  display: inline-block;
+  margin-left: 5px;
+  width: fit-content;
 }
 
 header {
   margin: 20px;
   text-align: center;
+}
+
+.inline {
+  display: inline-block;
 }
 
 .plant {

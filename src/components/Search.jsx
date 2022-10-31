@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Card from "./Card";
 import FilterTag from './FilterTag';
+import PlantColorFilter from "./plants/PlantColorFilter"
 
 const boons = require("../data/boons.json");
 const boonPattern = ["skill", "text"];
@@ -21,11 +22,12 @@ export default function Search(props) {
   function filterTag(datum) {
     return filterTagValue ? (datum.tags && datum.tags.some(s => s.includes(filterTagValue))) : true;
   }
-  console.log(filterTagValue);
-  console.log(filterTag(data[0]));
   
   return <div className="row card-holder">
-    <FilterTag />
+    <div className='filter-bar'>
+      <FilterTag />
+      {props.contentType === "plant" ? <PlantColorFilter /> : <div/>}
+    </div>
     {data.filter(filterTag).map((datum) => {
       return <Card key={datum.name} contentType={props.contentType} name={datum.name} tags={datum.tags ? datum.tags.join(", ") : ""} text={pattern.map(field => datum[field])} />
   })}
