@@ -4,8 +4,8 @@ export default function Card(props) {
   return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div className={props.contentType+"-interior"}>
       <h3>{props.name}</h3>
-      {props.text.map((line, ix) => <p key={ix}>{line}</p>)}
       <p>{props.tags}</p>
+      {props.text.map((line, ix) => <p key={ix}>{line}</p>)}
     </div>
   </div>
 }

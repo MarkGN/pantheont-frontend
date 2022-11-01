@@ -3,7 +3,6 @@
     "name": "Abort",
     "color": "red",
     "tags": [
-      "slow",
       "civilian"
     ],
     "text": "Terminate pregnancy. Illegal in much of the world, so the potion is much more popular, since that gives the mage plausible deniability."
@@ -12,7 +11,6 @@
     "name": "Aid childbirth",
     "color": "red",
     "tags": [
-      "slow",
       "civilian"
     ],
     "text": "Labour becomes very easy and free of complications. No particular drawback. Very popular civilian magic."
@@ -27,7 +25,6 @@
     "name": "Fertilise",
     "color": "red",
     "tags": [
-      "slow",
       "civilian"
     ],
     "text": "Target plant grows 10% faster for 24 hours. Not channelled."
@@ -90,19 +87,19 @@
     "name": "Transmute",
     "color": "red",
     "tags": [],
-    "text": "Can temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories for $level minutes. TODO level-gate the possible materials: original, various base materials, certain rarer and more expensive materials. Metal merchants "
+    "text": "Can temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories for $level minutes. TODO level-gate the possible materials: original, various base materials, certain rarer and more expensive materials. Noble metals can't (?) be created, although they can be transmuted into other materials."
   },
   {
-    "name": "Water breathing, walking n",
+    "name": "Water breathing, walking",
     "color": "red",
     "tags": [],
-    "text": "You and up to n allies don't drown, sink. At high level, water breathing is actually oxygen creation or unbreathing, so that smoke inhalation and hard vacuum also don't kill you."
+    "text": "You and up to $level allies don't drown, sink. At high level, water breathing is actually oxygen creation or unbreathing, so that smoke inhalation and hard vacuum also don't kill you."
   },
   {
     "name": "Antimagic shell",
     "color": "orange",
     "tags": [],
-    "text": "Anyone engaging you has -5 magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong? I guess orange is a rather specialised colour."
+    "text": "Anyone engaging you has -5 magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong?"
   },
   {
     "name": "Boost",
@@ -224,7 +221,6 @@
     "name": "Biomancy",
     "color": "blue",
     "tags": [
-      "slow",
       "civilian"
     ],
     "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, etc"
@@ -248,7 +244,6 @@
     "name": "Geomancy",
     "color": "blue",
     "tags": [
-      "slow",
       "civilian"
     ],
     "text": "Identify composition of crystals"
@@ -257,7 +252,6 @@
     "name": "Meteomancy",
     "color": "blue",
     "tags": [
-      "slow",
       "civilian"
     ],
     "text": "Predict the weather, 1 day into the future within 1km per level."

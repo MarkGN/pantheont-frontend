@@ -81,18 +81,15 @@ function parsePlantFile() {
       let reagentType = "";
       const reagentTypes = "active,amper,damper,preservative".split(",");
       const plants=[];
-      console.log(reagentTypes);
       lines.forEach(line => {
         const rt = line.substring(3,line.length-3).toLowerCase();
-        console.log(rt);
         if (reagentTypes.includes(rt)) {
           reagentType = rt;
-          console.log(reagentType);
         }
         if (reagentType && line.includes(":")) {
           const isActive = reagentType === "active";
           const entry = parsePlant(line, isActive ? activeRegEx : reagentRegEx, isActive);
-          plants.push(entry);
+          plants.push({...entry, "reagentType":reagentType});
         }
       });
       const myJson = JSON.stringify(plants, null, 2);
@@ -114,7 +111,6 @@ function parseSpellFile() {
         const col = line.substring(4,line.length-4).toLowerCase();
         if (colors.includes(col)) {
           color = col;
-          console.log(color);
         }
         if (color && line.includes(":")) {
           let [name, ...text] = line.split(": ");
@@ -145,4 +141,4 @@ function parseSpellFile() {
 }
 
 parsePlantFile();
-// parseSpellFile();
+parseSpellFile();

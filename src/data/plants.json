@@ -3,43 +3,50 @@
     "name": "Aibe seed",
     "colors": "BG",
     "description": "Dandelion-like flower whose seeds blow off on approach and affect intruders.",
-    "effect": "hallucinations"
+    "effect": "hallucinations",
+    "reagentType": "active"
   },
   {
     "name": "Anaitsa berry",
     "colors": "YP",
     "description": "Bush with bright yellow berries.",
-    "effect": "paralytic"
+    "effect": "paralytic",
+    "reagentType": "active"
   },
   {
     "name": "Black glove",
     "colors": "PY",
     "description": "Flower with black petals.",
-    "effect": "love"
+    "effect": "love",
+    "reagentType": "active"
   },
   {
     "name": "Che plat berry",
     "colors": "GY",
     "description": "Inanimate flowering vine with very many very thin white petals.",
-    "effect": "abortifacient"
+    "effect": "abortifacient",
+    "reagentType": "active"
   },
   {
     "name": "Chuche leaf",
     "colors": "OY",
     "description": "Tree with gum-like leaves.",
-    "effect": "disjunction, fortify magic"
+    "effect": "disjunction, fortify magic",
+    "reagentType": "active"
   },
   {
     "name": "Dabano berry",
     "colors": "BP",
     "description": "Inanimate vine with dark blue flowers and darker berries.",
-    "effect": "amnesia"
+    "effect": "amnesia",
+    "reagentType": "active"
   },
   {
     "name": "Golden lady",
     "colors": "GR",
     "description": "Five-petal flower with honey colouring.",
-    "effect": "childbirth"
+    "effect": "childbirth",
+    "reagentType": "active"
   },
   {
     "name": "Inha berry",
@@ -48,13 +55,15 @@
     "effect": "fertility",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Likebane",
     "colors": "YG",
     "description": "Flower with yellow-and-grey petals.",
-    "effect": "targeted poison"
+    "effect": "targeted poison",
+    "reagentType": "active"
   },
   {
     "name": "Lover's kiss flower",
@@ -63,7 +72,8 @@
     "effect": "sleep",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Merflower petal",
@@ -72,7 +82,8 @@
     "effect": "water walking",
     "tags": [
       "aquatic"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Mie laz flower",
@@ -81,31 +92,36 @@
     "effect": "poison",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Mindai grass",
     "colors": "GO",
     "description": "Grass-like weed.",
-    "effect": "contraceptive"
+    "effect": "contraceptive",
+    "reagentType": "active"
   },
   {
     "name": "Mugibai nut",
     "colors": "BY",
     "description": "Tree with blue flowers.",
-    "effect": "see invisible"
+    "effect": "see invisible",
+    "reagentType": "active"
   },
   {
     "name": "Nejal berry",
     "colors": "RP",
     "description": "Bush like strawberry, small and red.",
-    "effect": "combat stim"
+    "effect": "combat stim",
+    "reagentType": "active"
   },
   {
     "name": "Oktar petal",
     "colors": "PR",
     "description": "A thorny purple flowering weed.",
-    "effect": "curse"
+    "effect": "curse",
+    "reagentType": "active"
   },
   {
     "name": "Sea glove",
@@ -114,7 +130,8 @@
     "effect": "water breathing",
     "tags": [
       "aquatic"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Sea wort",
@@ -123,25 +140,29 @@
     "effect": "swift swim",
     "tags": [
       "aquatic"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Sujan petal",
     "colors": "GB",
     "description": "Flower with long pink-and-white petals.",
-    "effect": "healing"
+    "effect": "healing",
+    "reagentType": "active"
   },
   {
     "name": "Tebac petal",
     "colors": "PG",
     "description": "Oxalis-like flower with red petals. Instead of inflicting Injury if taken raw, causes addiction.",
-    "effect": "euphoriant"
+    "effect": "euphoriant",
+    "reagentType": "active"
   },
   {
     "name": "Tetan petal",
     "colors": "BO",
     "description": "Small red flower with orange spots.",
-    "effect": "sense magic"
+    "effect": "sense magic",
+    "reagentType": "active"
   },
   {
     "name": "Vichas flower",
@@ -150,7 +171,8 @@
     "effect": "sensory deprivation",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Wrath lily petal",
@@ -159,12 +181,14 @@
     "effect": "wrath",
     "tags": [
       "trap"
-    ]
+    ],
+    "reagentType": "active"
   },
   {
     "name": "Aokla",
     "colors": "GP",
-    "description": "A fern that can be ingested directly and is a mild euphoriant."
+    "description": "A fern that can be ingested directly and is a mild euphoriant.",
+    "reagentType": "amper"
   },
   {
     "name": "Blast pod leaf",
@@ -172,7 +196,8 @@
     "description": "A pod that fills with something pressurised and explosive that goes off on contact. Farmed by kaiju as a cheap trap.",
     "tags": [
       "trap"
-    ]
+    ],
+    "reagentType": "amper"
   },
   {
     "name": "Carmineroot",
@@ -181,7 +206,8 @@
     "tags": [
       "animate vine",
       "cornucopic"
-    ]
+    ],
+    "reagentType": "amper"
   },
   {
     "name": "Chokeweed leaf",
@@ -189,7 +215,8 @@
     "description": "No special abilities, but it grows very profusely.",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "amper"
   },
   {
     "name": "Dash corn",
@@ -197,7 +224,8 @@
     "description": "Much like maize, except that its ears grow absurdly fast (eg one per day); however, they rot just as fast. Farmed by kaiju as sustenance for minions.",
     "tags": [
       "cornucopic"
-    ]
+    ],
+    "reagentType": "amper"
   },
   {
     "name": "Firelace",
@@ -205,12 +233,14 @@
     "description": "Pink flowers that burst into flame on contact. Farmed by kaiju as a cheap trap.",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "amper"
   },
   {
     "name": "Jepo weed",
     "colors": "RP",
-    "description": "A tough grass."
+    "description": "A tough grass.",
+    "reagentType": "amper"
   },
   {
     "name": "Kaicheri leaf",
@@ -218,7 +248,8 @@
     "description": "Unaggressive, with broad leaves and small white flowers.",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "amper"
   },
   {
     "name": "Maiden's touch",
@@ -227,17 +258,20 @@
     "tags": [
       "animate vine",
       "aquatic"
-    ]
+    ],
+    "reagentType": "amper"
   },
   {
     "name": "Yellow fern",
     "colors": "YB",
-    "description": ""
+    "description": "",
+    "reagentType": "amper"
   },
   {
     "name": "Blue cap",
     "colors": "GB",
-    "description": "A mushroom with blue spots; quite toxic unless boiled."
+    "description": "A mushroom with blue spots; quite toxic unless boiled.",
+    "reagentType": "damper"
   },
   {
     "name": "Inzun",
@@ -245,12 +279,14 @@
     "description": "With yellow flowers that grow into red berries. The vines drain ability to use magic.",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "damper"
   },
   {
     "name": "Glueshroom",
     "colors": "OY",
-    "description": "A mushroom that secretes a powerful adhesive when squeezed."
+    "description": "A mushroom that secretes a powerful adhesive when squeezed.",
+    "reagentType": "damper"
   },
   {
     "name": "Hezucoral",
@@ -258,7 +294,8 @@
     "description": "Plant that accretes minerals out of water and creates semi-mineral structural matrices. The foundation of most aquatic nexus; needs nexus magic to grow effectively.",
     "tags": [
       "aquatic"
-    ]
+    ],
+    "reagentType": "damper"
   },
   {
     "name": "Horizon mushroom",
@@ -266,7 +303,8 @@
     "description": "An extremely fast-growing mushroom that's quite nutritious.",
     "tags": [
       "cornucopic"
-    ]
+    ],
+    "reagentType": "damper"
   },
   {
     "name": "Noi wan",
@@ -274,22 +312,26 @@
     "description": "A toadstool that twists gravity when stepped on; fully grown ones can launch a person into the air. Farmed by kaiju as low-effort ladders.",
     "tags": [
       "trap"
-    ]
+    ],
+    "reagentType": "damper"
   },
   {
     "name": "Pora stalk",
     "colors": "YB",
-    "description": "A toadstool that's quite poisonous without an active ingredient."
+    "description": "A toadstool that's quite poisonous without an active ingredient.",
+    "reagentType": "damper"
   },
   {
     "name": "Scarlet cap",
     "colors": "RY",
-    "description": "A mushroom with a pure red top."
+    "description": "A mushroom with a pure red top.",
+    "reagentType": "damper"
   },
   {
     "name": "Sea reed stem",
     "colors": "BP",
-    "description": "Like reeds, but salt tolerant."
+    "description": "Like reeds, but salt tolerant.",
+    "reagentType": "damper"
   },
   {
     "name": "Vampire bramble root",
@@ -297,17 +339,20 @@
     "description": "With thorns that inflict Bleeding on any hit.",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "damper"
   },
   {
     "name": "Yunzo root",
     "colors": "OP",
-    "description": "Grassy weed much like that stuff Fang said she made dumplings out of."
+    "description": "Grassy weed much like that stuff Fang said she made dumplings out of.",
+    "reagentType": "damper"
   },
   {
     "name": "Bluewood sap",
     "colors": "YB",
-    "description": "A tree with blue-tinged wood."
+    "description": "A tree with blue-tinged wood.",
+    "reagentType": "preservative"
   },
   {
     "name": "Crabweed sap",
@@ -316,7 +361,8 @@
     "tags": [
       "animate vine",
       "aquatic"
-    ]
+    ],
+    "reagentType": "preservative"
   },
   {
     "name": "Honeycup honey",
@@ -324,12 +370,14 @@
     "description": "A flower that rapidly produces a cupful of honey.",
     "tags": [
       "cornucopic"
-    ]
+    ],
+    "reagentType": "preservative"
   },
   {
     "name": "Jaut sap",
     "colors": "YG",
-    "description": "A very thorny tree, whose thorns often cause allergic reactions."
+    "description": "A very thorny tree, whose thorns often cause allergic reactions.",
+    "reagentType": "preservative"
   },
   {
     "name": "Kobal sap",
@@ -337,12 +385,14 @@
     "description": "A tree whose (mundane) fruit grows absurdly quickly",
     "tags": [
       "cornucopic"
-    ]
+    ],
+    "reagentType": "preservative"
   },
   {
     "name": "Modaga sap",
     "colors": "YP",
-    "description": "A cactus-like plant. The sap is mildly hallucinogenic by itself."
+    "description": "A cactus-like plant. The sap is mildly hallucinogenic by itself.",
+    "reagentType": "preservative"
   },
   {
     "name": "Nezema resin",
@@ -350,7 +400,8 @@
     "description": "With broad leaves that secretes a very sticky resin that's an absolute bitch to get off.",
     "tags": [
       "animate vine"
-    ]
+    ],
+    "reagentType": "preservative"
   },
   {
     "name": "Shaika sap",
@@ -358,7 +409,8 @@
     "description": "A tree that grows fruits of many neighbouring species (\"At least one of them has to work, right?\").",
     "tags": [
       "cornucopic"
-    ]
+    ],
+    "reagentType": "preservative"
   },
   {
     "name": "Sea cap",
@@ -366,11 +418,13 @@
     "description": "A mushroom.",
     "tags": [
       "aquatic"
-    ]
+    ],
+    "reagentType": "preservative"
   },
   {
     "name": "Stone root",
     "colors": "RY",
-    "description": "A plant that incorporates rock into its structural matrix. Very tough, used by kaiju to build stuff. Uses a mixture of minerals: quartz, calcite, aragonite, hydroxyapatite, etc. Other plants grow in cracks, making it more of a biocomposite matrix."
+    "description": "A plant that incorporates rock into its structural matrix. Very tough, used by kaiju to build stuff. Uses a mixture of minerals: quartz, calcite, aragonite, hydroxyapatite, etc. Other plants grow in cracks, making it more of a biocomposite matrix.",
+    "reagentType": "preservative"
   }
 ]
