@@ -38,12 +38,23 @@ export default function Search(props) {
     <div className='filter-bar'>
       <FilterTag />
       <Group groups={groups} />
+      <div className="my-tooltip"><p>Hover over me</p>
+        <span class="tooltiptext">Tooltip text</span>
+      </div>
+
+      <div className="my-tooltip"><p>Hover over me</p>
+        <span class="tooltiptext">Tooltip text</span>
+      </div>
+
+      <div className="my-tooltip"><p>Hover over me</p>
+        <span class="tooltiptext">Tooltip text</span>
+      </div>
     </div>
     {data
     .filter(filterTag)
     .sort(groupAndOrderStrWithEmptyGroupLast)
     .map((datum) => {
-      return <Card key={datum.name} contentType={props.contentType} name={datum.name} tags={datum.tags ? datum.tags.join(", ") : ""} text={pattern.map(field => datum[field])} />
+      return <Card key={datum.name} contentType={props.contentType} name={datum.name} tags={datum.tags} text={pattern.map(field => datum[field])} />
   })}
   </div>
 }

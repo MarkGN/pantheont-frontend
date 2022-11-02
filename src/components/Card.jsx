@@ -1,18 +1,29 @@
 import React from 'react';
 
+function spellColorToBgColor(col) {
+  const colorMap = {"red":"#ffdddd", "orange":"#ffeecc", "yellow":"#ffffbb", "green":"#ddffdd", "blue":"#ddddff", "purple":"#ffbbff"};
+  return colorMap[col] || "#ffffff";
+}
+
+const tags = require("../data/tags.json");
+
 export default function Card(props) {
   return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
-    <div className={props.contentType+"-interior"}>
+    <div className={props.contentType+"-interior"} style={(props.contentType === "spell") ? {"backgroundColor":spellColorToBgColor(props.text[0])} : {}}>
       <h3>{props.name}</h3>
-      <p>{props.tags}</p>
+      <i>
+        {(props.tags || []).map((tag, ix) => {
+          const toolTipText = (tags.find((t) => tag.includes(t.name.toLowerCase())) || {}).text;
+          if (toolTipText) {
+            return <div className="my-tooltip">{tag + (ix === props.tags.length-1 ? "" : ",")}
+            <span class="tooltiptext">{toolTipText}</span>
+          </div>
+          } else {
+            return <div>{tag + (ix === props.tags.length-1 ? "" : ",")}</div>
+          }
+        })}
+      </i>
       {props.text.map((line, ix) => <p key={ix}>{line}</p>)}
     </div>
   </div>
 }
-
-/*
-TODO It's less clear to me that I should have a single Card component.
-After all, different types of content display different data.
-Then again, props.name, props.contentType, props.text, where the last
-is a list of strings, {props.text.forEach(line => <p>line</p>)} ...
-*/

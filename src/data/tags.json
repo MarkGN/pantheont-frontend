@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Animate vine",
+    "type": "flat",
+    "text": "This counts as a monster with base stats of 8-average, +1 size, +5 combat, a Net attack, and Sessile and Unseeing. It's typically aggressive against anything nearby."
+  },
+  {
+    "name": "Aquatic",
+    "type": "flat",
+    "text": "This thrives in water rather than on land."
+  },
+  {
+    "name": "Armour (n)",
+    "type": "flat",
+    "text": "Take +n to combat, -n to athletics, and -n to stealth."
+  },
+  {
+    "name": "Armour piercing (n)",
+    "type": "flat",
+    "text": "Take +n to combat up to a maximum of the target's total Armour value."
+  },
+  {
+    "name": "Civilian",
+    "type": "flat",
+    "text": "No mechanical effect, but it is assumed that player characters won't have much use for this."
+  },
+  {
+    "name": "Cornucopic",
+    "type": "flat",
+    "text": "This produces a tremendous amount of food. Cornucopics are illegal under Hebai's Law."
+  },
+  {
+    "name": "Fight style",
+    "type": "flat",
+    "text": "You may only have one boon with this; that boon only applies if you have no Armour."
+  },
+  {
+    "name": "High-level",
+    "type": "flat",
+    "text": "This spell is only available at high level. Will be deprecated once I develop a spell level system."
+  },
+  {
+    "name": "Incapacitated",
+    "type": "flat",
+    "text": "You can't do anything. Lasts until end of battle."
+  },
+  {
+    "name": "Modifier",
+    "type": "flat",
+    "text": "This ability may be used in conjunction with an action to change its rules. You may stack arbitrarily many modifiers."
+  },
+  {
+    "name": "Move",
+    "type": "flat",
+    "text": "This is an action that otherwise isn't available."
+  },
+  {
+    "name": "Net",
+    "type": "flat",
+    "text": "On a hit against an opponent without Tangled, this inflicts Tangled n instead of n damage."
+  },
+  {
+    "name": "Prereq",
+    "type": "flat",
+    "text": "You can't take this without the listed prerequisite. If you do somehow get it, it doesn't take effect."
+  },
+  {
+    "name": "Sessile",
+    "type": "flat",
+    "text": "This can't manoeuvre around the battlefield. It can still move eg to fight, as opposed to something fully paralysed."
+  },
+  {
+    "name": "Slow",
+    "type": "flat",
+    "text": "This can't be used during Crisis, the idea being that it takes a while and is at least a little fiddly."
+  },
+  {
+    "name": "Social",
+    "type": "flat",
+    "text": "No mechanical effect, but if ever I create a social skill, this will be associated with it."
+  },
+  {
+    "name": "Trap",
+    "type": "flat",
+    "text": "No mechanical effect, but this is often used as a trap."
+  },
+  {
+    "name": "Tribal",
+    "type": "flat",
+    "text": "No mechanical effect, but it probably synergises with other effects with the same tribe."
+  },
+  {
+    "name": "Unseeing",
+    "type": "flat",
+    "text": "This doesn't use vision for perception. It doesn't generally suffer any combat penalties, but can't do things such as read or see colour."
+  },
+  {
+    "name": "World-building",
+    "type": "flat",
+    "text": "This content exists for world-building purposes, but is not available to players."
+  },
+  {
+    "name": "Injured",
+    "type": "tokens",
+    "text": "Take -$n to all physical actions. Decrease by 1 with each long rest."
+  },
+  {
+    "name": "Tangled",
+    "type": "tokens",
+    "text": "Take -$n to all physical actions. You can't manoeuvre. You have Untangle (move): if engaged this round, you don't inflict damage on a win, and if you win all engagements, resolve this condition. Lasts 3 rounds."
+  }
+]

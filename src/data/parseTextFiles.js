@@ -6,6 +6,7 @@ const fs = require ("node:fs");
 const boonTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Boons.txt";
 const plantTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Hezulim/Flora.txt";
 const spellTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Spells.txt";
+const tagTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Tags.txt";
 
 function parsePlant(line, regex, isActive) {
   if (regex.test(line)) {
@@ -140,5 +141,33 @@ function parseSpellFile() {
   });
 }
 
-parsePlantFile();
-parseSpellFile();
+function parseTagFile() {
+  fs.open(tagTextFile, 'r', (err, file) => {
+    fs.readFile(file, {encoding: 'utf-8'}, (err, data) => {
+      const lines = data.split(/\r?\n/);
+      let type = "";
+      const types = "flat,tokens".split(",");
+      const tags=[];
+      lines.forEach(line => {
+        const t = line.substring(4,line.length-4).toLowerCase();
+        if (types.includes(t)) {
+          type = t;
+        }
+        if (type && line.includes(":")) {
+          let [name, ...text] = line.split(": ");
+          text = text.join(": "); 
+          text = text[0].toUpperCase()+text.slice(1);
+          tags.push({name:name, type:type, text:text});
+        }
+      });
+      const myJson = JSON.stringify(tags, null, 2);
+      fs.writeFile('src/data/tags.json', myJson, 'utf8', () => {
+        console.log("done");
+      });
+    });
+  });
+}
+
+// parsePlantFile();
+// parseSpellFile();
+parseTagFile();
