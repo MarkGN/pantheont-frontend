@@ -38,17 +38,6 @@ export default function Search(props) {
     <div className='filter-bar'>
       <FilterTag />
       <Group groups={groups} />
-      <div className="my-tooltip"><p>Hover over me</p>
-        <span class="tooltiptext">Tooltip text</span>
-      </div>
-
-      <div className="my-tooltip"><p>Hover over me</p>
-        <span class="tooltiptext">Tooltip text</span>
-      </div>
-
-      <div className="my-tooltip"><p>Hover over me</p>
-        <span class="tooltiptext">Tooltip text</span>
-      </div>
     </div>
     {data
     .filter(filterTag)

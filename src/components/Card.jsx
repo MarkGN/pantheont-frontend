@@ -15,11 +15,11 @@ export default function Card(props) {
         {(props.tags || []).map((tag, ix) => {
           const toolTipText = (tags.find((t) => tag.includes(t.name.toLowerCase())) || {}).text;
           if (toolTipText) {
-            return <div className="my-tooltip">{tag + (ix === props.tags.length-1 ? "" : ",")}
-            <span class="tooltiptext">{toolTipText}</span>
+            return <div className="my-tooltip" key={tag}>{tag + (ix === props.tags.length-1 ? "" : ",")}
+            <span className="tooltiptext">{toolTipText}</span>
           </div>
           } else {
-            return <div>{tag + (ix === props.tags.length-1 ? "" : ",")}</div>
+            return <div key={tag}>{tag + (ix === props.tags.length-1 ? "" : ",")}</div>
           }
         })}
       </i>
