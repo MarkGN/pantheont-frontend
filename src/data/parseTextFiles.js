@@ -21,6 +21,8 @@ function parsePlant(line, regex, isActive) {
       effect = colors[1];
       colors = colors[0];
     }
+    const expandColor = {"R":"red","O":"orange","Y":"yellow","G":"green","B":"blue","P":"purple"};
+    colors = expandColor[colors[0]] + ", " + expandColor[colors[1]];
     const entry = {name:name, colors:colors, description:description};
     if (effect) {
       entry.effect = effect;
@@ -168,6 +170,6 @@ function parseTagFile() {
   });
 }
 
-// parsePlantFile();
-// parseSpellFile();
+parsePlantFile();
+parseSpellFile();
 parseTagFile();

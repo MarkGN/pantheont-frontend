@@ -1,14 +1,16 @@
 import React from "react";
 import { useDispatch } from 'react-redux';
-import { setTagFilter } from './filterSlice';
+import { setExcludeFilter, setTagFilter } from './filterSlice';
 
 
 export default function FilterTag(props) {
   const dispatch = useDispatch();
+  const mySetFilter = props.reverse ? setExcludeFilter : setTagFilter;
+  const id = "filter" + (props.reverse ? 2 : 1);
   return <div>
-    <p className="inline">Tags must include: </p><input className="filter-input" onChange={()=>{
-      dispatch(setTagFilter(document.getElementsByClassName("filter-input")[0].value));
-    }} placeholder={props.placeholder} type="text"></input>
+    <p className="inline">Tags must{props.reverse ? " not " : " "}include: </p><input id={id} className="filter-input" onChange={()=>{
+      dispatch(mySetFilter(document.getElementById(id).value));
+    }} placeholder={props.placeholder} type="text" defaultValue={props.value}></input>
   </div>;
 }
 

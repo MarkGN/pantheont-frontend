@@ -23,10 +23,11 @@ export default function Search(props) {
   const groups = {"boon":boonGroups, "plant":plantGroups, "spell":spellGroups}[props.contentType];
 
   const filterTagValue = useSelector((state) => state.tagFilter.value);
+  const filterTagExclusion = useSelector((state) => state.tagFilter.exclude);
   const groupValue = useSelector((state) => state.group.value);
 
   function filterTag(datum) {
-    return (!filterTagValue) || (datum.tags && datum.tags.some(s => s.includes(filterTagValue)));
+    return ((!filterTagValue) || (datum.tags && datum.tags.some(s => s.includes(filterTagValue)))) && (!filterTagExclusion || !datum.tags || !datum.tags.some(s => s.includes(filterTagExclusion)));
   }
 
   function groupAndOrderStrWithEmptyGroupLast(a,b) {
@@ -37,6 +38,7 @@ export default function Search(props) {
   return <div className="row card-holder">
     <div className='filter-bar'>
       <FilterTag />
+      <FilterTag reverse="1" value="civilian" />
       <Group groups={groups} />
     </div>
     {data
