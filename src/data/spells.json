@@ -257,12 +257,12 @@
     "text": "Predict the weather, 1 day into the future within 1km per level."
   },
   {
-    "name": "Necromancy n",
+    "name": "Necromancy",
     "color": "blue",
     "tags": [
       "slow"
     ],
-    "text": "Speak with the dead. Each unique caster may speak with each corpse for up to n minutes; the corpse may or may not be cooperative. This is one of the reasons killing people isn't a great idea: corpses tend to be pretty enthusiastic about getting revenge on their killers."
+    "text": "Speak with the dead. Each unique caster may speak with each corpse for up to $level minutes; the corpse may or may not be cooperative. This is one of the reasons killing people isn't a great idea: corpses tend to be pretty enthusiastic about getting revenge on their killers."
   },
   {
     "name": "Olfamancy",
