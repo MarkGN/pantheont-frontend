@@ -9,16 +9,21 @@ function softenColors(cols) {
   return cols.split(", ").map(softenColor).join(",");
 }
 
+function skillToColor(skill) {
+  return softenColor({"athletics":"yellow", "fight":"red", "knowledge":"green", "magic":"orange", "stealth":"purple", "vigilance":"blue"}[skill]);
+}
+
 const tags = require("../data/tags.json");
 
 function styling(props) {
-  return {"spell": {"backgroundColor":softenColor(props.text[0])}, "plant": {"backgroundImage": "linear-gradient(to right,"+softenColors(props.text[0])+")"}}[props.contentType] || {};
+  return {"boon": {"backgroundColor":skillToColor(props.text[0])}, "spell": {"backgroundColor":softenColor(props.text[0])}, "plant": {"backgroundImage": "linear-gradient(to right,"+softenColors(props.text[0])+")"}}[props.contentType] || {};
 }
 
 export default function Card(props) {
   return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
-    <div className={props.contentType+"-interior"} style={styling(props)}>
-      <h3>{props.name}</h3>
+    <div className="card-interior">
+    {/* <div className={props.contentType+"-interior"}> */}
+      <div className="content-card-name"  style={styling(props)}><h3>{props.name}</h3></div>
       <i>
         {(props.tags || []).map((tag, ix) => {
           const toolTipText = (tags.find((t) => tag.includes(t.name.toLowerCase())) || {}).text;

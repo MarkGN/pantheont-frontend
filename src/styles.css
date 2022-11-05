@@ -25,12 +25,24 @@ body {
   padding: 5px;
 }
 
+.card-interior {
+  background-color: #ffffff;
+  border-color: black;
+  border-style: solid;
+  margin: 5px;
+  padding: 5px;
+}
+
 .content-card {
   border: 0px;
   border-style: none;
   display: inline-block;
   padding: 5px;
   text-align: center;
+}
+
+.content-card-name {
+  width: 100%;
 }
 
 .card-holder {
@@ -114,7 +126,7 @@ header {
   visibility: hidden;
   /* width: 120px; */
   width:240px;
-  background-color: black;
+  background-color: #000000a0;
   color: #fff;
   text-align: center;
   /* border-radius: 6px; */
