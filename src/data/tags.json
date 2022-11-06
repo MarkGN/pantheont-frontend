@@ -10,14 +10,9 @@
     "text": "This thrives in water rather than on land."
   },
   {
-    "name": "Armour (n)",
+    "name": "Bleeding",
     "type": "flat",
-    "text": "Take +n to combat, -n to athletics, and -n to stealth."
-  },
-  {
-    "name": "Armour piercing (n)",
-    "type": "flat",
-    "text": "Take +n to combat up to a maximum of the target's total Armour value."
+    "text": "Whenever you do a check, take 1 point of injury. Resolved when you accumulate 5 points. If you fall asleep, take all outstanding points immediately."
   },
   {
     "name": "Civilian",
@@ -65,7 +60,7 @@
     "text": "On a hit against an opponent without Tangled, this inflicts Tangled n instead of n damage."
   },
   {
-    "name": "Prereq",
+    "name": "Prereq.*",
     "type": "flat",
     "text": "You can't take this without the listed prerequisite. If you do somehow get it, it doesn't take effect."
   },
@@ -85,12 +80,17 @@
     "text": "No mechanical effect, but if ever I create a social skill, this will be associated with it."
   },
   {
+    "name": "Suppress",
+    "type": "flat",
+    "text": "When you win an engagement from range, you may prevent the opponent from closing to melee."
+  },
+  {
     "name": "Trap",
     "type": "flat",
     "text": "No mechanical effect, but this is often used as a trap."
   },
   {
-    "name": "Tribal",
+    "name": ".*Tribal.*",
     "type": "flat",
     "text": "No mechanical effect, but it probably synergises with other effects with the same tribe."
   },
@@ -105,13 +105,23 @@
     "text": "This content exists for world-building purposes, but is not available to players."
   },
   {
+    "name": "Armour",
+    "type": "variable",
+    "text": "Take +n to combat, -n to athletics, and -n to stealth."
+  },
+  {
+    "name": "Armour piercing",
+    "type": "variable",
+    "text": "Take +n to combat up to a maximum of the target's total Armour value."
+  },
+  {
     "name": "Injured",
-    "type": "tokens",
+    "type": "variable",
     "text": "Take -$n to all physical actions. Decrease by 1 with each long rest."
   },
   {
     "name": "Tangled",
-    "type": "tokens",
+    "type": "variable",
     "text": "Take -$n to all physical actions. You can't manoeuvre. You have Untangle (move): if engaged this round, you don't inflict damage on a win, and if you win all engagements, resolve this condition. Lasts 3 rounds."
   }
 ]

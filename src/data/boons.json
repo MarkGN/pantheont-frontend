@@ -55,7 +55,7 @@
     "tags": [
       "armour tribal"
     ],
-    "text": "Take no athletics penalty from Armour."
+    "text": "Take no athletics penalty from @armour@."
   },
   {
     "name": "Stubborn",
@@ -134,7 +134,7 @@
     "name": "Pain tolerant",
     "skill": "fight",
     "tags": [],
-    "text": "Negate the check penalty from up to 2 points of Injury."
+    "text": "Negate the check penalty from up to 2 points of @injury:injured@."
   },
   {
     "name": "Reckless attack",
@@ -142,7 +142,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Take -1 to any clashes, and the outcome is a crit, including for the opponent. NB: this is clash-specific."
+    "text": "Take -1 to any clashes, and the outcome is a @crit@, including for the opponent. NB: this is clash-specific."
   },
   {
     "name": "Taunt",
@@ -181,7 +181,7 @@
     "tags": [
       "move"
     ],
-    "text": "Check MET+knowledge vs 10; on success, resolve Bleeding for a target; on failure, the patient takes a point of Weakness. Also, (move) when you or anyone else takes a long rest, check MET+knowledge vs 15; on a success, they resolve an additional point of Weakness. A patient may only receive one attempt of this move per long rest, and you may only give it to one patient. An ally without this boon can assist you with either move."
+    "text": "Check MET+knowledge vs 10; on success, resolve @bleeding@ for a target; on failure, the patient takes a point of @injury:injured@. Also, (move) when you or anyone else takes a long rest, check MET+knowledge vs 15; on a success, they resolve an additional point of @injury:injured@. A patient may only receive one attempt of this move per long rest, and you may only give it to one patient. An ally without this boon can assist you with either move."
   },
   {
     "name": "Forager",
@@ -285,7 +285,7 @@
     "name": "Shapeshifter",
     "skill": "magic",
     "tags": [
-      "prereq: Red spellbook"
+      "prereq Red spellbook"
     ],
     "text": "Per level of magic, you may learn an animal shape that you may assume as a spell. (eg if this is your third magic boon, you may immediately learn up to 3 animals, and then 1 more for each subsequent skill-up.) To learn a shape has the same requirements as learning a new spell in terms of time and money."
   },
@@ -301,7 +301,7 @@
     "tags": [
       "move"
     ],
-    "text": "Pick a target unaware of you; next round, if you sneak attack, it is a crit. "
+    "text": "Pick a target unaware of you; next round, if you sneak attack, it is a @crit@. "
   },
   {
     "name": "Careful",
@@ -309,7 +309,7 @@
     "tags": [
       "armour tribal"
     ],
-    "text": "Take no stealth penalty from Armour."
+    "text": "Take no stealth penalty from @armour@."
   },
   {
     "name": "Forgettable",
@@ -321,7 +321,7 @@
     "name": "Inventive",
     "skill": "stealth",
     "tags": [
-      "prereq: Trap maker"
+      "prereq Trap maker"
     ],
     "text": "You may make two different styles of traps, wherein whenever a trap is revealed, only other traps of the same style are revealed."
   },
@@ -381,7 +381,7 @@
     "tags": [
       "fight style"
     ],
-    "text": "During ranged engagements, add your vigilance to your combat, and you have Suppress."
+    "text": "During ranged engagements, add your vigilance to your combat, and you have @suppress@."
   },
   {
     "name": "Scotopic",

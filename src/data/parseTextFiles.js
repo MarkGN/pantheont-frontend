@@ -148,7 +148,7 @@ function parseTagFile() {
     fs.readFile(file, {encoding: 'utf-8'}, (err, data) => {
       const lines = data.split(/\r?\n/);
       let type = "";
-      const types = "flat,tokens".split(",");
+      const types = "flat,variable".split(",");
       const tags=[];
       lines.forEach(line => {
         const t = line.substring(4,line.length-4).toLowerCase();

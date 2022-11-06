@@ -336,7 +336,7 @@
   {
     "name": "Vampire bramble root",
     "colors": "red, blue",
-    "description": "With thorns that inflict Bleeding on any hit.",
+    "description": "With thorns that inflict @bleeding@ on any hit.",
     "tags": [
       "animate vine"
     ],

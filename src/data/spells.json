@@ -11,7 +11,7 @@
     "name": "Disintegrate",
     "color": "red",
     "tags": [],
-    "text": "You can tear crystalline matter to dust. +3 combat and 5 AP, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard."
+    "text": "You can tear crystalline matter to dust. +3 combat and 5 @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard."
   },
   {
     "name": "Fertilise",
@@ -55,7 +55,7 @@
     "name": "Photokinesis",
     "color": "red",
     "tags": [],
-    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +4 armour, +3 ranged. Can conjure illumination of whatever colour; can also suppress light."
+    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +4 @armour@, +3 ranged. Can conjure illumination of whatever colour; can also suppress light."
   },
   {
     "name": "Pyrokinesis",
