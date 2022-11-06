@@ -14,6 +14,14 @@
     "text": "If you aren't Restricted or in a choke point, add your athletics score to combat."
   },
   {
+    "name": "Jockey",
+    "skill": "athletics",
+    "tags": [
+      "rider tribal"
+    ],
+    "text": "Your steed gets +1 to AGI checks."
+  },
+  {
     "name": "Mark athletic",
     "skill": "athletics",
     "tags": [
@@ -26,12 +34,6 @@
     "skill": "athletics",
     "tags": [],
     "text": "You can climb up to AGI+athletics metres in one round. You can wall run twice as far as you can long jump, and you can wall jump twice as high as you can high jump."
-  },
-  {
-    "name": "Rider",
-    "skill": "athletics",
-    "tags": [],
-    "text": "Your steed gets +1 to AGI checks."
   },
   {
     "name": "Second wind",
@@ -103,7 +105,7 @@
     "tags": [
       "rider tribal"
     ],
-    "text": "When you close from ranged to melee while mounted, inflict a crit"
+    "text": "When you close from ranged to melee while mounted, inflict a @crit@."
   },
   {
     "name": "Leadership",

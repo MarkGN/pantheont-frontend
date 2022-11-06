@@ -30,6 +30,11 @@
     "text": "This produces a tremendous amount of food. Cornucopics are illegal under Hebai's Law."
   },
   {
+    "name": "Crit",
+    "type": "flat",
+    "text": "This inflicts double damage. If multiple effects give crits, the effect adds, eg with two crits, an attack inflicts triple damage."
+  },
+  {
     "name": "Fight style",
     "type": "flat",
     "text": "You may only have one boon with this; that boon only applies if you have no Armour."

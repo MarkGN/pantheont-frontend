@@ -42,6 +42,8 @@ body {
 }
 
 .content-card-name {
+  border: 1px;
+  border-style: solid;
   width: 100%;
 }
 

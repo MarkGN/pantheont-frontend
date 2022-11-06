@@ -170,6 +170,7 @@ function parseTagFile() {
   });
 }
 
+parseBoonFile();
 parsePlantFile();
 parseSpellFile();
 parseTagFile();
