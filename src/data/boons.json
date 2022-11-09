@@ -39,7 +39,7 @@
     "name": "Second wind",
     "skill": "athletics",
     "tags": [],
-    "text": "Negate the check penalty from up to 2 Fatigue."
+    "text": "Negate the check penalty from up to 2 @fatigue@."
   },
   {
     "name": "Sprint",
@@ -47,7 +47,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "If you have no Fatigue, take +3 to athletics and fight checks ueor and take 1 Fatigue aeor."
+    "text": "If you have no @fatigue@, take +3 to athletics and fight checks ueor and take 1 @fatigue@ aeor."
   },
   {
     "name": "Stoic",
@@ -134,7 +134,7 @@
     "name": "Pain tolerant",
     "skill": "fight",
     "tags": [],
-    "text": "Negate the check penalty from up to 2 points of @injury:injured@."
+    "text": "Negate the check penalty from up to 2 points of @injury@."
   },
   {
     "name": "Reckless attack",
@@ -181,7 +181,7 @@
     "tags": [
       "move"
     ],
-    "text": "Check MET+knowledge vs 10; on success, resolve @bleeding@ for a target; on failure, the patient takes a point of @injury:injured@. Also, (move) when you or anyone else takes a long rest, check MET+knowledge vs 15; on a success, they resolve an additional point of @injury:injured@. A patient may only receive one attempt of this move per long rest, and you may only give it to one patient. An ally without this boon can assist you with either move."
+    "text": "Check MET+knowledge vs 10; on success, resolve @bleeding@ for a target; on failure, the patient takes a point of @injury@. Also, (move) when you or anyone else takes a long rest, check MET+knowledge vs 15; on a success, they resolve an additional point of @injury@. A patient may only receive one attempt of this move per long rest, and you may only give it to one patient. An ally without this boon can assist you with either move."
   },
   {
     "name": "Forager",
@@ -199,7 +199,7 @@
     "name": "Kinbakushi",
     "skill": "knowledge",
     "tags": [],
-    "text": "Ordinarily, to wriggle out of being tied up is AGI+ath vs MET+knowledge, either escaping or taking 1 Injury and alerting anyone nearby. With this, instead the penalty is that they can't try again and must be untied, and you get +5 to tying checks (including when you're the one tied up)."
+    "text": "Ordinarily, to wriggle out of being tied up is AGI+ath vs MET+knowledge, either escaping or taking 1 @injury@ and alerting anyone nearby. With this, instead the penalty is that they can't try again and must be untied, and you get +5 to tying checks (including when you're the one tied up)."
   },
   {
     "name": "Lockpicking",
@@ -258,6 +258,12 @@
       "fight style"
     ],
     "text": "When fighting with spells, you may add $magic to your combat."
+  },
+  {
+    "name": "Gnostic",
+    "skill": "magic",
+    "tags": [],
+    "text": "You may channel two blue spells at the same time. Any effects are maxed, not stacked (eg if one gives +3 vigilance and another gives +4, you get +4, not +7). If you're channelling two spells when Crisis is declared, you can't cast other spells until it ends."
   },
   {
     "name": "Irongut",
@@ -342,12 +348,20 @@
     "text": "When you land a successful sneak attack, you aren't revealed, although the victim can probably figure out there's an attacker nearby and you must make another check to inflict another sneak attack."
   },
   {
+    "name": "Nonchalant",
+    "skill": "stealth",
+    "tags": [
+      "modifier"
+    ],
+    "text": "When you fail a hide check, instead of being revealed, you lose focus as per a POW roll; however, you also leave a bit of evidence such as a footprint or bit of hair, which will be found if you don't remove it with a successful hide check."
+  },
+  {
     "name": "Pickpocket",
     "skill": "stealth",
     "tags": [
       "modifier"
     ],
-    "text": "If you pass a stealth check, instead of hiding or sneak attacking, you can take an item from the target that they aren't wearing. If they also aren't holding it, you aren't revealed."
+    "text": "When you pass a stealth check, instead of hiding or sneak attacking, you take an item from the target that they aren't wearing. If they also aren't holding it, you aren't revealed."
   },
   {
     "name": "Trap maker",

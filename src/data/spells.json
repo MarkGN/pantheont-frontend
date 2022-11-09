@@ -11,7 +11,7 @@
     "name": "Disintegrate",
     "color": "red",
     "tags": [],
-    "text": "You can tear crystalline matter to dust. +3 combat and 5 @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard."
+    "text": "You can tear crystalline matter to dust. +3 combat and 5 @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard; and I don't want magic to simply trump everything."
   },
   {
     "name": "Fertilise",
@@ -66,8 +66,10 @@
   {
     "name": "Reshape",
     "color": "red",
-    "tags": [],
-    "text": "Noncom, can shape crystalline (ie metal, rock, etc) matter. (Red magic lacks precision; if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. Mass is conserved, not volume."
+    "tags": [
+      "slow"
+    ],
+    "text": "Noncom, can shape crystalline (ie metal, rock, etc) matter. (Red magic lacks precision; if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
   },
   {
     "name": "Telekinesis",
@@ -87,7 +89,7 @@
     "name": "Transmute",
     "color": "red",
     "tags": [],
-    "text": "Can temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories for $level minutes. TODO level-gate the possible materials: original, various base materials, certain rarer and more expensive materials. Noble metals can't (?) be created, although they can be transmuted into other materials."
+    "text": "Can temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories for $level minutes. TODO level-gate the possible materials: original, various base materials, certain rarer and more expensive materials. Noble metals can't (?) be created, although they can be transmuted into other materials. Mass is conserved, not volume."
   },
   {
     "name": "Water breathing, walking",
@@ -125,7 +127,7 @@
     "tags": [
       "slow"
     ],
-    "text": "The time limit of some other spell of equal or lower requirement becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, transmutation, bound summons, etc, but not a flamethrower. This doesn't negate \"Only k instances may be active at a time\". This can't make enchanted gear "
+    "text": "The time limit of some other spell of equal or lower requirement becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, transmutation, bound summons, etc, but not a flamethrower. This can't make enchanted wearable gear. This requires manite; say, 5*(level+1) grams."
   },
   {
     "name": "Meditate",
@@ -186,7 +188,7 @@
     "name": "Flashstep",
     "color": "yellow",
     "tags": [],
-    "text": "+3 combat, negate ranged part of engagement if you could reach them by walking toward them. +5 to chase checks."
+    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't climb over a wall). +3 combat, negate ranged part of engagement if you can close by walking. +5 to chase checks."
   },
   {
     "name": "Gravity tilt",
@@ -226,10 +228,22 @@
     "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, etc"
   },
   {
+    "name": "Clarity",
+    "color": "blue",
+    "tags": [],
+    "text": "+10 vs @veil@s"
+  },
+  {
     "name": "Danger sense",
     "color": "blue",
     "tags": [],
     "text": "+3, +10 vigilance vs sneak attacks; can wake from normal sleep for this ('normal' excludes drugged, enchanted, comatose, etc). Cancelled with next spell, so needs to be reapplied constantly."
+  },
+  {
+    "name": "Disguise",
+    "color": "blue",
+    "tags": [],
+    "text": "Create a $veil$ on yourself that makes you look like someone else, if you successfully check MAS+stealth vs MET+vig. To look like someone in particular, take -5. Getting touched breaks the veil, so suspicious people often ask to tap each other."
   },
   {
     "name": "Encrypt",
@@ -241,12 +255,24 @@
     "text": "Hard-scramble information indefinitely, unless a passphrase or other slipknot is applied. This isn't a veil, it's obvious that information is there, it just can't be parsed, eg writing will still be visible but be rendered as lorem ipsum. Combined with DWs such that if you don't have the key, you absolutely can't get at the cargo, and if you just try to smash the door, it'll collapse the dimension and you'll never get the cargo. Encryption can be disenchanted; but it's often combined with other enchantments, such that if you break the encryption, you'll destroy the entire item anyway."
   },
   {
+    "name": "Facade",
+    "color": "blue",
+    "tags": [],
+    "text": "Create a static visual @veil@ of up to 2m squared. Its texture behaves like an object in your blind spot, eg if you put a facade over a small hole in a wall, it will look like the rest of the wall."
+  },
+  {
     "name": "Geomancy",
     "color": "blue",
     "tags": [
       "civilian"
     ],
     "text": "Identify composition of crystals"
+  },
+  {
+    "name": "Haze",
+    "color": "blue",
+    "tags": [],
+    "text": "Create a @veil@ of up to 5m cubed. It is obvious that there is a veil there."
   },
   {
     "name": "Meteomancy",
@@ -262,7 +288,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Speak with the dead. Each unique caster may speak with each corpse for up to $level minutes; the corpse may or may not be cooperative. This is one of the reasons killing people isn't a great idea: corpses tend to be pretty enthusiastic about getting revenge on their killers."
+    "text": "Speak with the dead. Each unique caster may speak with each corpse for up to $level minutes. The corpse may or may not be cooperative, but they tend to be amenable to getting revenge on their killers."
   },
   {
     "name": "Olfamancy",
@@ -297,6 +323,12 @@
     "color": "blue",
     "tags": [],
     "text": "Send messages to anyone on the T-soph network."
+  },
+  {
+    "name": "Veilbreaker",
+    "color": "blue",
+    "tags": [],
+    "text": "Check MET+vigilance+5 vs a veil's MAS+stealth+$level; on a pass, break any veil nearby (even if you weren't aware of it); on a fail, you can't cast this again today"
   },
   {
     "name": "Watcher",

@@ -47,7 +47,7 @@
   {
     "name": "Modifier",
     "type": "flat",
-    "text": "This ability may be used in conjunction with an action to change its rules. You may stack arbitrarily many modifiers."
+    "text": "This ability may (optionally) be used in conjunction with an action to change its rules. You may stack arbitrarily many modifiers."
   },
   {
     "name": "Move",
@@ -57,7 +57,7 @@
   {
     "name": "Net",
     "type": "flat",
-    "text": "On a hit against an opponent without Tangled, this inflicts Tangled n instead of n damage."
+    "text": "On a hit against an opponent without Tangle, this inflicts Tangle n instead of n damage."
   },
   {
     "name": "Prereq.*",
@@ -100,6 +100,11 @@
     "text": "This doesn't use vision for perception. It doesn't generally suffer any combat penalties, but can't do things such as read or see colour."
   },
   {
+    "name": "Veil",
+    "type": "flat",
+    "text": "A magical effect that interferes with others' perception of an object or area."
+  },
+  {
     "name": "World-building",
     "type": "flat",
     "text": "This content exists for world-building purposes, but is not available to players."
@@ -115,12 +120,17 @@
     "text": "Take +n to combat up to a maximum of the target's total Armour value."
   },
   {
-    "name": "Injured",
+    "name": "Fatigue",
+    "type": "variable",
+    "text": "Take -$n to all physical actions. Remove aeob. At 10 fatigue, you are Incapacitated."
+  },
+  {
+    "name": "Injury",
     "type": "variable",
     "text": "Take -$n to all physical actions. Decrease by 1 with each long rest."
   },
   {
-    "name": "Tangled",
+    "name": "Tangle",
     "type": "variable",
     "text": "Take -$n to all physical actions. You can't manoeuvre. You have Untangle (move): if engaged this round, you don't inflict damage on a win, and if you win all engagements, resolve this condition. Lasts 3 rounds."
   }

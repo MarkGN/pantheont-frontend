@@ -221,7 +221,7 @@
   {
     "name": "Dash corn",
     "colors": "red, yellow",
-    "description": "Much like maize, except that its ears grow absurdly fast (eg one per day); however, they rot just as fast. Farmed by kaiju as sustenance for minions.",
+    "description": "Much like maize, except that its ears grow absurdly fast (eg one per day); however, they rot just as fast.",
     "tags": [
       "cornucopic"
     ],
@@ -230,7 +230,7 @@
   {
     "name": "Firelace",
     "colors": "red, orange",
-    "description": "Pink flowers that burst into flame on contact. Farmed by kaiju as a cheap trap.",
+    "description": "Pink flowers that burst into flame on contact.",
     "tags": [
       "animate vine"
     ],
