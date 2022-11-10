@@ -45,6 +45,11 @@
     "text": "You can't do anything. Lasts until end of battle."
   },
   {
+    "name": "Indirect",
+    "type": "flat",
+    "text": "Enemies don't gain a combat bonus against you if they're behind cover."
+  },
+  {
     "name": "Modifier",
     "type": "flat",
     "text": "This ability may (optionally) be used in conjunction with an action to change its rules. You may stack arbitrarily many modifiers."

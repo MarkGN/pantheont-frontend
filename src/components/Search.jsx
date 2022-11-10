@@ -27,11 +27,13 @@ export default function Search(props) {
   const groupValue = useSelector((state) => state.group.value);
 
   function filterTag(datum) {
-    return ((!filterTagValue) || (datum.tags && datum.tags.some(s => s.includes(filterTagValue)))) && (!filterTagExclusion || !datum.tags || !datum.tags.some(s => s.includes(filterTagExclusion)));
+    return ((!filterTagValue) || (datum.tags && datum.tags.some(s => s.toLowerCase().includes(filterTagValue.toLowerCase())))) && 
+      (!filterTagExclusion || !datum.tags || !datum.tags.some(s => s.toLowerCase().includes(filterTagExclusion.toLowerCase())));
   }
 
   function groupAndOrderStrWithEmptyGroupLast(a,b) {
     // TODO refactor this; it works, but hell if I can read it
+    // Also I'd like to make it so that I can sort by groups non-alphabetically, eg sort colours in rainbow order
     return (2*(!a[groupValue]-!b[groupValue]))+(((a[groupValue] || "") > (b[groupValue] || "")) - ((a[groupValue] || "") < (b[groupValue] || ""))) || (a.name>b.name ? 1 : -1);
   }
   
@@ -40,6 +42,7 @@ export default function Search(props) {
       <FilterTag />
       <FilterTag reverse="1" value="civilian" />
       <Group groups={groups} />
+      {data.filter(filterTag).length} result{data.filter(filterTag).length === 1 ? "" : "s"}
     </div>
     {data
     .filter(filterTag)

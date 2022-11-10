@@ -376,6 +376,12 @@
     "text": "Can project voice with a MAS+stealth vs MET+vigilance check, to give a false location or make listeners think someone else is speaking."
   },
   {
+    "name": "Grenadier",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "When using an @indirect@ weapon from behind cover, you don't take damage from a failed clash."
+  },
+  {
     "name": "Lip reader",
     "skill": "vigilance",
     "tags": [],
@@ -396,6 +402,18 @@
       "fight style"
     ],
     "text": "During ranged engagements, add your vigilance to your combat, and you have @suppress@."
+  },
+  {
+    "name": "Overwatch",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "Increase the bonus for engaging from the high ground to +5."
+  },
+  {
+    "name": "Pre-sight",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "Take +5 when engaging opponents who are in a choke point at range."
   },
   {
     "name": "Scotopic",
