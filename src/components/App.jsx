@@ -10,7 +10,7 @@ function App() {
     PlantSearch, BoonSearch, etc components, each being updated based on the onClick */}
       <div className="tab">
         <button className="tablinks" onClick={()=>setSearchState("boon")}>Boons</button>
-        <button className="tablinks" onClick={()=>setSearchState("plant")}>Paikera</button>
+        <button className="tablinks" onClick={()=>setSearchState("plant")}>Flora</button>
         <button className="tablinks" onClick={()=>setSearchState("spell")}>Spells</button>
         {/* <button className="tablinks" onClick={(event)=>{
           event.stopPropagation();
