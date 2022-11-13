@@ -83,7 +83,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Instead of inflicting damage, you knock the weapon from your opponent's hand."
+    "text": "Instead of inflicting damage with a melee clash, you knock the weapon from your opponent's hand."
   },
   {
     "name": "Fighting withdrawal",
@@ -137,7 +137,7 @@
     "text": "Negate the check penalty from up to 2 points of @injury@."
   },
   {
-    "name": "Reckless attack",
+    "name": "Reckless",
     "skill": "fight",
     "tags": [
       "modifier"
@@ -204,8 +204,10 @@
   {
     "name": "Lockpicking",
     "skill": "knowledge",
-    "tags": [],
-    "text": "Can pick locks, with a MET+knowledge check if there's time pressure or a trap or something."
+    "tags": [
+      "move"
+    ],
+    "text": "Pick a lock, with a MET+knowledge check if there's time pressure or a trap or something."
   },
   {
     "name": "Mark knowledge",
@@ -243,7 +245,7 @@
     "name": "Tea lover",
     "skill": "knowledge",
     "tags": [],
-    "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. If this stacks, you may prepare additional doses. Unused doses expire in the morning."
+    "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
   },
   {
     "name": "Bookworm",
@@ -257,7 +259,7 @@
     "tags": [
       "fight style"
     ],
-    "text": "When fighting with spells, you may add $magic to your combat."
+    "text": "When fighting with spells, add your magic skill to your combat."
   },
   {
     "name": "Gnostic",
@@ -379,12 +381,14 @@
     "name": "Grenadier",
     "skill": "vigilance",
     "tags": [],
-    "text": "When using an @indirect@ weapon from behind cover, you don't take damage from a failed clash."
+    "text": "When using an @indirect@ weapon from behind cover, opponents can't used ranged attacks without indirect against you."
   },
   {
     "name": "Lip reader",
     "skill": "vigilance",
-    "tags": [],
+    "tags": [
+      "move"
+    ],
     "text": "Check hidden MET+vigilance vs 10 to read lips."
   },
   {
@@ -407,7 +411,7 @@
     "name": "Overwatch",
     "skill": "vigilance",
     "tags": [],
-    "text": "Increase the bonus for engaging from the high ground to +5."
+    "text": "Increase the bonus for engaging from the high ground at range to +5."
   },
   {
     "name": "Pre-sight",

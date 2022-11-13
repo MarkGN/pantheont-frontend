@@ -228,6 +228,12 @@
     "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, etc"
   },
   {
+    "name": "Chameleon",
+    "color": "blue",
+    "tags": [],
+    "text": "@Veil:veil@ yourself. At level 1, you may instead veil an ally (the veil breaks when they cast a spell); at level 2, you may veil both yourself and one ally."
+  },
+  {
     "name": "Clarity",
     "color": "blue",
     "tags": [],
@@ -252,7 +258,7 @@
       "slow",
       "high-level"
     ],
-    "text": "Hard-scramble information indefinitely, unless a passphrase or other slipknot is applied. This isn't a veil, it's obvious that information is there, it just can't be parsed, eg writing will still be visible but be rendered as lorem ipsum. Combined with DWs such that if you don't have the key, you absolutely can't get at the cargo, and if you just try to smash the door, it'll collapse the dimension and you'll never get the cargo. Encryption can be disenchanted; but it's often combined with other enchantments, such that if you break the encryption, you'll destroy the entire item anyway."
+    "text": "Hard-scramble information indefinitely, unless a passphrase or other slipknot is applied. This isn't a veil, it's obvious that information is there, it just can't be parsed, eg writing will be visible but rendered as lorem ipsum. Combined with DWs such that if you don't have the key, you absolutely can't get at the cargo, and if you just try to smash the door, it'll collapse the dimension and you'll never get the cargo. Encryption can be disenchanted; but it's often combined with other enchantments, such that if you break the encryption, you'll destroy the entire item anyway."
   },
   {
     "name": "Facade",

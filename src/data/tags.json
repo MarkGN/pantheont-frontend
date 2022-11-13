@@ -107,7 +107,7 @@
   {
     "name": "Veil",
     "type": "flat",
-    "text": "A magical effect that interferes with others' perception of an object or area."
+    "text": "A magical effect that interferes with others' perception of an object or area. By default, a veiled person is hidden with +5 to hide checks."
   },
   {
     "name": "World-building",
