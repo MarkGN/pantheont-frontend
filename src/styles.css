@@ -75,11 +75,16 @@ header {
   display: inline-block;
 }
 
-.legend {
+.inner-legend {
   background-color: #eeffff;
   border: 1px solid black;
-  display: inline;
+  margin: auto;
   padding: 5px 15px;
+  width:fit-content;
+}
+
+.legend {
+  display: inline;
   width: 100%;
 }
 
