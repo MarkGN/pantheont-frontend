@@ -1,0 +1,24 @@
+{
+  "boon": [
+    "Athletics: running away or chasing people, climbing difficult surfaces, swimming difficult waters",
+    "Fight: any sort of physical combat",
+    "Knowledge: general knowledge, and basically anything that doesn't fit neatly into any other skill",
+    "Magic: proficiency at the impossible",
+    "Stealth: hiding, looking nonchalant",
+    "Vigilance: seeing enemies, traps, or anything hidden"
+  ],
+  "plant": [
+    "Active ingredients provide the valuable effects.",
+    "Ampers amplify the active ingredient's effect. Without an amper matching the active ingredient's primary colour, there's only 1 chance in 2 of the effect working.",
+    "Dampers dampen the toxicity of active ingredients. Without a damper matching the active ingredient's secondary colour, the potion inflicts 1 injury.",
+    "Preservatives prolong a potion's effective life. Without a preservative matching at least one colour of all other ingredients, they spoil within 24 hours."
+  ],
+  "spell": [
+    "Red magic affects matter. Telekinesis, shapeshifting, transmutation, and warping the properties of matter.",
+    "Orange magic affects magic itself. Power enhancers and nullifiers, permanent enchantments, triggers.",
+    "Yellow magic governs pocket dimensions and teleport effects.",
+    "Green magic is mysterious, but known to be involved in the creation of chimera. It's universally illegal.",
+    "Blue magic affects knowledge: both acquiring it for oneself, or obscuring it from others.",
+    "Purple magic governs the undead, summons, and mind control. It's universally illegal."
+  ]
+}

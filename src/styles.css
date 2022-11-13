@@ -75,6 +75,14 @@ header {
   display: inline-block;
 }
 
+.legend {
+  background-color: #eeffff;
+  border: 1px solid black;
+  display: inline;
+  padding: 5px 15px;
+  width: 100%;
+}
+
 .plant {
   border: 0px;
   border-style: none;
