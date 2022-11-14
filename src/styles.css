@@ -25,12 +25,22 @@ body {
   padding: 5px;
 }
 
+.card-holder {
+  margin: 5px;
+}
+
 .card-interior {
   background-color: #ffffff;
   border-color: black;
   border-style: solid;
   margin: 5px;
+  /* overflow: auto; */
+  /* I want to make it break over-long words such as URLs, but it's not happening. Hmm. */
+  /* I could, of course, cheat, and make it parse URLs as links, or even put them into tags. */
+  /* "image-url blah" could work. */
+  overflow-wrap: break-word;
   padding: 5px;
+  /* word-break: break-all; */
 }
 
 .content-card {
@@ -45,10 +55,6 @@ body {
   border: 1px;
   border-style: solid;
   width: 100%;
-}
-
-.card-holder {
-  margin: 5px;
 }
 
 code {

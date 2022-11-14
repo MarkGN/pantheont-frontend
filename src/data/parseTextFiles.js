@@ -12,8 +12,8 @@ function parsePlant(line, regex, isActive) {
   if (regex.test(line)) {
     let [name, ... rest] = line.split(':');
     rest = rest.join(':').trim();
-    let [meta, ...description] = rest.split('.');
-    description = description.join('.').trim();
+    let [meta, ...description] = rest.split('. ');
+    description = description.join('. ').trim();
     let [colors, ... tags] = meta.split(';');
     let effect;
     if (isActive) {

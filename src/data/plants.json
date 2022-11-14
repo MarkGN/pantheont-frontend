@@ -78,10 +78,11 @@
   {
     "name": "Merflower petal",
     "colors": "orange, purple",
-    "description": "Water lily with black and white petals. Url at https://images.nightcafe.studio/jobs/hDof37IcXGSF45zZu0UO/hDof37IcXGSF45zZu0UO--2--axhgg.jpg?tr=w-1600,c-at_max",
+    "description": "Water lily with black and white petals.",
     "effect": "water walking",
     "tags": [
-      "aquatic"
+      "aquatic",
+      "image https://images.nightcafe.studio/jobs/hDof37IcXGSF45zZu0UO/hDof37IcXGSF45zZu0UO--2--axhgg.jpg?tr=w-1600,c-at_max"
     ],
     "reagentType": "active"
   },
@@ -238,7 +239,7 @@
   },
   {
     "name": "Jepo weed",
-    "colors": "red, purple",
+    "colors": "orange, purple",
     "description": "A tough grass.",
     "reagentType": "amper"
   },
@@ -258,6 +259,16 @@
     "tags": [
       "animate vine",
       "aquatic"
+    ],
+    "reagentType": "amper"
+  },
+  {
+    "name": "Saltweed leaf",
+    "colors": "red, purple",
+    "description": "A network of floating pond lily leaves connected by vines; they grow salty/sweet fruits",
+    "tags": [
+      "aquatic",
+      "cornucopic"
     ],
     "reagentType": "amper"
   },
@@ -318,7 +329,7 @@
   {
     "name": "Pora stalk",
     "colors": "yellow, blue",
-    "description": "A toadstool that's quite poisonous without an active ingredient.",
+    "description": "A toadstool that's quite poisonous unless boiled.",
     "reagentType": "damper"
   },
   {

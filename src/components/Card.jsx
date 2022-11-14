@@ -37,19 +37,25 @@ function tooltipify(tag, key) {
 
 function tooltipifyText(text, key) {
   const lines = text.split("@");
-  return <span className='inline'>{lines.map((line,ix) => (ix%2 ? tooltipify(line, key + " " + ix) : line))}</span>
+  return <span className='inline'>{lines.map((line,ix) => (ix%2 ? tooltipify(line, key + "/tooltip/" + ix) : line))}</span>
 }
 
 export default function Card(props) {
+  function tagToDiv(tag, ix) {
+    if (tag.split(" ")[0] === "image") {
+      return <span className="inline" key={props.name+"/tag/"+ix}>{ix === 0 ? "" : ", "}<a href={tag.split(" ")[1]} rel="noreferrer" target="_blank">image</a></span>;
+    } else {
+      return <span className="inline" key={props.name+"/tag/"+ix}>{ix === 0 ? "" : ", "}{tooltipify(tag, props.name+ix)}</span>;
+    }
+  }
+
   return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div className="card-interior">
       <div className="content-card-name"  style={styling(props)}><h3>{props.name}</h3></div>
       <p>
-        {(props.tags || []).map((tag,ix) => {
-          return <span className="inline" key={props.name+ix}>{ix === 0 ? "" : ", "}{tooltipify(tag, props.name+ix)}</span>;
-        })}
+        {(props.tags || []).map(tagToDiv)}
       </p>
-      {props.text.map((line, ix) => line ? <p key={props.name+"text"+ix}>{tooltipifyText(line || "", props.name+" text "+ix)}</p> : "")}
+      {props.text.map((line, ix) => line ? <p key={props.name+"/text/"+ix}>{tooltipifyText(line || "", props.name+" text "+ix)}</p> : "")}
     </div>
   </div>
 }
