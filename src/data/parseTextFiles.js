@@ -116,7 +116,7 @@ function parseSpellFile() {
           color = col;
         }
         if (color && line.includes(":")) {
-          let [name, ...text] = line.split(": ");
+          let [name, level, ...text] = line.split(": ");
           text = text.join(": "); 
           const tags = [];
           const tagKeys = {"#":"slow", "$":"high-level", "&":"civilian", "^":"social","*":"world-building"};
@@ -132,7 +132,7 @@ function parseSpellFile() {
             text = text2.join(") ");
           }
           text = text[0].toUpperCase()+text.slice(1);
-          spells.push({name:name, color:color, tags:tags, text:text});
+          spells.push({name:name, level:level, color:color, tags:tags, text:text});
         }
       });
       const myJson = JSON.stringify(spells, null, 2);

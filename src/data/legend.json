@@ -15,11 +15,13 @@
     "Preservatives prolong a potion's effective life. Without a preservative matching at least one colour of all other ingredients, they spoil within 24 hours."
   ],
   "spell": [
-    "Red magic affects matter. Telekinesis, shapeshifting, transmutation, and warping the properties of matter.",
-    "Orange magic affects magic itself. Power enhancers and nullifiers, permanent enchantments, triggers.",
-    "Yellow magic governs pocket dimensions and teleport effects.",
-    "Green magic is mysterious, but known to be involved in the creation of chimera. It's universally illegal.",
-    "Blue magic affects knowledge: both acquiring it for oneself, or obscuring it from others.",
-    "Purple magic governs the undead, summons, and mind control. It's universally illegal."
+    "You may learn as many spells as you have points of magic.",
+    "Spells have a requirement listed: your governing attribute plus magic skill must meet this to cast that spell. For each 5 points you exceed the requirement, you cast the spell at a higher level. Combat spells give an additional +1 per level.",
+    "Red magic affects matter. Telekinesis, shapeshifting, transmutation, and warping the properties of matter. It's governed by POW.",
+    "Orange magic affects magic itself. Power enhancers and nullifiers, permanent enchantments, triggers. It's governed by END.",
+    "Yellow magic governs pocket dimensions and teleport effects. It's governed by AGI.",
+    "Green magic is mysterious, but known to be involved in the creation of chimera. No green spells are known. It's universally illegal.",
+    "Blue magic affects knowledge: both acquiring it for oneself, or obscuring it from others. It's governed by MET.",
+    "Purple magic governs the undead, summons, and mind control. It's governed by MAS. It's universally illegal."
   ]
 }

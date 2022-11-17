@@ -1,6 +1,7 @@
 [
   {
     "name": "Aid childbirth",
+    "level": "7",
     "color": "red",
     "tags": [
       "civilian"
@@ -9,12 +10,14 @@
   },
   {
     "name": "Disintegrate",
+    "level": "10",
     "color": "red",
     "tags": [],
     "text": "You can tear crystalline matter to dust. +3 combat and 5 @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard; and I don't want magic to simply trump everything."
   },
   {
     "name": "Fertilise",
+    "level": "8",
     "color": "red",
     "tags": [
       "civilian"
@@ -23,48 +26,56 @@
   },
   {
     "name": "Hydrokinesis",
+    "level": "8",
     "color": "red",
     "tags": [],
     "text": "You gain some telekinetic power over water nearby. +3 combat, +3 ranged. Take an additional +5 to all physical while in water."
   },
   {
     "name": "Kollakinesis",
+    "level": "9",
     "color": "red",
     "tags": [],
     "text": "You gain some telekinetic power over glue nearby, including the ability to conjure small amounts. +3 combat, +2 ranged, Net. Can conjure glue, soften it, etc. TODO If casters counter movers, what counters casters?"
   },
   {
     "name": "Mouseform",
+    "level": "10",
     "color": "red",
     "tags": [],
     "text": "-10 size."
   },
   {
     "name": "Ogreform",
+    "level": "9",
     "color": "red",
     "tags": [],
     "text": "+2 size, +2 combat, but can't use a weapon."
   },
   {
     "name": "Panikinesis",
+    "level": "8",
     "color": "red",
     "tags": [],
     "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 Net. Good for repairs."
   },
   {
     "name": "Photokinesis",
+    "level": "8",
     "color": "red",
     "tags": [],
     "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +4 @armour@, +3 ranged. Can conjure illumination of whatever colour; can also suppress light."
   },
   {
     "name": "Pyrokinesis",
+    "level": "7",
     "color": "red",
     "tags": [],
     "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5 combat, +4 ranged; create a POW=[POW roll vs 10] fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
   },
   {
     "name": "Reshape",
+    "level": "6",
     "color": "red",
     "tags": [
       "slow"
@@ -73,12 +84,14 @@
   },
   {
     "name": "Telekinesis",
+    "level": "8",
     "color": "red",
     "tags": [],
     "text": "You gain some general but relatively weak telekinesis. +3 combat, +4 ranged. Can pick up, push, or pull items from long range. Carry capacity capped at half your weight, so you can't fly, but can propel self for +5 to jumps."
   },
   {
     "name": "Terminate pregnancy",
+    "level": "8",
     "color": "red",
     "tags": [
       "civilian"
@@ -87,78 +100,95 @@
   },
   {
     "name": "Transmute",
+    "level": "7",
     "color": "red",
     "tags": [],
     "text": "Can temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories for $level minutes. TODO level-gate the possible materials: original, various base materials, certain rarer and more expensive materials. Noble metals can't (?) be created, although they can be transmuted into other materials. Mass is conserved, not volume."
   },
   {
     "name": "Water breathing, walking",
+    "level": "9",
     "color": "red",
     "tags": [],
     "text": "You and up to $level allies don't drown, sink. At high level, water breathing is actually oxygen creation or unbreathing, so that smoke inhalation and hard vacuum also don't kill you."
   },
   {
     "name": "Antimagic shell",
+    "level": "11",
     "color": "orange",
     "tags": [],
     "text": "Anyone engaging you has -5 magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong?"
   },
   {
     "name": "Boost",
+    "level": "9",
     "color": "orange",
     "tags": [],
     "text": "Assist an ally's spellcasting, ie their casting attribute counts as min(attr, you.MAS)+5."
   },
   {
     "name": "Disenchant",
+    "level": "10",
     "color": "orange",
     "tags": [],
     "text": "Break an enchantment of requirement equal or lower to this plus 5. Does not affect spells that are permanent without enchantment, such as curses."
   },
   {
     "name": "Disjunction",
+    "level": "11",
     "color": "orange",
     "tags": [],
     "text": "Even the lightest touch cancels magic. +10 vs summons."
   },
   {
     "name": "Enchant",
+    "level": "--",
     "color": "orange",
     "tags": [
       "slow"
     ],
-    "text": "The time limit of some other spell of equal or lower requirement becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, transmutation, bound summons, etc, but not a flamethrower. This can't make enchanted wearable gear. This requires manite; say, 5*(level+1) grams."
+    "text": "The duration of some other spell of requirement<=this.requirement-5 becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, bound summons, etc, but not a flamethrower. This can't make enchanted wearable gear. This requires manite; say, 5*(level+1) grams. If Enchant is used with Inscribe, the item has enchant.level charges, and can be recharged by use of this spell, without requiring manite."
+  },
+  {
+    "name": "Inscribe",
+    "level": "--",
+    "color": "orange",
+    "tags": [
+      "slow"
+    ],
+    "text": "Some other spell of requirement<=this.requirement-5 is inscribed onto a solid object, whence it can be 'cast' in response to a trigger, which can be speaking a phrase but which is typically touching a glyph, customarily a crossed circle. Lasts until used."
   },
   {
     "name": "Meditate",
+    "level": "8",
     "color": "orange",
     "tags": [],
     "text": "Enter a magical combat trance and open your mind to higher states. +3 combat, take +1 magic aeor, capped at +$magic."
   },
   {
     "name": "Mirror",
+    "level": "--",
     "color": "orange",
     "tags": [],
-    "text": "Copy a spell of level up to $n that was cast last round, of any colour. This includes combat spells. You must pay any additional costs."
+    "text": "Copy a spell of requirement up to this.requirement that was cast last round, of any colour. This includes combat spells. You must pay any additional costs of that spell such as manite."
   },
   {
     "name": "Antigrav",
+    "level": "14",
     "color": "yellow",
-    "tags": [
-      "high-level"
-    ],
+    "tags": [],
     "text": "Negate the force of gravity on yourself and up to $level allies or objects of equal or lesser size. Can use this for pseudo flight, but landing is the tricky part. You don't negate the weight of any of your gear, if that matters, only living biological material."
   },
   {
     "name": "Bubble",
+    "level": "15",
     "color": "yellow",
-    "tags": [
-      "high-level"
-    ],
+    "tags": [],
     "text": "Cordon yourself and some nearby area into an ad hoc pocket dimension, such that nobody can enter or leave. There must be a keystone on the outside (ie the non-you side); if it is destroyed, or you are incapacitated, the spell fizzles."
   },
   {
     "name": "Create pocket dimension",
+    "level": "10",
     "color": "yellow",
     "tags": [
       "slow",
@@ -168,6 +198,7 @@
   },
   {
     "name": "Create wormhole",
+    "level": "16",
     "color": "yellow",
     "tags": [
       "slow",
@@ -177,33 +208,37 @@
   },
   {
     "name": "Dimensional breach",
+    "level": "14",
     "color": "yellow",
     "tags": [
-      "high-level",
       "world-building"
     ],
     "text": "Tunnel into an alternate dimension with similar world coordinates"
   },
   {
     "name": "Flashstep",
+    "level": "9",
     "color": "yellow",
     "tags": [],
     "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't climb over a wall). +3 combat, negate ranged part of engagement if you can close by walking. +5 to chase checks."
   },
   {
     "name": "Gravity tilt",
+    "level": "8",
     "color": "yellow",
     "tags": [],
     "text": "+5 to climb; can pulse for +3 combat, +4 ranged."
   },
   {
     "name": "Hammerspace",
+    "level": "8",
     "color": "yellow",
     "tags": [],
     "text": "Access a pocket dimension that can fit up to -5 size categories of stuff (ie 1/30 your volume, so like a couple litres); its access point is locked to your position. For each extra level, one extra size category."
   },
   {
     "name": "Stasis",
+    "level": "10",
     "color": "yellow",
     "tags": [
       "slow"
@@ -212,15 +247,16 @@
   },
   {
     "name": "Time warp",
+    "level": "20",
     "color": "yellow",
     "tags": [
-      "high-level",
       "world-building"
     ],
     "text": "Create a pocket dimension with two apertures with different coordinates in time. This is an entire Thing."
   },
   {
     "name": "Biomancy",
+    "level": "10",
     "color": "blue",
     "tags": [
       "civilian"
@@ -229,45 +265,51 @@
   },
   {
     "name": "Chameleon",
+    "level": "10",
     "color": "blue",
     "tags": [],
     "text": "@Veil:veil@ yourself. At level 1, you may instead veil an ally (the veil breaks when they cast a spell); at level 2, you may veil both yourself and one ally."
   },
   {
     "name": "Clarity",
+    "level": "8",
     "color": "blue",
     "tags": [],
-    "text": "+10 vs @veil@s"
+    "text": "+10 to spot @veil@s"
   },
   {
     "name": "Danger sense",
+    "level": "7",
     "color": "blue",
     "tags": [],
     "text": "+3, +10 vigilance vs sneak attacks; can wake from normal sleep for this ('normal' excludes drugged, enchanted, comatose, etc). Cancelled with next spell, so needs to be reapplied constantly."
   },
   {
     "name": "Disguise",
+    "level": "9",
     "color": "blue",
     "tags": [],
     "text": "Create a $veil$ on yourself that makes you look like someone else, if you successfully check MAS+stealth vs MET+vig. To look like someone in particular, take -5. Getting touched breaks the veil, so suspicious people often ask to tap each other."
   },
   {
     "name": "Encrypt",
+    "level": "13",
     "color": "blue",
     "tags": [
-      "slow",
-      "high-level"
+      "slow"
     ],
     "text": "Hard-scramble information indefinitely, unless a passphrase or other slipknot is applied. This isn't a veil, it's obvious that information is there, it just can't be parsed, eg writing will be visible but rendered as lorem ipsum. Combined with DWs such that if you don't have the key, you absolutely can't get at the cargo, and if you just try to smash the door, it'll collapse the dimension and you'll never get the cargo. Encryption can be disenchanted; but it's often combined with other enchantments, such that if you break the encryption, you'll destroy the entire item anyway."
   },
   {
     "name": "Facade",
+    "level": "10",
     "color": "blue",
     "tags": [],
     "text": "Create a static visual @veil@ of up to 2m squared. Its texture behaves like an object in your blind spot, eg if you put a facade over a small hole in a wall, it will look like the rest of the wall."
   },
   {
     "name": "Geomancy",
+    "level": "9",
     "color": "blue",
     "tags": [
       "civilian"
@@ -276,12 +318,14 @@
   },
   {
     "name": "Haze",
+    "level": "8",
     "color": "blue",
     "tags": [],
-    "text": "Create a @veil@ of up to 5m cubed. It is obvious that there is a veil there."
+    "text": "Create a @veil@ of up to 5m cubed. It is obvious that there is a veil there, but not what is behind it. Anyone shooting into or out of it treats it as cover."
   },
   {
     "name": "Meteomancy",
+    "level": "12",
     "color": "blue",
     "tags": [
       "civilian"
@@ -290,6 +334,7 @@
   },
   {
     "name": "Necromancy",
+    "level": "11",
     "color": "blue",
     "tags": [
       "slow"
@@ -298,6 +343,7 @@
   },
   {
     "name": "Olfamancy",
+    "level": "9",
     "color": "blue",
     "tags": [
       "slow"
@@ -305,39 +351,36 @@
     "text": "Gain enhanced smell: you can identify species, identity, and any injuries of anyone nearby who's left a scent trail within the past few days. You don't know the name or face of anyone you smell, but if you know them from elsewhere, you can match the two."
   },
   {
-    "name": "Passive perception",
-    "color": "blue",
-    "tags": [
-      "world-building"
-    ],
-    "text": "Spells that you cast once early in the day and remain active until you draw a weapon or cast another spell, which is kind of necessary for perception when you don't know you'll need it. And perhaps you can have it flare up and give a short-term bonus if you're pretty sure something's there. Boon?"
-  },
-  {
     "name": "Scotopic",
+    "level": "9",
     "color": "blue",
     "tags": [],
     "text": "You and up to $level allies can see in the dark."
   },
   {
     "name": "Tag, track",
+    "level": "10",
     "color": "blue",
     "tags": [],
-    "text": "Tag up to $level items with a hash of your choosing; you can detect the direction (but not distance) to a tagged item if you know its hash, if it's within n*100m."
+    "text": "Tag up to $level items with a hash of your choosing; you can detect the direction (but not distance) to a tagged item if you know its hash, if it's within $level*100m."
   },
   {
     "name": "Telesophy",
+    "level": "11",
     "color": "blue",
     "tags": [],
     "text": "Send messages to anyone on the T-soph network."
   },
   {
     "name": "Veilbreaker",
+    "level": "9",
     "color": "blue",
     "tags": [],
     "text": "Check MET+vigilance+5 vs a veil's MAS+stealth+$level; on a pass, break any veil nearby (even if you weren't aware of it); on a fail, you can't cast this again today"
   },
   {
     "name": "Watcher",
+    "level": "12",
     "color": "blue",
     "tags": [
       "slow"
@@ -346,60 +389,74 @@
   },
   {
     "name": "X-ray vision",
+    "level": "11",
     "color": "blue",
     "tags": [],
     "text": "See through solid objects, up to 10cm per level. Specifically, your vision skips ahead up to 10cm from the first opaque object, so if there are two sheets of paper spaced 5cm apart you can see through both, but you can't if they're 15cm apart. In the former case, you're aware of the first piece, like how you can see the palm of a hand you put over one eye."
   },
   {
     "name": "Bind wisp",
+    "level": "13",
     "color": "purple",
-    "tags": [],
+    "tags": [
+      "world-building"
+    ],
     "text": "Take control of a wisp. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they //will// break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
   },
   {
     "name": "Compromise",
+    "level": "16",
     "color": "purple",
     "tags": [
       "slow",
-      "high-level"
+      "world-building"
     ],
     "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1 round. You steal their senses during. You can't act yourself at the same time, and you don't generally know ahead of time whether they're in a position to do anything you care about. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
   },
   {
     "name": "Confusion",
+    "level": "14",
     "color": "purple",
     "tags": [
-      "high-level"
+      "world-building"
     ],
     "text": "Make other characters attack each other. Because this is extremely powerful, it should probably have a very easy save. The point is to counter large troop concentrations: above 10 or so, each additional combatant is as likely to teamkill as to change the outcome. So, say it's MAS+magic+num_enemies vs MAS+magic+20, single check; on success, anyone who tries to engage or advance instead engages the nearest viable target. TODO this is awkward, because there are 3 outcomes: you hit the caster, you hit your buddy, and your buddy or the caster hits you. Can I rework this? You just flat-out engage anyone in front of you? Call it wrath? Gate it? Is that any better than checking? Implement it as a veil?"
   },
   {
     "name": "Create curse",
+    "level": "13",
     "color": "purple",
     "tags": [
-      "slow"
+      "slow",
+      "world-building"
     ],
     "text": "A magical parasite that infests a victim and inflicts some nuisancesome condition until removed."
   },
   {
     "name": "Erokinesis",
+    "level": "10",
     "color": "purple",
     "tags": [
-      "slow"
+      "slow",
+      "world-building"
     ],
-    "text": "Make someone fall in or out of love. Technically only lasts while channelled, but it has long-term effects"
+    "text": "Make someone fall in or out of love. Technically only lasts while channelled, but people tend to rationalise their love, so it has long-term secondary effect."
   },
   {
     "name": "Necrokinesis",
+    "level": "11",
     "color": "purple",
-    "tags": [],
+    "tags": [
+      "world-building"
+    ],
     "text": "Animate up to $level nearby corpses. "
   },
   {
     "name": "Pacify animate vines",
+    "level": "14",
     "color": "purple",
     "tags": [
-      "high-level"
+      "world-building"
     ],
     "text": "I had the notion that this might be species-specific or otherwise require a lot of separate spells so that players can't really get it and trivialise an enemy type. After all, it's a big all-to-nothing effect. But, it does kind of need to exist, as a softlock picker."
   }

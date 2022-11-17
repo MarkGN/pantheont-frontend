@@ -15,7 +15,9 @@ const plantPattern = ["colors", "effect", "reagentType", "description"];
 const plantGroups = ["reagentType", "tags"];
 
 const spells = require("../data/spells.json");
-const spellPattern = ["color", "text"];
+// TODO this is a bit ugly; maybe there's a better way, but as long as it's just one or two things that want extra text like this ...
+spells.forEach(spell => spell.level = "requirement: "+spell.level);
+const spellPattern = ["color", "level", "text"];
 const spellGroups = ["color"];
 
 export default function Search(props) {

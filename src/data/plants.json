@@ -35,6 +35,16 @@
     "reagentType": "active"
   },
   {
+    "name": "Creampod seed",
+    "colors": "red, blue",
+    "description": "A small bush that grows ampoules that fill with a dairy-like substance, roughly half water. If fertilised, the ampoule drops off with the seed to help the new plant grow more easily.",
+    "effect": "styptic",
+    "tags": [
+      "cornucopic"
+    ],
+    "reagentType": "active"
+  },
+  {
     "name": "Dabano berry",
     "colors": "blue, purple",
     "description": "Inanimate vine with dark blue flowers and darker berries.",
@@ -213,9 +223,10 @@
   {
     "name": "Chokeweed leaf",
     "colors": "red, green",
-    "description": "No special abilities, but it grows very profusely.",
+    "description": "Despite being technically cornucopic, is inedible to humans, so it's just an extremely prolific animate vine.",
     "tags": [
-      "animate vine"
+      "animate vine",
+      "cornucopic"
     ],
     "reagentType": "amper"
   },
