@@ -61,10 +61,10 @@
   },
   {
     "name": "Photokinesis",
-    "level": "8",
+    "level": "10",
     "color": "red",
     "tags": [],
-    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +4 @armour@, +3 ranged. Can conjure illumination of whatever colour; can also suppress light."
+    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +5 @armour@, +4 ranged. Can conjure illumination of any colour; can also suppress light."
   },
   {
     "name": "Pyrokinesis",
@@ -80,7 +80,16 @@
     "tags": [
       "slow"
     ],
-    "text": "Noncom, can shape crystalline (ie metal, rock, etc) matter. (Red magic lacks precision; if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
+    "text": "Shape crystalline (ie metal, rock, ceramic) matter. (This lacks precision: if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
+  },
+  {
+    "name": "Sterilise",
+    "level": "9",
+    "color": "red",
+    "tags": [
+      "civilian"
+    ],
+    "text": "Kill bacteria, insect eggs, mould spores, viruses, or other tiny pests. Can be used prophylactically to prevent milk from souring, etc. Use for +1 to checks to treat @bleeding@."
   },
   {
     "name": "Telekinesis",
@@ -103,7 +112,7 @@
     "level": "7",
     "color": "red",
     "tags": [],
-    "text": "Can temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories for $level minutes. TODO level-gate the possible materials: original, various base materials, certain rarer and more expensive materials. Noble metals can't (?) be created, although they can be transmuted into other materials. Mass is conserved, not volume."
+    "text": "Temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories; this lasts indefinitely, but if you try to transmute more, the first part reverts. Mass is conserved, not volume. At level 0, you can make base salts and materials (lead, table salt, copper); at level 1, can make iron, zinc, most ceramics, and can revert to original material; at level 2, can make diamond (it's not valuable in-universe); at level 3, can make titanium. Can't make noble metals, radioactive materials, or manite ever."
   },
   {
     "name": "Water breathing, walking",
@@ -147,7 +156,7 @@
     "tags": [
       "slow"
     ],
-    "text": "The duration of some other spell of requirement<=this.requirement-5 becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, bound summons, etc, but not a flamethrower. This can't make enchanted wearable gear. This requires manite; say, 5*(level+1) grams. If Enchant is used with Inscribe, the item has enchant.level charges, and can be recharged by use of this spell, without requiring manite."
+    "text": "The duration of some other spell of requirement<=this.requirement-5 becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, bound summons, etc, but not a flamethrower. This can't make enchanted wearable gear. This requires manite; say, 5*(target.requirement) grams. If Enchant is used with Inscribe, the item has enchant.level charges, and can be recharged by use of this spell, without requiring manite."
   },
   {
     "name": "Inscribe",
@@ -208,7 +217,7 @@
   },
   {
     "name": "Dimensional breach",
-    "level": "14",
+    "level": "13",
     "color": "yellow",
     "tags": [
       "world-building"
@@ -220,7 +229,7 @@
     "level": "9",
     "color": "yellow",
     "tags": [],
-    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't climb over a wall). +3 combat, negate ranged part of engagement if you can close by walking. +5 to chase checks."
+    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't walk over a wall). +3 combat, negate ranged part of engagement if you can close by walking. +5 to chase checks."
   },
   {
     "name": "Gravity tilt",
@@ -247,7 +256,7 @@
   },
   {
     "name": "Time warp",
-    "level": "20",
+    "level": "30",
     "color": "yellow",
     "tags": [
       "world-building"
@@ -420,7 +429,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Make other characters attack each other. Because this is extremely powerful, it should probably have a very easy save. The point is to counter large troop concentrations: above 10 or so, each additional combatant is as likely to teamkill as to change the outcome. So, say it's MAS+magic+num_enemies vs MAS+magic+20, single check; on success, anyone who tries to engage or advance instead engages the nearest viable target. TODO this is awkward, because there are 3 outcomes: you hit the caster, you hit your buddy, and your buddy or the caster hits you. Can I rework this? You just flat-out engage anyone in front of you? Call it wrath? Gate it? Is that any better than checking? Implement it as a veil?"
+    "text": "Make other characters attack each other. Because this is extremely powerful, it should probably have a very easy save. The point is to counter large troop concentrations: above 10 or so, each additional combatant is as likely to teamkill as to change the outcome. So, say it's MAS+magic+num_enemies vs MAS+magic+20, single check; on success, anyone who tries to engage or advance instead engages the nearest viable target. TODO this is awkward, because there are 3 outcomes: you hit the caster, you hit your buddy, and your buddy or the caster hits you. Can I rework this? You just flat-out engage anyone in front of you? Call it wrath? Gate it? Is that any better than checking? Implement it as a veil? Conjure n_chars-20 invisible Wrath Wisps that force you to engage nearest?"
   },
   {
     "name": "Create curse",
@@ -430,7 +439,7 @@
       "slow",
       "world-building"
     ],
-    "text": "A magical parasite that infests a victim and inflicts some nuisancesome condition until removed."
+    "text": "A magical parasite that infests a victim and inflicts some nuisancesome condition until removed. Curses can be delivered by trap or to any Incapacitated character."
   },
   {
     "name": "Erokinesis",
@@ -449,7 +458,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Animate up to $level nearby corpses. "
+    "text": "Animate up to $level+1 nearby corpses. "
   },
   {
     "name": "Pacify animate vines",
@@ -459,5 +468,19 @@
       "world-building"
     ],
     "text": "I had the notion that this might be species-specific or otherwise require a lot of separate spells so that players can't really get it and trivialise an enemy type. After all, it's a big all-to-nothing effect. But, it does kind of need to exist, as a softlock picker."
+  },
+  {
+    "name": "Summon lesser minion",
+    "level": "10",
+    "color": "purple",
+    "tags": [],
+    "text": "Summon a minion that is a copy of yourself except that all attributes are 2 lower; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured. It does not need to be channelled and acts independently in accordance with your (implied) wishes."
+  },
+  {
+    "name": "Summon swarm",
+    "level": "10",
+    "color": "purple",
+    "tags": [],
+    "text": "As for summon lesser minion, except you get 2, each has only 1 focus, and you take only 2 -1 tokens."
   }
 ]

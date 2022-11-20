@@ -176,14 +176,6 @@
     "text": "Your mount doesn't bolt when hit."
   },
   {
-    "name": "First aid",
-    "skill": "knowledge",
-    "tags": [
-      "move"
-    ],
-    "text": "Check MET+knowledge vs 10; on success, resolve @bleeding@ for a target; on failure, the patient takes a point of @injury@. Also, (move) when you or anyone else takes a long rest, check MET+knowledge vs 15; on a success, they resolve an additional point of @injury@. A patient may only receive one attempt of this move per long rest, and you may only give it to one patient. An ally without this boon can assist you with either move."
-  },
-  {
     "name": "Forager",
     "skill": "knowledge",
     "tags": [],
@@ -216,6 +208,12 @@
       "mark tribal"
     ],
     "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Medic",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "You can receive assistance for first aid checks. Take +5 to them too."
   },
   {
     "name": "Proficiency",
@@ -430,5 +428,11 @@
     "skill": "vigilance",
     "tags": [],
     "text": "When shooting into melee, damage from friendly fire is capped at 4."
+  },
+  {
+    "name": "Vanguard",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "When an ally would blunder into a trap, if you would have passed the spot check, you shout a warning in time to save them."
   }
 ]

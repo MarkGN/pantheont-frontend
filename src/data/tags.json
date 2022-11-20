@@ -12,7 +12,7 @@
   {
     "name": "Bleeding",
     "type": "flat",
-    "text": "Whenever you do a check, take 1 point of injury. Resolved when you accumulate 5 points. If you fall asleep, take all outstanding points immediately."
+    "text": "Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; and either way, counts as a check and so you take 1 Injury."
   },
   {
     "name": "Civilian",
@@ -73,6 +73,11 @@
     "name": "Sessile",
     "type": "flat",
     "text": "This can't manoeuvre around the battlefield. It can still move eg to fight, as opposed to something fully paralysed."
+  },
+  {
+    "name": "Sharp",
+    "type": "flat",
+    "text": "When you incapacitate with this, the target takes Bleeding."
   },
   {
     "name": "Slow",

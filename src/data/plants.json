@@ -3,42 +3,42 @@
     "name": "Aibe seed",
     "colors": "blue, green",
     "description": "Dandelion-like flower whose seeds blow off on approach and affect intruders.",
-    "effect": "hallucinations",
+    "effect": "hallucinations 13",
     "reagentType": "active"
   },
   {
     "name": "Anaitsa berry",
     "colors": "yellow, purple",
     "description": "Bush with bright yellow berries.",
-    "effect": "paralytic",
+    "effect": "paralytic 8",
     "reagentType": "active"
   },
   {
     "name": "Black glove",
     "colors": "purple, yellow",
     "description": "Flower with black petals.",
-    "effect": "love",
+    "effect": "love 15",
     "reagentType": "active"
   },
   {
     "name": "Che plat berry",
     "colors": "green, yellow",
     "description": "Inanimate flowering vine with very many very thin white petals.",
-    "effect": "abortifacient",
+    "effect": "abortifacient 8",
     "reagentType": "active"
   },
   {
     "name": "Chuche leaf",
     "colors": "orange, yellow",
     "description": "Tree with gum-like leaves.",
-    "effect": "disjunction, fortify magic",
+    "effect": "fortify magic 14, disjunction 18",
     "reagentType": "active"
   },
   {
     "name": "Creampod seed",
     "colors": "red, blue",
     "description": "A small bush that grows ampoules that fill with a dairy-like substance, roughly half water. If fertilised, the ampoule drops off with the seed to help the new plant grow more easily.",
-    "effect": "styptic",
+    "effect": "styptic 12",
     "tags": [
       "cornucopic"
     ],
@@ -48,21 +48,21 @@
     "name": "Dabano berry",
     "colors": "blue, purple",
     "description": "Inanimate vine with dark blue flowers and darker berries.",
-    "effect": "amnesia",
+    "effect": "amnesia 17",
     "reagentType": "active"
   },
   {
     "name": "Golden lady",
     "colors": "green, red",
     "description": "Five-petal flower with honey colouring.",
-    "effect": "childbirth",
+    "effect": "easy childbirth 7",
     "reagentType": "active"
   },
   {
     "name": "Inha berry",
     "colors": "green, purple",
     "description": "Non-aggressive, with purple flowers and berries.",
-    "effect": "fertility",
+    "effect": "fertility 6",
     "tags": [
       "animate vine"
     ],
@@ -72,14 +72,14 @@
     "name": "Likebane",
     "colors": "yellow, green",
     "description": "Flower with yellow-and-grey petals.",
-    "effect": "targeted poison",
+    "effect": "targeted poison 18",
     "reagentType": "active"
   },
   {
     "name": "Lover's kiss flower",
     "colors": "red, blue",
     "description": "Has orange flowers; twines around victims and locks them in enchanted sleep. (Soporific 1: take 1 Fatigue per hit.)",
-    "effect": "sleep",
+    "effect": "sleep 8",
     "tags": [
       "animate vine"
     ],
@@ -89,7 +89,7 @@
     "name": "Merflower petal",
     "colors": "orange, purple",
     "description": "Water lily with black and white petals.",
-    "effect": "water walking",
+    "effect": "water walking 12",
     "tags": [
       "aquatic",
       "image https://images.nightcafe.studio/jobs/hDof37IcXGSF45zZu0UO/hDof37IcXGSF45zZu0UO--2--axhgg.jpg?tr=w-1600,c-at_max"
@@ -100,7 +100,7 @@
     "name": "Mie laz flower",
     "colors": "yellow, blue",
     "description": "With yellow flowers with contact toxin effect.",
-    "effect": "poison",
+    "effect": "poison 5",
     "tags": [
       "animate vine"
     ],
@@ -110,35 +110,35 @@
     "name": "Mindai grass",
     "colors": "green, orange",
     "description": "Grass-like weed.",
-    "effect": "contraceptive",
+    "effect": "contraceptive 11",
     "reagentType": "active"
   },
   {
     "name": "Mugibai nut",
     "colors": "blue, yellow",
     "description": "Tree with blue flowers.",
-    "effect": "see invisible",
+    "effect": "clarity 17",
     "reagentType": "active"
   },
   {
     "name": "Nejal berry",
-    "colors": "red, purple",
+    "colors": "red, yellow",
     "description": "Bush like strawberry, small and red.",
-    "effect": "combat stim",
+    "effect": "combat stim 19",
     "reagentType": "active"
   },
   {
     "name": "Oktar petal",
     "colors": "purple, red",
     "description": "A thorny purple flowering weed.",
-    "effect": "curse",
+    "effect": "curse 13",
     "reagentType": "active"
   },
   {
     "name": "Sea glove",
     "colors": "orange, red",
     "description": "Fleshy plant, seaweed meets cactus.",
-    "effect": "water breathing",
+    "effect": "water breathing 12",
     "tags": [
       "aquatic"
     ],
@@ -148,7 +148,7 @@
     "name": "Sea wort",
     "colors": "orange, blue",
     "description": "Seaweed with red flowers.",
-    "effect": "swift swim",
+    "effect": "swift swim 10",
     "tags": [
       "aquatic"
     ],
@@ -158,28 +158,28 @@
     "name": "Sujan petal",
     "colors": "green, blue",
     "description": "Flower with long pink-and-white petals.",
-    "effect": "healing",
+    "effect": "healing 20",
     "reagentType": "active"
   },
   {
     "name": "Tebac petal",
     "colors": "purple, green",
     "description": "Oxalis-like flower with red petals. Instead of inflicting Injury if taken raw, causes addiction.",
-    "effect": "euphoriant",
+    "effect": "euphoriant 10",
     "reagentType": "active"
   },
   {
     "name": "Tetan petal",
     "colors": "blue, orange",
     "description": "Small red flower with orange spots.",
-    "effect": "sense magic",
+    "effect": "sense magic 15",
     "reagentType": "active"
   },
   {
     "name": "Vichas flower",
     "colors": "blue, red",
     "description": "With black flowers and a contact neurotoxin.",
-    "effect": "sensory deprivation",
+    "effect": "sensory deprivation 8",
     "tags": [
       "animate vine"
     ],
@@ -189,7 +189,7 @@
     "name": "Wrath lily petal",
     "colors": "purple, blue",
     "description": "Scarlet flowers with large stamens that burst on approach, releasing wrath pollen.",
-    "effect": "wrath",
+    "effect": "wrath 6",
     "tags": [
       "trap"
     ],
@@ -388,7 +388,7 @@
   },
   {
     "name": "Honeycup honey",
-    "colors": "red, purple",
+    "colors": "red, blue",
     "description": "A flower that rapidly produces a cupful of honey.",
     "tags": [
       "cornucopic"
@@ -422,6 +422,15 @@
     "description": "With broad leaves that secretes a very sticky resin that's an absolute bitch to get off.",
     "tags": [
       "animate vine"
+    ],
+    "reagentType": "preservative"
+  },
+  {
+    "name": "Pilo sap",
+    "colors": "red, purple",
+    "description": "A woody shrub that grows hornet-like creatures that attack anyone who gets too close.",
+    "tags": [
+      "trap"
     ],
     "reagentType": "preservative"
   },
