@@ -37,7 +37,10 @@ export default function Search(props) {
   function groupAndOrderStrWithEmptyGroupLast(a, b) {
     // TODO refactor this; it works, but hell if I can read it
     // Also I'd like to make it so that I can sort by groups non-alphabetically, eg sort colours in rainbow order
-    return (2 * (!a[groupValue] - !b[groupValue])) + (((a[groupValue] || "") > (b[groupValue] || "")) - ((a[groupValue] || "") < (b[groupValue] || ""))) || (a.name > b.name ? 1 : -1);
+    const mapping = {"red":1,"orange":2,"yellow":3,"green":4,"blue":5,"purple":6};
+    let aVal = a[groupValue]; aVal = mapping[aVal] || aVal;
+    let bVal = b[groupValue]; bVal = mapping[bVal] || bVal;
+    return (2 * (!aVal - !bVal)) + (((aVal || "") > (bVal || "")) - ((aVal || "") < (bVal || ""))) || (a.name > b.name ? 1 : -1);
   }
 
   return <div className="row card-holder">

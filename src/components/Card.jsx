@@ -43,7 +43,7 @@ function tooltipifyText(text, key) {
 export default function Card(props) {
   function tagToDiv(tag, ix) {
     if (tag.split(" ")[0] === "image") {
-      return <span className="inline" key={props.name+"/tag/"+ix}>{ix === 0 ? "" : ", "}<a href={tag.split(" ")[1]} rel="noreferrer" target="_blank">image</a></span>;
+      return <span className="inline" key={props.name+"/tag/"+ix}>{ix === 0 ? "" : ", "}<a href={tag.split(" ")[1]} rel="noopener noreferrer" target="_blank">image</a></span>;
     } else {
       return <span className="inline" key={props.name+"/tag/"+ix}>{ix === 0 ? "" : ", "}{tooltipify(tag, props.name+ix)}</span>;
     }

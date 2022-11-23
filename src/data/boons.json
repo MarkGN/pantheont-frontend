@@ -78,6 +78,14 @@
     "text": "On landing a melee hit and when not flanked, enter blade bind with the target for one round. While blade bound, you can't be intercepted from clashing with them, and the check is POW+fight symmetric, not AGI+fight. This is chainable."
   },
   {
+    "name": "Berserkergang",
+    "skill": "fight",
+    "tags": [
+      "modifier"
+    ],
+    "text": "Ueob, enter berserkergang. Lose 2 focus abor, and all hits you inflict are crits. The focus loss can cause you to faint and take @injury@."
+  },
+  {
     "name": "Disarm",
     "skill": "fight",
     "tags": [
