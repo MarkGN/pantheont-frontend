@@ -9,7 +9,7 @@ export default function FilterTag(props) {
   const id = "filter" + (props.reverse ? 2 : 1);
   return <div>
     <p className="inline">Tags must{props.reverse ? " not " : " "}include: </p><input id={id} className="filter-input" onChange={()=>{
-      dispatch(mySetFilter(document.getElementById(id).value));
+      dispatch(mySetFilter((document.getElementById(id) as HTMLInputElement).value));
     }} placeholder={props.placeholder} type="text" defaultValue={props.value}></input>
   </div>;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Card from "./Card";
-import FilterTag from './FilterTag';
-import Group from "./Group";
-import Legend from "./Legend";
+import Card from "./Card.tsx";
+import FilterTag from './FilterTag.tsx';
+import Group from "./Group.tsx";
+import Legend from "./Legend.tsx";
 
 // TODO starting to wrinkle my nose at the code smell here
 const boons = require("../data/boons.json");
