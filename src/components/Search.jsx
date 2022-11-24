@@ -12,7 +12,7 @@ const boonGroups = ["skill"];
 
 const plants = require("../data/plants.json");
 const plantPattern = ["colors", "effect", "reagentType", "description"];
-const plantGroups = ["reagentType", "tags", "level"];
+const plantGroups = ["reagentType", "tags"];
 
 const spells = require("../data/spells.json");
 // TODO this is a bit ugly; maybe there's a better way, but as long as it's just one or two things that want extra text like this ...
