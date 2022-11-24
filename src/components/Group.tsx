@@ -9,7 +9,7 @@ export default function Group(props) {
     <label htmlFor="none">None </label> <input defaultChecked={true} id="none" name="group" onClick={()=>{
       dispatch(setGroup(""));
     }} type="radio" />
-    {props.groups.map(group => <div key={group}><label htmlFor={group}>{group} </label> <input defaultChecked={false} id={group} name="group" onClick={()=>{
+    {props.groups.map((group : string) => <div key={group}><label htmlFor={group}>{group} </label> <input defaultChecked={false} id={group} name="group" onClick={()=>{
       dispatch(setGroup(group));
     }} type="radio" /></div>)}
   </div>

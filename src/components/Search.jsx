@@ -12,13 +12,13 @@ const boonGroups = ["skill"];
 
 const plants = require("../data/plants.json");
 const plantPattern = ["colors", "effect", "reagentType", "description"];
-const plantGroups = ["reagentType", "tags"];
+const plantGroups = ["reagentType", "tags", "level"];
 
 const spells = require("../data/spells.json");
 // TODO this is a bit ugly; maybe there's a better way, but as long as it's just one or two things that want extra text like this ...
-spells.forEach(spell => spell.level = "requirement: "+spell.level);
+// spells.forEach(spell => spell.level = "requirement: "+spell.level);
 const spellPattern = ["color", "level", "text"];
-const spellGroups = ["color"];
+const spellGroups = ["color", "level"];
 
 export default function Search(props) {
   const data = { "boon": boons, "plant": plants, "spell": spells }[props.contentType];
@@ -36,11 +36,16 @@ export default function Search(props) {
 
   function groupAndOrderStrWithEmptyGroupLast(a, b) {
     // TODO refactor this; it works, but hell if I can read it
-    // Also I'd like to make it so that I can sort by groups non-alphabetically, eg sort colours in rainbow order
     const mapping = {"red":1,"orange":2,"yellow":3,"green":4,"blue":5,"purple":6};
-    let aVal = a[groupValue]; aVal = mapping[aVal] || aVal;
-    let bVal = b[groupValue]; bVal = mapping[bVal] || bVal;
-    return (2 * (!aVal - !bVal)) + (((aVal || "") > (bVal || "")) - ((aVal || "") < (bVal || ""))) || (a.name > b.name ? 1 : -1);
+    let aVal = a[groupValue] || ""; aVal = mapping[aVal] || aVal; 
+    aVal = Number(aVal) || aVal; 
+    // TODO This almost works. a) Having requirement be part of the field causes ugliness here; and
+    // b) non-numerical entries causes problems too.
+    let bVal = b[groupValue] || ""; bVal = mapping[bVal] || bVal; 
+    bVal = Number(bVal) || bVal;
+    return ((typeof(aVal)>typeof(bVal)) - (typeof(bVal)>typeof(aVal))) || 
+      ((2 * (!aVal - !bVal)) + (((aVal || "") > (bVal || "")) - ((aVal || "") < (bVal || "")))) || 
+      (a.name > b.name ? 1 : -1);
   }
 
   return <div className="row card-holder">

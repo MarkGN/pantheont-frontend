@@ -49,13 +49,18 @@ export default function Card(props) {
     }
   }
 
+  // TODO still a bit ugly but no worse than an optional "prefix" field only used in this one spot
+  function annotateNumbers(line : string) {
+    return Number(line) ? "requirement: "+line : line;
+  }
+
   return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div className="card-interior">
       <div className="content-card-name"  style={styling(props)}><h3>{props.name}</h3></div>
       <p>
         {(props.tags || []).map(tagToDiv)}
       </p>
-      {props.text.map((line, ix) => line ? <p key={props.name+"/text/"+ix}>{tooltipifyText(line || "", props.name+" text "+ix)}</p> : "")}
+      {props.text.map((line : string, ix : number) => line ? <p key={props.name+"/text/"+ix}>{tooltipifyText(annotateNumbers(line) || "", props.name+" text "+ix)}</p> : "")}
     </div>
   </div>
 }
