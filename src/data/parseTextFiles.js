@@ -4,6 +4,7 @@ const fs = require ("node:fs");
 
 // Sue me for hard-coding these, these are my scrapbook files
 const boonTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Boons.txt";
+const itemTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Items.txt";
 const plantTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Hezulim/Flora.txt";
 const spellTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Spells.txt";
 const tagTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Tags.txt";
@@ -23,7 +24,7 @@ function parsePlant(line, regex, isActive) {
     }
     const expandColor = {"R":"red","O":"orange","Y":"yellow","G":"green","B":"blue","P":"purple"};
     colors = expandColor[colors[0]] + ", " + expandColor[colors[1]];
-    const entry = {name:name, colors:colors, description:description};
+    const entry = {name:name, colors:colors, text:description};
     if (effect) {
       entry.effect = effect;
     }
@@ -75,6 +76,31 @@ function parseBoonFile() {
   });
 }
 
+function parseItemFile() {
+  fs.open(itemTextFile, 'r', (err,file) => {
+    fs.readFile(file, {encoding: 'utf-8'}, (err, data) => {
+      const lines = data.split(/\r?\n/);
+      let category = "";
+      const categories = "armour,tool,weapon".split(",");
+      const items=[];
+      lines.forEach(line => {
+        if (categories.includes(line.substring(4,line.length-4).toLowerCase())) {
+          category = line.substring(4,line.length-4).toLowerCase();
+        }
+        if (category && line.includes(":")) {
+          let [name, tags, text] = line.split(": ");
+          text = text[0].toUpperCase()+text.slice(1);
+          items.push({name:name, tags:tags.split(", "), type:category, text:text});
+        }
+      });
+      const myJson = JSON.stringify(items, null, 2);
+      fs.writeFile('src/data/items.json', myJson, 'utf8', () => {
+        console.log("done");
+      });
+    });
+  });
+}
+
 function parsePlantFile() {
   const activeRegEx = new RegExp(".*:.*:.*\..*");
   const reagentRegEx = new RegExp(".*:.*\..*");
@@ -119,7 +145,7 @@ function parseSpellFile() {
           let [name, level, ...text] = line.split(": ");
           text = text.join(": "); 
           const tags = [];
-          const tagKeys = {"#":"slow", "$":"high-level", "&":"civilian", "^":"social","*":"world-building"};
+          const tagKeys = {"#":"slow", "$":"high-level", "&":"civilian", "^":"social","%":"world-building", "*":"dubious"};
           Object.entries(tagKeys).forEach(([key,value]) => {
             if (name.includes(key)) {
               name=name.replace(key,"").trim();
@@ -171,6 +197,7 @@ function parseTagFile() {
 }
 
 parseBoonFile();
+parseItemFile();
 parsePlantFile();
 parseSpellFile();
 parseTagFile();

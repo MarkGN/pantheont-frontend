@@ -1,4 +1,4 @@
-Note to self: run: node data/parse_plants.js ; npm run deploy ; npm start
+Note to self: run: node data/parseTextFiles.js ; npm run deploy ; npm start
 You can run it locally, or see at https://MarkGN.github.io/pantheont-frontend.
 
 # Getting Started with Create React App

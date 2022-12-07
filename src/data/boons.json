@@ -207,7 +207,7 @@
     "tags": [
       "move"
     ],
-    "text": "Pick a lock, with a MET+knowledge check if there's time pressure or a trap or something."
+    "text": "Pick a lock, with a MET+knowledge check if there's time pressure or a trap or something. Must have a lockpick or at least a bit of wire or something."
   },
   {
     "name": "Mark knowledge",
@@ -361,7 +361,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "When you fail a hide check, instead of being revealed, you lose focus as per a POW roll; however, you also leave a bit of evidence such as a footprint or bit of hair, which will be found if you don't remove it with a successful hide check."
+    "text": "When you fail a hide check, instead of being revealed, you lose focus as per a POW roll; however, you also leave a bit of evidence such as a footprint or bit of hair, which will be found later if you don't remove it with a successful hide check."
   },
   {
     "name": "Pickpocket",
@@ -369,7 +369,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "When you pass a stealth check, instead of hiding or sneak attacking, you take an item from the target that they aren't wearing. If they also aren't holding it, you aren't revealed."
+    "text": "When you pass a stealth check, instead of hiding or sneak attacking, take an item from the target that they aren't wearing. If they weren't holding it, you aren't revealed."
   },
   {
     "name": "Trap maker",

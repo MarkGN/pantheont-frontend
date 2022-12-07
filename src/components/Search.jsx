@@ -7,23 +7,27 @@ import Legend from "./Legend.tsx";
 
 // TODO starting to wrinkle my nose at the code smell here
 const boons = require("../data/boons.json");
-const boonPattern = ["skill", "text"];
+const boonPattern = ["skill"];
 const boonGroups = ["skill"];
 
+const items = require("../data/items.json");
+const itemPattern = ["type"];
+const itemGroups = ["type"];
+
 const plants = require("../data/plants.json");
-const plantPattern = ["colors", "effect", "reagentType", "description"];
+const plantPattern = ["colors", "effect", "reagentType"];
 const plantGroups = ["reagentType", "tags"];
 
 const spells = require("../data/spells.json");
 // TODO this is a bit ugly; maybe there's a better way, but as long as it's just one or two things that want extra text like this ...
 // spells.forEach(spell => spell.level = "requirement: "+spell.level);
-const spellPattern = ["color", "level", "text"];
+const spellPattern = ["color", "level"];
 const spellGroups = ["color", "level"];
 
 export default function Search(props) {
-  const data = { "boon": boons, "plant": plants, "spell": spells }[props.contentType];
-  const pattern = { "boon": boonPattern, "plant": plantPattern, "spell": spellPattern }[props.contentType];
-  const groups = { "boon": boonGroups, "plant": plantGroups, "spell": spellGroups }[props.contentType];
+  const data = { "boon": boons, "item": items, "plant": plants, "spell": spells }[props.contentType];
+  const pattern = { "boon": boonPattern, "item": itemPattern, "plant": plantPattern, "spell": spellPattern }[props.contentType];
+  const groups = { "boon": boonGroups, "item": itemGroups, "plant": plantGroups, "spell": spellGroups }[props.contentType];
 
   const filterTagValue = useSelector((state) => state.tagFilter.value);
   const filterTagExclusion = useSelector((state) => state.tagFilter.exclude);
@@ -60,7 +64,7 @@ export default function Search(props) {
         .filter(filterTag)
         .sort(groupAndOrderStrWithEmptyGroupLast)
         .map((datum) => {
-          return <Card key={datum.name} contentType={props.contentType} name={datum.name} tags={datum.tags} text={pattern.map(field => datum[field])} />
+          return <Card key={datum.name} contentType={props.contentType} name={datum.name} tags={datum.tags} pattern={pattern.map(field => datum[field])} text={datum.text} />
         })}
   </div>
 }

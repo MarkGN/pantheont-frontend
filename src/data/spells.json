@@ -61,10 +61,10 @@
   },
   {
     "name": "Photokinesis",
-    "level": "10",
+    "level": "14",
     "color": "red",
     "tags": [],
-    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +5 @armour@, +4 ranged. Can conjure illumination of any colour; can also suppress light."
+    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +7 @armour@, +5 ranged. Can conjure illumination of any colour; can also suppress light."
   },
   {
     "name": "Pyrokinesis",
@@ -136,6 +136,13 @@
     "text": "Assist an ally's spellcasting, ie their casting attribute counts as min(attr, you.MAS)+5."
   },
   {
+    "name": "Copyrite",
+    "level": "--",
+    "color": "orange",
+    "tags": [],
+    "text": "Copy a spell of requirement up to this.requirement that was cast last round, of any colour. This includes combat spells. You must pay any additional costs of that spell such as manite."
+  },
+  {
     "name": "Disenchant",
     "level": "10",
     "color": "orange",
@@ -173,13 +180,6 @@
     "color": "orange",
     "tags": [],
     "text": "Enter a magical combat trance and open your mind to higher states. +3 combat, take +1 magic aeor, capped at +$magic."
-  },
-  {
-    "name": "Mirror",
-    "level": "--",
-    "color": "orange",
-    "tags": [],
-    "text": "Copy a spell of requirement up to this.requirement that was cast last round, of any colour. This includes combat spells. You must pay any additional costs of that spell such as manite."
   },
   {
     "name": "Antigrav",
@@ -410,7 +410,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Take control of a wisp. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they //will// break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
+    "text": "Take control of a wisp. Specifically, +5 and +4 ranged vs one, and on a hit, instead of incapacitating it, you dominate it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
   },
   {
     "name": "Compromise",
@@ -423,15 +423,6 @@
     "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1 round. You steal their senses during. You can't act yourself at the same time, and you don't generally know ahead of time whether they're in a position to do anything you care about. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
   },
   {
-    "name": "Confusion",
-    "level": "14",
-    "color": "purple",
-    "tags": [
-      "world-building"
-    ],
-    "text": "Make other characters attack each other. Because this is extremely powerful, it should probably have a very easy save. The point is to counter large troop concentrations: above 10 or so, each additional combatant is as likely to teamkill as to change the outcome. So, say it's MAS+magic+num_enemies vs MAS+magic+20, single check; on success, anyone who tries to engage or advance instead engages the nearest viable target. TODO this is awkward, because there are 3 outcomes: you hit the caster, you hit your buddy, and your buddy or the caster hits you. Can I rework this? You just flat-out engage anyone in front of you? Call it wrath? Gate it? Is that any better than checking? Implement it as a veil? Conjure n_chars-20 invisible Wrath Wisps that force you to engage nearest?"
-  },
-  {
     "name": "Create curse",
     "level": "13",
     "color": "purple",
@@ -442,7 +433,7 @@
     "text": "A magical parasite that infests a victim and inflicts some nuisancesome condition until removed. Curses can be delivered by trap or to any Incapacitated character."
   },
   {
-    "name": "Erokinesis",
+    "name": "Erourgy",
     "level": "10",
     "color": "purple",
     "tags": [
@@ -452,7 +443,7 @@
     "text": "Make someone fall in or out of love. Technically only lasts while channelled, but people tend to rationalise their love, so it has long-term secondary effect."
   },
   {
-    "name": "Necrokinesis",
+    "name": "Necrourgy",
     "level": "11",
     "color": "purple",
     "tags": [
@@ -474,7 +465,14 @@
     "level": "10",
     "color": "purple",
     "tags": [],
-    "text": "Summon a minion that is a copy of yourself except that all attributes are 2 lower; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured. It does not need to be channelled and acts independently in accordance with your (implied) wishes."
+    "text": "@summon@ a copy of yourself except that all attributes are 2 lower; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured."
+  },
+  {
+    "name": "Summon phantasms",
+    "level": "11",
+    "color": "purple",
+    "tags": [],
+    "text": "As for summon lesser minion, except you get 3, its attributes equal yours, and it can't inflict damage or debuffs or physically affect anything. It can engage enemies; they may choose to ignore it, in which case they can't , but if they ignore a real attacker, the attacker makes a sneak attack. Its Armour is 0."
   },
   {
     "name": "Summon swarm",
@@ -482,5 +480,12 @@
     "color": "purple",
     "tags": [],
     "text": "As for summon lesser minion, except you get 2, each has only 1 focus, and you take only 2 -1 tokens."
+  },
+  {
+    "name": "Wrath",
+    "level": "14",
+    "color": "purple",
+    "tags": [],
+    "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies aeor (single check), and on a fail, take \"Enraged: this must attack the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueob."
   }
 ]

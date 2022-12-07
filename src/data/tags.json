@@ -1,5 +1,10 @@
 [
   {
+    "name": "Ammo.*",
+    "type": "flat",
+    "text": "This can be used by a related Loaded item."
+  },
+  {
     "name": "Animate vine",
     "type": "flat",
     "text": "This counts as a monster with base stats of 8-average, +1 size, +5 combat, a Net attack, and Sessile and Unseeing. It's typically aggressive against anything nearby."
@@ -7,7 +12,7 @@
   {
     "name": "Aquatic",
     "type": "flat",
-    "text": "This thrives in water rather than on land."
+    "text": "This thrives in water rather than on land. +5 to physical checks while in water, -10 while out."
   },
   {
     "name": "Bleeding",
@@ -20,6 +25,16 @@
     "text": "No mechanical effect, but it is assumed that player characters won't have much use for this."
   },
   {
+    "name": "Concealed",
+    "type": "flat",
+    "text": "You can easily hide this under your clothes."
+  },
+  {
+    "name": "Consumable",
+    "type": "flat",
+    "text": "This is consumed on use."
+  },
+  {
     "name": "Cornucopic",
     "type": "flat",
     "text": "This produces a tremendous amount of food. Cornucopics are illegal under Hebai's Law."
@@ -30,14 +45,19 @@
     "text": "This inflicts double damage. If multiple effects give crits, the effect adds, eg with two crits, an attack inflicts triple damage."
   },
   {
-    "name": "Fight style",
+    "name": "Dubious",
     "type": "flat",
-    "text": "You may only have one boon with this; that boon only applies if you have no Armour."
+    "text": "I'm not convinced this content is really a good idea, at least in its current form, but I'll include it for now and playtest and revise."
   },
   {
-    "name": "High-level",
+    "name": "Fight style",
     "type": "flat",
-    "text": "This spell is only available at high level. Will be deprecated once I develop a spell level system."
+    "text": "You may only have one boon with this; and that boon only applies if you have no Armour."
+  },
+  {
+    "name": "Held",
+    "type": "flat",
+    "text": "You need your dominant hand free to use this."
   },
   {
     "name": "Incapacitated",
@@ -48,6 +68,16 @@
     "name": "Indirect",
     "type": "flat",
     "text": "Enemies don't gain a combat bonus against you if they're behind cover."
+  },
+  {
+    "name": "Innocent",
+    "type": "flat",
+    "text": "People won't necessarily take this as a threat."
+  },
+  {
+    "name": "Loaded.*",
+    "type": "flat",
+    "text": "This can only operate by expending ammunition of the listed type."
   },
   {
     "name": "Modifier",
@@ -70,6 +100,11 @@
     "text": "You can't take this without the listed prerequisite. If you do somehow get it, it doesn't take effect."
   },
   {
+    "name": "Ranged",
+    "type": "flat",
+    "text": "This applies only when engaging from outside melee. You may have both a ranged and a non-ranged weapon equipped at once."
+  },
+  {
     "name": "Sessile",
     "type": "flat",
     "text": "This can't manoeuvre around the battlefield. It can still move eg to fight, as opposed to something fully paralysed."
@@ -90,6 +125,11 @@
     "text": "No mechanical effect, but if ever I create a social skill, this will be associated with it."
   },
   {
+    "name": "Summon",
+    "type": "flat",
+    "text": "This creates a new character. The spell isn't channelled, but you may have only one summon spell active at a time, so if you re-cast, the current one is cancelled and any summons are dismissed [cease to exist]. The summoner can give orders to the summon, but doesn't control it directly, and it can act of its own initiative. If this would be injured, instead it is dismissed."
+  },
+  {
     "name": "Suppress",
     "type": "flat",
     "text": "When you win an engagement from range, you may prevent the opponent from closing to melee."
@@ -105,6 +145,11 @@
     "text": "No mechanical effect, but it probably synergises with other effects with the same tribe."
   },
   {
+    "name": "Two-handed",
+    "type": "flat",
+    "text": "If you fight with this, you can't use anything in your off hand."
+  },
+  {
     "name": "Unseeing",
     "type": "flat",
     "text": "This doesn't use vision for perception. It doesn't generally suffer any combat penalties, but can't do things such as read or see colour."
@@ -118,6 +163,11 @@
     "name": "World-building",
     "type": "flat",
     "text": "This content exists for world-building purposes, but is not available to players."
+  },
+  {
+    "name": "Worn.*",
+    "type": "flat",
+    "text": "This is worn on the listed location. You can only have one item worn there."
   },
   {
     "name": "Armour",

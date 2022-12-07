@@ -1,0 +1,275 @@
+[
+  {
+    "name": "Buckler",
+    "tags": [
+      "worn off hand"
+    ],
+    "type": "armour",
+    "text": "1 @armour@. This can be used even if you have a @2H:two-handed@ weapon."
+  },
+  {
+    "name": "Chain mail",
+    "tags": [
+      "worn chest"
+    ],
+    "type": "armour",
+    "text": "3 @armour@"
+  },
+  {
+    "name": "Helmet",
+    "tags": [
+      "worn head"
+    ],
+    "type": "armour",
+    "text": "1 @armour@, -1 vigilance"
+  },
+  {
+    "name": "Shield",
+    "tags": [
+      "worn off hand"
+    ],
+    "type": "armour",
+    "text": "3 @armour@"
+  },
+  {
+    "name": "Tower shield",
+    "tags": [
+      "worn both hands",
+      "2H:two-handed"
+    ],
+    "type": "armour",
+    "text": "+4, 4 @armour@"
+  },
+  {
+    "name": "Animal bait",
+    "tags": [
+      "concealed"
+    ],
+    "type": "tool",
+    "text": "Can be consumed for +5 to make an animal do what you want. Comes in vegetarian, meat, and bug versions."
+  },
+  {
+    "name": "Caltrops",
+    "tags": [
+      "concealed"
+    ],
+    "type": "tool",
+    "text": "Can be laid for a trap inflicting @bleeding@ and -5 athletics ueob."
+  },
+  {
+    "name": "Citronella oil",
+    "tags": [
+      "concealed"
+    ],
+    "type": "tool",
+    "text": "Dogs and bugs hate this."
+  },
+  {
+    "name": "Fishing rod",
+    "tags": [
+      ""
+    ],
+    "type": "tool",
+    "text": "By a body of water with fish, you may sacrifice a bit of bug or meat bait and check END+vig vs 12; on a pass, after 2 hours, you get a fish worth a day's supplies."
+  },
+  {
+    "name": "Lamp",
+    "tags": [
+      "worn off hand"
+    ],
+    "type": "tool",
+    "text": "Provides dim light within 5m."
+  },
+  {
+    "name": "Lockpick",
+    "tags": [
+      "concealed"
+    ],
+    "type": "tool",
+    "text": "+5 to pick locks."
+  },
+  {
+    "name": "Matches",
+    "tags": [
+      "concealed"
+    ],
+    "type": "tool",
+    "text": "Start a POW=1 fire."
+  },
+  {
+    "name": "Medical kit",
+    "tags": [
+      ""
+    ],
+    "type": "tool",
+    "text": "+5 to first aid checks. Includes bandages, alcohol, scissors, tweezers."
+  },
+  {
+    "name": "Pitons",
+    "tags": [
+      ""
+    ],
+    "type": "tool",
+    "text": "With a hammer, take +5 to climb checks."
+  },
+  {
+    "name": "Rope",
+    "tags": [
+      ""
+    ],
+    "type": "tool",
+    "text": "10m of hemp rope. Can be used for whatever you want, but indicative uses are"
+  },
+  {
+    "name": "Soft shoes",
+    "tags": [
+      "worn feet"
+    ],
+    "type": "tool",
+    "text": "+1 to stealth."
+  },
+  {
+    "name": "Arrow",
+    "tags": [
+      "ammo bow",
+      "sharp"
+    ],
+    "type": "weapon",
+    "text": "Fired from a bow."
+  },
+  {
+    "name": "Battleaxe",
+    "tags": [
+      "6 AP:armour piercing",
+      "sharp",
+      "2H:two-handed"
+    ],
+    "type": "weapon",
+    "text": "+5"
+  },
+  {
+    "name": "Bolas",
+    "tags": [
+      "consumable",
+      "net"
+    ],
+    "type": "weapon",
+    "text": "+2"
+  },
+  {
+    "name": "Bow",
+    "tags": [
+      "loaded arrow",
+      "ranged"
+    ],
+    "type": "weapon",
+    "text": "+5"
+  },
+  {
+    "name": "Crowbar",
+    "tags": [
+      "3 AP:armour piercing",
+      "innocent"
+    ],
+    "type": "weapon",
+    "text": "+4. Can be used to open locked doors quickly."
+  },
+  {
+    "name": "Dagger",
+    "tags": [
+      "concealed",
+      "sharp"
+    ],
+    "type": "weapon",
+    "text": "+3"
+  },
+  {
+    "name": "Grenade",
+    "tags": [
+      "+0 ranged:ranged",
+      "indirect",
+      "loaded"
+    ],
+    "type": "weapon",
+    "text": "When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail."
+  },
+  {
+    "name": "Longsword",
+    "tags": [
+      "sharp",
+      "2H:two-handed"
+    ],
+    "type": "weapon",
+    "text": "+7"
+  },
+  {
+    "name": "Net",
+    "tags": [
+      "consumable",
+      "net",
+      "ranged"
+    ],
+    "type": "weapon",
+    "text": "+4"
+  },
+  {
+    "name": "Rock",
+    "tags": [
+      "+1 ranged"
+    ],
+    "type": "weapon",
+    "text": "+1. May be treated as @loaded@ if for some reason there aren't rocks or other similar improvised weapons about."
+  },
+  {
+    "name": "Shortsword",
+    "tags": [
+      "sharp"
+    ],
+    "type": "weapon",
+    "text": "+5"
+  },
+  {
+    "name": "Sling",
+    "tags": [
+      "ranged"
+    ],
+    "type": "weapon",
+    "text": "+3"
+  },
+  {
+    "name": "Spear",
+    "tags": [
+      "sharp",
+      "2H:two-handed"
+    ],
+    "type": "weapon",
+    "text": "+7"
+  },
+  {
+    "name": "Staff",
+    "tags": [
+      "innocent",
+      "2H:two-handed"
+    ],
+    "type": "weapon",
+    "text": "+5"
+  },
+  {
+    "name": "Whip",
+    "tags": [
+      "net"
+    ],
+    "type": "weapon",
+    "text": "+4"
+  },
+  {
+    "name": "Wood axe",
+    "tags": [
+      "3 AP:armour piercing",
+      "innocent",
+      "sharp"
+    ],
+    "type": "weapon",
+    "text": "+4"
+  }
+]
