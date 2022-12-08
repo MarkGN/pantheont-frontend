@@ -2,9 +2,13 @@ import React from 'react';
 import { useDispatch } from 'react-redux'
 import { setGroup } from './groupSlice'
 
-export default function Group(props) {
+interface GroupProps {
+  groups : Array<string>
+}
+
+export default function Group(props : GroupProps) {
   const dispatch = useDispatch();
-  return <div className="plant-filter">
+  return <div className="filter">
     <p>Group by:</p>
     <label htmlFor="none">None </label> <input defaultChecked={true} id="none" name="group" onClick={()=>{
       dispatch(setGroup(""));

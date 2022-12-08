@@ -1,9 +1,13 @@
 import React from "react";
 
-const data = require("../data/legend.json");
+import data from "../data/legend.json";
 
-export default function Legend(props) {
+interface LegendProps {
+  contentType : string
+}
+
+export default function Legend(props : LegendProps) {
   return <div className="legend"><div className="inner-legend">
-    {(data[props.contentType] || [""]).map((line, ix) => <p key={ix}>{line}</p>)}
+    {(data[props.contentType] || [""]).map((line : string, ix : number) => <p key={ix}>{line}</p>)}
   </div></div>
 }

@@ -1,25 +1,33 @@
 import React from 'react';
 
-function softenColor(col) {
+import tags from "../data/tags.json";
+
+interface CardProps {
+  contentType : string,
+  name : string,
+  pattern : Array<string>,
+  tags : Array<string>,
+  text : string
+}
+
+function softenColor(col : string) {
   const colorMap = {"red":"#ffcccc", "orange":"#ffeecc", "yellow":"#ffffbb", "green":"#ddffdd", "blue":"#ddddff", "purple":"#ffbbff"};
   return colorMap[col] || "#ffffff";
 }
 
 function itemTypeToColor(it: string) {
-  return softenColor({"armour":"blue", "tool":"yellow", "weapon":"red"}[it]);
+  return softenColor({"armour":"blue", "tool":"yellow", "weapon":"red"}[it] || "");
 }
 
 function skillToColor(skill : string) {
-  return softenColor({"athletics":"yellow", "fight":"red", "knowledge":"green", "magic":"orange", "stealth":"purple", "vigilance":"blue"}[skill]);
+  return softenColor({"athletics":"yellow", "fight":"red", "knowledge":"green", "magic":"orange", "stealth":"purple", "vigilance":"blue"}[skill] || "");
 }
 
 function reagentTypeToColor(r : string) {
-  return softenColor({"active":"red", "amper":"orange", "damper":"blue", "preservative":"purple"}[r]);
+  return softenColor({"active":"red", "amper":"orange", "damper":"blue", "preservative":"purple"}[r] || "");
 }
 
-const tags = require("../data/tags.json");
-
-function styling(props) {
+function styling(props : CardProps) {
   return {"boon": {"backgroundColor":skillToColor(props.pattern[0])}, "item": {"backgroundColor": itemTypeToColor(props.pattern[0])}, "plant": {"backgroundColor": reagentTypeToColor(props.pattern[2])}, "spell": {"backgroundColor":softenColor(props.pattern[0])}}[props.contentType] || {};
 }
 
@@ -44,7 +52,7 @@ function tooltipifyText(text : string, key : string) {
   return <span className='inline'>{lines.map((line : string,ix : number) => (ix%2 ? tooltipify(line, key + "/tooltip/" + ix) : line))}</span>
 }
 
-export default function Card(props) {
+export default function Card(props : CardProps) {
   function tagToDiv(tag: string, ix: number) {
     if (tag.split(" ")[0] === "image") {
       return <span className="inline" key={props.name+"/tag/"+ix}>{ix === 0 ? "" : ", "}<a href={tag.split(" ")[1]} rel="noopener noreferrer" target="_blank">image</a></span>;

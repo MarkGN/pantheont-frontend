@@ -1,3 +1,7 @@
+.attr {
+  width: fit-content;
+}
+
 body {
   background-color: #ddeecc;
   margin: 0;
@@ -9,22 +13,6 @@ body {
   text-align: center;
 }
 
-.boon {
-  border: 0px;
-  border-style: none;
-  display: inline-block;
-  padding: 5px;
-  text-align: center;
-}
-
-.boon-interior {
-  background-color: #ffddcc;
-  border-color: black;
-  border-style: solid;
-  margin: 5px;
-  padding: 5px;
-}
-
 .card-holder {
   margin: 5px;
 }
@@ -34,13 +22,8 @@ body {
   border-color: black;
   border-style: solid;
   margin: 5px;
-  /* overflow: auto; */
-  /* I want to make it break over-long words such as URLs, but it's not happening. Hmm. */
-  /* I could, of course, cheat, and make it parse URLs as links, or even put them into tags. */
-  /* "image-url blah" could work. */
   overflow-wrap: break-word;
   padding: 5px;
-  /* word-break: break-all; */
 }
 
 .content-card {
@@ -60,6 +43,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.filter {
+  background-color: #cceeff;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+  margin: 5px 25px;
+  padding: 5px;
+  text-align: center;
+  width: fit-content;
 }
 
 .filter-bar {
@@ -93,54 +87,9 @@ header {
   display: inline;
   width: 100%;
 }
-
-.plant {
-  border: 0px;
-  border-style: none;
-  display: inline-block;
-  padding: 5px;
-  text-align: center;
-}
-
-.plant-filter {
-  background-color: #cceeff;
-  border-color: black;
-  border-style: solid;
-  display: inline-block;
-  margin: 5px 25px;
-  padding: 5px;
-  text-align: center;
-  width: fit-content;
-}
-
-.plant-interior {
-  background-color: #eeffcc;
-  border-color: black;
-  border-style: solid;
-  margin: 5px;
-  padding: 5px;
-}
-
-.spell {
-  border: 0px;
-  border-style: none;
-  display: inline-block;
-  padding: 5px;
-  text-align: center;
-}
-
-.spell-interior {
-  background-color: #ccddff;
-  border-color: black;
-  border-style: solid;
-  margin: 5px;
-  padding: 5px;
-}
-
 .my-tooltip {
   position: relative;
   display: inline-block;
-  /* margin-right: 3px; */
 }
 
 .tooltiptext {
