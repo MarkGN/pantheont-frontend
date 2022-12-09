@@ -30,7 +30,7 @@
     "text": "You can easily hide this under your clothes."
   },
   {
-    "name": "Consumable",
+    "name": "Consumed",
     "type": "flat",
     "text": "This is consumed on use."
   },
@@ -133,6 +133,11 @@
     "name": "Suppress",
     "type": "flat",
     "text": "When you win an engagement from range, you may prevent the opponent from closing to melee."
+  },
+  {
+    "name": "Thrown",
+    "type": "flat",
+    "text": "As for Consumed, but can be retrieved after."
   },
   {
     "name": "Trap",

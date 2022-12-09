@@ -88,9 +88,9 @@ function parseItemFile() {
           category = line.substring(4,line.length-4).toLowerCase();
         }
         if (category && line.includes(":")) {
-          let [name, tags, text] = line.split(": ");
+          let [name, tags, price, text] = line.split(": ");
           text = text[0].toUpperCase()+text.slice(1);
-          items.push({name:name, tags:tags.split(", "), type:category, text:text});
+          items.push({name:name, price:price, tags:tags.split(", "), text:text, type:category});
         }
       });
       const myJson = JSON.stringify(items, null, 2);

@@ -1,275 +1,326 @@
 [
   {
     "name": "Buckler",
+    "price": "300c",
     "tags": [
       "worn off hand"
     ],
-    "type": "armour",
-    "text": "1 @armour@. This can be used even if you have a @2H:two-handed@ weapon."
+    "text": "1 @armour@. This can be used even if you have a @2H:two-handed@ weapon.",
+    "type": "armour"
   },
   {
     "name": "Chain mail",
+    "price": "600c",
     "tags": [
       "worn chest"
     ],
-    "type": "armour",
-    "text": "3 @armour@"
+    "text": "3 @armour@",
+    "type": "armour"
   },
   {
     "name": "Helmet",
+    "price": "300c",
     "tags": [
       "worn head"
     ],
-    "type": "armour",
-    "text": "1 @armour@, -1 vigilance"
+    "text": "1 @armour@, -1 vigilance",
+    "type": "armour"
   },
   {
     "name": "Shield",
+    "price": "400c",
     "tags": [
       "worn off hand"
     ],
-    "type": "armour",
-    "text": "3 @armour@"
+    "text": "4 @armour@",
+    "type": "armour"
   },
   {
     "name": "Tower shield",
+    "price": "1000c",
     "tags": [
       "worn both hands",
       "2H:two-handed"
     ],
-    "type": "armour",
-    "text": "+4, 4 @armour@"
+    "text": "+4, 5 @armour@",
+    "type": "armour"
   },
   {
     "name": "Animal bait",
+    "price": "10c",
     "tags": [
       "concealed"
     ],
-    "type": "tool",
-    "text": "Can be consumed for +5 to make an animal do what you want. Comes in vegetarian, meat, and bug versions."
+    "text": "Can be consumed for +5 to make an animal do what you want. Comes in vegetarian, meat, and bug versions.",
+    "type": "tool"
   },
   {
-    "name": "Caltrops",
-    "tags": [
-      "concealed"
-    ],
-    "type": "tool",
-    "text": "Can be laid for a trap inflicting @bleeding@ and -5 athletics ueob."
-  },
-  {
-    "name": "Citronella oil",
-    "tags": [
-      "concealed"
-    ],
-    "type": "tool",
-    "text": "Dogs and bugs hate this."
-  },
-  {
-    "name": "Fishing rod",
-    "tags": [
-      ""
-    ],
-    "type": "tool",
-    "text": "By a body of water with fish, you may sacrifice a bit of bug or meat bait and check END+vig vs 12; on a pass, after 2 hours, you get a fish worth a day's supplies."
-  },
-  {
-    "name": "Lamp",
-    "tags": [
-      "worn off hand"
-    ],
-    "type": "tool",
-    "text": "Provides dim light within 5m."
-  },
-  {
-    "name": "Lockpick",
-    "tags": [
-      "concealed"
-    ],
-    "type": "tool",
-    "text": "+5 to pick locks."
-  },
-  {
-    "name": "Matches",
-    "tags": [
-      "concealed"
-    ],
-    "type": "tool",
-    "text": "Start a POW=1 fire."
-  },
-  {
-    "name": "Medical kit",
-    "tags": [
-      ""
-    ],
-    "type": "tool",
-    "text": "+5 to first aid checks. Includes bandages, alcohol, scissors, tweezers."
-  },
-  {
-    "name": "Pitons",
-    "tags": [
-      ""
-    ],
-    "type": "tool",
-    "text": "With a hammer, take +5 to climb checks."
-  },
-  {
-    "name": "Rope",
-    "tags": [
-      ""
-    ],
-    "type": "tool",
-    "text": "10m of hemp rope. Can be used for whatever you want, but indicative uses are"
-  },
-  {
-    "name": "Soft shoes",
+    "name": "Boots",
+    "price": "100c",
     "tags": [
       "worn feet"
     ],
-    "type": "tool",
-    "text": "+1 to stealth."
+    "text": "-1 stealth, +2 vs ground traps",
+    "type": "tool"
+  },
+  {
+    "name": "Caltrops",
+    "price": "100c",
+    "tags": [
+      "concealed"
+    ],
+    "text": "Can be laid for a trap inflicting @bleeding@ and -5 athletics ueob.",
+    "type": "tool"
+  },
+  {
+    "name": "Citronella oil",
+    "price": "20c",
+    "tags": [
+      "concealed"
+    ],
+    "text": "Dogs and bugs hate this.",
+    "type": "tool"
+  },
+  {
+    "name": "Fishing rod",
+    "price": "30c",
+    "tags": [
+      ""
+    ],
+    "text": "By a body of water with fish, you may sacrifice a bit of bug or meat bait and check END+vig vs 12; on a pass, after 2 hours, you get a fish worth a day's supplies.",
+    "type": "tool"
+  },
+  {
+    "name": "Lamp",
+    "price": "50c",
+    "tags": [
+      "worn off hand"
+    ],
+    "text": "Provides dim light within 5m. Oil included.",
+    "type": "tool"
+  },
+  {
+    "name": "Lockpick",
+    "price": "40c",
+    "tags": [
+      "concealed"
+    ],
+    "text": "+5 to pick locks.",
+    "type": "tool"
+  },
+  {
+    "name": "Matches",
+    "price": "40c",
+    "tags": [
+      "concealed"
+    ],
+    "text": "Start a POW=1 fire.",
+    "type": "tool"
+  },
+  {
+    "name": "Medical kit",
+    "price": "100c",
+    "tags": [
+      ""
+    ],
+    "text": "+5 to first aid checks. Includes bandages, alcohol, scissors, tweezers.",
+    "type": "tool"
+  },
+  {
+    "name": "Oil",
+    "price": "20c",
+    "tags": [
+      ""
+    ],
+    "text": "Lubricate a door to prevent it blowing a stealth check.",
+    "type": "tool"
+  },
+  {
+    "name": "Pitons",
+    "price": "50c",
+    "tags": [
+      ""
+    ],
+    "text": "With a hammer, take +5 to climb checks.",
+    "type": "tool"
+  },
+  {
+    "name": "Rope",
+    "price": "40c",
+    "tags": [
+      ""
+    ],
+    "text": "10m of hemp rope. Can be used for whatever you want, but indicative uses are",
+    "type": "tool"
+  },
+  {
+    "name": "Soft shoes",
+    "price": "100c",
+    "tags": [
+      "worn feet"
+    ],
+    "text": "+1 to stealth.",
+    "type": "tool"
   },
   {
     "name": "Arrow",
+    "price": "30c",
     "tags": [
       "ammo bow",
       "sharp"
     ],
-    "type": "weapon",
-    "text": "Fired from a bow."
+    "text": "Fired from a bow.",
+    "type": "weapon"
   },
   {
     "name": "Battleaxe",
+    "price": "1000c",
     "tags": [
       "6 AP:armour piercing",
       "sharp",
       "2H:two-handed"
     ],
-    "type": "weapon",
-    "text": "+5"
+    "text": "+5",
+    "type": "weapon"
   },
   {
     "name": "Bolas",
+    "price": "50c",
     "tags": [
-      "consumable",
+      "thrown",
       "net"
     ],
-    "type": "weapon",
-    "text": "+2"
+    "text": "+2",
+    "type": "weapon"
   },
   {
     "name": "Bow",
+    "price": "200c",
     "tags": [
       "loaded arrow",
       "ranged"
     ],
-    "type": "weapon",
-    "text": "+5"
+    "text": "+5",
+    "type": "weapon"
   },
   {
     "name": "Crowbar",
+    "price": "50c",
     "tags": [
       "3 AP:armour piercing",
       "innocent"
     ],
-    "type": "weapon",
-    "text": "+4. Can be used to open locked doors quickly."
+    "text": "+4. Can be used to open locked doors quickly.",
+    "type": "weapon"
   },
   {
     "name": "Dagger",
+    "price": "40c",
     "tags": [
       "concealed",
       "sharp"
     ],
-    "type": "weapon",
-    "text": "+3"
+    "text": "+3",
+    "type": "weapon"
   },
   {
     "name": "Grenade",
+    "price": "100c",
     "tags": [
       "+0 ranged:ranged",
       "indirect",
-      "loaded"
+      "consumed"
     ],
-    "type": "weapon",
-    "text": "When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail."
+    "text": "Has an associated condition, such as tangled (as for glue), fire, or poison. When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail.",
+    "type": "weapon"
   },
   {
     "name": "Longsword",
+    "price": "1000c",
     "tags": [
+      "1 AP:armour piercing",
       "sharp",
       "2H:two-handed"
     ],
-    "type": "weapon",
-    "text": "+7"
+    "text": "+7",
+    "type": "weapon"
   },
   {
     "name": "Net",
+    "price": "400c",
     "tags": [
-      "consumable",
+      "thrown",
       "net",
       "ranged"
     ],
-    "type": "weapon",
-    "text": "+4"
+    "text": "+4",
+    "type": "weapon"
   },
   {
     "name": "Rock",
+    "price": "0c",
     "tags": [
       "+1 ranged"
     ],
-    "type": "weapon",
-    "text": "+1. May be treated as @loaded@ if for some reason there aren't rocks or other similar improvised weapons about."
+    "text": "+1. May be treated as @consumed@ if for some reason there aren't rocks or other similar improvised weapons about.",
+    "type": "weapon"
   },
   {
     "name": "Shortsword",
+    "price": "200c",
     "tags": [
       "sharp"
     ],
-    "type": "weapon",
-    "text": "+5"
+    "text": "+5",
+    "type": "weapon"
   },
   {
     "name": "Sling",
+    "price": "10c",
     "tags": [
       "ranged"
     ],
-    "type": "weapon",
-    "text": "+3"
+    "text": "+3",
+    "type": "weapon"
   },
   {
     "name": "Spear",
+    "price": "50c",
     "tags": [
       "sharp",
       "2H:two-handed"
     ],
-    "type": "weapon",
-    "text": "+7"
+    "text": "+7",
+    "type": "weapon"
   },
   {
     "name": "Staff",
+    "price": "30c",
     "tags": [
       "innocent",
       "2H:two-handed"
     ],
-    "type": "weapon",
-    "text": "+5"
+    "text": "+5",
+    "type": "weapon"
   },
   {
     "name": "Whip",
+    "price": "80c",
     "tags": [
       "net"
     ],
-    "type": "weapon",
-    "text": "+4"
+    "text": "+4",
+    "type": "weapon"
   },
   {
     "name": "Wood axe",
+    "price": "50c",
     "tags": [
       "3 AP:armour piercing",
       "innocent",
       "sharp"
     ],
-    "type": "weapon",
-    "text": "+4"
+    "text": "+4",
+    "type": "weapon"
   }
 ]

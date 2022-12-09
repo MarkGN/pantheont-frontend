@@ -10,8 +10,8 @@ const boonPattern = ["skill"];
 const boonGroups = ["skill"];
 
 const items = require("../data/items.json");
-const itemPattern = ["type"];
-const itemGroups = ["type"];
+const itemPattern = ["type", "price"];
+const itemGroups = ["type", "price"];
 
 const plants = require("../data/plants.json");
 const plantPattern = ["colors", "effect", "reagentType"];
@@ -61,16 +61,19 @@ export default function Search(props) {
   }
 
   function groupAndOrderStrWithEmptyGroupLast(a, b) {
-    // TODO refactor this; it works, but hell if I can read it
     const mapping = {"red":1,"orange":2,"yellow":3,"green":4,"blue":5,"purple":6};
-    let aVal = a[groupValue] || ""; aVal = mapping[aVal] || aVal; 
-    aVal = Number(aVal) || aVal; 
-    // TODO This almost works. a) Having requirement be part of the field causes ugliness here; and
-    // b) non-numerical entries causes problems too.
-    let bVal = b[groupValue] || ""; bVal = mapping[bVal] || bVal; 
-    bVal = Number(bVal) || bVal;
-    return ((typeof(aVal)>typeof(bVal)) - (typeof(bVal)>typeof(aVal))) || 
-      ((2 * (!aVal - !bVal)) + (((aVal || "") > (bVal || "")) - ((aVal || "") < (bVal || "")))) || 
+    /*
+      Rules are:
+      If sorting by color and none is available, pretend it's 
+    */
+    const tf = (groupValue === "color" && (x => (mapping[x] || 10))) || 
+      (groupValue === "level" && (x => {const num = Number(x); return isNaN(num) ? Infinity : num})) || 
+      (groupValue === "price" && (x => {const num = Number((x||"").substring(0, (x||"").length-1)); return isNaN(num) ? Infinity : num})) || 
+      (x => x);
+    const aVal = tf(a[groupValue]);
+    const bVal = tf(b[groupValue]);
+    return ((typeof(aVal)>typeof(bVal)) - (typeof(bVal)>typeof(aVal))) ||  
+      (((aVal || "") > (bVal || "")) - ((aVal || "") < (bVal || ""))) || 
       (a.name > b.name ? 1 : -1);
   }
 
