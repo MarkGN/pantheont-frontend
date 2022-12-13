@@ -3,6 +3,7 @@ import React from 'react';
 import tags from "../data/tags.json";
 
 interface CardProps {
+  addable: boolean,
   contentType : string,
   name : string,
   pattern : Array<string>,

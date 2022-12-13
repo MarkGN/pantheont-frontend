@@ -25,12 +25,14 @@ const tabData = {
   "boon": {
     "data": boons,
     "pattern": boonPattern,
-    "groups": boonGroups
+    "groups": boonGroups,
+    "addable": true
   },
   "item": {
     "data": items,
     "pattern": itemPattern,
-    "groups": itemGroups
+    "groups": itemGroups,
+    "addable": true
   },
   "plant": {
     "data": plants,
@@ -40,7 +42,8 @@ const tabData = {
   "spell": {
     "data": spells,
     "pattern": spellPattern,
-    "groups": spellGroups
+    "groups": spellGroups,
+    "addable": true
   }
 }
 
@@ -62,16 +65,14 @@ export default function Search(props) {
 
   function groupAndOrderStrWithEmptyGroupLast(a, b) {
     const mapping = {"red":1,"orange":2,"yellow":3,"green":4,"blue":5,"purple":6};
-    /*
-      Rules are:
-      If sorting by color and none is available, pretend it's 
-    */
-    const tf = (groupValue === "color" && (x => (mapping[x] || 10))) || 
+    // We push non-complying values to the end, but falsy values such as 0 are treated as though that is intended.
+    const tf = (groupValue === "color" && (x => (mapping[x] || Infinity))) || 
       (groupValue === "level" && (x => {const num = Number(x); return isNaN(num) ? Infinity : num})) || 
       (groupValue === "price" && (x => {const num = Number((x||"").substring(0, (x||"").length-1)); return isNaN(num) ? Infinity : num})) || 
       (x => x);
     const aVal = tf(a[groupValue]);
     const bVal = tf(b[groupValue]);
+    // Note: Because typeof(undefined)==="undefined", it is sorted last.
     return ((typeof(aVal)>typeof(bVal)) - (typeof(bVal)>typeof(aVal))) ||  
       (((aVal || "") > (bVal || "")) - ((aVal || "") < (bVal || ""))) || 
       (a.name > b.name ? 1 : -1);
@@ -89,7 +90,7 @@ export default function Search(props) {
         .filter(filterTag)
         .sort(groupAndOrderStrWithEmptyGroupLast)
         .map((datum) => {
-          return <Card key={datum.name} contentType={props.contentType} name={datum.name} tags={datum.tags} pattern={tab["pattern"].map(field => datum[field])} text={datum.text} />
+          return <Card key={datum.name} addable={tab.addable} contentType={props.contentType} name={datum.name} pattern={tab["pattern"].map(field => datum[field])} tags={datum.tags} text={datum.text} />
         })}
   </div>
 }

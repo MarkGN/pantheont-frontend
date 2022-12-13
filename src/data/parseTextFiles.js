@@ -90,7 +90,12 @@ function parseItemFile() {
         if (category && line.includes(":")) {
           let [name, tags, price, text] = line.split(": ");
           text = text[0].toUpperCase()+text.slice(1);
-          items.push({name:name, price:price, tags:tags.split(", "), text:text, type:category});
+          let item = {name:name, price:price, text:text, type:category}
+          if (tags) {
+            // item[tags] = tags.split(", ");
+            item = {...item, tags:tags.split(", ")};
+          }
+          items.push(item);
         }
       });
       const myJson = JSON.stringify(items, null, 2);
