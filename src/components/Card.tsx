@@ -1,5 +1,4 @@
-import React from 'react';
-
+import Adder from "./AddToCharacter";
 import tags from "../data/tags.json";
 
 interface CardProps {
@@ -12,8 +11,7 @@ interface CardProps {
 }
 
 function softenColor(col : string) {
-  const colorMap = {"red":"#ffcccc", "orange":"#ffeecc", "yellow":"#ffffbb", "green":"#ddffdd", "blue":"#ddddff", "purple":"#ffbbff"};
-  return colorMap[col] || "#ffffff";
+  return {"red":"#ffcccc", "orange":"#ffeecc", "yellow":"#ffffbb", "green":"#ddffdd", "blue":"#ddddff", "purple":"#ffbbff"}[col] || "#ffffff";
 }
 
 function itemTypeToColor(it: string) {
@@ -69,7 +67,7 @@ export default function Card(props : CardProps) {
 
   return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div className="card-interior">
-      <div className="content-card-name"  style={styling(props)}><h3>{props.name}</h3></div>
+      <div className="content-card-name"  style={styling(props)}><h3>{props.name} {props.addable ? <Adder contentType={props.contentType} name={props.name} /> : null}</h3></div>
       <p>
         {(props.tags || []).map(tagToDiv)}
       </p>

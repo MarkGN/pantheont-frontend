@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Card from "./Card.tsx";
-import FilterTag from './FilterTag.tsx';
-import Group from "./Group.tsx";
-import Legend from "./Legend.tsx";
+import Card from "./Card";
+import FilterTag from './FilterTag';
+import Group from "./Group";
+import Legend from "./Legend";
 
 const boons = require("../data/boons.json");
 const boonPattern = ["skill"];
@@ -47,11 +47,11 @@ const tabData = {
   }
 }
 
-// interface state {
-//   group 
+// interface SearchProps {
+//   contentType : string
 // }
 
-export default function Search(props) {
+export default function Search(props ) {
   const tab = tabData[props.contentType];
 
   const filterTagValue = useSelector((state) => state.tagFilter.value);
@@ -66,7 +66,7 @@ export default function Search(props) {
   function groupAndOrderStrWithEmptyGroupLast(a, b) {
     const mapping = {"red":1,"orange":2,"yellow":3,"green":4,"blue":5,"purple":6};
     // We push non-complying values to the end, but falsy values such as 0 are treated as though that is intended.
-    const tf = (groupValue === "color" && (x => (mapping[x] || Infinity))) || 
+    const tf = (groupValue === "color" && ((x) => (mapping[x] || Infinity))) || 
       (groupValue === "level" && (x => {const num = Number(x); return isNaN(num) ? Infinity : num})) || 
       (groupValue === "price" && (x => {const num = Number((x||"").substring(0, (x||"").length-1)); return isNaN(num) ? Infinity : num})) || 
       (x => x);
@@ -80,8 +80,8 @@ export default function Search(props) {
 
   return <div className="row card-holder">
     <div className='filter-bar'>
-      <FilterTag />
-      <FilterTag reverse="1" value="civilian" />
+      <FilterTag placeholder="" reverse={false} value="" />
+      <FilterTag placeholder="" reverse={true} value="civilian" />
       <Group groups={tab["groups"]} />
       {tab["data"].filter(filterTag).length} result{tab["data"].filter(filterTag).length === 1 ? "" : "s"}
     </div>
@@ -90,7 +90,7 @@ export default function Search(props) {
         .filter(filterTag)
         .sort(groupAndOrderStrWithEmptyGroupLast)
         .map((datum) => {
-          return <Card key={datum.name} addable={tab.addable} contentType={props.contentType} name={datum.name} pattern={tab["pattern"].map(field => datum[field])} tags={datum.tags} text={datum.text} />
+          return <Card key={datum.name} addable={tab.addable} contentType={props.contentType} name={datum.name} pattern={tab["pattern"].map((field) => datum[field])} tags={datum.tags} text={datum.text} />
         })}
   </div>
 }

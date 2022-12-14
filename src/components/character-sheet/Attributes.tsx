@@ -1,4 +1,4 @@
-import React from "react";
+import Attr from "./Attribute";
 
 interface AttrProps {
   values : Array<number>
@@ -10,7 +10,7 @@ export default function Attributes(props: AttrProps) {
   return <div className="card-holder">
     <div className="card-interior attr">
       {attrs.map((attr,ix) => {
-        return <p key={attr}>{attr}: {props.values[ix]}</p>
+        return <Attr key={ix} name={attr} />
       })}
     </div>
   </div>

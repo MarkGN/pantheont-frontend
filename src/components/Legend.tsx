@@ -7,7 +7,8 @@ interface LegendProps {
 }
 
 export default function Legend(props : LegendProps) {
+  const lines = data[props.contentType as keyof typeof data] || [""];
   return <div className="legend"><div className="inner-legend">
-    {(data[props.contentType] || [""]).map((line : string, ix : number) => <p key={ix}>{line}</p>)}
+    {lines.map((line : string, ix : number) => <p key={ix}>{line}</p>)}
   </div></div>
 }
