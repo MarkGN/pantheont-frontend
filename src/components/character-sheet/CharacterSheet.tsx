@@ -1,8 +1,8 @@
 import Cookies from 'js-cookie';
-import React from "react";
 import Attributes from "./Attributes";
 import ContentList from './ContentList';
 import Legend from "../Legend";
+import Skills from './Skills';
 
 /*
   I want to be able to set the name;
@@ -13,13 +13,17 @@ import Legend from "../Legend";
 
 export default function CharacterSheet() {
   return <div>
-    <div className="row">
-      <input defaultValue={Cookies.get("char-name")} id="char-name" onChange={(event) => {
+    <p>
+      This feature under construction. Please experiment but keep your expectations low.
+    </p>
+    <div className="row card-holder">
+      <input className="content-card content-card col-lg-3 col-md-4 col-sm-6 col-xs-12" defaultValue={Cookies.get("char-name")} id="char-name" onChange={(event) => {
         Cookies.set("char-name", event.target.value, {expires : 400});
       }} placeholder="name" type="text"></input>
-      <Attributes values={[3,4,5,6,7]} />
+      <Attributes />
+      <Skills />
     </div>
-    <div className="row">
+    <div className="row card-holder">
       <ContentList contentType={"boon"} data={(Cookies.get("char-boon") || "").split(",")} />
       <ContentList contentType={"item"} data={(Cookies.get("char-item") || "").split(",")} />
       <ContentList contentType={"spell"} data={(Cookies.get("char-spell") || "").split(",")} />

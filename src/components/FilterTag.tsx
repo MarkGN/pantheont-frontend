@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch } from 'react-redux';
 import { setExcludeFilter, setTagFilter } from '../app/searchSlice';
 
@@ -18,7 +17,3 @@ export default function FilterTag(props : FilterProps) {
     }} placeholder={props.placeholder} type="text" defaultValue={props.value}></input>
   </div>;
 }
-
-/*
-TODO make it 
-*/

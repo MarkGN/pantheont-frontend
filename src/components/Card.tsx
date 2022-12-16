@@ -70,8 +70,8 @@ export default function Card(props : CardProps) {
       <div className="content-card-name"  style={styling(props)}>
         <h3>
           {props.name} {props.addable ? <Adder contentType={props.contentType} name={props.name} /> : null}
-          </h3>
-        </div>
+        </h3>
+      </div>
       <p>
         {(props.tags || []).map(tagToDiv)}
       </p>

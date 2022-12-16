@@ -311,7 +311,7 @@
     "name": "Shapeshifter",
     "skill": "magic",
     "tags": [
-      "prereq Red spellbook"
+      "prereq Red affinity"
     ],
     "text": "Per level of magic, you may learn an animal shape that you may assume as a spell. (eg if this is your third magic boon, you may immediately learn up to 3 animals, and then 1 more for each subsequent skill-up.) To learn a shape has the same requirements as learning a new spell in terms of time and money."
   },
