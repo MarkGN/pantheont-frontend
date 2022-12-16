@@ -54,9 +54,9 @@ const tabData = {
 export default function Search(props ) {
   const tab = tabData[props.contentType];
 
-  const filterTagValue = useSelector((state) => state.tagFilter.value);
-  const filterTagExclusion = useSelector((state) => state.tagFilter.exclude);
-  const groupValue = useSelector((state) => state.group.value);
+  const filterTagValue = useSelector((state) => state.search.include);
+  const filterTagExclusion = useSelector((state) => state.search.exclude);
+  const groupValue = useSelector((state) => state.search.group);
 
   function filterTag(datum) {
     return ((!filterTagValue) || (datum.tags && datum.tags.some(s => s.toLowerCase().includes(filterTagValue.toLowerCase())))) &&

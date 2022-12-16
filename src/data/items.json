@@ -124,7 +124,10 @@
     "name": "Oil",
     "price": "20c",
     "text": "Lubricate a door to prevent it blowing a stealth check.",
-    "type": "tool"
+    "type": "tool",
+    "tags": [
+      "concealed"
+    ]
   },
   {
     "name": "Pitons",
@@ -135,7 +138,7 @@
   {
     "name": "Rope",
     "price": "40c",
-    "text": "10m of hemp rope. Can be used for whatever you want, but indicative uses are",
+    "text": "10m of hemp rope. Indicative uses are",
     "type": "tool"
   },
   {
@@ -175,7 +178,8 @@
     "type": "weapon",
     "tags": [
       "thrown",
-      "net"
+      "net",
+      "ranged"
     ]
   },
   {
@@ -222,12 +226,20 @@
   {
     "name": "Longsword",
     "price": "1000c",
-    "text": "+7",
+    "text": "+6. If you can use it two-handed, take an additional +1.",
     "type": "weapon",
     "tags": [
-      "1 AP:armour piercing",
-      "sharp",
-      "2H:two-handed"
+      "sharp"
+    ]
+  },
+  {
+    "name": "Main gauche",
+    "price": "400c",
+    "text": "+3. May be equipped in the off hand, giving only +1.",
+    "type": "weapon",
+    "tags": [
+      "concealed",
+      "sharp"
     ]
   },
   {
@@ -244,9 +256,10 @@
   {
     "name": "Rock",
     "price": "0c",
-    "text": "+1. May be treated as @consumed@ if for some reason there aren't rocks or other similar improvised weapons about.",
+    "text": "+1. May be treated as @consumed@, but one typically doesn't run out of rocks.",
     "type": "weapon",
     "tags": [
+      "concealed",
       "+1 ranged"
     ]
   },
@@ -262,7 +275,7 @@
   {
     "name": "Sling",
     "price": "10c",
-    "text": "+3",
+    "text": "+3. Technically @loaded rock@, if there aren't any around.",
     "type": "weapon",
     "tags": [
       "ranged"

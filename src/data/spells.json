@@ -9,6 +9,13 @@
     "text": "Labour becomes very easy and free of complications. No particular drawback. Very popular civilian magic."
   },
   {
+    "name": "Augment",
+    "level": "9",
+    "color": "red",
+    "tags": [],
+    "text": "+1 combat ueor. Can be cast even while holding a weapon."
+  },
+  {
     "name": "Disintegrate",
     "level": "10",
     "color": "red",
@@ -172,7 +179,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Some other spell of requirement<=this.requirement-5 is inscribed onto a solid object, whence it can be 'cast' in response to a trigger, which can be speaking a phrase but which is typically touching a glyph, customarily a crossed circle. Lasts until used."
+    "text": "Some other spell of requirement<=this.requirement-5 is inscribed onto a solid object, whence it can be 'cast' in response to a trigger, which is typically either reading a scroll or touching a glyph, customarily marked with a crossed circle. Lasts until used or until the glyph is erased. Requires target.requirement grams of manite."
   },
   {
     "name": "Meditate",
@@ -243,7 +250,7 @@
     "level": "8",
     "color": "yellow",
     "tags": [],
-    "text": "Access a pocket dimension that can fit up to -5 size categories of stuff (ie 1/30 your volume, so like a couple litres); its access point is locked to your position. For each extra level, one extra size category."
+    "text": "Access a pocket dimension that can fit up to -5 size categories of stuff (ie 1/30 your volume, so like a couple litres); its access point is locked to your position. For each extra level, +1 size category."
   },
   {
     "name": "Stasis",
@@ -256,7 +263,7 @@
   },
   {
     "name": "Time warp",
-    "level": "30",
+    "level": "35",
     "color": "yellow",
     "tags": [
       "world-building"

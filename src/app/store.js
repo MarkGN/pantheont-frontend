@@ -1,10 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import tagFilterReducer from '../components/filterSlice'
-import groupReducer from "../components/groupSlice";
+// import tagFilterReducer from '../components/filterSlice'
+import contentReducer from "./contentSlice"
+import searchReducer from "./searchSlice"
+// import groupReducer from "../components/groupSlice"
 
 export default configureStore({
   reducer: {
-    group: groupReducer,
-    tagFilter: tagFilterReducer
+    content: contentReducer,
+    search: searchReducer,
+    // group: groupReducer,
+    // tagFilter: tagFilterReducer
   },
 })

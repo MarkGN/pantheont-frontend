@@ -30,6 +30,7 @@ function removeContent(contentType : string, name : string) {
 
 // TODO I'm not thrilled that I have one variable for the cookie and another for the hook.
 // Surely I should have a single source of truth?
+// Also this is a bit slow; so what if I moved this to the redux store and only read cookies when the site first loads?
 export default function Adder(props: AdderProps) {
   const [isOwned, setIsOwned] = useState(((Cookies.get("char-"+props.contentType) || "").split(",").includes(props.name)));
   return <div>

@@ -29,7 +29,7 @@
   },
   {
     "name": "Chuche leaf",
-    "colors": "orange, yellow",
+    "colors": "orange, blue",
     "text": "Tree with gum-like leaves.",
     "effect": "fortify magic 14, disjunction 18",
     "reagentType": "active"
@@ -135,6 +135,13 @@
     "reagentType": "active"
   },
   {
+    "name": "Piyin fruit",
+    "colors": "red, green",
+    "text": "A bitter brown fruit with large seeds, very unpleasant.",
+    "effect": "shrink 13, restore 17",
+    "reagentType": "active"
+  },
+  {
     "name": "Sea glove",
     "colors": "orange, red",
     "text": "Fleshy plant, seaweed meets cactus.",
@@ -146,7 +153,7 @@
   },
   {
     "name": "Sea wort",
-    "colors": "orange, blue",
+    "colors": "orange, yellow",
     "text": "Seaweed with red flowers.",
     "effect": "swift swim 10",
     "tags": [
@@ -241,7 +248,7 @@
   },
   {
     "name": "Firelace",
-    "colors": "red, orange",
+    "colors": "red, purple",
     "text": "Pink flowers that burst into flame on contact.",
     "tags": [
       "animate vine"
@@ -265,7 +272,7 @@
   },
   {
     "name": "Maiden's touch",
-    "colors": "yellow, purple",
+    "colors": "orange, yellow",
     "text": "Unaggressive seaweed with long tendrils that drain magic on touch.",
     "tags": [
       "animate vine",
@@ -275,7 +282,7 @@
   },
   {
     "name": "Saltweed leaf",
-    "colors": "red, purple",
+    "colors": "red, orange",
     "text": "A network of floating pond lily leaves connected by vines; they grow salty/sweet fruits",
     "tags": [
       "aquatic",
@@ -297,7 +304,7 @@
   },
   {
     "name": "Inzun",
-    "colors": "red, orange",
+    "colors": "red, purple",
     "text": "With yellow flowers that grow into red berries. The vines drain ability to use magic.",
     "tags": [
       "animate vine"
@@ -312,7 +319,7 @@
   },
   {
     "name": "Hezucoral",
-    "colors": "red, purple",
+    "colors": "red, orange",
     "text": "Plant that accretes minerals out of water and creates semi-mineral structural matrices. The foundation of most aquatic nexus; needs nexus magic to grow effectively.",
     "tags": [
       "aquatic"
@@ -418,7 +425,7 @@
   },
   {
     "name": "Nezema resin",
-    "colors": "orange, blue",
+    "colors": "blue, purple",
     "text": "With broad leaves that secretes a very sticky resin that's an absolute bitch to get off.",
     "tags": [
       "animate vine"
@@ -445,7 +452,7 @@
   },
   {
     "name": "Sea cap",
-    "colors": "blue, purple",
+    "colors": "orange, blue",
     "text": "A mushroom.",
     "tags": [
       "aquatic"

@@ -133,6 +133,12 @@
     "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
+    "name": "Mordhau",
+    "skill": "fight",
+    "tags": [],
+    "text": "Take @1 AP:armour piercing@ in melee."
+  },
+  {
     "name": "Overwhelming",
     "skill": "fight",
     "tags": [],
@@ -254,10 +260,16 @@
     "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
   },
   {
-    "name": "Bookworm",
+    "name": "Adept",
     "skill": "magic",
     "tags": [],
     "text": "You may learn twice as many spells."
+  },
+  {
+    "name": "Colour affinity",
+    "skill": "magic",
+    "tags": [],
+    "text": "Pick a colour: you may learn and cast spells of that colour."
   },
   {
     "name": "Combat caster",
@@ -304,10 +316,10 @@
     "text": "Per level of magic, you may learn an animal shape that you may assume as a spell. (eg if this is your third magic boon, you may immediately learn up to 3 animals, and then 1 more for each subsequent skill-up.) To learn a shape has the same requirements as learning a new spell in terms of time and money."
   },
   {
-    "name": "Spellbook",
+    "name": "Subtlety",
     "skill": "magic",
     "tags": [],
-    "text": "Pick a colour: you may learn and cast spells of that colour."
+    "text": "The magic emissions from your blue spells are @veiled:veil@ and can't be detected easily."
   },
   {
     "name": "Aim",

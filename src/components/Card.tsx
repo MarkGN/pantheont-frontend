@@ -67,11 +67,19 @@ export default function Card(props : CardProps) {
 
   return <div className="content-card col-lg-3 col-md-4 col-sm-6 col-xs-12">
     <div className="card-interior">
-      <div className="content-card-name"  style={styling(props)}><h3>{props.name} {props.addable ? <Adder contentType={props.contentType} name={props.name} /> : null}</h3></div>
+      <div className="content-card-name"  style={styling(props)}>
+        <h3>
+          {props.name} {props.addable ? <Adder contentType={props.contentType} name={props.name} /> : null}
+          </h3>
+        </div>
       <p>
         {(props.tags || []).map(tagToDiv)}
       </p>
-      {props.pattern.map((line : string, ix : number) => line ? <p key={props.name+"/text/"+ix}>{tooltipifyText(annotateNumbers(line) || "", props.name+" text "+ix)}</p> : "")}
+      {props.pattern.map((line : string, ix : number) => line ? 
+        <p key={props.name+"/text/"+ix}>
+          {tooltipifyText(annotateNumbers(line) || "", props.name+" text "+ix)}
+        </p> : "")
+      }
       <p>
         {tooltipifyText(props.text, props.name)}
       </p>

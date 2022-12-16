@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux'
-import { setGroup } from './groupSlice'
+import { setGroup } from '../app/searchSlice'
 
 interface GroupProps {
   groups : Array<string>

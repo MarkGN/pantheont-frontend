@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from 'react-redux';
-import { setExcludeFilter, setTagFilter } from './filterSlice';
+import { setExcludeFilter, setTagFilter } from '../app/searchSlice';
 
 interface FilterProps {
   placeholder : string,
