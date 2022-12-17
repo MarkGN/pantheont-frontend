@@ -285,6 +285,15 @@
     "reagentType": "amper"
   },
   {
+    "name": "Pao jiat",
+    "colors": "yellow, purple",
+    "text": "Grassy weed that, when triggered, dumps the target circa one minute into the future.",
+    "tags": [
+      "trap"
+    ],
+    "reagentType": "amper"
+  },
+  {
     "name": "Saltweed leaf",
     "colors": "red, orange",
     "text": "A network of floating pond lily leaves connected by vines; they grow salty/sweet fruits",
@@ -430,7 +439,7 @@
   {
     "name": "Nezema resin",
     "colors": "blue, purple",
-    "text": "With broad leaves that secretes a very sticky resin that's an absolute bitch to get off.",
+    "text": "Its broad leaves secrete a very sticky resin that's an absolute bitch to get off.",
     "tags": [
       "animate vine"
     ],

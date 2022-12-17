@@ -50,7 +50,7 @@ const tabData = {
 //   contentType : string
 // }
 
-export default function Search(props ) {
+export default function Search(props) {
   const tab = tabData[props.contentType];
 
   const filterTagValue = useSelector((state) => state.search.include);

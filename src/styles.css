@@ -1,3 +1,8 @@
+.adder {
+  /* margin: 5px; */
+  padding: 5px;
+}
+
 .attr {
   width: fit-content;
 }
@@ -106,4 +111,8 @@ header {
 
 .my-tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.removable {
+  display: inline-block;
 }

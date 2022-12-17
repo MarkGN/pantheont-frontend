@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContent, removeContent } from '../app/contentSlice';
+import { addContent, removeContent } from '../../app/contentSlice';
 
 interface AdderProps {
   contentType: string,
@@ -52,11 +52,11 @@ export default function Adder(props: AdderProps) {
   const [isOwned, setIsOwned] = useState(contentStore[props.contentType as ContentType].includes(props.name)); // TODO THIS LINE HERE MAKE IT CHECK THE STORE
   // const [isOwned, setIsOwned] = useState(((Cookies.get("char-"+props.contentType) || "").split(",").includes(props.name))); // TODO THIS LINE HERE MAKE IT CHECK THE STORE
   const dispatch = useDispatch();
-  return <div>
+  return <div className="adder">
     <button className={isOwned ? "button btn-danger" : "button btn-success"} onClick={() => {
       (isOwned ? removeContent2 : addContent2)(props.contentType, props.name);
       setIsOwned(!isOwned);
-      dispatch((isOwned ? removeContent : addContent)({contentType : props.contentType, name : props.name}))
+      dispatch((isOwned ? removeContent : addContent)({contentType : props.contentType, name : props.name}));
     }}>{isOwned ? "-" : "+"}</button>
   </div>
 }

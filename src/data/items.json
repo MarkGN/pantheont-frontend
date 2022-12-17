@@ -46,12 +46,13 @@
     ]
   },
   {
-    "name": "Animal bait",
+    "name": "Bait",
     "price": "10c",
-    "text": "Can be consumed for +5 to make an animal do what you want. Comes in vegetarian, meat, and bug versions.",
+    "text": "Take +5 to make an animal do what you want. Comes in vegetarian, meat, and bug versions.",
     "type": "tool",
     "tags": [
-      "concealed"
+      "concealed",
+      "consumed"
     ]
   },
   {
@@ -84,7 +85,7 @@
   {
     "name": "Fishing rod",
     "price": "30c",
-    "text": "By a body of water with fish, you may sacrifice a bit of bug or meat bait and check END+vig vs 12; on a pass, after 2 hours, you get a fish worth a day's supplies.",
+    "text": "By a body of water with fish, you may sacrifice a unit of bug or meat bait and check END+vig vs 12; on a pass, after 2 hours, you get a fish worth a day's supplies.",
     "type": "tool"
   },
   {
@@ -134,6 +135,15 @@
     "price": "50c",
     "text": "With a hammer, take +5 to climb checks.",
     "type": "tool"
+  },
+  {
+    "name": "Provisions",
+    "price": "50c",
+    "text": "Enough food for a day. If you don't eat, take 1 @Injury@ and you don't heal @Injury@ until the next day when you eat.",
+    "type": "tool",
+    "tags": [
+      "consumed"
+    ]
   },
   {
     "name": "Rope",

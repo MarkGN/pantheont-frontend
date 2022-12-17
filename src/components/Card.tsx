@@ -1,4 +1,4 @@
-import Adder from "./AddToCharacter";
+import Adder from "./character-sheet/AddToCharacter";
 import tags from "../data/tags.json";
 
 interface CardProps {
@@ -69,7 +69,12 @@ export default function Card(props : CardProps) {
     <div className="card-interior">
       <div className="content-card-name"  style={styling(props)}>
         <h3>
-          {props.name} {props.addable ? <Adder contentType={props.contentType} name={props.name} /> : null}
+          <div className="removable">
+            <p>{props.name}</p>
+          </div>
+          <div className="removable">
+            {props.addable ? <Adder contentType={props.contentType} name={props.name} /> : null}
+          </div>
         </h3>
       </div>
       <p>
