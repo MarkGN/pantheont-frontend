@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CharacterSheet from "./character-sheet/CharacterSheet";
 import Search from "./Search";
 

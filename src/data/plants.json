@@ -180,6 +180,9 @@
     "colors": "blue, orange",
     "text": "Small red flower with orange spots.",
     "effect": "sense magic 15",
+    "tags": [
+      "image https://images.nightcafe.studio/jobs/E5MbO0YRg36zLqOa6pBR/E5MbO0YRg36zLqOa6pBR--4--70t84.jpg?tr=w-1600,c-at_max"
+    ],
     "reagentType": "active"
   },
   {
@@ -233,7 +236,8 @@
     "text": "Despite being technically cornucopic, is inedible to humans, so it's just an extremely prolific animate vine.",
     "tags": [
       "animate vine",
-      "cornucopic"
+      "cornucopic",
+      "image https://images.nightcafe.studio/jobs/ju07MmkzLewhR5two35x/ju07MmkzLewhR5two35x--1--h3uxo.jpg?tr=w-1600,c-at_max"
     ],
     "reagentType": "amper"
   },

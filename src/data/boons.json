@@ -450,6 +450,12 @@
     "text": "When shooting into melee, damage from friendly fire is capped at 4."
   },
   {
+    "name": "Tracker",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "Take +5 when following footprints, "
+  },
+  {
     "name": "Vanguard",
     "skill": "vigilance",
     "tags": [],
