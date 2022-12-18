@@ -97,6 +97,18 @@ header {
   display: inline-block;
 }
 
+.number-input {
+  text-align: center;
+}
+
+.rule-false {
+  color: red;
+}
+
+.rule-true {
+  color: green;
+}
+
 .tooltiptext {
   background-color: #000000a0;
   color: #fff;

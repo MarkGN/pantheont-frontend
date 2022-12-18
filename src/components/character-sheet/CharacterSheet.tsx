@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import Attributes from "./Attributes";
 import ContentList from './ContentList';
+import CreationRules from './CreationRules';
 import Legend from "../Legend";
 import Skills from './Skills';
 
@@ -29,5 +30,6 @@ export default function CharacterSheet() {
       <ContentList contentType={"spell"} data={(Cookies.get("char-spell") || "").split(",")} />
     </div>
     <Legend contentType="char" />
+    <CreationRules />
   </div>
 }
