@@ -21,7 +21,7 @@ function checkBoons(textual : boolean) {
     return "You should have 6 boons: 3 associated with one skill, 2 with a second, 1 with a third.";
   } else {
     const skillPoints = skills.map(skill => {
-      return boons.filter((b : any) => (Cookies.get("char-boon").split(",").includes(b.name) && b.skill===skill)).length;
+      return boons.filter((b : any) => ((Cookies.get("char-boon") || "").split(",").includes(b.name) && b.skill===skill)).length;
     });
     return (skillPoints.reduce((partial,n)=>partial+n,0) === 6) && [1,2,3].every(n => skillPoints.includes(n));
   }
@@ -31,7 +31,7 @@ function checkFightStyles(textual : boolean) {
   if (textual) {
     return "You should have no more than one boon tagged Fight Style.";
   } else {
-    return boons.filter((b: any) => b.tags.includes("fight style") && Cookies.get("char-boon").split(",").includes(b.name)).length <= 1;
+    return boons.filter((b: any) => b.tags.includes("fight style") && (Cookies.get("char-boon") || "").split(",").includes(b.name)).length <= 1;
   }
 }
 
