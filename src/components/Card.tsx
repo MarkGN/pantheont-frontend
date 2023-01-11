@@ -22,12 +22,22 @@ function skillToColor(skill : string) {
   return softenColor({"athletics":"yellow", "fight":"red", "knowledge":"green", "magic":"orange", "stealth":"purple", "vigilance":"blue"}[skill] || "");
 }
 
+function tagToColor(tag : string) {
+  return softenColor({"flat":"red", "variable":"blue"}[tag] || "");
+}
+
 function reagentTypeToColor(r : string) {
   return softenColor({"active":"red", "amper":"orange", "damper":"blue", "preservative":"purple"}[r] || "");
 }
 
 function styling(props : CardProps) {
-  return {"boon": {"backgroundColor":skillToColor(props.pattern[0])}, "item": {"backgroundColor": itemTypeToColor(props.pattern[0])}, "plant": {"backgroundColor": reagentTypeToColor(props.pattern[2])}, "spell": {"backgroundColor":softenColor(props.pattern[0])}}[props.contentType] || {};
+  return {
+    "boon": {"backgroundColor":skillToColor(props.pattern[0])}, 
+    "item": {"backgroundColor": itemTypeToColor(props.pattern[0])}, 
+    "plant": {"backgroundColor": reagentTypeToColor(props.pattern[2])}, 
+    "spell": {"backgroundColor":softenColor(props.pattern[0])},
+    "tag": {"backgroundColor":tagToColor(props.pattern[1])}
+    }[props.contentType] || {};
 }
 
 function tooltipify(tag : string, key : string) {

@@ -56,6 +56,12 @@
     ]
   },
   {
+    "name": "Blanket",
+    "price": "30c",
+    "text": "When you check to jump through a fire, on success you may instead use this to reduce its POW by 5.",
+    "type": "tool"
+  },
+  {
     "name": "Boots",
     "price": "100c",
     "text": "-1 stealth, +2 vs ground traps",
@@ -91,7 +97,7 @@
   {
     "name": "Lamp",
     "price": "50c",
-    "text": "Provides dim light within 5m. Oil included.",
+    "text": "Provides bright light within 2m and dim within 2m more. Oil not included, but not tracked.",
     "type": "tool",
     "tags": [
       "worn off hand"
@@ -198,6 +204,17 @@
     "text": "+5",
     "type": "weapon",
     "tags": [
+      "loaded arrow",
+      "ranged"
+    ]
+  },
+  {
+    "name": "Crossbow",
+    "price": "600c",
+    "text": "+3. No, I'm not going to design separate crossbow bolts that do the exact same thing as arrows.",
+    "type": "weapon",
+    "tags": [
+      "6 AP:armour piercing",
       "loaded arrow",
       "ranged"
     ]

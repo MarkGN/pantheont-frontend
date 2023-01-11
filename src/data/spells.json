@@ -64,7 +64,7 @@
     "level": "8",
     "color": "red",
     "tags": [],
-    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 Net. Good for repairs."
+    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 @Net@. Good for repairs."
   },
   {
     "name": "Photokinesis",
@@ -214,7 +214,7 @@
   },
   {
     "name": "Create wormhole",
-    "level": "16",
+    "level": "18",
     "color": "yellow",
     "tags": [
       "slow",
@@ -251,6 +251,15 @@
     "color": "yellow",
     "tags": [],
     "text": "Access a pocket dimension that can fit up to -5 size categories of stuff (ie 1/30 your volume, so like a couple litres); its access point is locked to your position. For each extra level, +1 size category."
+  },
+  {
+    "name": "Space warp",
+    "level": "16",
+    "color": "yellow",
+    "tags": [
+      "slow"
+    ],
+    "text": "Change spatial geometry nearby. You can make something bigger on the inside than out, make areas closer or further"
   },
   {
     "name": "Stasis",

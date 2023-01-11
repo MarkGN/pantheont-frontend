@@ -2,7 +2,7 @@
   {
     "name": "Ammo.*",
     "type": "flat",
-    "text": "This can be used by a related Loaded item."
+    "text": "This can be used by a related Loaded item. It is Consumed."
   },
   {
     "name": "Animate vine",
@@ -17,7 +17,7 @@
   {
     "name": "Bleeding",
     "type": "flat",
-    "text": "Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; and either way, counts as a check and so you take 1 Injury."
+    "text": "Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; on a fail, take 1 Injury."
   },
   {
     "name": "Civilian",
@@ -53,11 +53,6 @@
     "name": "Fight style",
     "type": "flat",
     "text": "You may only have one boon with this; and that boon only applies if you have no Armour."
-  },
-  {
-    "name": "Held",
-    "type": "flat",
-    "text": "You need your dominant hand free to use this."
   },
   {
     "name": "Incapacitated",
@@ -97,7 +92,7 @@
   {
     "name": "Prereq.*",
     "type": "flat",
-    "text": "You can't take this without the listed prerequisite. If you do somehow get it, it doesn't take effect."
+    "text": "You can't take this without the listed prerequisite. If you do somehow get it without the prerequisite, it doesn't take effect."
   },
   {
     "name": "Ranged",
@@ -107,7 +102,7 @@
   {
     "name": "Sessile",
     "type": "flat",
-    "text": "This can't manoeuvre around the battlefield. It can still move eg to fight, as opposed to something fully paralysed."
+    "text": "This can't manoeuvre around the battlefield. It can still move eg to engage in combat, as opposed to something fully paralysed."
   },
   {
     "name": "Sharp",

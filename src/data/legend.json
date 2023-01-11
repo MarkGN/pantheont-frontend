@@ -32,5 +32,8 @@
     "Green magic is mysterious, but known to be involved in the creation of chimera. No green spells are known. It's illegal under Hebai's law.",
     "Blue magic affects knowledge: both acquiring it for oneself, or obscuring it from others. It's governed by MET.",
     "Purple magic governs the undead, summons, and mind control. It's governed by MAS. It's illegal under Hebai's law."
+  ],
+  "tags": [
+    ".* means more text usually goes here."
   ]
 }

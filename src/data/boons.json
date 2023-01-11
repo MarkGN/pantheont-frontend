@@ -282,7 +282,9 @@
   {
     "name": "Gnostic",
     "skill": "magic",
-    "tags": [],
+    "tags": [
+      "prereq Blue affinity"
+    ],
     "text": "You may channel two blue spells at the same time. Any effects are maxed, not stacked (eg if one gives +3 vigilance and another gives +4, you get +4, not +7). If you're channelling two spells when Crisis is declared, you can't cast other spells until it ends."
   },
   {
@@ -318,7 +320,9 @@
   {
     "name": "Subtlety",
     "skill": "magic",
-    "tags": [],
+    "tags": [
+      "prereq Blue affinity"
+    ],
     "text": "The magic emissions from your blue spells are @veiled:veil@ and can't be detected easily."
   },
   {
@@ -342,14 +346,6 @@
     "skill": "stealth",
     "tags": [],
     "text": "Gain a sneak attack whenever you attack someone who is neither attacking nor defending."
-  },
-  {
-    "name": "Inventive",
-    "skill": "stealth",
-    "tags": [
-      "prereq Trap maker"
-    ],
-    "text": "You may make two different styles of traps, wherein whenever a trap is revealed, only other traps of the same style are revealed."
   },
   {
     "name": "Mark stealth",
@@ -396,6 +392,14 @@
     "text": "Can project voice with a MAS+stealth vs MET+vigilance check, to give a false location or make listeners think someone else is speaking."
   },
   {
+    "name": "Distraction shot",
+    "skill": "vigilance",
+    "tags": [
+      "action"
+    ],
+    "text": "When shooting into melee, instead of hitting either character, count as assisting one: their attribute+weapon becomes min(attribute+weapon, you.MAS+you.ranged_weapon)+5."
+  },
+  {
     "name": "Grenadier",
     "skill": "vigilance",
     "tags": [],
@@ -432,6 +436,12 @@
     "text": "Increase the bonus for engaging from the high ground at range to +5."
   },
   {
+    "name": "Pattern recognition",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "On spotting (not triggering) any trap, automatically spot all traps by the same trap-maker within line of sight."
+  },
+  {
     "name": "Pre-sight",
     "skill": "vigilance",
     "tags": [],
@@ -453,7 +463,7 @@
     "name": "Tracker",
     "skill": "vigilance",
     "tags": [],
-    "text": "Take +5 when following footprints, "
+    "text": "Take +5 when following footprints, and you also learn whether your quarry has armour or fight styles."
   },
   {
     "name": "Vanguard",

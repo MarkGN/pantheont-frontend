@@ -20,6 +20,8 @@ const spells = require("../data/spells.json");
 const spellPattern = ["color", "level"];
 const spellGroups = ["color", "level"];
 
+const tags = require("../data/tags.json");
+
 const tabData = {
   "boon": {
     "data": boons,
@@ -43,6 +45,11 @@ const tabData = {
     "pattern": spellPattern,
     "groups": spellGroups,
     "addable": true
+  },
+  "tag": {
+    "data": tags,
+    "pattern": ["name", "type"],
+    "groups": ["type"]
   }
 }
 
