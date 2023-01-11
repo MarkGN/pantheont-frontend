@@ -148,7 +148,7 @@
   {
     "name": "Rope",
     "price": "40c",
-    "text": "10m of hemp rope. Indicative uses are",
+    "text": "10m of hemp rope. Indicative uses are to safely climb up or down from a ledge, provided you can tie it off; tie someone up (they can make a @slow@ AGI+ath vs MET+knowledge check to either break free or take 1 @Injury@); to make a leash for an animal; to make a lasso (weapon with thrown net ranged +2); to make a snare trap.",
     "type": "tool"
   },
   {
@@ -225,7 +225,7 @@
   {
     "name": "Grenade",
     "price": "100c",
-    "text": "Has an associated condition, such as tangled (as for glue), fire, or poison. When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail.",
+    "text": "Has an associated condition, such as tangled (as for glue), fire, or poison. When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail. You may target open space, but if you hit a target, they take the condition automatically and do not lose focus from being hit.",
     "type": "weapon",
     "tags": [
       "+0 ranged:ranged",

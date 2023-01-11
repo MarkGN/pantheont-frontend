@@ -5,6 +5,10 @@ const attributes="agility,power,endurance,method,mask".split(","); // TODO move 
 const skills = "athletics,fight,knowledge,magic,stealth,vigilance".split(",");
 const boons = require("../../data/boons.json");
 
+function safeGet(c : string) {
+  return Cookies.get(c) || "";
+}
+
 function checkAttributes(textual : boolean) {
   if (textual) {
     return "Attributes must be the numbers 3 through 7 in any order.";
@@ -21,7 +25,7 @@ function checkBoons(textual : boolean) {
     return "You should have 6 boons: 3 associated with one skill, 2 with a second, 1 with a third.";
   } else {
     const skillPoints = skills.map(skill => {
-      return boons.filter((b : any) => ((Cookies.get("char-boon") || "").split(",").includes(b.name) && b.skill===skill)).length;
+      return boons.filter((b : any) => (safeGet("char-boon").split(",").includes(b.name) && b.skill===skill)).length;
     });
     return (skillPoints.reduce((partial,n)=>partial+n,0) === 6) && [1,2,3].every(n => skillPoints.includes(n));
   }
@@ -31,7 +35,7 @@ function checkFightStyles(textual : boolean) {
   if (textual) {
     return "You should have no more than one boon tagged Fight Style.";
   } else {
-    return boons.filter((b: any) => b.tags.includes("fight style") && (Cookies.get("char-boon") || "").split(",").includes(b.name)).length <= 1;
+    return boons.filter((b: any) => b.tags.includes("fight style") && safeGet("char-boon").split(",").includes(b.name)).length <= 1;
   }
 }
 
@@ -39,8 +43,8 @@ function checkMagic(textual : boolean) {
   if (textual) {
     return "You begin with exactly 1 spell if you have the Colour Affinity boon.";
   } else {
-    const spells = Cookies.get("char-spell").split(",");
-    return (!spells) || (Cookies.get("char-boon").split(",").includes("Colour affinity") && (spells[0] && spells.length === 1));
+    const spells = safeGet("char-spell").split(",");
+    return (!spells) || (safeGet("char-boon").split(",").includes("Colour affinity") && (spells[0] && spells.length === 1));
   }
 }
 

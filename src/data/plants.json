@@ -253,7 +253,7 @@
   {
     "name": "Firelace",
     "colors": "red, purple",
-    "text": "Pink flowers that burst into flame on contact.",
+    "text": "Pink flowers that burst into flame on contact. Can be used to make incendiary grenades.",
     "tags": [
       "animate vine"
     ],
@@ -365,7 +365,7 @@
   },
   {
     "name": "Scarlet cap",
-    "colors": "red, yellow",
+    "colors": "yellow, purple",
     "text": "A mushroom with a pure red top.",
     "reagentType": "damper"
   },
@@ -373,6 +373,12 @@
     "name": "Sea reed stem",
     "colors": "blue, purple",
     "text": "Like reeds, but salt tolerant.",
+    "reagentType": "damper"
+  },
+  {
+    "name": "Taiyo",
+    "colors": "red, yellow",
+    "text": "A luminous fungus that likes caves. Can be used to make lights, and also flashbangs.",
     "reagentType": "damper"
   },
   {
