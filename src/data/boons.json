@@ -170,7 +170,7 @@
     "name": "Trample",
     "skill": "fight",
     "tags": [],
-    "text": "If opponents intercept and if max(defender.POW)+num_defenders < POW, they pre-empt rather than interrupt."
+    "text": "When you hit someone in combat, they become @stunned@."
   },
   {
     "name": "Wind up",

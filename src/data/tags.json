@@ -17,7 +17,7 @@
   {
     "name": "Bleeding",
     "type": "flat",
-    "text": "Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; on a fail, take 1 Injury."
+    "text": "(condition) Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; on a fail, take 1 Injury."
   },
   {
     "name": "Civilian",
@@ -57,7 +57,7 @@
   {
     "name": "Incapacitated",
     "type": "flat",
-    "text": "You can't do anything. Lasts until end of battle."
+    "text": "(condition) You can't do anything. Lasts until end of battle."
   },
   {
     "name": "Indirect",
@@ -118,6 +118,11 @@
     "name": "Social",
     "type": "flat",
     "text": "No mechanical effect, but if ever I create a social skill, this will be associated with it."
+  },
+  {
+    "name": "Stunned",
+    "type": "flat",
+    "text": "(condition) Your action must be to stand ground. Resolved aeor."
   },
   {
     "name": "Summon",
@@ -182,16 +187,16 @@
   {
     "name": "Fatigue",
     "type": "variable",
-    "text": "Take -$n to all physical actions. Remove aeob. At 10 fatigue, you are Incapacitated."
+    "text": "(condition) Take -$n to all physical actions. Remove aeob. At 10 fatigue, you are Incapacitated."
   },
   {
     "name": "Injury",
     "type": "variable",
-    "text": "Take -$n to all physical actions. Decrease by 1 with each long rest."
+    "text": "(condition) Take -$n to all physical actions. Decrease by 1 with each long rest."
   },
   {
     "name": "Tangle",
     "type": "variable",
-    "text": "Take -$n to all physical actions. You can't manoeuvre. You have Untangle (move): if engaged this round, you don't inflict damage on a win, and if you win all engagements, resolve this condition. Lasts 3 rounds."
+    "text": "(condition) Take -$n to all physical actions. You can't manoeuvre. You have Untangle (move): if engaged this round, you don't inflict damage on a win, and if you win all engagements, resolve this condition. Lasts 3 rounds."
   }
 ]
