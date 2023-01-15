@@ -78,7 +78,7 @@
     "level": "7",
     "color": "red",
     "tags": [],
-    "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5 combat, +4 ranged; create a POW=[POW roll vs 10] fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
+    "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5 combat, +4 ranged; create a POW=3 fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
   },
   {
     "name": "Reshape",

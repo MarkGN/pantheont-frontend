@@ -33,7 +33,7 @@
     "name": "Parkour",
     "skill": "athletics",
     "tags": [],
-    "text": "You can climb up to AGI+athletics metres in one round. You can wall run twice as far as you can long jump, and you can wall jump twice as high as you can high jump."
+    "text": "You can climb up to AGI+athletics metres in one round without a check. You can wall run twice as far as you can long jump, and you can wall jump twice as high as you can high jump."
   },
   {
     "name": "Second wind",
@@ -133,6 +133,12 @@
     "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
+    "name": "Masochist",
+    "skill": "fight",
+    "tags": [],
+    "text": "Negate the check penalty from up to 2 points of @injury@."
+  },
+  {
     "name": "Mordhau",
     "skill": "fight",
     "tags": [],
@@ -143,12 +149,6 @@
     "skill": "fight",
     "tags": [],
     "text": "If a single hit inflicts at least 2/3 of a target's maximum focus (rounded up), it incapacitates them."
-  },
-  {
-    "name": "Pain tolerant",
-    "skill": "fight",
-    "tags": [],
-    "text": "Negate the check penalty from up to 2 points of @injury@."
   },
   {
     "name": "Reckless",
@@ -193,7 +193,7 @@
     "name": "Forager",
     "skill": "knowledge",
     "tags": [],
-    "text": "While travelling, you may check MET+knowledge vs 20. On success, find paikera along the way."
+    "text": "While travelling, you may check MET+knowledge vs 15. On success, find paikera along the way."
   },
   {
     "name": "Intuitive",
@@ -205,7 +205,7 @@
     "name": "Kinbakushi",
     "skill": "knowledge",
     "tags": [],
-    "text": "Ordinarily, to wriggle out of being tied up is AGI+ath vs MET+knowledge, either escaping or taking 1 @injury@ and alerting anyone nearby. With this, instead the penalty is that they can't try again and must be untied, and you get +5 to tying checks (including when you're the one tied up)."
+    "text": "The penalty to trying to escape your knots is that they can't try again and must be untied; and you get +5 to tying checks, including when you're the one tied up."
   },
   {
     "name": "Lockpicking",
@@ -280,6 +280,14 @@
     "text": "When fighting with spells, add your magic skill to your combat."
   },
   {
+    "name": "Focus energy",
+    "skill": "magic",
+    "tags": [
+      "modifier"
+    ],
+    "text": "Take -3 ueor. aeor, gain a +1 magic token."
+  },
+  {
     "name": "Gnostic",
     "skill": "magic",
     "tags": [
@@ -331,7 +339,7 @@
     "tags": [
       "move"
     ],
-    "text": "Pick a target unaware of you; next round, if you sneak attack, it is a @crit@. "
+    "text": "You may apply headshots to sneak attacks."
   },
   {
     "name": "Careful",
@@ -345,7 +353,7 @@
     "name": "Forgettable",
     "skill": "stealth",
     "tags": [],
-    "text": "Gain a sneak attack whenever you attack someone who is neither attacking nor defending."
+    "text": "It is a sneak attack whenever you attack someone who is neither attacking nor defending."
   },
   {
     "name": "Mark stealth",
@@ -403,7 +411,15 @@
     "name": "Grenadier",
     "skill": "vigilance",
     "tags": [],
-    "text": "When using an @indirect@ weapon from behind cover, opponents can't used ranged attacks without indirect against you."
+    "text": "When using an @indirect@ weapon from behind cover, opponents can't use ranged attacks without indirect against you."
+  },
+  {
+    "name": "Kite",
+    "skill": "vigilance",
+    "tags": [
+      "rider tribal"
+    ],
+    "text": "(modifier) when mounted and attacking with range only, gain @suppress@ and any opponents who try to close take -5."
   },
   {
     "name": "Lip reader",

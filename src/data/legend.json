@@ -34,6 +34,8 @@
     "Purple magic governs the undead, summons, and mind control. It's governed by MAS. It's illegal under Hebai's law."
   ],
   "tags": [
-    ".* means more text usually goes here."
+    ".* means more text usually goes here.",
+    "aeor: at end of round",
+    "ueob: until end of battle"
   ]
 }
