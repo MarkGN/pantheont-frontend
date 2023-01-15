@@ -19,7 +19,9 @@
     "name": "Disintegrate",
     "level": "10",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "dubious"
+    ],
     "text": "You can tear crystalline matter to dust. +3 combat and 5 @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard; and I don't want magic to simply trump everything."
   },
   {
@@ -42,7 +44,9 @@
     "name": "Kollakinesis",
     "level": "9",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "dubious"
+    ],
     "text": "You gain some telekinetic power over glue nearby, including the ability to conjure small amounts. +3 combat, +2 ranged, Net. Can conjure glue, soften it, etc. TODO If casters counter movers, what counters casters?"
   },
   {
@@ -132,7 +136,9 @@
     "name": "Antimagic shell",
     "level": "11",
     "color": "orange",
-    "tags": [],
+    "tags": [
+      "dubious"
+    ],
     "text": "Anyone engaging you has -5 magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong?"
   },
   {
