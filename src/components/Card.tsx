@@ -36,7 +36,7 @@ function styling(props : CardProps) {
     "item": {"backgroundColor": itemTypeToColor(props.pattern[0])}, 
     "plant": {"backgroundColor": reagentTypeToColor(props.pattern[2])}, 
     "spell": {"backgroundColor":softenColor(props.pattern[0])},
-    "tag": {"backgroundColor":tagToColor(props.pattern[1])}
+    "tag": {"backgroundColor":tagToColor(props.pattern[0])}
     }[props.contentType] || {};
 }
 
