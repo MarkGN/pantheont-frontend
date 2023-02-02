@@ -48,7 +48,7 @@ const tabData = {
   },
   "tag": {
     "data": tags,
-    "pattern": ["name", "type"],
+    "pattern": ["type"],
     "groups": ["type"]
   }
 }
