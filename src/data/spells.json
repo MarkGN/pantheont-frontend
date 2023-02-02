@@ -68,7 +68,7 @@
     "level": "8",
     "color": "red",
     "tags": [],
-    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 @Net@. Good for repairs."
+    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 @net@. Good for repairs."
   },
   {
     "name": "Photokinesis",
@@ -277,6 +277,13 @@
     "text": "Time does not pass within a space equal to your size+$level. Must be channelled (or more usefully, enchanted)."
   },
   {
+    "name": "Suspend",
+    "level": "9",
+    "color": "yellow",
+    "tags": [],
+    "text": "+3 to combat, and on a hit, the target is sent 1 round into the future."
+  },
+  {
     "name": "Time warp",
     "level": "35",
     "color": "yellow",
@@ -432,7 +439,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Take control of a wisp. Specifically, +5 and +4 ranged vs one, and on a hit, instead of incapacitating it, you dominate it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
+    "text": "Take control of a wisp. Specifically, +6 and +4 ranged vs one, and on a hit, instead of incapacitating it, you dominate it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
   },
   {
     "name": "Compromise",
@@ -465,6 +472,13 @@
     "text": "Make someone fall in or out of love. Technically only lasts while channelled, but people tend to rationalise their love, so it has long-term secondary effect."
   },
   {
+    "name": "Hypnourgy",
+    "level": "8",
+    "color": "purple",
+    "tags": [],
+    "text": "Make someone fall asleep. On a hit, instead of inflicting N damage, inflict N @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
+  },
+  {
     "name": "Necrourgy",
     "level": "11",
     "color": "purple",
@@ -494,7 +508,7 @@
     "level": "11",
     "color": "purple",
     "tags": [],
-    "text": "As for summon lesser minion, except you get 3, its attributes equal yours, and it can't inflict damage or debuffs or physically affect anything. It can engage enemies; they may choose to ignore it, in which case they can't , but if they ignore a real attacker, the attacker makes a sneak attack. Its Armour is 0."
+    "text": "As for summon lesser minion, except you get 3, its attributes equal yours, and it can't inflict damage or debuffs or physically affect anything. It can engage enemies; they may choose to ignore it, in which case they aren't interrupted from whatever they were doing, but if they ignore a real attacker, the attacker makes a sneak attack. Its Armour is 0."
   },
   {
     "name": "Summon swarm",

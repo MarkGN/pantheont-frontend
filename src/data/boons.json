@@ -42,6 +42,12 @@
     "text": "Negate the check penalty from up to 2 @fatigue@."
   },
   {
+    "name": "Skautahlaupari",
+    "skill": "athletics",
+    "tags": [],
+    "text": "Negate the penalty from fighting on ice or other slippery terrain."
+  },
+  {
     "name": "Sprint",
     "skill": "athletics",
     "tags": [
@@ -165,6 +171,12 @@
       "social"
     ],
     "text": "When you defend an ally, intercept all opponents attacking her."
+  },
+  {
+    "name": "Tough",
+    "skill": "fight",
+    "tags": [],
+    "text": "Whenever you would take @injury@, take 1 fewer."
   },
   {
     "name": "Trample",
@@ -462,6 +474,14 @@
     "skill": "vigilance",
     "tags": [],
     "text": "Take +5 when engaging opponents who are in a choke point at range."
+  },
+  {
+    "name": "Quickshot",
+    "skill": "vigilance",
+    "tags": [
+      "modifier"
+    ],
+    "text": "When fighting with a @loaded@ weapon, you may use an additional unit of ammunition for +1."
   },
   {
     "name": "Scotopic",

@@ -127,7 +127,7 @@
   {
     "name": "Summon",
     "type": "flat",
-    "text": "This creates a new character. The spell isn't channelled, but you may have only one summon spell active at a time, so if you re-cast, the current one is cancelled and any summons are dismissed [cease to exist]. The summoner can give orders to the summon, but doesn't control it directly, and it can act of its own initiative. If this would be injured, instead it is dismissed."
+    "text": "This creates a new character. The spell isn't channelled, but you may have only one summon spell active at a time, so if you re-cast, the current one is cancelled and any summons are dismissed [from this dimension]. The summoner can give orders to the summon, but doesn't control it directly, and it can act of its own initiative. If this would be incapacitated, instead it is dismissed."
   },
   {
     "name": "Suppress",

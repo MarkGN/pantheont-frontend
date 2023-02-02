@@ -382,6 +382,15 @@
     "reagentType": "damper"
   },
   {
+    "name": "Tiahalo",
+    "colors": "orange, blue",
+    "text": "A fungus with a heavy animate bludgeon, akin to an animate vine but which inflicts Stunned and knocks its victims down and out.",
+    "tags": [
+      "trap"
+    ],
+    "reagentType": "damper"
+  },
+  {
     "name": "Vampire bramble root",
     "colors": "red, blue",
     "text": "With thorns that inflict @bleeding@ on any hit.",
