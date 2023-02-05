@@ -25,6 +25,11 @@
     "text": "No mechanical effect, but it is assumed that player characters won't have much use for this."
   },
   {
+    "name": "Combat",
+    "type": "flat",
+    "text": "This gives a numerical or other bonus to combat."
+  },
+  {
     "name": "Concealed",
     "type": "flat",
     "text": "You can easily hide this under your clothes."

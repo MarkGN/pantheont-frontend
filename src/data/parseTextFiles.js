@@ -9,6 +9,16 @@ const plantTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Hezulim/Flora.tx
 const spellTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Spells.txt";
 const tagTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Tags.txt";
 
+function myWriteFile(name, json) {
+  fs.writeFile(name, json, 'utf8', (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("done");
+    }
+  });
+}
+
 function parsePlant(line, regex, isActive) {
   if (regex.test(line)) {
     let [name, ... rest] = line.split(':');
@@ -69,9 +79,7 @@ function parseBoonFile() {
         }
       });
       const myJson = JSON.stringify(boons, null, 2);
-      fs.writeFile('src/data/boons.json', myJson, 'utf8', () => {
-        console.log("done");
-      });
+      myWriteFile('src/data/boons.json', myJson);
     });
   });
 }
@@ -99,9 +107,7 @@ function parseItemFile() {
         }
       });
       const myJson = JSON.stringify(items, null, 2);
-      fs.writeFile('src/data/items.json', myJson, 'utf8', () => {
-        console.log("done");
-      });
+      myWriteFile('src/data/items.json', myJson);
     });
   });
 }
@@ -127,9 +133,7 @@ function parsePlantFile() {
         }
       });
       const myJson = JSON.stringify(plants, null, 2);
-      fs.writeFile('src/data/plants.json', myJson, 'utf8', () => {
-        console.log("done");
-      });
+      myWriteFile('src/data/plants.json', myJson);
     });
   });
 }
@@ -150,7 +154,7 @@ function parseSpellFile() {
           let [name, level, ...text] = line.split(": ");
           text = text.join(": "); 
           const tags = [];
-          const tagKeys = {"#":"slow", "$":"high-level", "&":"civilian", "^":"social","%":"world-building", "*":"dubious"};
+          const tagKeys = {"!":"combat", "#":"slow", "$":"high-level", "&":"civilian", "^":"social","%":"world-building", "*":"dubious"};
           Object.entries(tagKeys).forEach(([key,value]) => {
             if (name.includes(key)) {
               name=name.replace(key,"").trim();
@@ -167,9 +171,14 @@ function parseSpellFile() {
         }
       });
       const myJson = JSON.stringify(spells, null, 2);
-      fs.writeFile('src/data/spells.json', myJson, 'utf8', () => {
-        console.log("done");
+      fs.writeFile('', myJson, 'utf8', (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("done");
+        }
       });
+      myWriteFile("src/data/spells.json", myJson, 'utf8');
     });
   });
 }

@@ -12,7 +12,9 @@
     "name": "Augment",
     "level": "9",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "+1 combat ueor. Can be cast even while holding a weapon."
   },
   {
@@ -20,6 +22,7 @@
     "level": "10",
     "color": "red",
     "tags": [
+      "combat",
       "dubious"
     ],
     "text": "You can tear crystalline matter to dust. +3 combat and 5 @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard; and I don't want magic to simply trump everything."
@@ -37,7 +40,9 @@
     "name": "Hydrokinesis",
     "level": "8",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "You gain some telekinetic power over water nearby. +3 combat, +3 ranged. Take an additional +5 to all physical while in water."
   },
   {
@@ -45,6 +50,7 @@
     "level": "9",
     "color": "red",
     "tags": [
+      "combat",
       "dubious"
     ],
     "text": "You gain some telekinetic power over glue nearby, including the ability to conjure small amounts. +3 combat, +2 ranged, Net. Can conjure glue, soften it, etc. TODO If casters counter movers, what counters casters?"
@@ -60,28 +66,36 @@
     "name": "Ogreform",
     "level": "9",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "+2 size, +2 combat, but can't use a weapon."
   },
   {
     "name": "Panikinesis",
     "level": "8",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 @net@. Good for repairs."
   },
   {
     "name": "Photokinesis",
     "level": "14",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +7 @armour@, +5 ranged. Can conjure illumination of any colour; can also suppress light."
   },
   {
     "name": "Pyrokinesis",
     "level": "7",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5 combat, +4 ranged; create a POW=3 fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
   },
   {
@@ -106,7 +120,9 @@
     "name": "Telekinesis",
     "level": "8",
     "color": "red",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "You gain some general but relatively weak telekinesis. +3 combat, +4 ranged. Can pick up, push, or pull items from long range. Carry capacity capped at half your weight, so you can't fly, but can propel self for +5 to jumps."
   },
   {
@@ -191,7 +207,9 @@
     "name": "Meditate",
     "level": "8",
     "color": "orange",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "Enter a magical combat trance and open your mind to higher states. +3 combat, take +1 magic aeor, capped at +$magic."
   },
   {
@@ -241,14 +259,18 @@
     "name": "Flashstep",
     "level": "9",
     "color": "yellow",
-    "tags": [],
-    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't walk over a wall). +3 combat, negate ranged part of engagement if you can close by walking. +5 to chase checks."
+    "tags": [
+      "combat"
+    ],
+    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't walk over a wall). +3 combat, treat combat as pure melee. +5 to chase checks."
   },
   {
     "name": "Gravity tilt",
     "level": "8",
     "color": "yellow",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "+5 to climb; can pulse for +3 combat, +4 ranged."
   },
   {
@@ -280,7 +302,9 @@
     "name": "Suspend",
     "level": "9",
     "color": "yellow",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "+3 to combat, and on a hit, the target is sent 1 round into the future."
   },
   {
@@ -319,7 +343,9 @@
     "name": "Danger sense",
     "level": "7",
     "color": "blue",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "+3, +10 vigilance vs sneak attacks; can wake from normal sleep for this ('normal' excludes drugged, enchanted, comatose, etc). Cancelled with next spell, so needs to be reapplied constantly."
   },
   {
@@ -475,7 +501,9 @@
     "name": "Hypnourgy",
     "level": "8",
     "color": "purple",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "Make someone fall asleep. On a hit, instead of inflicting N damage, inflict N @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
   },
   {
