@@ -15,7 +15,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+1 combat ueor. Can be cast even while holding a weapon."
+    "text": "You get +1 combat. Can be cast even while holding a weapon."
   },
   {
     "name": "Disintegrate",
@@ -25,7 +25,7 @@
       "combat",
       "dubious"
     ],
-    "text": "You can tear crystalline matter to dust. +3 combat and 5 @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard; and I don't want magic to simply trump everything."
+    "text": "You can tear crystalline matter to dust. +3* combat and 5* @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard; and I don't want magic to simply trump everything."
   },
   {
     "name": "Fertilise",
@@ -43,7 +43,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some telekinetic power over water nearby. +3 combat, +3 ranged. Take an additional +5 to all physical while in water."
+    "text": "You gain some telekinetic power over water nearby. +3* combat, +3 @ranged@. Take an additional +5 to all physical while in water."
   },
   {
     "name": "Kollakinesis",
@@ -53,7 +53,7 @@
       "combat",
       "dubious"
     ],
-    "text": "You gain some telekinetic power over glue nearby, including the ability to conjure small amounts. +3 combat, +2 ranged, Net. Can conjure glue, soften it, etc. TODO If casters counter movers, what counters casters?"
+    "text": "You gain some telekinetic power over glue nearby, including the ability to conjure small amounts. +3* combat, +2 @ranged@, @net@. Can conjure glue, soften it, etc. TODO If casters counter movers, what counters casters?"
   },
   {
     "name": "Mouseform",
@@ -78,7 +78,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4 @net@. Good for repairs."
+    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4* @net@. Good for repairs."
   },
   {
     "name": "Photokinesis",
@@ -87,7 +87,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +7 @armour@, +5 ranged. Can conjure illumination of any colour; can also suppress light."
+    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +7* @armour@, +5* @ranged@. Can conjure illumination of any colour; can also suppress light."
   },
   {
     "name": "Pyrokinesis",
@@ -96,7 +96,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5 combat, +4 ranged; create a POW=3 fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
+    "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5* combat, +4 @ranged@. Create a POW=3* fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
   },
   {
     "name": "Reshape",
@@ -123,7 +123,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some general but relatively weak telekinesis. +3 combat, +4 ranged. Can pick up, push, or pull items from long range. Carry capacity capped at half your weight, so you can't fly, but can propel self for +5 to jumps."
+    "text": "You gain some general but relatively weak telekinesis. +3 combat, +4 @ranged@. Can pick up, push, or pull items from long range. Carry capacity capped at half your weight, so you can't fly, but can propel self for +5 to jumps."
   },
   {
     "name": "Terminate pregnancy",
@@ -146,7 +146,7 @@
     "level": "9",
     "color": "red",
     "tags": [],
-    "text": "You and up to $level allies don't drown, sink. At high level, water breathing is actually oxygen creation or unbreathing, so that smoke inhalation and hard vacuum also don't kill you."
+    "text": "You and up to 0* allies don't drown, sink. At level 2+, water breathing is actually oxygen creation or unbreathing, so that smoke inhalation and hard vacuum also don't kill you."
   },
   {
     "name": "Antimagic shell",
@@ -183,7 +183,7 @@
     "level": "11",
     "color": "orange",
     "tags": [],
-    "text": "Even the lightest touch cancels magic. +10 vs summons."
+    "text": "Even the lightest touch cancels magic. +10* vs summons."
   },
   {
     "name": "Enchant",
@@ -210,14 +210,14 @@
     "tags": [
       "combat"
     ],
-    "text": "Enter a magical combat trance and open your mind to higher states. +3 combat, take +1 magic aeor, capped at +$magic."
+    "text": "Enter a magical combat trance and open your mind to higher states. +3* combat, take +1 magic aeor, capped at +$magic."
   },
   {
     "name": "Antigrav",
     "level": "14",
     "color": "yellow",
     "tags": [],
-    "text": "Negate the force of gravity on yourself and up to $level allies or objects of equal or lesser size. Can use this for pseudo flight, but landing is the tricky part. You don't negate the weight of any of your gear, if that matters, only living biological material."
+    "text": "Negate the force of gravity on yourself and up to 0* allies or objects of equal or lesser size. Can use this for pseudo flight, but landing is the tricky part. You don't negate the weight of any of your gear, if that matters, only living biological material."
   },
   {
     "name": "Bubble",
@@ -262,7 +262,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't walk over a wall). +3 combat, treat combat as pure melee. +5 to chase checks."
+    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't walk over a wall). +3* combat, treat combat as pure melee. +5* to chase checks."
   },
   {
     "name": "Gravity tilt",
@@ -271,14 +271,14 @@
     "tags": [
       "combat"
     ],
-    "text": "+5 to climb; can pulse for +3 combat, +4 ranged."
+    "text": "+5* to climb; can pulse for +3* combat, +4 ranged."
   },
   {
     "name": "Hammerspace",
     "level": "8",
     "color": "yellow",
     "tags": [],
-    "text": "Access a pocket dimension that can fit up to -5 size categories of stuff (ie 1/30 your volume, so like a couple litres); its access point is locked to your position. For each extra level, +1 size category."
+    "text": "Access a pocket dimension that can fit up to -5* size categories of stuff; its access point is locked to your position."
   },
   {
     "name": "Space warp",
@@ -287,7 +287,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Change spatial geometry nearby. You can make something bigger on the inside than out, make areas closer or further"
+    "text": "Change spatial geometry nearby. You can make something bigger on the inside than out, make areas closer or further."
   },
   {
     "name": "Stasis",
@@ -296,7 +296,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Time does not pass within a space equal to your size+$level. Must be channelled (or more usefully, enchanted)."
+    "text": "Time does not pass within a space equal to you.size*. Must be channelled (or more usefully, enchanted)."
   },
   {
     "name": "Suspend",
@@ -305,7 +305,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+3 to combat, and on a hit, the target is sent 1 round into the future."
+    "text": "+3* to combat, and on a hit, the target is sent 1 round into the future."
   },
   {
     "name": "Time warp",
@@ -314,7 +314,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Create a pocket dimension with two apertures with different coordinates in time. This is an entire Thing."
+    "text": "Create a pocket dimension with two apertures with different coordinates in time."
   },
   {
     "name": "Biomancy",
@@ -337,7 +337,7 @@
     "level": "8",
     "color": "blue",
     "tags": [],
-    "text": "+10 to spot @veil@s"
+    "text": "+10* to spot @veil@s"
   },
   {
     "name": "Danger sense",
@@ -346,7 +346,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+3, +10 vigilance vs sneak attacks; can wake from normal sleep for this ('normal' excludes drugged, enchanted, comatose, etc). Cancelled with next spell, so needs to be reapplied constantly."
+    "text": "+3*, +10* vigilance vs sneak attacks; can wake from normal sleep for this ('normal' excludes drugged, enchanted, comatose, etc). Cancelled with next spell, so needs to be reapplied constantly."
   },
   {
     "name": "Disguise",
@@ -394,7 +394,7 @@
     "tags": [
       "civilian"
     ],
-    "text": "Predict the weather, 1 day into the future within 1km per level."
+    "text": "Predict the weather, 1* day into the future within 1*km."
   },
   {
     "name": "Necromancy",
@@ -403,7 +403,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Speak with the dead. Each unique caster may speak with each corpse for up to $level minutes. The corpse may or may not be cooperative, but they tend to be amenable to getting revenge on their killers."
+    "text": "Speak with the dead. Each unique caster may speak with each corpse for up to 1* minute. The corpse may or may not be cooperative, but they tend to be amenable to getting revenge on their killers."
   },
   {
     "name": "Olfamancy",
@@ -419,14 +419,14 @@
     "level": "9",
     "color": "blue",
     "tags": [],
-    "text": "You and up to $level allies can see in the dark."
+    "text": "You and up to 0* allies can see in the dark."
   },
   {
     "name": "Tag, track",
     "level": "10",
     "color": "blue",
     "tags": [],
-    "text": "Tag up to $level items with a hash of your choosing; you can detect the direction (but not distance) to a tagged item if you know its hash, if it's within $level*100m."
+    "text": "Tag up to 1* items with a hash of your choosing; you can detect the direction (but not distance) to a tagged item if you know its hash, if it's within 1* times 100m."
   },
   {
     "name": "Telesophy",
@@ -440,7 +440,7 @@
     "level": "9",
     "color": "blue",
     "tags": [],
-    "text": "Check MET+vigilance+5 vs a veil's MAS+stealth+$level; on a pass, break any veil nearby (even if you weren't aware of it); on a fail, you can't cast this again today"
+    "text": "Check MET+vigilance+5* vs a veil's MAS+stealth+$level; on a pass, break any veil nearby (even if you weren't aware of it); on a fail, you can't cast this again today."
   },
   {
     "name": "Watcher",
@@ -449,14 +449,14 @@
     "tags": [
       "slow"
     ],
-    "text": "Create a Watcher that attaches to an incapacitated target. Once per day, you may share their senses for up to 1 minute. You can do this remotely, although obviously they might just be on the toilet or daydreaming or something. They are not typically aware of this. You aren't aware of their thoughts, memories, or other non-sensory data. The Watcher is weak to orange magic and can be killed by any sort of dispel effect, regardless of whether you're targeting it. Per level, you gain an additional sense: audio, video, smell, taste, touch, proprioception, pain, balance, hunger, thermo ... although as long as you have audiovideo you can probably figure out the others. A person may host no more than one Watcher at a time."
+    "text": "Create a Watcher that attaches to an incapacitated target. Once per day, you may share their senses for up to 1* minute. You can do this remotely, although obviously they might just be on the toilet or daydreaming or something. They are not typically aware of this. You aren't aware of their thoughts, memories, or other non-sensory data. The Watcher is weak to orange magic and can be killed by any sort of dispel effect, regardless of whether you're targeting it. Per level, you gain an additional sense: audio, video, smell, taste, touch, proprioception, pain, balance, hunger, thermo ... although as long as you have audiovideo you can probably figure out the others. A person may host no more than one Watcher at a time."
   },
   {
     "name": "X-ray vision",
     "level": "11",
     "color": "blue",
     "tags": [],
-    "text": "See through solid objects, up to 10cm per level. Specifically, your vision skips ahead up to 10cm from the first opaque object, so if there are two sheets of paper spaced 5cm apart you can see through both, but you can't if they're 15cm apart. In the former case, you're aware of the first piece, like how you can see the palm of a hand you put over one eye."
+    "text": "See through solid objects, up to 1* times 10cm. Specifically, your vision skips ahead up to 10cm from the first opaque object, so if there are two sheets of paper spaced 5cm apart you can see through both, but you can't if they're 15cm apart. In the former case, you're aware of the first piece, like how you can see the palm of a hand you put over one eye."
   },
   {
     "name": "Bind wisp",
@@ -465,7 +465,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Take control of a wisp. Specifically, +6 and +4 ranged vs one, and on a hit, instead of incapacitating it, you dominate it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
+    "text": "Take control of a wisp. Specifically, +6* and +4 ranged vs one, and on a hit, instead of incapacitating it, you dominate it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
   },
   {
     "name": "Compromise",
@@ -504,7 +504,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Make someone fall asleep. On a hit, instead of inflicting N damage, inflict N @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
+    "text": "Make someone fall asleep. On a hit, instead of inflicting N damage, inflict N* @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
   },
   {
     "name": "Necrourgy",
@@ -513,7 +513,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Animate up to $level+1 nearby corpses. "
+    "text": "Animate up to 1* nearby corpses. "
   },
   {
     "name": "Pacify animate vines",
@@ -522,7 +522,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "I had the notion that this might be species-specific or otherwise require a lot of separate spells so that players can't really get it and trivialise an enemy type. After all, it's a big all-to-nothing effect. But, it does kind of need to exist, as a softlock picker."
+    "text": "Target animate vine becomes incapacitated."
   },
   {
     "name": "Summon lesser minion",
@@ -550,6 +550,6 @@
     "level": "14",
     "color": "purple",
     "tags": [],
-    "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies aeor (single check), and on a fail, take \"Enraged: this must attack the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueob."
+    "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies* aeor (single check), and on a fail, take \"Enraged: this must attack the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueob."
   }
 ]

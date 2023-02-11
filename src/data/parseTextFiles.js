@@ -12,6 +12,8 @@ const tagTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Tags.txt";
 function myWriteFile(name, json) {
   fs.writeFile(name, json, 'utf8', (err) => {
     if (err) {
+      console.log(name);
+      console.log("err");
       console.log(err);
     } else {
       console.log("done");
@@ -171,13 +173,6 @@ function parseSpellFile() {
         }
       });
       const myJson = JSON.stringify(spells, null, 2);
-      fs.writeFile('', myJson, 'utf8', (err) => {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log("done");
-        }
-      });
       myWriteFile("src/data/spells.json", myJson, 'utf8');
     });
   });
@@ -203,9 +198,7 @@ function parseTagFile() {
         }
       });
       const myJson = JSON.stringify(tags, null, 2);
-      fs.writeFile('src/data/tags.json', myJson, 'utf8', () => {
-        console.log("done");
-      });
+      myWriteFile("src/data/tags.json", myJson, 'utf8');
     });
   });
 }

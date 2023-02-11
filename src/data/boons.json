@@ -33,7 +33,7 @@
     "name": "Parkour",
     "skill": "athletics",
     "tags": [],
-    "text": "You can climb up to AGI+athletics metres in one round without a check. You can wall run twice as far as you can long jump, and you can wall jump twice as high as you can high jump."
+    "text": "You can climb up to AGI+athletics metres without a check as part of your action. You can wall run twice as far as you can long jump, and you can wall jump twice as high as you can high jump."
   },
   {
     "name": "Second wind",
