@@ -204,6 +204,13 @@
     "text": "Some other spell of requirement<=this.requirement-5 is inscribed onto a solid object, whence it can be 'cast' in response to a trigger, which is typically either reading a scroll or touching a glyph, customarily marked with a crossed circle. Lasts until used or until the glyph is erased. Requires target.requirement grams of manite."
   },
   {
+    "name": "Loan",
+    "level": "12",
+    "color": "orange",
+    "tags": [],
+    "text": "Ueob, one nearby ally gains access to one of your spells and you lose access to it. They use their own stats to cast it."
+  },
+  {
     "name": "Meditate",
     "level": "8",
     "color": "orange",
@@ -475,7 +482,7 @@
       "slow",
       "world-building"
     ],
-    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1 round. You steal their senses during. You can't act yourself at the same time, and you don't generally know ahead of time whether they're in a position to do anything you care about. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
+    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1* round. You steal their senses during. You can't act yourself at the same time, and you don't generally know ahead of time whether they're in a position to do anything you care about. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
   },
   {
     "name": "Create curse",
@@ -525,11 +532,20 @@
     "text": "Target animate vine becomes incapacitated."
   },
   {
+    "name": "Subvert",
+    "level": "12",
+    "color": "purple",
+    "tags": [
+      "combat"
+    ],
+    "text": "+2*. On a hit, the target takes Subverted ueob. If they would be incapacitated, instead their focus is fully restored and they are under your control ueob with no debuffs. They faint aeob. If the target is already subverted, this is a crit."
+  },
+  {
     "name": "Summon lesser minion",
     "level": "10",
     "color": "purple",
     "tags": [],
-    "text": "@summon@ a copy of yourself except that all attributes are 2 lower; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured."
+    "text": "@Summon:summon@ a copy of yourself except that all attributes are 2 lower; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured."
   },
   {
     "name": "Summon phantasms",
