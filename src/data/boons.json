@@ -250,6 +250,12 @@
     "text": "+2 to checks related to some non-adventurer task."
   },
   {
+    "name": "Recipe book",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "Pick any potion; take +5 to crafting it. When you level up enough that you'd be able to craft it regardless, pick another potion."
+  },
+  {
     "name": "Seductive",
     "skill": "knowledge",
     "tags": [
@@ -328,6 +334,12 @@
       "mark tribal"
     ],
     "text": "Whenever you beat someone at a check involving this skill or successfully cast a spell at them, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Savant",
+    "skill": "magic",
+    "tags": [],
+    "text": "Pick any spell; take +5 to cast it. This does not allow you to cast at a higher level. When you level up enough to be able to cast it without this boon, pick another spell."
   },
   {
     "name": "Shapeshifter",
