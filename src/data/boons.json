@@ -67,7 +67,7 @@
     "name": "Stubborn",
     "skill": "athletics",
     "tags": [],
-    "text": "+1 focus."
+    "text": "You have +1 focus."
   },
   {
     "name": "Warm up",
@@ -190,7 +190,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "This round, take -3. Next round, take +2."
+    "text": "Take -3. Next round, take +2."
   },
   {
     "name": "Calming",
@@ -202,16 +202,26 @@
     "text": "Your mount doesn't bolt when hit."
   },
   {
-    "name": "Forager",
+    "name": "Gatherer",
     "skill": "knowledge",
-    "tags": [],
-    "text": "While travelling, you may check MET+knowledge vs 15. On success, find paikera along the way."
+    "tags": [
+      "forage tribal"
+    ],
+    "text": "(action) While travelling, check MET+knowledge vs 15. On success, find paikera along the way."
+  },
+  {
+    "name": "Green thumb",
+    "skill": "knowledge",
+    "tags": [
+      "forage tribal"
+    ],
+    "text": "(modifier) When harvesting paikera, instead of collecting the reagent, get a viable cutting."
   },
   {
     "name": "Intuitive",
     "skill": "knowledge",
     "tags": [],
-    "text": "1 time per session you may ask the GM an out-of-character question. He shouldn't answer outright, but should give a good hint, advice, or Socratic counter-question."
+    "text": "1 time per session, you may ask the GM an out-of-character question. He shouldn't answer outright, but should give a good hint, advice, or Socratic counter-question."
   },
   {
     "name": "Kinbakushi",
@@ -253,13 +263,14 @@
     "name": "Recipe book",
     "skill": "knowledge",
     "tags": [],
-    "text": "Pick any potion; take +5 to crafting it. When you level up enough that you'd be able to craft it regardless, pick another potion."
+    "text": "Pick any potion; take +5 to crafting it. When you craft it with a margin of 5 or more, you may pick another potion."
   },
   {
     "name": "Seductive",
     "skill": "knowledge",
     "tags": [
-      "social"
+      "social",
+      "move"
     ],
     "text": "Check MAS+knowledge vs END+knowledge to get someone to do something they really don't want."
   },
@@ -420,8 +431,11 @@
   {
     "name": "Ventriloquist",
     "skill": "stealth",
-    "tags": [],
-    "text": "Can project voice with a MAS+stealth vs MET+vigilance check, to give a false location or make listeners think someone else is speaking."
+    "tags": [
+      "social",
+      "move"
+    ],
+    "text": "Project voice with a MAS+stealth vs MET+vigilance check, to give a false location and/or sound like someone else."
   },
   {
     "name": "Distraction shot",
@@ -443,7 +457,7 @@
     "tags": [
       "rider tribal"
     ],
-    "text": "(modifier) when mounted and attacking with range only, gain @suppress@ and any opponents who try to close take -5."
+    "text": "(modifier) When mounted and attacking with range only, gain @suppress@ and any opponents who try to close take -5."
   },
   {
     "name": "Lip reader",
