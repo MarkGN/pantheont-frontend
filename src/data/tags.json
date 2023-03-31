@@ -50,6 +50,11 @@
     "text": "This inflicts double damage. If multiple effects give crits, the effect adds, eg with two crits, an attack inflicts triple damage."
   },
   {
+    "name": "Dominate",
+    "type": "flat",
+    "text": "Take control of the target. You don't control them directly and don't gain a telepathic link, but it will try to obey commands, protect you, and attack your enemies. Even if it doesn't understand your language, it can intuit general intent. If two characters both try to take control of the same target, they check MAS+magic against each other; the loser fails and loses access to whatever method they tried until their next long rest, and if the winner had already dominated the target, the loser also loses focus as per a POW roll."
+  },
+  {
     "name": "Dubious",
     "type": "flat",
     "text": "I'm not convinced this content is really a good idea, at least in its current form, but I'll include it for now and playtest and revise."

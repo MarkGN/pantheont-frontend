@@ -208,7 +208,7 @@
     "level": "12",
     "color": "orange",
     "tags": [],
-    "text": "Ueob, one nearby ally gains access to one of your spells and you lose access to it. They use their own stats to cast it."
+    "text": "Ueoc, one nearby ally gains access to one of your spells and you lose access to it. They use their own stats to cast it."
   },
   {
     "name": "Meditate",
@@ -218,6 +218,15 @@
       "combat"
     ],
     "text": "Enter a magical combat trance and open your mind to higher states. +3* combat, take +1 magic aeor, capped at +$magic."
+  },
+  {
+    "name": "Mnemonophage",
+    "level": "13",
+    "color": "orange",
+    "tags": [
+      "slow"
+    ],
+    "text": "Target character forgets a spell."
   },
   {
     "name": "Antigrav",
@@ -275,17 +284,15 @@
     "name": "Gravity tilt",
     "level": "8",
     "color": "yellow",
-    "tags": [
-      "combat"
-    ],
-    "text": "+5* to climb; can pulse for +3* combat, +4 ranged."
+    "tags": [],
+    "text": "+5* to climb; everyone within melee engagement range of you has their base $fight capped at their $athletics."
   },
   {
     "name": "Hammerspace",
     "level": "8",
     "color": "yellow",
     "tags": [],
-    "text": "Access a pocket dimension that can fit up to -5* size categories of stuff; its access point is locked to your position."
+    "text": "Access a pocket dimension that can fit up to -5* size categories of stuff. Its access point is locked to your position."
   },
   {
     "name": "Space warp",
@@ -345,15 +352,6 @@
     "color": "blue",
     "tags": [],
     "text": "+10* to spot @veil@s"
-  },
-  {
-    "name": "Danger sense",
-    "level": "7",
-    "color": "blue",
-    "tags": [
-      "combat"
-    ],
-    "text": "+3*, +10* vigilance vs sneak attacks; can wake from normal sleep for this ('normal' excludes drugged, enchanted, comatose, etc). Cancelled with next spell, so needs to be reapplied constantly."
   },
   {
     "name": "Disguise",
@@ -419,11 +417,20 @@
     "tags": [
       "slow"
     ],
-    "text": "Gain enhanced smell: you can identify species, identity, and any injuries of anyone nearby who's left a scent trail within the past few days. You don't know the name or face of anyone you smell, but if you know them from elsewhere, you can match the two."
+    "text": "Gain enhanced smell. You can identify species, identity, and any injuries of anyone nearby who's left a scent trail within the past few days. You don't know the name or face of anyone you smell, but if you know them from elsewhere, you can match the two."
+  },
+  {
+    "name": "Precognition",
+    "level": "9",
+    "color": "blue",
+    "tags": [
+      "combat"
+    ],
+    "text": "+4*, +10* vigilance vs sneak attacks. Can only be cast if you haven't cast non-blue magic since your last rest. This can be maintained while asleep, where it lets you wake to react to sneak attacks, with no bonus."
   },
   {
     "name": "Scotopic",
-    "level": "9",
+    "level": "8",
     "color": "blue",
     "tags": [],
     "text": "You and up to 0* allies can see in the dark."
@@ -472,7 +479,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "Take control of a wisp. Specifically, +6* and +4 ranged vs one, and on a hit, instead of incapacitating it, you dominate it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
+    "text": "+6* and +4 ranged vs wisps, and on a hit, you @dominate@ it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
   },
   {
     "name": "Compromise",
@@ -495,7 +502,7 @@
     "text": "A magical parasite that infests a victim and inflicts some nuisancesome condition until removed. Curses can be delivered by trap or to any Incapacitated character."
   },
   {
-    "name": "Erourgy",
+    "name": "Eroarchy",
     "level": "10",
     "color": "purple",
     "tags": [
@@ -505,7 +512,7 @@
     "text": "Make someone fall in or out of love. Technically only lasts while channelled, but people tend to rationalise their love, so it has long-term secondary effect."
   },
   {
-    "name": "Hypnourgy",
+    "name": "Hypnoarchy",
     "level": "8",
     "color": "purple",
     "tags": [
@@ -514,7 +521,7 @@
     "text": "Make someone fall asleep. On a hit, instead of inflicting N damage, inflict N* @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
   },
   {
-    "name": "Necrourgy",
+    "name": "Necroarchy",
     "level": "11",
     "color": "purple",
     "tags": [
@@ -523,13 +530,13 @@
     "text": "Animate up to 1* nearby corpses. "
   },
   {
-    "name": "Pacify animate vines",
+    "name": "Klemarchy",
     "level": "14",
     "color": "purple",
     "tags": [
       "world-building"
     ],
-    "text": "Target animate vine becomes incapacitated."
+    "text": "@Dominate@ target animate vine."
   },
   {
     "name": "Subvert",
@@ -538,7 +545,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+2*. On a hit, the target takes Subverted ueob. If they would be incapacitated, instead their focus is fully restored and they are under your control ueob with no debuffs. They faint aeob. If the target is already subverted, this is a crit."
+    "text": "+2*. On a hit, the target takes Subverted ueoc. If they would be incapacitated, instead their focus is fully restored and they are @dominated:dominate@ ueoc with no debuffs. They faint aeob. If the target is already subverted, this is a crit."
   },
   {
     "name": "Summon lesser minion",
@@ -566,6 +573,6 @@
     "level": "14",
     "color": "purple",
     "tags": [],
-    "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies* aeor (single check), and on a fail, take \"Enraged: this must attack the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueob."
+    "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies* aeor (single check), and on a fail, take \"Enraged: this must attack the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueoc."
   }
 ]

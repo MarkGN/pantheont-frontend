@@ -27,7 +27,7 @@
     "tags": [
       "mark tribal"
     ],
-    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
     "name": "Parkour",
@@ -73,7 +73,7 @@
     "name": "Warm up",
     "skill": "athletics",
     "tags": [],
-    "text": "Whenever you do an athletics check during battle, get +1 athletics ueob."
+    "text": "Whenever you do an athletics check during battle, get +1 athletics ueoc."
   },
   {
     "name": "Anbinden",
@@ -89,7 +89,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Ueob, enter berserkergang. Lose 2 focus abor, and all hits you inflict are crits. The focus loss can cause you to faint and take @injury@."
+    "text": "Enter berserkergang ueoc. Lose 2 focus aeor, and all hits you inflict are crits. The focus loss can cause you to faint and take @injury@."
   },
   {
     "name": "Disarm",
@@ -136,7 +136,7 @@
     "tags": [
       "mark tribal"
     ],
-    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
     "name": "Masochist",
@@ -243,7 +243,7 @@
     "tags": [
       "mark tribal"
     ],
-    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
     "name": "Medic",
@@ -263,7 +263,7 @@
     "name": "Recipe book",
     "skill": "knowledge",
     "tags": [],
-    "text": "Pick any potion; take +5 to crafting it. When you craft it with a margin of 5 or more, you may pick another potion."
+    "text": "Pick any potion; take +5 to crafting it. Whenever you craft it without needing this, you may pick another potion."
   },
   {
     "name": "Seductive",
@@ -298,7 +298,7 @@
     "name": "Colour affinity",
     "skill": "magic",
     "tags": [],
-    "text": "Pick a colour: you may learn and cast spells of that colour."
+    "text": "Pick a colour: you may learn and cast spells of that colour. The square of the number of copies of this you have can't exceed your base magic."
   },
   {
     "name": "Combat caster",
@@ -344,13 +344,13 @@
     "tags": [
       "mark tribal"
     ],
-    "text": "Whenever you beat someone at a check involving this skill or successfully cast a spell at them, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+    "text": "Whenever you beat someone at a check involving this skill or successfully cast a spell at them, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
     "name": "Savant",
     "skill": "magic",
     "tags": [],
-    "text": "Pick any spell; take +5 to cast it. This does not allow you to cast at a higher level. When you level up enough to be able to cast it without this boon, pick another spell."
+    "text": "Pick any spell; take +5 to cast it. This does not allow you to cast at a higher level. Whenever you cast it without needing this, you may pick another spell."
   },
   {
     "name": "Shapeshifter",
@@ -396,7 +396,7 @@
     "tags": [
       "mark tribal"
     ],
-    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
     "name": "Ninjutsu",
@@ -473,7 +473,7 @@
     "tags": [
       "mark tribal"
     ],
-    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeob. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+    "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
     "name": "Marksman",
