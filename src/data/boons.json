@@ -309,6 +309,12 @@
     "text": "When fighting with spells, add your magic skill to your combat."
   },
   {
+    "name": "Daskalos",
+    "skill": "magic",
+    "tags": [],
+    "text": "When teaching someone a spell, it takes $requirement hours, not double that."
+  },
+  {
     "name": "Focus energy",
     "skill": "magic",
     "tags": [

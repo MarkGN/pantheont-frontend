@@ -18,6 +18,16 @@
     "text": "You get +1 combat. Can be cast even while holding a weapon."
   },
   {
+    "name": "Cryokinesis",
+    "level": "11",
+    "color": "red",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Slowly cool target object. Can get from room temperature to -40 degrees over 10 minutes."
+  },
+  {
     "name": "Disintegrate",
     "level": "10",
     "color": "red",
@@ -35,6 +45,15 @@
       "civilian"
     ],
     "text": "Target plant grows 10% faster for 24 hours. Not channelled."
+  },
+  {
+    "name": "Geokinesis",
+    "level": "6",
+    "color": "red",
+    "tags": [
+      "slow"
+    ],
+    "text": "Shape crystalline (ie metal, rock, ceramic) matter. (This lacks precision: if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
   },
   {
     "name": "Hydrokinesis",
@@ -99,15 +118,6 @@
     "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5* combat, +4 @ranged@. Create a POW=3* fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
   },
   {
-    "name": "Reshape",
-    "level": "6",
-    "color": "red",
-    "tags": [
-      "slow"
-    ],
-    "text": "Shape crystalline (ie metal, rock, ceramic) matter. (This lacks precision: if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
-  },
-  {
     "name": "Sterilise",
     "level": "9",
     "color": "red",
@@ -153,9 +163,10 @@
     "level": "11",
     "color": "orange",
     "tags": [
+      "combat",
       "dubious"
     ],
-    "text": "Anyone engaging you has -5 magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong?"
+    "text": "Anyone engaging you has -5* magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong?"
   },
   {
     "name": "Boost",
@@ -182,7 +193,9 @@
     "name": "Disjunction",
     "level": "11",
     "color": "orange",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "Even the lightest touch cancels magic. +10* vs summons."
   },
   {
@@ -319,7 +332,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+3* to combat, and on a hit, the target is sent 1 round into the future."
+    "text": "+3* to combat, and on a hit, the target is sent 1 round into the future (in addition to any damage)."
   },
   {
     "name": "Time warp",
@@ -391,6 +404,13 @@
     "color": "blue",
     "tags": [],
     "text": "Create a @veil@ of up to 5m cubed. It is obvious that there is a veil there, but not what is behind it. Anyone shooting into or out of it treats it as cover."
+  },
+  {
+    "name": "Kaleidomancy",
+    "level": "11",
+    "color": "blue",
+    "tags": [],
+    "text": "The area is bathed in sensory chaos: glittering lights, musical bells, strange smells. For all actions, everyone's base skill is capped at their vigilance."
   },
   {
     "name": "Meteomancy",
