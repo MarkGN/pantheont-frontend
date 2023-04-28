@@ -62,7 +62,16 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some telekinetic power over water nearby. +3* combat, +3 @ranged@. Take an additional +5 to all physical while in water."
+    "text": "You gain telekinetic power over water nearby. +3* combat, +3 @ranged@. Take an additional +5 to all physical while in water, or +2 more combat if nearby."
+  },
+  {
+    "name": "Inferno",
+    "level": "16",
+    "color": "red",
+    "tags": [
+      "combat"
+    ],
+    "text": "Fires randomly break out all around you aeor. Determine the number and strength by (a POW roll vs 0)*. Take +9* and 2 -1 magic tokens."
   },
   {
     "name": "Kollakinesis",
@@ -79,7 +88,7 @@
     "level": "10",
     "color": "red",
     "tags": [],
-    "text": "-10 size."
+    "text": "-10 size. @Channelled@."
   },
   {
     "name": "Ogreform",
@@ -88,7 +97,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+2 size, +2 combat, but can't use a weapon."
+    "text": "+2 size, +2 combat, but can't use a weapon. @Channelled@."
   },
   {
     "name": "Panikinesis",
@@ -106,7 +115,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +7* @armour@, +5* @ranged@. Can conjure illumination of any colour; can also suppress light."
+    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +5* @armour@, +5* @ranged@, and gain a shield absorbing the next 3 focus you would lose (does not stack). Can conjure illumination of any colour."
   },
   {
     "name": "Pyrokinesis",
@@ -115,7 +124,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some fire control power, including the ability to conjure it, but not put it out. +5* combat, +4 @ranged@. Create a POW=3* fire with every clash, on your position if you lose, target if you win. Can conjure light, set stuff on fire."
+    "text": "You gain fire control power, including the ability to conjure it. +3* combat, +4 @ranged@, and an additional +1 for each fire of POW at least 5 nearby, to a maximum of +5. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. Can start smaller fires, but not put them out."
   },
   {
     "name": "Sterilise",
@@ -167,6 +176,13 @@
       "dubious"
     ],
     "text": "Anyone engaging you has -5* magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong?"
+  },
+  {
+    "name": "Appropriate",
+    "level": "10",
+    "color": "orange",
+    "tags": [],
+    "text": "If an opponent casts a spell at you, +8*, and if they cast a spell this round, ueoc they lose access to that spell and you gain access to it. "
   },
   {
     "name": "Boost",
@@ -246,7 +262,7 @@
     "level": "14",
     "color": "yellow",
     "tags": [],
-    "text": "Negate the force of gravity on yourself and up to 0* allies or objects of equal or lesser size. Can use this for pseudo flight, but landing is the tricky part. You don't negate the weight of any of your gear, if that matters, only living biological material."
+    "text": "Negate the force of gravity on yourself and up to 0* allies or objects of equal or lesser size. Can use this for pseudo flight with an AGI+ath* check vs 10 to avoid crashing and taking 1 Injury."
   },
   {
     "name": "Bubble",
@@ -306,6 +322,13 @@
     "color": "yellow",
     "tags": [],
     "text": "Access a pocket dimension that can fit up to -5* size categories of stuff. Its access point is locked to your position."
+  },
+  {
+    "name": "Solitude",
+    "level": "21",
+    "color": "yellow",
+    "tags": [],
+    "text": "Create a random maze of warped geometry nearby. Everything is still topologically connected, but characters become isolated from each other and lost."
   },
   {
     "name": "Space warp",
@@ -532,13 +555,22 @@
     "text": "Make someone fall in or out of love. Technically only lasts while channelled, but people tend to rationalise their love, so it has long-term secondary effect."
   },
   {
+    "name": "Hoplarchy",
+    "level": "12",
+    "color": "purple",
+    "tags": [
+      "slow"
+    ],
+    "text": "Animate target construct and take 5 -1 magic tokens. @Channelled@. The construct may be no larger than you, although you could make a larger one by enchanting multiple components one at a time and joining them together."
+  },
+  {
     "name": "Hypnoarchy",
     "level": "8",
     "color": "purple",
     "tags": [
       "combat"
     ],
-    "text": "Make someone fall asleep. On a hit, instead of inflicting N damage, inflict N* @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
+    "text": "Make someone fall asleep. Take +0*, and on a hit, instead of inflicting N damage, inflict N @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
   },
   {
     "name": "Necroarchy",
@@ -565,21 +597,21 @@
     "tags": [
       "combat"
     ],
-    "text": "+2*. On a hit, the target takes Subverted ueoc. If they would be incapacitated, instead their focus is fully restored and they are @dominated:dominate@ ueoc with no debuffs. They faint aeob. If the target is already subverted, this is a crit."
+    "text": "+2*. On a hit, the target takes Subverted ueoc. If they would be incapacitated, instead their focus is fully restored and they are @dominated:dominate@ ueoc with no debuffs. They faint aeoc. If the target is already subverted, this is a crit."
   },
   {
     "name": "Summon lesser minion",
     "level": "10",
     "color": "purple",
     "tags": [],
-    "text": "@Summon:summon@ a copy of yourself except that all attributes are 2 lower; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured."
+    "text": "@Summon:summon@ a copy of yourself except that all attributes equal your POW-2; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured."
   },
   {
     "name": "Summon phantasms",
     "level": "11",
     "color": "purple",
     "tags": [],
-    "text": "As for summon lesser minion, except you get 3, its attributes equal yours, and it can't inflict damage or debuffs or physically affect anything. It can engage enemies; they may choose to ignore it, in which case they aren't interrupted from whatever they were doing, but if they ignore a real attacker, the attacker makes a sneak attack. Its Armour is 0."
+    "text": "As for summon lesser minion, except you get 3, its attributes equal your POW, and it can't inflict damage or debuffs or physically affect anything. It can engage enemies; they may choose to ignore it, in which case they aren't interrupted from whatever they were doing, but if they ignore a real attacker, the attacker makes a sneak attack. Its Armour is 0."
   },
   {
     "name": "Summon swarm",
@@ -587,6 +619,13 @@
     "color": "purple",
     "tags": [],
     "text": "As for summon lesser minion, except you get 2, each has only 1 focus, and you take only 2 -1 tokens."
+  },
+  {
+    "name": "Umbrage",
+    "level": "23",
+    "color": "purple",
+    "tags": [],
+    "text": "@Summon@ $magic shadowlings randomly around you aeor. A shadowling has all attributes equal to your POW; all skills equal to 5*; and +5 combat. They ignore all commands and are permanently enraged, attacking whoever is closest except other shadowlings. They last ueoc or are dismissed when you are incapacitated."
   },
   {
     "name": "Wrath",

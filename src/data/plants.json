@@ -310,6 +310,12 @@
     "reagentType": "amper"
   },
   {
+    "name": "Aparak root",
+    "colors": "red, yellow",
+    "text": "A dandelion-like that attacts wormholes; can be used to stabilise pathways, move them around, or remotely tunnel.",
+    "reagentType": "damper"
+  },
+  {
     "name": "Blue cap",
     "colors": "green, blue",
     "text": "A mushroom with blue spots; quite toxic unless boiled.",
@@ -317,7 +323,7 @@
   },
   {
     "name": "Inzun",
-    "colors": "red, purple",
+    "colors": "orange, green",
     "text": "With yellow flowers that grow into red berries. The vines drain ability to use magic.",
     "tags": [
       "animate vine"
@@ -377,7 +383,7 @@
   },
   {
     "name": "Taiyo",
-    "colors": "red, yellow",
+    "colors": "red, purple",
     "text": "A luminous fungus that likes caves. Can be used to make lights, and also flashbangs.",
     "reagentType": "damper"
   },

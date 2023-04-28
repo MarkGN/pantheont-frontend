@@ -20,6 +20,11 @@
     "text": "(condition) Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; on a fail, take 1 Injury."
   },
   {
+    "name": "Channelled",
+    "type": "flat",
+    "text": "You must constantly cast this spell to maintain its effect; the effect stops if you pick something up, are incapacitated, or cast another spell."
+  },
+  {
     "name": "Civilian",
     "type": "flat",
     "text": "No mechanical effect, but it is assumed that player characters won't have much use for this."

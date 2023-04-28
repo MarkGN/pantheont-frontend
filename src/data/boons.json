@@ -48,6 +48,12 @@
     "text": "Negate the penalty from fighting on ice or other slippery terrain."
   },
   {
+    "name": "Specialist",
+    "skill": "athletics",
+    "tags": [],
+    "text": "When you get this, pick two of climb, fire, run, swim, and miscellaneous. Take +5 to athletics actions relating to the first and -5 to the second."
+  },
+  {
     "name": "Sprint",
     "skill": "athletics",
     "tags": [
@@ -73,7 +79,7 @@
     "name": "Warm up",
     "skill": "athletics",
     "tags": [],
-    "text": "Whenever you do an athletics check during battle, get +1 athletics ueoc."
+    "text": "Whenever you do an athletics action during battle, get +1 athletics aeor ueoc."
   },
   {
     "name": "Anbinden",
@@ -202,6 +208,14 @@
     "text": "Your mount doesn't bolt when hit."
   },
   {
+    "name": "Craftsman",
+    "skill": "knowledge",
+    "tags": [
+      "civilian"
+    ],
+    "text": "Pick an item. Take +5 to crafting it and it takes half as long."
+  },
+  {
     "name": "Gatherer",
     "skill": "knowledge",
     "tags": [
@@ -213,9 +227,9 @@
     "name": "Green thumb",
     "skill": "knowledge",
     "tags": [
-      "forage tribal"
+      "civilian"
     ],
-    "text": "(modifier) When harvesting paikera, instead of collecting the reagent, get a viable cutting."
+    "text": "When you plant anything, it produces twice as much harvest."
   },
   {
     "name": "Intuitive",
@@ -260,6 +274,14 @@
     "text": "+2 to checks related to some non-adventurer task."
   },
   {
+    "name": "Propagator",
+    "skill": "knowledge",
+    "tags": [
+      "forage tribal"
+    ],
+    "text": "(modifier) When harvesting paikera, instead of collecting the reagent, get a viable cutting."
+  },
+  {
     "name": "Recipe book",
     "skill": "knowledge",
     "tags": [],
@@ -287,6 +309,15 @@
     "skill": "knowledge",
     "tags": [],
     "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
+  },
+  {
+    "name": "Whisperer",
+    "skill": "knowledge",
+    "tags": [
+      "civilian",
+      "social"
+    ],
+    "text": "You can try to tame an animal with intervals of one day, not one week."
   },
   {
     "name": "Adept",
@@ -395,6 +426,12 @@
     "skill": "stealth",
     "tags": [],
     "text": "It is a sneak attack whenever you attack someone who is neither attacking nor defending."
+  },
+  {
+    "name": "Hunter",
+    "skill": "stealth",
+    "tags": [],
+    "text": "While travelling, you can hunt enough to cover half your food requirements."
   },
   {
     "name": "Mark stealth",
