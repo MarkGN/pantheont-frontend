@@ -1,5 +1,22 @@
 [
   {
+    "name": "Contortionist",
+    "skill": "athletics",
+    "tags": [
+      "civilian"
+    ],
+    "text": "Learn any one of the following tricks: the splits and putting your feet behind your head; somersaulting; walking on your hands. With two copies of this, learn all three."
+  },
+  {
+    "name": "Dancer",
+    "skill": "athletics",
+    "tags": [
+      "civilian",
+      "social"
+    ],
+    "text": "You know any two dances and actually look pretty good doing them."
+  },
+  {
     "name": "Free climber",
     "skill": "athletics",
     "tags": [],
@@ -51,7 +68,7 @@
     "name": "Specialist",
     "skill": "athletics",
     "tags": [],
-    "text": "When you get this, pick two of climb, fire, run, swim, and miscellaneous. Take +5 to athletics actions relating to the first and -5 to the second."
+    "text": "When you get this, pick two of climb, fire, run, and swim. Take +5 to athletics actions relating to the first and -5 to the second."
   },
   {
     "name": "Sprint",
@@ -221,7 +238,7 @@
     "tags": [
       "forage tribal"
     ],
-    "text": "(action) While travelling, check MET+knowledge vs 15. On success, find paikera along the way."
+    "text": "(move) While travelling, check MET+knowledge vs 15. On success, find paikera along the way."
   },
   {
     "name": "Green thumb",
@@ -242,6 +259,14 @@
     "skill": "knowledge",
     "tags": [],
     "text": "The penalty to trying to escape your knots is that they can't try again and must be untied; and you get +5 to tying checks, including when you're the one tied up."
+  },
+  {
+    "name": "Linguist",
+    "skill": "knowledge",
+    "tags": [
+      "civilian"
+    ],
+    "text": "You can either fluently speak any one additional language; or badly speak any two; or understand any three."
   },
   {
     "name": "Lockpicking",
@@ -266,12 +291,21 @@
     "text": "You can receive assistance for first aid checks. Take +5 to them too."
   },
   {
+    "name": "Musician",
+    "skill": "knowledge",
+    "tags": [
+      "civilian",
+      "social"
+    ],
+    "text": "You are good at singing and any two instruments of choice."
+  },
+  {
     "name": "Proficiency",
     "skill": "knowledge",
     "tags": [
       "civilian"
     ],
-    "text": "+2 to checks related to some non-adventurer task."
+    "text": "+5 to checks related to some non-adventurer task."
   },
   {
     "name": "Propagator",
@@ -279,7 +313,7 @@
     "tags": [
       "forage tribal"
     ],
-    "text": "(modifier) When harvesting paikera, instead of collecting the reagent, get a viable cutting."
+    "text": "(modifier) When harvesting phytos, instead of collecting the reagent, get a viable cutting."
   },
   {
     "name": "Recipe book",
@@ -305,7 +339,7 @@
     "text": "You know a guy who knows a guy."
   },
   {
-    "name": "Tea lover",
+    "name": "Chadoka",
     "skill": "knowledge",
     "tags": [],
     "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
@@ -315,7 +349,8 @@
     "skill": "knowledge",
     "tags": [
       "civilian",
-      "social"
+      "social",
+      "animal tribal"
     ],
     "text": "You can try to tame an animal with intervals of one day, not one week."
   },
@@ -342,7 +377,9 @@
   {
     "name": "Daskalos",
     "skill": "magic",
-    "tags": [],
+    "tags": [
+      "civilian"
+    ],
     "text": "When teaching someone a spell, it takes $requirement hours, not double that."
   },
   {
@@ -365,7 +402,7 @@
     "name": "Irongut",
     "skill": "magic",
     "tags": [],
-    "text": "You may drink an additional potion per battle without side effects."
+    "text": "You may drink an additional potion per crisis without side effects."
   },
   {
     "name": "Manaburn",
@@ -395,7 +432,7 @@
     "tags": [
       "prereq Red affinity"
     ],
-    "text": "Per level of magic, you may learn an animal shape that you may assume as a spell. (eg if this is your third magic boon, you may immediately learn up to 3 animals, and then 1 more for each subsequent skill-up.) To learn a shape has the same requirements as learning a new spell in terms of time and money."
+    "text": "Per level of magic, you may learn an animal shape that you may assume as a spell. (eg if this is your third magic boon, you may immediately learn up to 3 animals, and then 1 more with each subsequent skill-up.) To learn a shape has the same requirements as learning a new spell in terms of time and money."
   },
   {
     "name": "Subtlety",
@@ -420,6 +457,15 @@
       "armour tribal"
     ],
     "text": "Take no stealth penalty from @armour@."
+  },
+  {
+    "name": "Earskritcher",
+    "skill": "stealth",
+    "tags": [
+      "social",
+      "animal tribal"
+    ],
+    "text": "Trained animals don't consider you hostile and won't attack you or raise the alarm unless provoked or ordered."
   },
   {
     "name": "Forgettable",
@@ -466,6 +512,12 @@
     "text": "When you pass a stealth check, instead of hiding or sneak attacking, take an item from the target that they aren't wearing. If they weren't holding it, you aren't revealed."
   },
   {
+    "name": "Shameless",
+    "skill": "stealth",
+    "tags": [],
+    "text": "You may hide any one @concealed@ item on your person such that it can't be found even by frisking or magic."
+  },
+  {
     "name": "Trap maker",
     "skill": "stealth",
     "tags": [],
@@ -475,6 +527,7 @@
     "name": "Ventriloquist",
     "skill": "stealth",
     "tags": [
+      "civilian",
       "social",
       "move"
     ],

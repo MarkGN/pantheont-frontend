@@ -48,7 +48,7 @@
   },
   {
     "name": "Geokinesis",
-    "level": "6",
+    "level": "10",
     "color": "red",
     "tags": [
       "slow"
@@ -62,7 +62,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain telekinetic power over water nearby. +3* combat, +3 @ranged@. Take an additional +5 to all physical while in water, or +2 more combat if nearby."
+    "text": "You gain telekinetic power over water nearby. +3* combat, +3 @ranged@. Take an additional +5 to all physical while in water, or +2 more combat if near enough water to swim in."
   },
   {
     "name": "Inferno",
@@ -89,6 +89,15 @@
     "color": "red",
     "tags": [],
     "text": "-10 size. @Channelled@."
+  },
+  {
+    "name": "Musikinesis",
+    "level": "6",
+    "color": "red",
+    "tags": [
+      "slow"
+    ],
+    "text": "Amplify any nearby sounds of your choice up to 100dB. Creates minor distortion. Can also save and repeat or loop sounds; these are too distorted to make out words, but rhythms and music are mostly intact."
   },
   {
     "name": "Ogreform",
@@ -240,13 +249,20 @@
     "text": "Ueoc, one nearby ally gains access to one of your spells and you lose access to it. They use their own stats to cast it."
   },
   {
+    "name": "Mana siphon",
+    "level": "14",
+    "color": "orange",
+    "tags": [],
+    "text": "+5*, and if you defeat anyone in a clash, they take 2 -1 magic tokens up to their modified magic stat, and you gain that many +1 magic tokens. You can only take tokens from one clash per round."
+  },
+  {
     "name": "Meditate",
     "level": "8",
     "color": "orange",
     "tags": [
       "combat"
     ],
-    "text": "Enter a magical combat trance and open your mind to higher states. +3* combat, take +1 magic aeor, capped at +$magic."
+    "text": "Enter a magical combat trance and open your mind to higher states. +3* combat, take +1 magic aeor."
   },
   {
     "name": "Mnemonophage",
@@ -570,16 +586,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Make someone fall asleep. Take +0*, and on a hit, instead of inflicting N damage, inflict N @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. One solid hit puts a target to sleep, and they can't be awoken by any means for at least 10 minutes."
-  },
-  {
-    "name": "Necroarchy",
-    "level": "11",
-    "color": "purple",
-    "tags": [
-      "world-building"
-    ],
-    "text": "Animate up to 1* nearby corpses. "
+    "text": "Make someone fall asleep. Take +0*, and on a hit, instead of inflicting N damage, inflict N @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. Incapacitation means a magical sleep that can't be awoken by any means for at least 10 minutes."
   },
   {
     "name": "Klemarchy",
@@ -589,6 +596,25 @@
       "world-building"
     ],
     "text": "@Dominate@ target animate vine."
+  },
+  {
+    "name": "Kyriarchy",
+    "level": "9",
+    "color": "purple",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "You become target Rarint's master."
+  },
+  {
+    "name": "Necroarchy",
+    "level": "11",
+    "color": "purple",
+    "tags": [
+      "world-building"
+    ],
+    "text": "Animate up to 1* nearby corpses. "
   },
   {
     "name": "Subvert",
