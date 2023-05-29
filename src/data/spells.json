@@ -28,16 +28,6 @@
     "text": "Slowly cool target object. Can get from room temperature to -40 degrees over 10 minutes."
   },
   {
-    "name": "Disintegrate",
-    "level": "10",
-    "color": "red",
-    "tags": [
-      "combat",
-      "dubious"
-    ],
-    "text": "You can tear crystalline matter to dust. +3* combat and 5* @AP:armour piercing@, and on a hit, dust a weapon or suit of armour instead of inflicting damage. TODO Too strong? It means a red mage counters an armour warrior pretty hard; and I don't want magic to simply trump everything."
-  },
-  {
     "name": "Fertilise",
     "level": "8",
     "color": "red",
@@ -72,16 +62,6 @@
       "combat"
     ],
     "text": "Fires randomly break out all around you aeor. Determine the number and strength by (a POW roll vs 0)*. Take +9* and 2 -1 magic tokens."
-  },
-  {
-    "name": "Kollakinesis",
-    "level": "9",
-    "color": "red",
-    "tags": [
-      "combat",
-      "dubious"
-    ],
-    "text": "You gain some telekinetic power over glue nearby, including the ability to conjure small amounts. +3* combat, +2 @ranged@, @net@. Can conjure glue, soften it, etc. TODO If casters counter movers, what counters casters?"
   },
   {
     "name": "Mouseform",
@@ -548,7 +528,7 @@
       "slow",
       "world-building"
     ],
-    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1* round. You steal their senses during. You can't act yourself at the same time, and you don't generally know ahead of time whether they're in a position to do anything you care about. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
+    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1* round. You steal their senses during, and your own body becomes insensate. You otherwise have no additional knowledge about the target. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
   },
   {
     "name": "Create curse",

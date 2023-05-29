@@ -115,12 +115,18 @@
     "text": "Enter berserkergang ueoc. Lose 2 focus aeor, and all hits you inflict are crits. The focus loss can cause you to faint and take @injury@."
   },
   {
+    "name": "Bloodlust",
+    "skill": "fight",
+    "tags": [],
+    "text": "When you incapacitate anyone, take +2 fight ueoc to a maximum of +5, and recover 5 focus."
+  },
+  {
     "name": "Disarm",
     "skill": "fight",
     "tags": [
       "modifier"
     ],
-    "text": "Instead of inflicting damage with a melee clash, you knock the weapon from your opponent's hand."
+    "text": "Instead of inflicting damage with a melee clash, you knock the weapon from your opponent's hand and inflict @stunned@."
   },
   {
     "name": "Fighting withdrawal",

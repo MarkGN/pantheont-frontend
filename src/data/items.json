@@ -1,5 +1,14 @@
 [
   {
+    "name": "Brigandine",
+    "price": "400c",
+    "text": "2 @armour@",
+    "type": "armour",
+    "tags": [
+      "worn chest"
+    ]
+  },
+  {
     "name": "Buckler",
     "price": "300c",
     "text": "1 @armour@. This can be used even if you have a @2H:two-handed@ weapon.",
@@ -9,12 +18,21 @@
     ]
   },
   {
-    "name": "Chain mail",
-    "price": "600c",
-    "text": "3 @armour@",
+    "name": "Gambeson",
+    "price": "100c",
+    "text": "1 @armour@",
     "type": "armour",
     "tags": [
       "worn chest"
+    ]
+  },
+  {
+    "name": "Greaves",
+    "price": "400c",
+    "text": "1 @armour@",
+    "type": "armour",
+    "tags": [
+      "worn feet"
     ]
   },
   {
@@ -24,6 +42,15 @@
     "type": "armour",
     "tags": [
       "worn head"
+    ]
+  },
+  {
+    "name": "Maille",
+    "price": "1200c",
+    "text": "3 @armour@",
+    "type": "armour",
+    "tags": [
+      "worn chest"
     ]
   },
   {
