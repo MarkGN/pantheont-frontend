@@ -1,5 +1,5 @@
 import NavbarLink from "./NavbarLink";
-const tabs = ["boon", "item", "plant", "spell", "tag"];
+// tabs = ["boon", "item", "plant", "spell", "tag"];
 
 export default function Header() {
   return <div className="topnav">

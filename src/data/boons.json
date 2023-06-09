@@ -191,7 +191,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Take -1 to any clashes, and the outcome is a @crit@, including for the opponent. NB: this is clash-specific."
+    "text": "Take -1 to any clashes, and the outcome is a @crit@, including for the opponent."
   },
   {
     "name": "Taunt",
@@ -229,6 +229,12 @@
       "rider tribal"
     ],
     "text": "Your mount doesn't bolt when hit."
+  },
+  {
+    "name": "Chadoka",
+    "skill": "knowledge",
+    "tags": [],
+    "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
   },
   {
     "name": "Craftsman",
@@ -293,8 +299,10 @@
   {
     "name": "Medic",
     "skill": "knowledge",
-    "tags": [],
-    "text": "You can receive assistance for first aid checks. Take +5 to them too."
+    "tags": [
+      "action"
+    ],
+    "text": "Revive: Remove @Incapacitated@ from a character. They do not recover anything else, and they can inflict no damage or debuffs ueoc. They can freely run away, cast spells, or use items. Take +5 to first aid checks."
   },
   {
     "name": "Musician",
@@ -343,12 +351,6 @@
       "social"
     ],
     "text": "You know a guy who knows a guy."
-  },
-  {
-    "name": "Chadoka",
-    "skill": "knowledge",
-    "tags": [],
-    "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
   },
   {
     "name": "Whisperer",
@@ -457,12 +459,18 @@
     "text": "You may apply headshots to sneak attacks."
   },
   {
+    "name": "Beautician",
+    "skill": "stealth",
+    "tags": [],
+    "text": "When an ally wears a disguise, you can apply makeup and treat any disguise checks as assisted. You can assist yourself for +5 if you have time to apply makeup."
+  },
+  {
     "name": "Careful",
     "skill": "stealth",
     "tags": [
       "armour tribal"
     ],
-    "text": "Take no stealth penalty from @armour@."
+    "text": "Take no stealth penalty from @armour@ or other worn items."
   },
   {
     "name": "Earskritcher",
@@ -492,6 +500,14 @@
       "mark tribal"
     ],
     "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
+  },
+  {
+    "name": "Master of disguise",
+    "skill": "stealth",
+    "tags": [
+      "social"
+    ],
+    "text": "With a MAS+stealth vs MET+vigilance check and the right outfit, you can convince anyone that you are anyone they haven't personally met."
   },
   {
     "name": "Ninjutsu",
@@ -552,6 +568,12 @@
     "skill": "vigilance",
     "tags": [],
     "text": "When using an @indirect@ weapon from behind cover, opponents can't use ranged attacks without indirect against you."
+  },
+  {
+    "name": "Iaido",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "When engaging an opponent you can't see, their stealth bonus is penalised by your vigilance to a minimum of 0."
   },
   {
     "name": "Kite",
@@ -633,6 +655,6 @@
     "name": "Vanguard",
     "skill": "vigilance",
     "tags": [],
-    "text": "When an ally would blunder into a trap, if you would have passed the spot check, you shout a warning in time to save them."
+    "text": "When an ally would blunder into a trap and you would have passed the spot checkx, you shout a warning in time to save them."
   }
 ]

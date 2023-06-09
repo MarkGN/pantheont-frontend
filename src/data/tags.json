@@ -17,7 +17,7 @@
   {
     "name": "Bleeding",
     "type": "flat",
-    "text": "(condition) Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; on a fail, take 1 Injury."
+    "text": "(condition) Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; on a fail, take 1 Injury. Allies can do this move on your behalf."
   },
   {
     "name": "Channelled",
@@ -142,7 +142,7 @@
   {
     "name": "Summon",
     "type": "flat",
-    "text": "This creates a new character. The spell isn't channelled, but you may have only one summon spell active at a time, so if you re-cast, the current one is cancelled and any summons are dismissed [from this dimension]. The summoner can give orders to the summon, but doesn't control it directly, and it can act of its own initiative. If this would be incapacitated, instead it is dismissed."
+    "text": "This creates a new character. The spell isn't channelled, but you may have only one summon spell active at a time, so if you re-cast, the current one is cancelled and any summons are dismissed: they cease to exist. The summoner can give orders to the summon, but doesn't control it directly, and it can act of its own initiative. If this would be incapacitated, instead it is dismissed."
   },
   {
     "name": "Suppress",
@@ -167,7 +167,7 @@
   {
     "name": "Two-handed",
     "type": "flat",
-    "text": "If you fight with this, you can't use anything in your off hand."
+    "text": "If you use this, you can't hold anything in your off hand."
   },
   {
     "name": "Unseeing",
@@ -177,7 +177,12 @@
   {
     "name": "Veil",
     "type": "flat",
-    "text": "A magical effect that interferes with others' perception of an object or area. By default, a veiled person is hidden with +5 to hide checks."
+    "text": "A magical effect that interferes with others' perception of an object or area. Anything veiled is hidden with +5 to stealth. If whatever is hidden is detected, the veil fizzles; this includes if they attack, talk audibly, or cast a spell. Veils can't hide magic signatures."
+  },
+  {
+    "name": "Wild",
+    "type": "flat",
+    "text": "You can't deliberately weaken this spell."
   },
   {
     "name": "World-building",
@@ -197,17 +202,37 @@
   {
     "name": "Armour piercing",
     "type": "variable",
-    "text": "Take +n to combat up to a maximum of the target's total Armour value."
+    "text": "Take +n to combat up to a maximum of the target's total Armour value. Take -n athletics while using this."
+  },
+  {
+    "name": "Blind",
+    "type": "variable",
+    "text": "(condition) Take -$n to sight-based checks, including most fight and vigilance checks."
+  },
+  {
+    "name": "Dazzled",
+    "type": "variable",
+    "text": "(condition) Take -$n to sight-based checks, including most fight and vigilance checks. Decrease by 1 aeor unless you gain Dazzled tokens this round."
   },
   {
     "name": "Fatigue",
     "type": "variable",
-    "text": "(condition) Take -$n to all physical actions. Remove aeob. At 10 fatigue, you are Incapacitated."
+    "text": "(condition) Take -$n to all physical actions. Remove aeoc. At 10 fatigue, you are Incapacitated."
   },
   {
     "name": "Injury",
     "type": "variable",
     "text": "(condition) Take -$n to all physical actions. Decrease by 1 with each long rest."
+  },
+  {
+    "name": "Nullify",
+    "type": "variable",
+    "text": "Anyone except you within melee range takes -$n magic. Multiple instances of this max, not sum. This doesn't affect anything else tagged Nullify. This is always visible to anything with magic sense. Summons and other pure magic entities take -$n to everything."
+  },
+  {
+    "name": "Paralysis",
+    "type": "variable",
+    "text": "(condition) Take -$n to all physical actions."
   },
   {
     "name": "Tangle",

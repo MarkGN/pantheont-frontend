@@ -41,6 +41,7 @@ function parsePlant(line, regex, isActive) {
       entry.effect = effect;
     }
     if (tags.length) {
+      tags = tags[0].split(", ");
       tags = tags.map((s) => s.trim());
       entry.tags = tags;
     }

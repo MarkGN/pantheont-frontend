@@ -13,7 +13,7 @@
     "name": "Anaitsa",
     "colors": "yellow, purple",
     "text": "Contact toxin inflicts 1 Paralysis per hit.",
-    "effect": "paralytic 8",
+    "effect": "paralytic 8, antiparalytic 17",
     "tags": [
       "hostile"
     ],
@@ -55,13 +55,16 @@
     "colors": "blue, purple",
     "text": "",
     "effect": "amnesia 17",
+    "tags": [
+      "veiled."
+    ],
     "reagentType": "active"
   },
   {
     "name": "Golden lady",
     "colors": "green, red",
     "text": "Named for having densely-packed yellow hairs.",
-    "effect": "easy childbirth 7",
+    "effect": "easy childbirth 7, plant growth 12",
     "reagentType": "active"
   },
   {
@@ -69,6 +72,9 @@
     "colors": "green, purple",
     "text": "",
     "effect": "fertility 6",
+    "tags": [
+      "aerosol"
+    ],
     "reagentType": "active"
   },
   {
@@ -91,7 +97,8 @@
     "text": "Contact sedative inflicts 2 Fatigue per hit.",
     "effect": "sleep 8",
     "tags": [
-      "hostile"
+      "hostile",
+      "veiled"
     ],
     "reagentType": "active"
   },
@@ -124,6 +131,9 @@
     "colors": "green, blue",
     "text": "",
     "effect": "clarity 17",
+    "tags": [
+      "veiled"
+    ],
     "reagentType": "active"
   },
   {
@@ -205,7 +215,7 @@
   {
     "name": "Aokla",
     "colors": "red, green",
-    "text": "",
+    "text": "Grows a cotton-alike that's very easy to bind into cloth; considered cheap, honestly fine.",
     "tags": [
       "cornucopic"
     ],
@@ -214,7 +224,7 @@
   {
     "name": "Blast pods",
     "colors": "yellow, green",
-    "text": "Grows pods that fill with something pressurised and explosive that goes off on contact. These deflate 1 hour after being picked.",
+    "text": "Grows pods that fill with something pressurised and explosive that goes off on contact. These deflate a few minutes after being picked.",
     "tags": [
       "cornucopic"
     ],
@@ -225,7 +235,8 @@
     "colors": "red, blue",
     "text": "It grows very profusely, so can overwhelm areas very easily. Often nicknamed chokeweed when chimerised with vines.",
     "tags": [
-      "cornucopic hostile"
+      "cornucopic",
+      "hostile"
     ],
     "reagentType": "amper"
   },
@@ -243,7 +254,8 @@
     "colors": "red, purple",
     "text": "Grows pink-red sacs that burst into flame on contact.",
     "tags": [
-      "animate vine, cornucopic"
+      "cornucopic",
+      "hostile"
     ],
     "reagentType": "amper"
   },
@@ -307,13 +319,13 @@
   {
     "name": "Noi wan",
     "colors": "yellow, green",
-    "text": "On contact, twists gravity to launch target into the air, tending to aim to make them land on high ledges.",
+    "text": "On contact, twists gravity to launch target into the air, aimed to make them land on high ledges.",
     "reagentType": "damper"
   },
   {
-    "name": "Pora",
+    "name": "Snowbinder",
     "colors": "red, purple",
-    "text": "",
+    "text": "Attracts snow; as such is quite easy to find and exterminate.",
     "reagentType": "damper"
   },
   {
@@ -325,9 +337,9 @@
   {
     "name": "Brambleroot",
     "colors": "orange, blue",
-    "text": "",
+    "text": "Consistently has thorns.",
     "tags": [
-      "hostile."
+      "hostile"
     ],
     "reagentType": "damper"
   },

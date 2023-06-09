@@ -65,10 +65,9 @@
   {
     "name": "Tower shield",
     "price": "1000c",
-    "text": "+4, 5 @armour@",
+    "text": "+4, 6 @armour@",
     "type": "armour",
     "tags": [
-      "worn both hands",
       "2H:two-handed"
     ]
   },
@@ -91,7 +90,7 @@
   {
     "name": "Boots",
     "price": "100c",
-    "text": "-1 stealth, +2 vs ground traps",
+    "text": "-3 stealth, +3 vs fire and other environmental hazards.",
     "type": "tool",
     "tags": [
       "worn feet"
@@ -100,7 +99,7 @@
   {
     "name": "Caltrops",
     "price": "100c",
-    "text": "Can be laid for a trap inflicting @bleeding@ and -5 athletics ueob.",
+    "text": "Can be laid for a trap inflicting @bleeding@ and -5 athletics ueoc.",
     "type": "tool",
     "tags": [
       "concealed"
@@ -151,7 +150,7 @@
   {
     "name": "Medical kit",
     "price": "100c",
-    "text": "+5 to first aid checks. Includes bandages, alcohol, scissors, tweezers.",
+    "text": "+5 to checks to resolve conditions. Includes bandages, alcohol, scissors, tweezers.",
     "type": "tool"
   },
   {
@@ -181,13 +180,13 @@
   {
     "name": "Rope",
     "price": "40c",
-    "text": "10m of hemp rope. Indicative uses are to safely climb up or down from a ledge, provided you can tie it off; tie someone up (they can make a @slow@ AGI+ath vs MET+knowledge check to either break free or take 1 @Injury@); to make a leash for an animal; to make a lasso (weapon with thrown net ranged +2); to make a snare trap.",
+    "text": "10m of hemp rope. Indicative uses are to safely climb up or down from a ledge, provided you can tie it off; tie someone up (they can make a @slow@ AGI+ath vs MET+knowledge check to either break free or take 1 @Injury@); to make a leash for an animal; to make a lasso (weapon with thrown net ranged +1); to make a snare trap.",
     "type": "tool"
   },
   {
     "name": "Soft shoes",
     "price": "100c",
-    "text": "+1 to stealth.",
+    "text": "-3 athletics, +3 stealth.",
     "type": "tool",
     "tags": [
       "worn feet"
@@ -269,7 +268,7 @@
   {
     "name": "Grenade",
     "price": "100c",
-    "text": "Has an associated condition, such as tangled (as for glue), fire, or poison. When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail. You may target open space, but if you hit a target, they take the condition automatically and do not lose focus from being hit.",
+    "text": "Has an associated condition, such as tangled (as for glue), fire, or poison. When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail. You may target open space, but if you engage and hit a specific target, they take the condition automatically and do not lose focus from being hit.",
     "type": "weapon",
     "tags": [
       "+0 ranged:ranged",
@@ -294,6 +293,16 @@
     "tags": [
       "concealed",
       "sharp"
+    ]
+  },
+  {
+    "name": "Maul",
+    "price": "two-handed",
+    "text": "800c",
+    "type": "weapon",
+    "tags": [
+      "9 AP:armour piercing",
+      "2H"
     ]
   },
   {

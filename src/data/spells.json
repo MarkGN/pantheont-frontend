@@ -61,7 +61,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Fires randomly break out all around you aeor. Determine the number and strength by (a POW roll vs 0)*. Take +9* and 2 -1 magic tokens."
+    "text": "Fires randomly break out all around you aeor. Determine the number and strength by (a POW roll vs 0)*. Take +9* and 2 -1 magic tokens. @Wild@."
   },
   {
     "name": "Mouseform",
@@ -113,7 +113,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain fire control power, including the ability to conjure it. +3* combat, +4 @ranged@, and an additional +1 for each fire of POW at least 5 nearby, to a maximum of +5. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. Can start smaller fires, but not put them out."
+    "text": "You gain fire control power, including the ability to conjure it. +3* combat, +4 @ranged@, and an additional +1 for each fire of POW at least 5 nearby, to a maximum of +5. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. Can't put fires out."
   },
   {
     "name": "Sterilise",
@@ -164,14 +164,14 @@
       "combat",
       "dubious"
     ],
-    "text": "Anyone engaging you has -5* magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong?"
+    "text": "Anyone engaging you has -5* magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong? Also, what happens if two characters try to use this against each other, and each would counter the other by casting it?"
   },
   {
     "name": "Appropriate",
     "level": "10",
     "color": "orange",
     "tags": [],
-    "text": "If an opponent casts a spell at you, +8*, and if they cast a spell this round, ueoc they lose access to that spell and you gain access to it. "
+    "text": "If a target casts a spell at you, +8*, and ueoc they lose access to that spell and you gain access to it. "
   },
   {
     "name": "Boost",
@@ -245,15 +245,6 @@
     "text": "Enter a magical combat trance and open your mind to higher states. +3* combat, take +1 magic aeor."
   },
   {
-    "name": "Mnemonophage",
-    "level": "13",
-    "color": "orange",
-    "tags": [
-      "slow"
-    ],
-    "text": "Target character forgets a spell."
-  },
-  {
     "name": "Antigrav",
     "level": "14",
     "color": "yellow",
@@ -324,7 +315,7 @@
     "level": "21",
     "color": "yellow",
     "tags": [],
-    "text": "Create a random maze of warped geometry nearby. Everything is still topologically connected, but characters become isolated from each other and lost."
+    "text": "Create a random maze of warped geometry nearby. Everything is still topologically connected, but characters become isolated from each other and lost. @Wild@."
   },
   {
     "name": "Space warp",
@@ -369,21 +360,21 @@
     "tags": [
       "civilian"
     ],
-    "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, etc"
+    "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, or other health issues."
   },
   {
     "name": "Chameleon",
     "level": "10",
     "color": "blue",
     "tags": [],
-    "text": "@Veil:veil@ yourself. At level 1, you may instead veil an ally (the veil breaks when they cast a spell); at level 2, you may veil both yourself and one ally."
+    "text": "@Veil:veil@ yourself. At level 1, you may instead veil an ally; at level 2, you may veil both yourself and one ally."
   },
   {
     "name": "Clarity",
     "level": "8",
     "color": "blue",
     "tags": [],
-    "text": "+10* to spot @veil@s"
+    "text": "+10* to spot @veils:veil@."
   },
   {
     "name": "Disguise",
@@ -415,7 +406,7 @@
     "tags": [
       "civilian"
     ],
-    "text": "Identify composition of crystals"
+    "text": "Identify composition of crystals."
   },
   {
     "name": "Haze",
@@ -502,7 +493,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Create a Watcher that attaches to an incapacitated target. Once per day, you may share their senses for up to 1* minute. You can do this remotely, although obviously they might just be on the toilet or daydreaming or something. They are not typically aware of this. You aren't aware of their thoughts, memories, or other non-sensory data. The Watcher is weak to orange magic and can be killed by any sort of dispel effect, regardless of whether you're targeting it. Per level, you gain an additional sense: audio, video, smell, taste, touch, proprioception, pain, balance, hunger, thermo ... although as long as you have audiovideo you can probably figure out the others. A person may host no more than one Watcher at a time."
+    "text": "Create a Watcher that attaches to an incapacitated target. Once per day, you may share their senses for up to 1* minute. You can do this remotely. They are not typically aware of this. You aren't aware of their thoughts, memories, or other non-sensory data. The Watcher is weak to orange magic and can be killed by any sort of dispel effect, regardless of whether you're targeting it. Per level, you gain an additional sense: audio, video, smell, taste, touch, proprioception, pain, balance, hunger, thermo ... although as long as you have audiovideo you can probably guess at the others. A person may host no more than one Watcher at a time."
   },
   {
     "name": "X-ray vision",
@@ -528,7 +519,7 @@
       "slow",
       "world-building"
     ],
-    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1* round. You steal their senses during, and your own body becomes insensate. You otherwise have no additional knowledge about the target. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely, until disenchanted."
+    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1* round. You steal their senses during, and your own body becomes insensate. You otherwise have no additional knowledge about the target. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely."
   },
   {
     "name": "Create curse",
@@ -610,7 +601,7 @@
     "level": "10",
     "color": "purple",
     "tags": [],
-    "text": "@Summon:summon@ a copy of yourself except that all attributes equal your POW-2; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured."
+    "text": "@Summon@ a copy of yourself except that all attributes equal your POW-2; and take 3 -1 magic tokens. It has copies of whatever items you carry, but if it puts them down, they disappear; and consumables don't work, even if it uses them on itself. The minion may be reflavoured."
   },
   {
     "name": "Summon phantasms",
@@ -631,7 +622,7 @@
     "level": "23",
     "color": "purple",
     "tags": [],
-    "text": "@Summon@ $magic shadowlings randomly around you aeor. A shadowling has all attributes equal to your POW; all skills equal to 5*; and +5 combat. They ignore all commands and are permanently enraged, attacking whoever is closest except other shadowlings. They last ueoc or are dismissed when you are incapacitated."
+    "text": "@Summon@ $magic shadowlings randomly around you aeor. A shadowling has all attributes equal to your POW; all skills equal to 5*; and +5 combat. They ignore all commands and are permanently enraged, attacking whoever is closest except other shadowlings. They last ueoc or are dismissed when you are incapacitated. @Wild@."
   },
   {
     "name": "Wrath",
