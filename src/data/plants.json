@@ -36,7 +36,7 @@
   {
     "name": "Chuche",
     "colors": "orange, green",
-    "text": "",
+    "text": "Fortify magic means take +3 magic and astros (???; ends when you take mana shock).",
     "effect": "fortify magic 14, disjunction 18",
     "reagentType": "active"
   },
@@ -215,7 +215,7 @@
   {
     "name": "Aokla",
     "colors": "red, green",
-    "text": "Grows a cotton-alike that's very easy to bind into cloth; considered cheap, honestly fine.",
+    "text": "Grows a cotton-alike that's very easy to bind into cloth; considered tacky, but perfectly utilitarian.",
     "tags": [
       "cornucopic"
     ],
@@ -224,7 +224,7 @@
   {
     "name": "Blast pods",
     "colors": "yellow, green",
-    "text": "Grows pods that fill with something pressurised and explosive that goes off on contact. These deflate a few minutes after being picked.",
+    "text": "Grows pods that fill with something pressurised and explosive that goes off on contact. These deflate aeoc after being picked.",
     "tags": [
       "cornucopic"
     ],
@@ -252,7 +252,7 @@
   {
     "name": "Firelace",
     "colors": "red, purple",
-    "text": "Grows pink-red sacs that burst into flame on contact.",
+    "text": "Grows pink-red sacs that burst into flame on contact. These deflate aeoc after being picked, but can be stabilised into firestarters with salt.",
     "tags": [
       "cornucopic",
       "hostile"
@@ -266,7 +266,13 @@
     "reagentType": "amper"
   },
   {
-    "name": "Oasol",
+    "name": "Modaga",
+    "colors": "orange, purple",
+    "text": "A relay phyto; if growing near a nexus, can transfer its mana flux to within a 50m radius. Slow-growing, and it doesn't create extra mana, just redirects it.",
+    "reagentType": "amper"
+  },
+  {
+    "name": "Oamol",
     "colors": "red, orange",
     "text": "Condenses huge amounts of water.",
     "tags": [
@@ -280,6 +286,15 @@
     "text": "Its spores dump the target circa one minute into the future.",
     "tags": [
       "aerosol"
+    ],
+    "reagentType": "amper"
+  },
+  {
+    "name": "Twitchweed",
+    "colors": "orange, yellow",
+    "text": "It can teleport, usually moving between choke points.",
+    "tags": [
+      "hostile"
     ],
     "reagentType": "amper"
   },
@@ -344,15 +359,15 @@
     "reagentType": "damper"
   },
   {
-    "name": "Umberol",
+    "name": "Umberos",
     "colors": "green, blue",
     "text": "Exudes an anti-light aura; it and everything within 1m is pitch black, and up to 2m is dim. This is a magical effect that can only be cancelled with antimagic 15+.",
     "reagentType": "damper"
   },
   {
     "name": "Yunzo",
-    "colors": "orange, purple",
-    "text": "",
+    "colors": "red, blue",
+    "text": "Creates pit traps around itself.",
     "reagentType": "damper"
   },
   {
@@ -367,7 +382,10 @@
   {
     "name": "Jaut",
     "colors": "yellow, green",
-    "text": "",
+    "text": "Those caught are sent into the future. Those attempting to harvest it are rumoured to be sent even further.",
+    "tags": [
+      "aerosol"
+    ],
     "reagentType": "preservative"
   },
   {
@@ -377,12 +395,6 @@
     "tags": [
       "cornucopic"
     ],
-    "reagentType": "preservative"
-  },
-  {
-    "name": "Modaga",
-    "colors": "yellow, purple",
-    "text": "",
     "reagentType": "preservative"
   },
   {

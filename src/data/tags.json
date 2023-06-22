@@ -82,7 +82,7 @@
   {
     "name": "Innocent",
     "type": "flat",
-    "text": "People won't necessarily take this as a threat."
+    "text": "Characters don't interpret this as a weapon."
   },
   {
     "name": "Loaded.*",
@@ -112,7 +112,7 @@
   {
     "name": "Ranged",
     "type": "flat",
-    "text": "This applies only when engaging from outside melee. You may have both a ranged and a non-ranged weapon equipped at once."
+    "text": "This applies only when engaging from outside melee. You may have both a ranged and a non-ranged weapon equipped at once in the same hand slots."
   },
   {
     "name": "Sessile",
@@ -210,9 +210,14 @@
     "text": "(condition) Take -$n to sight-based checks, including most fight and vigilance checks."
   },
   {
-    "name": "Dazzled",
+    "name": "Dazzle",
     "type": "variable",
     "text": "(condition) Take -$n to sight-based checks, including most fight and vigilance checks. Decrease by 1 aeor unless you gain Dazzled tokens this round."
+  },
+  {
+    "name": "Dim",
+    "type": "variable",
+    "text": "Within $n metres, +1 light level (ie dark to dim or dim to normal). Multiple instances max."
   },
   {
     "name": "Fatigue",
@@ -225,9 +230,19 @@
     "text": "(condition) Take -$n to all physical actions. Decrease by 1 with each long rest."
   },
   {
+    "name": "Light",
+    "type": "variable",
+    "text": "Within $n metres, +2 light levels (ie it becomes normally bright), and within another $n, +1. Multiple instances max."
+  },
+  {
+    "name": "Mana shock",
+    "type": "variable",
+    "text": "(condition) Take -$n to magic. Decrease by 1 with each long rest. If an effect is capped at $magic, this stops you from increasing the effect, but doesn't make you lose any effect already in place."
+  },
+  {
     "name": "Nullify",
     "type": "variable",
-    "text": "Anyone except you within melee range takes -$n magic. Multiple instances of this max, not sum. This doesn't affect anything else tagged Nullify. This is always visible to anything with magic sense. Summons and other pure magic entities take -$n to everything."
+    "text": "Anyone except you within melee range takes -$n magic. Multiple instances max. This affects magic items, but doesn't affect anything else tagged Nullify. This is always visible to anything with magic sense. Pure magic entities instead take -$n to everything."
   },
   {
     "name": "Paralysis",

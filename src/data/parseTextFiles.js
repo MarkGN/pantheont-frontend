@@ -5,7 +5,7 @@ const fs = require ("node:fs");
 // Sue me for hard-coding these, these are my scrapbook files
 const boonTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Boons.txt";
 const itemTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Items.txt";
-const plantTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Hezulim/Flora.txt";
+const plantTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Hezulim/Kera.txt";
 const spellTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Spells.txt";
 const tagTextFile = "/home/mark/zim/TTRPGs/Settings/Pantheont/Tags.txt";
 

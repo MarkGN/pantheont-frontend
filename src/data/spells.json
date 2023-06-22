@@ -9,6 +9,15 @@
     "text": "Labour becomes very easy and free of complications. No particular drawback. Very popular civilian magic."
   },
   {
+    "name": "Aromakinesis",
+    "level": "6",
+    "color": "red",
+    "tags": [
+      "civilian"
+    ],
+    "text": "You can create, change, or cancel arbitrary smells nearby."
+  },
+  {
     "name": "Augment",
     "level": "9",
     "color": "red",
@@ -43,7 +52,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Shape crystalline (ie metal, rock, ceramic) matter. (This lacks precision: if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
+    "text": "Shape crystalline (ie metal, rock, ceramic) matter. (This lacks precision: if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, digging, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
   },
   {
     "name": "Hydrokinesis",
@@ -140,14 +149,14 @@
     "tags": [
       "civilian"
     ],
-    "text": "A magical abortion. A spell is less hassle than a potion, but it's illegal and the mage has less plausible deniability, so the potion is often preferred."
+    "text": "Administer a magical abortion. Some limited nausea and general crappiness are common side effects."
   },
   {
     "name": "Transmute",
     "level": "7",
     "color": "red",
     "tags": [],
-    "text": "Temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size categories; this lasts indefinitely, but if you try to transmute more, the first part reverts. Mass is conserved, not volume. At level 0, you can make base salts and materials (lead, table salt, copper); at level 1, can make iron, zinc, most ceramics, and can revert to original material; at level 2, can make diamond (it's not valuable in-universe); at level 3, can make titanium. Can't make noble metals, radioactive materials, or manite ever."
+    "text": "Temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size levels; this lasts indefinitely, but if you try to transmute more, the first part reverts. Mass is conserved, not volume. At level 0, you can make base salts and materials (lead, table salt, copper); at level 1, can make iron, zinc, most ceramics, and can revert to original material; at level 2, can make diamond (it's not valuable in-universe); at level 3, can make titanium. Can't make noble metals, radioactive materials, or manite ever."
   },
   {
     "name": "Water breathing, walking",
@@ -243,6 +252,20 @@
       "combat"
     ],
     "text": "Enter a magical combat trance and open your mind to higher states. +3* combat, take +1 magic aeor."
+  },
+  {
+    "name": "Proof",
+    "level": "--",
+    "color": "orange",
+    "tags": [],
+    "text": "Magic can't affect whatever you touch while this is channelled, unless its requirement is at least 10 higher than this.requirement."
+  },
+  {
+    "name": "Spoof",
+    "level": "16",
+    "color": "orange",
+    "tags": [],
+    "text": "Blue magic can't detect anything on your person, but is otherwise unaffected and receives no indication that it isn't working properly."
   },
   {
     "name": "Antigrav",
@@ -343,15 +366,6 @@
       "combat"
     ],
     "text": "+3* to combat, and on a hit, the target is sent 1 round into the future (in addition to any damage)."
-  },
-  {
-    "name": "Time warp",
-    "level": "35",
-    "color": "yellow",
-    "tags": [
-      "world-building"
-    ],
-    "text": "Create a pocket dimension with two apertures with different coordinates in time."
   },
   {
     "name": "Biomancy",
@@ -477,7 +491,7 @@
     "level": "11",
     "color": "blue",
     "tags": [],
-    "text": "Send messages to anyone on the T-soph network."
+    "text": "Send messages to anyone on the T-soph network. However, the system is still expensive to use, costing 30c per node used."
   },
   {
     "name": "Veilbreaker",
@@ -509,7 +523,7 @@
     "tags": [
       "world-building"
     ],
-    "text": "+6* and +4 ranged vs wisps, and on a hit, you @dominate@ it. They're very powerful servants, but there's a catch: they feed on the spell's energy, gradually becoming stronger without upper limit. Eventually, they break free, and then there's an extra-strong wisp. Responsible use is to let it loose in the wild, where the extra strength dissipates harmlessly. Purple mages are always responsible, right?"
+    "text": "+6* and +4 ranged vs wisps, and on a hit, you @dominate@ it. However, every 24 hours, they check END+magic vs your MAS+magic; on a pass, they break free and are enraged; on a fail, they get a special +1 magic token with \"You only lose 1 of these per day\"."
   },
   {
     "name": "Compromise",
@@ -519,7 +533,7 @@
       "slow",
       "world-building"
     ],
-    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1* round. You steal their senses during, and your own body becomes insensate. You otherwise have no additional knowledge about the target. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely."
+    "text": "Inflict Compromised on an incapacitated target. Once per day, you may take control of them for 1* round. You steal their senses during, and your own body becomes insensate. You otherwise have no additional knowledge about the target. They have no memory of this, and aren't necessarily aware that they're compromised. Lasts indefinitely. You may only have Compromised up to $magic targets at once, and can remove Compromise on any pre-existing target at will."
   },
   {
     "name": "Create curse",
@@ -594,7 +608,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+2*. On a hit, the target takes Subverted ueoc. If they would be incapacitated, instead their focus is fully restored and they are @dominated:dominate@ ueoc with no debuffs. They faint aeoc. If the target is already subverted, this is a crit."
+    "text": "+2*. On a hit, the target takes Subverted ueoc. If they would be incapacitated, instead their focus is fully restored and they are @dominated:dominate@ ueoc. They faint aeoc. If the target is already subverted, this is a crit."
   },
   {
     "name": "Summon lesser minion",

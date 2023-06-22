@@ -222,6 +222,14 @@
     "text": "Take -3. Next round, take +2."
   },
   {
+    "name": "Botanist",
+    "skill": "knowledge",
+    "tags": [
+      "forage tribal"
+    ],
+    "text": "Whenever you see a phyto, if you've seen the kera before, you recognise it."
+  },
+  {
     "name": "Calming",
     "skill": "knowledge",
     "tags": [
