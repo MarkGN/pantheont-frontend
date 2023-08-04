@@ -12,7 +12,7 @@
   {
     "name": "Anaitsa",
     "colors": "yellow, purple",
-    "text": "Contact toxin inflicts 1 Paralysis per hit.",
+    "text": "Contact toxin inflicts 1 @paralysis@ per hit.",
     "effect": "paralytic 8, antiparalytic 17",
     "tags": [
       "hostile"
@@ -44,7 +44,7 @@
     "name": "Creampod",
     "colors": "red, blue",
     "text": "Grows ampoules that fill with a dairy-like substance, roughly half water.",
-    "effect": "styptic 12",
+    "effect": "styptic 12 (take +10 to @medical@ checks against @Bleeding@)",
     "tags": [
       "cornucopic"
     ],
@@ -54,9 +54,19 @@
     "name": "Dabano",
     "colors": "blue, purple",
     "text": "",
-    "effect": "amnesia 17",
+    "effect": "amnesia 17 (forget a spell)",
     "tags": [
       "veiled."
+    ],
+    "reagentType": "active"
+  },
+  {
+    "name": "Futago",
+    "colors": "yellow, red",
+    "text": "Is fireproof and generally quite stubborn.",
+    "effect": "resist fire 8",
+    "tags": [
+      "hostile"
     ],
     "reagentType": "active"
   },
@@ -71,7 +81,7 @@
     "name": "Inha",
     "colors": "green, purple",
     "text": "",
-    "effect": "fertility 6",
+    "effect": "fertility 6 (",
     "tags": [
       "aerosol"
     ],
@@ -85,6 +95,16 @@
     "reagentType": "active"
   },
   {
+    "name": "Kaicheri",
+    "colors": "purple, green",
+    "text": "",
+    "effect": "wrath 6",
+    "tags": [
+      "aerosol."
+    ],
+    "reagentType": "active"
+  },
+  {
     "name": "Likebane",
     "colors": "yellow, green",
     "text": "",
@@ -94,7 +114,7 @@
   {
     "name": "Lover's kiss",
     "colors": "yellow, blue",
-    "text": "Contact sedative inflicts 2 Fatigue per hit.",
+    "text": "Contact sedative inflicts 2 @fatigue@ per hit.",
     "effect": "sleep 8",
     "tags": [
       "hostile",
@@ -123,7 +143,7 @@
     "name": "Mindai",
     "colors": "green, orange",
     "text": "",
-    "effect": "contraceptive 11",
+    "effect": "contraceptive 11 (works on both men and women)",
     "reagentType": "active"
   },
   {
@@ -168,7 +188,7 @@
     "name": "Sujan",
     "colors": "red, orange",
     "text": "",
-    "effect": "healing 25",
+    "effect": "healing 20 (take +10 to any one @medical@ check)",
     "reagentType": "active"
   },
   {
@@ -195,20 +215,10 @@
   {
     "name": "Vichas",
     "colors": "blue, red",
-    "text": "Contact neurotoxin inflicts 2 Blinded per hit. (Blinded n gives -n vigilance.)",
+    "text": "Contact neurotoxin inflicts 1 @Blind@ per hit.",
     "effect": "blindness 8, seeing 19",
     "tags": [
       "hostile"
-    ],
-    "reagentType": "active"
-  },
-  {
-    "name": "Kaicheri",
-    "colors": "purple, green",
-    "text": "",
-    "effect": "wrath 6",
-    "tags": [
-      "aerosol."
     ],
     "reagentType": "active"
   },
@@ -222,7 +232,7 @@
     "reagentType": "amper"
   },
   {
-    "name": "Blast pods",
+    "name": "Blaster",
     "colors": "yellow, green",
     "text": "Grows pods that fill with something pressurised and explosive that goes off on contact. These deflate aeoc after being picked.",
     "tags": [
@@ -252,10 +262,9 @@
   {
     "name": "Firelace",
     "colors": "red, purple",
-    "text": "Grows pink-red sacs that burst into flame on contact. These deflate aeoc after being picked, but can be stabilised into firestarters with salt.",
+    "text": "Grows pink-red sacs that burst into POW=8 fires on contact. These deflate aeoc after being picked, but can be stabilised into firestarters with salt.",
     "tags": [
-      "cornucopic",
-      "hostile"
+      "cornucopic"
     ],
     "reagentType": "amper"
   },
@@ -307,9 +316,9 @@
   {
     "name": "Inzun",
     "colors": "orange, green",
-    "text": "With yellow flowers that grow into red berries. The vines drain ability to use magic.",
+    "text": "Contact toxin inflicts -2 magic on hit and gives itself +1 combat.",
     "tags": [
-      "animate vine"
+      "hostile"
     ],
     "reagentType": "damper"
   },
@@ -325,7 +334,7 @@
   {
     "name": "Limaganda",
     "colors": "red, orange",
-    "text": "Secretes lots of glue.",
+    "text": "Secretes lots of glue. Pods can be thrown as grenades inflicting -3 athletics",
     "tags": [
       "cornucopic"
     ],
@@ -346,7 +355,7 @@
   {
     "name": "Taiyo",
     "colors": "yellow, blue",
-    "text": "Glows brightly within 1m and dimly within 2m, and can be used to craft lights.",
+    "text": "Produces pods with @light@ 1 that can be thrown as flash grenades inflicting @dazzle@ 3.",
     "reagentType": "damper"
   },
   {
@@ -380,6 +389,12 @@
     "reagentType": "preservative"
   },
   {
+    "name": "Inkblot",
+    "colors": "orange, yellow",
+    "text": "Produces a powerful blue-black dye that's highly visible to blue magic senses.",
+    "reagentType": "preservative"
+  },
+  {
     "name": "Jaut",
     "colors": "yellow, green",
     "text": "Those caught are sent into the future. Those attempting to harvest it are rumoured to be sent even further.",
@@ -400,7 +415,7 @@
   {
     "name": "Nezema",
     "colors": "blue, purple",
-    "text": "Contact resin inflicts -3 athletics per hit. If an animate vine, take -3 more while restrained.",
+    "text": "Contact resin inflicts -2 athletics, cumulative to a maximum of -5.",
     "tags": [
       "hostile"
     ],

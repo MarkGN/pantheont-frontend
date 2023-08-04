@@ -1,5 +1,13 @@
 [
   {
+    "name": "Conditioned",
+    "skill": "athletics",
+    "tags": [
+      "armour tribal"
+    ],
+    "text": "Take no athletics penalty from @armour@."
+  },
+  {
     "name": "Contortionist",
     "skill": "athletics",
     "tags": [
@@ -56,7 +64,7 @@
     "name": "Second wind",
     "skill": "athletics",
     "tags": [],
-    "text": "Negate the check penalty from up to 2 @fatigue@."
+    "text": "Negate the check penalty from 1 point of @fatigue@."
   },
   {
     "name": "Skautahlaupari",
@@ -76,15 +84,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "If you have no @fatigue@, take +3 to athletics and fight checks ueor and take 1 @fatigue@ aeor."
-  },
-  {
-    "name": "Stoic",
-    "skill": "athletics",
-    "tags": [
-      "armour tribal"
-    ],
-    "text": "Take no athletics penalty from @armour@."
+    "text": "If you have no @fatigue@, take +3 to physical checks ueor and take 1 @fatigue@ aeor."
   },
   {
     "name": "Stubborn",
@@ -96,7 +96,7 @@
     "name": "Warm up",
     "skill": "athletics",
     "tags": [],
-    "text": "Whenever you do an athletics action during battle, get +1 athletics aeor ueoc."
+    "text": "Whenever you do an athletics action during crisis, get +1 athletics aeor ueoc."
   },
   {
     "name": "Anbinden",
@@ -112,13 +112,13 @@
     "tags": [
       "modifier"
     ],
-    "text": "Enter berserkergang ueoc. Lose 2 focus aeor, and all hits you inflict are crits. The focus loss can cause you to faint and take @injury@."
+    "text": "Enter berserkergang ueoc or until incapacitated. Berserkergang: Take -2 focus aeor, and all hits you inflict are @crits:crit@. This focus loss can cause you to faint and take @injury@."
   },
   {
     "name": "Bloodlust",
     "skill": "fight",
     "tags": [],
-    "text": "When you incapacitate anyone, take +2 fight ueoc to a maximum of +5, and recover 5 focus."
+    "text": "When you incapacitate anyone, take +1 fight ueoc to a maximum of +5, and recover 5 focus."
   },
   {
     "name": "Disarm",
@@ -171,19 +171,13 @@
     "name": "Masochist",
     "skill": "fight",
     "tags": [],
-    "text": "Negate the check penalty from up to 2 points of @injury@."
-  },
-  {
-    "name": "Mordhau",
-    "skill": "fight",
-    "tags": [],
-    "text": "Take @1 AP:armour piercing@ in melee."
+    "text": "Negate the check penalty from 1 point of @injury@."
   },
   {
     "name": "Overwhelming",
     "skill": "fight",
     "tags": [],
-    "text": "If a single hit inflicts at least 2/3 of a target's maximum focus (rounded up), it incapacitates them."
+    "text": "If a single hit inflicts at least 3/4 of a target's maximum focus (rounded up), it incapacitates them."
   },
   {
     "name": "Reckless",
@@ -202,12 +196,6 @@
     "text": "When you defend an ally, intercept all opponents attacking her."
   },
   {
-    "name": "Tough",
-    "skill": "fight",
-    "tags": [],
-    "text": "Whenever you would take @injury@, take 1 fewer."
-  },
-  {
     "name": "Trample",
     "skill": "fight",
     "tags": [],
@@ -219,15 +207,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Take -3. Next round, take +2."
-  },
-  {
-    "name": "Botanist",
-    "skill": "knowledge",
-    "tags": [
-      "forage tribal"
-    ],
-    "text": "Whenever you see a phyto, if you've seen the kera before, you recognise it."
+    "text": "Take -3 to all physical. Next round, take +2 to all physical."
   },
   {
     "name": "Calming",
@@ -242,7 +222,7 @@
     "name": "Chadoka",
     "skill": "knowledge",
     "tags": [],
-    "text": "Once each morning, prepare a thermos of tea, counting as a +3 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
+    "text": "Once each morning, prepare a thermos of tea, counting as a +2 focus potion. You can take this multiple times and prepare additional doses. Unused doses expire in the morning."
   },
   {
     "name": "Craftsman",
@@ -258,7 +238,7 @@
     "tags": [
       "forage tribal"
     ],
-    "text": "(move) While travelling, check MET+knowledge vs 15. On success, find paikera along the way."
+    "text": "(move) Once per day while travelling, check MET+knowledge vs 20. On success, find and harvest phytos along the way."
   },
   {
     "name": "Green thumb",
@@ -294,7 +274,7 @@
     "tags": [
       "move"
     ],
-    "text": "Pick a lock, with a MET+knowledge check if there's time pressure or a trap or something. Must have a lockpick or at least a bit of wire or something."
+    "text": "Pick a lock, with a AGI+knowledge check if there's time pressure or a trap or something. Must have a lockpick or at least a bit of wire or something."
   },
   {
     "name": "Mark knowledge",
@@ -305,12 +285,20 @@
     "text": "Whenever you beat someone at a check involving this skill, you may Mark them aeoc. Take +1 to all checks against a Marked target except ones involving this skill. You may maintain one (additional) Mark at a time. Marks last indefinitely or until you cancel them (modifier)."
   },
   {
+    "name": "Masseur",
+    "skill": "knowledge",
+    "tags": [
+      "healing tribal, medical, move"
+    ],
+    "text": "Massage: check AGI+knowledge vs 15; on a pass, they recover 1 additional @Fatigue@ this long rest. Can only be used once per patient per long rest. Take +1 to @medical@ checks."
+  },
+  {
     "name": "Medic",
     "skill": "knowledge",
     "tags": [
-      "action"
+      "healing tribal, medical, move"
     ],
-    "text": "Revive: Remove @Incapacitated@ from a character. They do not recover anything else, and they can inflict no damage or debuffs ueoc. They can freely run away, cast spells, or use items. Take +5 to first aid checks."
+    "text": "Revive: Remove @Incapacitated@ from a character. They do not recover anything else, and they can inflict no damage or debuffs ueoc. They can freely run away, cast spells, or use items. Take +1 to @medical@ checks."
   },
   {
     "name": "Musician",
@@ -340,8 +328,10 @@
   {
     "name": "Recipe book",
     "skill": "knowledge",
-    "tags": [],
-    "text": "Pick any potion; take +5 to crafting it. Whenever you craft it without needing this, you may pick another potion."
+    "tags": [
+      "potion tribal"
+    ],
+    "text": "Pick any potion. Take +5 to crafting it and it takes half as long."
   },
   {
     "name": "Seductive",
@@ -350,7 +340,15 @@
       "social",
       "move"
     ],
-    "text": "Check MAS+knowledge vs END+knowledge to get someone to do something they really don't want."
+    "text": "Check MAS+knowledge vs END+knowledge to get an NPC to do something they really don't want."
+  },
+  {
+    "name": "Splint",
+    "skill": "knowledge",
+    "tags": [
+      "healing tribal, medical, move"
+    ],
+    "text": "Splint: Target ally gains Splinted, which negates 1 point of @Injury@. When they lose focus or receive any @condition@, the splint breaks. Take +1 to @medical@ checks."
   },
   {
     "name": "Streetwise",
@@ -359,6 +357,15 @@
       "social"
     ],
     "text": "You know a guy who knows a guy."
+  },
+  {
+    "name": "Treat wrangler",
+    "skill": "knowledge",
+    "tags": [
+      "social",
+      "animal tribal"
+    ],
+    "text": "You can tame feral animals to another stage at 40 Tame, Loyal, whence they will fight for you while uninjured and at full focus."
   },
   {
     "name": "Whisperer",
@@ -377,10 +384,10 @@
     "text": "You may learn twice as many spells."
   },
   {
-    "name": "Colour affinity",
+    "name": "Artificer",
     "skill": "magic",
     "tags": [],
-    "text": "Pick a colour: you may learn and cast spells of that colour. The square of the number of copies of this you have can't exceed your base magic."
+    "text": "Your magic sense detects inactive enchantments. Magical creatures don't count."
   },
   {
     "name": "Combat caster",
@@ -396,7 +403,13 @@
     "tags": [
       "civilian"
     ],
-    "text": "When teaching someone a spell, it takes $requirement hours, not double that."
+    "text": "When teaching someone a spell, it takes half as long."
+  },
+  {
+    "name": "Epiphany",
+    "skill": "magic",
+    "tags": [],
+    "text": "When you receive @Injury@, if you know fewer than $magic spells, learn one known by someone nearby, chosen at random. You don't need to know the person, but you do have to meet the spell's requirement. This only triggers once per day."
   },
   {
     "name": "Focus energy",
@@ -404,21 +417,35 @@
     "tags": [
       "modifier"
     ],
-    "text": "Take -3 ueor. aeor, gain a +1 magic token."
+    "text": "Take -5 ueor. Gain a +1 magic token aeor."
   },
   {
     "name": "Gnostic",
     "skill": "magic",
-    "tags": [
-      "prereq Blue affinity"
-    ],
-    "text": "You may channel two blue spells at the same time. Any effects are maxed, not stacked (eg if one gives +3 vigilance and another gives +4, you get +4, not +7). If you're channelling two spells when Crisis is declared, you can't cast other spells until it ends."
+    "tags": [],
+    "text": "You may channel two blue spells at the same time. Any effects are maxed, not stacked (eg if one gives +3 vigilance and another gives +4, you get +4, not +7)."
+  },
+  {
+    "name": "Illusionist",
+    "skill": "magic",
+    "tags": [],
+    "text": "Your @veils:veil@ @persist:persists@ for up to one hour even after you stop channelling them. You may only sustain one such veil at a time."
   },
   {
     "name": "Irongut",
     "skill": "magic",
-    "tags": [],
+    "tags": [
+      "potion tribal"
+    ],
     "text": "You may drink an additional potion per crisis without side effects."
+  },
+  {
+    "name": "Limit break",
+    "skill": "magic",
+    "tags": [
+      "modifier"
+    ],
+    "text": "Take +5 magic ueor and 1 @mana shock@. This can be used outside crisis."
   },
   {
     "name": "Manaburn",
@@ -426,7 +453,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Trade in a +1 magic token for +3 magic ueor."
+    "text": "Trade in a +1 magic token for +3 ueor."
   },
   {
     "name": "Mark magic",
@@ -443,20 +470,30 @@
     "text": "Pick any spell; take +5 to cast it. This does not allow you to cast at a higher level. Whenever you cast it without needing this, you may pick another spell."
   },
   {
-    "name": "Shapeshifter",
-    "skill": "magic",
-    "tags": [
-      "prereq Red affinity"
-    ],
-    "text": "Per level of magic, you may learn an animal shape that you may assume as a spell. (eg if this is your third magic boon, you may immediately learn up to 3 animals, and then 1 more with each subsequent skill-up.) To learn a shape has the same requirements as learning a new spell in terms of time and money."
-  },
-  {
     "name": "Subtlety",
     "skill": "magic",
+    "tags": [],
+    "text": "The magic signatures from your blue spells are hidden and require a MET+vigilance vs MAS+stealth check to detect."
+  },
+  {
+    "name": "Teleurgy",
+    "skill": "magic",
+    "tags": [],
+    "text": "Your red spells take effect anywhere you can see. This doesn't give combt bonuses."
+  },
+  {
+    "name": "Trance",
+    "skill": "magic",
     "tags": [
-      "prereq Blue affinity"
+      "modifier"
     ],
-    "text": "The magic emissions from your blue spells are @veiled:veil@ and can't be detected easily."
+    "text": "Enter trance ueoc or until incapacitated. Trance: Take -1 focus and +1 magic token aeor to a maximum of +5. Focus loss can cause you to become incapacitated."
+  },
+  {
+    "name": "Zen",
+    "skill": "magic",
+    "tags": [],
+    "text": "You can cast even if immobile or your hands are bound. This doesn't let you cast if incapacitated or using a weapon."
   },
   {
     "name": "Aim",
@@ -470,7 +507,7 @@
     "name": "Beautician",
     "skill": "stealth",
     "tags": [],
-    "text": "When an ally wears a disguise, you can apply makeup and treat any disguise checks as assisted. You can assist yourself for +5 if you have time to apply makeup."
+    "text": "When an ally wears a disguise, you can apply makeup and treat any disguise checks as assisted. You can 'assist yourself' for +5 if you have time to apply makeup."
   },
   {
     "name": "Careful",
@@ -515,7 +552,7 @@
     "tags": [
       "social"
     ],
-    "text": "With a MAS+stealth vs MET+vigilance check and the right outfit, you can convince anyone that you are anyone they haven't personally met."
+    "text": "With a MAS+stealth vs MET+vigilance check and the right outfit, you can convince a target that you are someone they haven't personally met."
   },
   {
     "name": "Ninjutsu",
@@ -523,7 +560,7 @@
     "tags": [
       "fight style"
     ],
-    "text": "When you land a successful sneak attack, you aren't revealed, although the victim can probably figure out there's an attacker nearby and you must make another check to inflict another sneak attack."
+    "text": "When you land a successful sneak or hidden attack, you aren't revealed, although the victim can probably figure out they're under attack and so you can't make sneak attacks."
   },
   {
     "name": "Nonchalant",
@@ -545,7 +582,7 @@
     "name": "Shameless",
     "skill": "stealth",
     "tags": [],
-    "text": "You may hide any one @concealed@ item on your person such that it can't be found even by frisking or magic."
+    "text": "You may hide any one @concealed@ item on your person such that it can't be found even by frisking."
   },
   {
     "name": "Trap maker",
@@ -562,6 +599,14 @@
       "move"
     ],
     "text": "Project voice with a MAS+stealth vs MET+vigilance check, to give a false location and/or sound like someone else."
+  },
+  {
+    "name": "Botanist",
+    "skill": "vigilance",
+    "tags": [
+      "forage tribal"
+    ],
+    "text": "Whenever you see a phyto, if you've seen the kera before, you recognise it."
   },
   {
     "name": "Distraction shot",
@@ -581,7 +626,7 @@
     "name": "Iaido",
     "skill": "vigilance",
     "tags": [],
-    "text": "When engaging an opponent you can't see, their stealth bonus is penalised by your vigilance to a minimum of 0."
+    "text": "When engaging a hidden opponent, their stealth bonus is penalised by your vigilance to a minimum of 0."
   },
   {
     "name": "Kite",
@@ -597,7 +642,7 @@
     "tags": [
       "move"
     ],
-    "text": "Check hidden MET+vigilance vs 10 to read lips."
+    "text": "Check MET+vigilance vs 10 to read lips."
   },
   {
     "name": "Mark vigilance",

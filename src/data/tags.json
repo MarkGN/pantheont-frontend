@@ -1,5 +1,10 @@
 [
   {
+    "name": "Adrenal",
+    "type": "flat",
+    "text": "This effect lasts ueoc."
+  },
+  {
     "name": "Ammo.*",
     "type": "flat",
     "text": "This can be used by a related Loaded item. It is Consumed."
@@ -17,7 +22,7 @@
   {
     "name": "Bleeding",
     "type": "flat",
-    "text": "(condition) Whenever you do a check or a check is done against you, take 1 point of injury. Resolved when you reach 5 injury. If you fall asleep, take all outstanding points immediately. (move) First aid: check MET+knowledge vs 15; on a pass, resolve this; on a fail, take 1 Injury. Allies can do this move on your behalf."
+    "text": "(condition) Each round, take 1 point of Fatigue aeor. Resolve this when you reach 10 Fatigue. Medical: Check MET+knowledge vs 15; on a pass, resolve this."
   },
   {
     "name": "Channelled",
@@ -52,7 +57,7 @@
   {
     "name": "Crit",
     "type": "flat",
-    "text": "This inflicts double damage. If multiple effects give crits, the effect adds, eg with two crits, an attack inflicts triple damage."
+    "text": "This inflicts double damage. Multiple crits do not stack."
   },
   {
     "name": "Dominate",
@@ -62,7 +67,17 @@
   {
     "name": "Dubious",
     "type": "flat",
-    "text": "I'm not convinced this content is really a good idea, at least in its current form, but I'll include it for now and playtest and revise."
+    "text": "I'm not convinced this content is really a good idea, at least in its current form, but I'll include it for now and playtest, rethink, and revise."
+  },
+  {
+    "name": "Facile",
+    "type": "flat",
+    "text": "You can cast this spell even if not attuned to its colour."
+  },
+  {
+    "name": "Fiery",
+    "type": "flat",
+    "text": "When this inflicts damage, it is in the form of Burn, not Injury. This has Light $POW."
   },
   {
     "name": "Fight style",
@@ -82,12 +97,22 @@
   {
     "name": "Innocent",
     "type": "flat",
-    "text": "Characters don't interpret this as a weapon."
+    "text": "NPCs don't interpret this as a weapon."
   },
   {
     "name": "Loaded.*",
     "type": "flat",
     "text": "This can only operate by expending ammunition of the listed type."
+  },
+  {
+    "name": "Long rest",
+    "type": "flat",
+    "text": "You get one of these per session or mission, whichever takes longer: no taking multiple long rests by taking a month-long hike, no taking multiple if you spend ages in the same dungeon."
+  },
+  {
+    "name": "Medical",
+    "type": "flat",
+    "text": "Other characters may do this move on your behalf. You take the penalty for failure regardless."
   },
   {
     "name": "Modifier",
@@ -103,6 +128,11 @@
     "name": "Net",
     "type": "flat",
     "text": "On a hit against an opponent without Tangle, this inflicts Tangle n instead of n damage."
+  },
+  {
+    "name": "Persistent",
+    "type": "flat",
+    "text": "This spell effect continues for some time even after you stop casting."
   },
   {
     "name": "Prereq.*",
@@ -167,7 +197,12 @@
   {
     "name": "Two-handed",
     "type": "flat",
-    "text": "If you use this, you can't hold anything in your off hand."
+    "text": "If you use this, you can't hold anything in your off hand, including anything @worn@ there. Take -1 athletics and -1 stealth while carrying this."
+  },
+  {
+    "name": "Unbridled",
+    "type": "flat",
+    "text": "You can't deliberately weaken this spell."
   },
   {
     "name": "Unseeing",
@@ -177,12 +212,12 @@
   {
     "name": "Veil",
     "type": "flat",
-    "text": "A magical effect that interferes with others' perception of an object or area. Anything veiled is hidden with +5 to stealth. If whatever is hidden is detected, the veil fizzles; this includes if they attack, talk audibly, or cast a spell. Veils can't hide magic signatures."
+    "text": "A magical effect that interferes with others' perception of an object or area. Anything veiled is hidden with +5 to stealth. When you know a veil is there, you can see through it, and also point it out to allies; if you don't know but strongly suspect, it doesn't get the +5 bonus. Veils can't hide magic signatures or touch, so if you cast or attack from behind one, you are revealed. They only scramble certain senses, so eg if you talk from behind a non-audio veil, that will reveal it."
   },
   {
     "name": "Wild",
     "type": "flat",
-    "text": "You can't deliberately weaken this spell."
+    "text": "You can try to tame this. See the miscellaneous mechanics page."
   },
   {
     "name": "World-building",
@@ -202,17 +237,22 @@
   {
     "name": "Armour piercing",
     "type": "variable",
-    "text": "Take +n to combat up to a maximum of the target's total Armour value. Take -n athletics while using this."
+    "text": "Take +n to combat up to a maximum of the target's total Armour value. Take -1 athletics while carrying this."
   },
   {
     "name": "Blind",
     "type": "variable",
-    "text": "(condition) Take -$n to sight-based checks, including most fight and vigilance checks."
+    "text": "(condition) Take -$n to vigilance and to fight."
+  },
+  {
+    "name": "Burn",
+    "type": "variable",
+    "text": "(condition) Convert this to Injury aeoc. (move) First aid: Check MET+knowledge vs 15; on a pass, halve $n, rounding it up. Either way, it is immediately converted to Injury."
   },
   {
     "name": "Dazzle",
     "type": "variable",
-    "text": "(condition) Take -$n to sight-based checks, including most fight and vigilance checks. Decrease by 1 aeor unless you gain Dazzled tokens this round."
+    "text": "(condition) This counts as blind $n, maxing. Decrease this by 1 aeor unless you gain Dazzle tokens this round."
   },
   {
     "name": "Dim",
@@ -222,12 +262,12 @@
   {
     "name": "Fatigue",
     "type": "variable",
-    "text": "(condition) Take -$n to all physical actions. Remove aeoc. At 10 fatigue, you are Incapacitated."
+    "text": "(condition) Take -$n to all physical actions. Remove 3 with a long rest. At END+5 fatigue, you are Incapacitated."
   },
   {
     "name": "Injury",
     "type": "variable",
-    "text": "(condition) Take -$n to all physical actions. Decrease by 1 with each long rest."
+    "text": "(condition) Take -$n to all physical actions. Medical: Check MET+knowledge vs 15; on a fail, take 2 @fatigue@ and you don't recover any fatigue today. Either way, remove 1 Injury. Can only be tried once per long rest."
   },
   {
     "name": "Light",
@@ -237,12 +277,12 @@
   {
     "name": "Mana shock",
     "type": "variable",
-    "text": "(condition) Take -$n to magic. Decrease by 1 with each long rest. If an effect is capped at $magic, this stops you from increasing the effect, but doesn't make you lose any effect already in place."
+    "text": "(condition) Take -$n to magic. Decrease by 1 with each long rest. At END+5 mana shock, you can't cast spells or sense magic."
   },
   {
     "name": "Nullify",
     "type": "variable",
-    "text": "Anyone except you within melee range takes -$n magic. Multiple instances max. This affects magic items, but doesn't affect anything else tagged Nullify. This is always visible to anything with magic sense. Pure magic entities instead take -$n to everything."
+    "text": "Anything within melee range except you and anything tagged Nullify takes -$n magic. Multiple instances max. This affects magic items. This is always visible to anything with magic sense. Pure magic entities instead take -$n to everything."
   },
   {
     "name": "Paralysis",

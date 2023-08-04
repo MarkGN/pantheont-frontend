@@ -6,7 +6,7 @@
     "tags": [
       "civilian"
     ],
-    "text": "Labour becomes very easy and free of complications. No particular drawback. Very popular civilian magic."
+    "text": "Labour becomes very easy and free of complications. No particular drawback. Very popular civilian magic. @Healing tribal@."
   },
   {
     "name": "Aromakinesis",
@@ -16,6 +16,13 @@
       "civilian"
     ],
     "text": "You can create, change, or cancel arbitrary smells nearby."
+  },
+  {
+    "name": "Attune red",
+    "level": "6",
+    "color": "red",
+    "tags": [],
+    "text": "Attune to red. @Facile."
   },
   {
     "name": "Augment",
@@ -43,7 +50,7 @@
     "tags": [
       "civilian"
     ],
-    "text": "Target plant grows 10% faster for 24 hours. Not channelled."
+    "text": "Target plant grows 10% faster. @Persists@ for 24 hours."
   },
   {
     "name": "Geokinesis",
@@ -61,7 +68,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain telekinetic power over water nearby. +3* combat, +3 @ranged@. Take an additional +5 to all physical while in water, or +2 more combat if near enough water to swim in."
+    "text": "You gain telekinetic power over water nearby. +2* combat, +2 @ranged@. Take an additional +3 to all physical while in water, or +1 more combat if near enough water to swim in."
   },
   {
     "name": "Inferno",
@@ -70,7 +77,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Fires randomly break out all around you aeor. Determine the number and strength by (a POW roll vs 0)*. Take +9* and 2 -1 magic tokens. @Wild@."
+    "text": "Fires randomly break out all around you aeor. Determine the number and strength by (a POW roll vs 0)*. Take +6* and 2 -1 magic tokens. @Unbridled@."
   },
   {
     "name": "Mouseform",
@@ -95,16 +102,16 @@
     "tags": [
       "combat"
     ],
-    "text": "+2 size, +2 combat, but can't use a weapon. @Channelled@."
+    "text": "+2 size, +1 combat, but can't use a weapon. @Channelled@."
   },
   {
     "name": "Panikinesis",
     "level": "8",
     "color": "red",
     "tags": [
-      "combat"
+      "civilian"
     ],
-    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Can be used with a rope/ribbon/etc for +4* @net@. Good for repairs."
+    "text": "Kinesis over cloth. Has enough coordination to make fibres bind to each other and efficiently weave multiple strands together in parallel. Good for repairs, making cloth."
   },
   {
     "name": "Photokinesis",
@@ -113,7 +120,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +5* @armour@, +5* @ranged@, and gain a shield absorbing the next 3 focus you would lose (does not stack). Can conjure illumination of any colour."
+    "text": "You gain some control over light, including the ability to conjure glowing glass-like forcefields. +3* @armour@, +3* @ranged@, and gain a shield absorbing the next 2 focus you would lose (does not stack). Can conjure illumination of any colour."
   },
   {
     "name": "Pyrokinesis",
@@ -122,7 +129,16 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain fire control power, including the ability to conjure it. +3* combat, +4 @ranged@, and an additional +1 for each fire of POW at least 5 nearby, to a maximum of +5. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. Can't put fires out."
+    "text": "You gain fire control power, including the ability to conjure it. +2* combat, +3 @ranged@, @fiery@, and an additional +1 if there is a fire of POW at least 5 nearby. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. This can't put fires out."
+  },
+  {
+    "name": "Soothe",
+    "level": "12",
+    "color": "red",
+    "tags": [
+      "slow"
+    ],
+    "text": "Target with @Injury@ but no Soothe tokens removes 1 Injury and takes 5 Soothe. Soothe has \"If you have no Injury, you may remove one of these per long rest.\" Take +1 to @medical@ checks. @Healing tribal@."
   },
   {
     "name": "Sterilise",
@@ -131,7 +147,7 @@
     "tags": [
       "civilian"
     ],
-    "text": "Kill bacteria, insect eggs, mould spores, viruses, or other tiny pests. Can be used prophylactically to prevent milk from souring, etc. Use for +1 to checks to treat @bleeding@."
+    "text": "Kill bacteria, insect eggs, mould spores, viruses, or other tiny pests. Can be used prophylactically to prevent milk from souring, etc. Take +1 to @medical@ checks. @Healing tribal@."
   },
   {
     "name": "Telekinesis",
@@ -140,7 +156,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain some general but relatively weak telekinesis. +3 combat, +4 @ranged@. Can pick up, push, or pull items from long range. Carry capacity capped at half your weight, so you can't fly, but can propel self for +5 to jumps."
+    "text": "You gain some general but relatively weak telekinesis. +2 combat, +3 @ranged@. Can pick up, push, or pull items from long range. Force capped at 20% of your weight, so you can't fly, but can propel self for +5 to jumps."
   },
   {
     "name": "Terminate pregnancy",
@@ -149,21 +165,21 @@
     "tags": [
       "civilian"
     ],
-    "text": "Administer a magical abortion. Some limited nausea and general crappiness are common side effects."
+    "text": "Administer a magical abortion. Nausea is a common side effect. @Healing tribal@."
   },
   {
     "name": "Transmute",
     "level": "7",
     "color": "red",
     "tags": [],
-    "text": "Temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size levels; this lasts indefinitely, but if you try to transmute more, the first part reverts. Mass is conserved, not volume. At level 0, you can make base salts and materials (lead, table salt, copper); at level 1, can make iron, zinc, most ceramics, and can revert to original material; at level 2, can make diamond (it's not valuable in-universe); at level 3, can make titanium. Can't make noble metals, radioactive materials, or manite ever."
+    "text": "Temporarily change the composition of crystalline matter. Maximum size is $level-5 fewer size levels; this lasts indefinitely, but if you try to transmute more, the first part reverts. Mass is conserved, not volume. At level 0, you can make base salts and materials (lead, table salt, copper); at level 1, can make iron, zinc, most ceramics, and can revert to original material; at level 2, can make diamond (it's not very valuable in-universe); at level 3, can make titanium. Can't make noble metals, radioactive materials, or manite ever."
   },
   {
-    "name": "Water breathing, walking",
+    "name": "Waterwalk",
     "level": "9",
     "color": "red",
     "tags": [],
-    "text": "You and up to 0* allies don't drown, sink. At level 2+, water breathing is actually oxygen creation or unbreathing, so that smoke inhalation and hard vacuum also don't kill you."
+    "text": "You and up to 0* allies don't drown or can walk on water, your choice. Lasts 3* rounds, can be refreshed. If you choose walking while submerged, you are pushed toward the surface."
   },
   {
     "name": "Antimagic shell",
@@ -173,14 +189,21 @@
       "combat",
       "dubious"
     ],
-    "text": "Anyone engaging you has -5* magic. Any who tries to cast at you takes 2 -1 magic tokens. TODO it's a pretty brutal hard counter to combat casters; too strong? Also, what happens if two characters try to use this against each other, and each would counter the other by casting it?"
+    "text": "You have @nullify@ 5*. Anyone who casts at you takes -1 magic token aeor."
   },
   {
     "name": "Appropriate",
     "level": "10",
     "color": "orange",
     "tags": [],
-    "text": "If a target casts a spell at you, +8*, and ueoc they lose access to that spell and you gain access to it. "
+    "text": "If a target casts a spell at you, +6*, and ueoc they lose access to that spell and you gain access to it. "
+  },
+  {
+    "name": "Attune orange",
+    "level": "6",
+    "color": "orange",
+    "tags": [],
+    "text": "Attune to orange. @Facile@."
   },
   {
     "name": "Boost",
@@ -201,7 +224,7 @@
     "level": "10",
     "color": "orange",
     "tags": [],
-    "text": "Break an enchantment of requirement equal or lower to this plus 5. Does not affect spells that are permanent without enchantment, such as curses."
+    "text": "Break an enchantment of requirement equal or lower to [this plus 5]. Does not affect spells that are permanent without enchantment, such as curses."
   },
   {
     "name": "Disjunction",
@@ -210,7 +233,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Even the lightest touch cancels magic. +10* vs summons."
+    "text": "Even the lightest touch cancels magic. +7* vs summons."
   },
   {
     "name": "Enchant",
@@ -238,27 +261,27 @@
     "text": "Ueoc, one nearby ally gains access to one of your spells and you lose access to it. They use their own stats to cast it."
   },
   {
-    "name": "Mana siphon",
-    "level": "14",
-    "color": "orange",
-    "tags": [],
-    "text": "+5*, and if you defeat anyone in a clash, they take 2 -1 magic tokens up to their modified magic stat, and you gain that many +1 magic tokens. You can only take tokens from one clash per round."
-  },
-  {
     "name": "Meditate",
     "level": "8",
     "color": "orange",
     "tags": [
       "combat"
     ],
-    "text": "Enter a magical combat trance and open your mind to higher states. +3* combat, take +1 magic aeor."
+    "text": "Enter a magical combat trance and open your mind to higher states. +2* combat and take +1 magic aeor."
   },
   {
     "name": "Proof",
     "level": "--",
     "color": "orange",
     "tags": [],
-    "text": "Magic can't affect whatever you touch while this is channelled, unless its requirement is at least 10 higher than this.requirement."
+    "text": "Magic can't affect whatever you touch while this is @channelled@, unless its requirement is at least 10 higher than this.requirement."
+  },
+  {
+    "name": "Siphon",
+    "level": "14",
+    "color": "orange",
+    "tags": [],
+    "text": "+4*, and if you defeat anyone in a clash, they take 2 -1 magic tokens up to their modified magic stat, and you gain that many +1 magic tokens. You can only take tokens from one clash per round."
   },
   {
     "name": "Spoof",
@@ -273,6 +296,13 @@
     "color": "yellow",
     "tags": [],
     "text": "Negate the force of gravity on yourself and up to 0* allies or objects of equal or lesser size. Can use this for pseudo flight with an AGI+ath* check vs 10 to avoid crashing and taking 1 Injury."
+  },
+  {
+    "name": "Attune yellow",
+    "level": "6",
+    "color": "yellow",
+    "tags": [],
+    "text": "Attune to yellow. @Facile@."
   },
   {
     "name": "Bubble",
@@ -317,14 +347,14 @@
     "tags": [
       "combat"
     ],
-    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't walk over a wall). +3* combat, treat combat as pure melee. +5* to chase checks."
+    "text": "Instantly move up to 50m if you could walk there (you can walk past a guard, you can't walk over a wall). +2* combat, treat combat as pure melee. +5* to chase checks."
   },
   {
     "name": "Gravity tilt",
     "level": "8",
     "color": "yellow",
     "tags": [],
-    "text": "+5* to climb; everyone within melee engagement range of you has their base $fight capped at their $athletics."
+    "text": "+5* to climb checks; everyone within melee engagement range of you has their base $fight capped at their $athletics."
   },
   {
     "name": "Hammerspace",
@@ -338,7 +368,7 @@
     "level": "21",
     "color": "yellow",
     "tags": [],
-    "text": "Create a random maze of warped geometry nearby. Everything is still topologically connected, but characters become isolated from each other and lost. @Wild@."
+    "text": "Create a random maze of warped geometry nearby. Everything is still topologically connected, but characters become isolated from each other and lost. @Unbridled@."
   },
   {
     "name": "Space warp",
@@ -356,7 +386,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Time does not pass within a space equal to you.size*. Must be channelled (or more usefully, enchanted)."
+    "text": "Time does not pass within a space equal to you.size*. @Channelled@ (or more usefully, enchanted)."
   },
   {
     "name": "Suspend",
@@ -365,7 +395,14 @@
     "tags": [
       "combat"
     ],
-    "text": "+3* to combat, and on a hit, the target is sent 1 round into the future (in addition to any damage)."
+    "text": "+2* combat, and on a hit, the target is sent 1 round into the future (in addition to any damage)."
+  },
+  {
+    "name": "Attune blue",
+    "level": "6",
+    "color": "blue",
+    "tags": [],
+    "text": "Attune to blue. @Facile@."
   },
   {
     "name": "Biomancy",
@@ -374,14 +411,14 @@
     "tags": [
       "civilian"
     ],
-    "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, or other health issues."
+    "text": "Diagnose infections, injuries, pregnancies, vitamin deficiencies, or other health issues. +1 to @medical@ checks. @Healing tribal@."
   },
   {
     "name": "Chameleon",
     "level": "10",
     "color": "blue",
     "tags": [],
-    "text": "@Veil:veil@ yourself. At level 1, you may instead veil an ally; at level 2, you may veil both yourself and one ally."
+    "text": "@Veil:veil@ yourself and up to 0* allies. It's a single veil, so you have to stay together, and if anyone does anything to blow it, it blows for all of you."
   },
   {
     "name": "Clarity",
@@ -395,7 +432,7 @@
     "level": "9",
     "color": "blue",
     "tags": [],
-    "text": "Create a $veil$ on yourself that makes you look like someone else, if you successfully check MAS+stealth vs MET+vig. To look like someone in particular, take -5. Getting touched breaks the veil, so suspicious people often ask to tap each other."
+    "text": "Create a @veil@ on yourself that makes you look like someone else, if you successfully check MAS+stealth* vs MET+vig. To look like someone in particular, take -5. Getting touched breaks the veil, so suspicious people often ask to tap each other."
   },
   {
     "name": "Encrypt",
@@ -404,14 +441,23 @@
     "tags": [
       "slow"
     ],
-    "text": "Hard-scramble information indefinitely, unless a passphrase or other slipknot is applied. This isn't a veil, it's obvious that information is there, it just can't be parsed, eg writing will be visible but rendered as lorem ipsum. Combined with DWs such that if you don't have the key, you absolutely can't get at the cargo, and if you just try to smash the door, it'll collapse the dimension and you'll never get the cargo. Encryption can be disenchanted; but it's often combined with other enchantments, such that if you break the encryption, you'll destroy the entire item anyway."
+    "text": "Hard-scramble information indefinitely, unless a passphrase or other slipknot is applied. This isn't a veil, it's obvious that information is there, it just can't be parsed, eg writing will be visible but rendered like lorem ipsum. Combined with DWs such that if you don't have the key, you absolutely can't get at the cargo, and if you just try to smash the door, it'll collapse the dimension and you'll never get the cargo. Encryption can be disenchanted; but it's often combined with other enchantments, such that if you break the encryption, you'll destroy the entire item anyway."
+  },
+  {
+    "name": "Eyebite",
+    "level": "8",
+    "color": "blue",
+    "tags": [
+      "combat"
+    ],
+    "text": "Take +1*, and if you would inflict N damage, instead inflict @Dazzle@ N."
   },
   {
     "name": "Facade",
     "level": "10",
     "color": "blue",
     "tags": [],
-    "text": "Create a static visual @veil@ of up to 2m squared. Its texture behaves like an object in your blind spot, eg if you put a facade over a small hole in a wall, it will look like the rest of the wall."
+    "text": "Create a static visual @veil@ of up to 2*m squared. Its texture behaves like an object in your blind spot, eg if you put a facade over a small hole in a wall, it will look like the rest of the wall."
   },
   {
     "name": "Geomancy",
@@ -427,14 +473,14 @@
     "level": "8",
     "color": "blue",
     "tags": [],
-    "text": "Create a @veil@ of up to 5m cubed. It is obvious that there is a veil there, but not what is behind it. Anyone shooting into or out of it treats it as cover."
+    "text": "Obscure an area of up to 5m cubed, looking like smoke. Anything inside counts as hidden."
   },
   {
     "name": "Kaleidomancy",
     "level": "11",
     "color": "blue",
     "tags": [],
-    "text": "The area is bathed in sensory chaos: glittering lights, musical bells, strange smells. For all actions, everyone's base skill is capped at their vigilance."
+    "text": "The area is bathed in sensory chaos: glittering lights, musical bells, strange smells. For all actions, everyone's base skill is capped at $vigilance. This does not need to be channelled."
   },
   {
     "name": "Meteomancy",
@@ -443,7 +489,7 @@
     "tags": [
       "civilian"
     ],
-    "text": "Predict the weather, 1* day into the future within 1*km."
+    "text": "Predict the weather, 3* days into the future within 1*km."
   },
   {
     "name": "Necromancy",
@@ -470,14 +516,14 @@
     "tags": [
       "combat"
     ],
-    "text": "+4*, +10* vigilance vs sneak attacks. Can only be cast if you haven't cast non-blue magic since your last rest. This can be maintained while asleep, where it lets you wake to react to sneak attacks, with no bonus."
+    "text": "+3*, +7* vigilance vs sneak attacks. Can only be cast if you haven't cast non-blue magic since your last rest. This can be maintained while asleep, where it lets you wake to react to sneak attacks, with no bonus."
   },
   {
-    "name": "Scotopic",
-    "level": "8",
+    "name": "Sign",
+    "level": "12",
     "color": "blue",
     "tags": [],
-    "text": "You and up to 0* allies can see in the dark."
+    "text": "Create a unique signature. Every time you produce one, it is the same; everyone else produces a different one. It is obvious if it has been tampered with."
   },
   {
     "name": "Tag, track",
@@ -494,11 +540,18 @@
     "text": "Send messages to anyone on the T-soph network. However, the system is still expensive to use, costing 30c per node used."
   },
   {
+    "name": "Umbramancy",
+    "level": "8",
+    "color": "blue",
+    "tags": [],
+    "text": "You and up to 0* allies can see in the dark, treating it as normally lit."
+  },
+  {
     "name": "Veilbreaker",
     "level": "9",
     "color": "blue",
     "tags": [],
-    "text": "Check MET+vigilance+5* vs a veil's MAS+stealth+$level; on a pass, break any veil nearby (even if you weren't aware of it); on a fail, you can't cast this again today."
+    "text": "Check MET+vigilance+5* vs a @veil's:veil@ MAS+stealth+$level; on a pass, break any veil nearby (even if you weren't aware of it); on a fail, you can't cast this again today."
   },
   {
     "name": "Watcher",
@@ -517,13 +570,27 @@
     "text": "See through solid objects, up to 1* times 10cm. Specifically, your vision skips ahead up to 10cm from the first opaque object, so if there are two sheets of paper spaced 5cm apart you can see through both, but you can't if they're 15cm apart. In the former case, you're aware of the first piece, like how you can see the palm of a hand you put over one eye."
   },
   {
+    "name": "Zoemancy",
+    "level": "11",
+    "color": "blue",
+    "tags": [],
+    "text": "Sense all living creatures within $requirement metres, even if hidden or inaccessible; but requires a check to penetrate anyone hidden under a @veil@."
+  },
+  {
+    "name": "Attune purple",
+    "level": "6",
+    "color": "purple",
+    "tags": [],
+    "text": "Attune to purple. @Facile@."
+  },
+  {
     "name": "Bind wisp",
     "level": "13",
     "color": "purple",
     "tags": [
       "world-building"
     ],
-    "text": "+6* and +4 ranged vs wisps, and on a hit, you @dominate@ it. However, every 24 hours, they check END+magic vs your MAS+magic; on a pass, they break free and are enraged; on a fail, they get a special +1 magic token with \"You only lose 1 of these per day\"."
+    "text": "+4* and +3 ranged vs wisps, and on a hit, you @dominate@ it. However, every 24 hours, they check END+magic vs your MAS+magic; on a pass, they break free and are enraged; on a fail, they get a special +1 magic token with \"You only lose 1 of these per day\"."
   },
   {
     "name": "Compromise",
@@ -553,7 +620,7 @@
       "slow",
       "world-building"
     ],
-    "text": "Make someone fall in or out of love. Technically only lasts while channelled, but people tend to rationalise their love, so it has long-term secondary effect."
+    "text": "Make someone fall in or out of love. Technically only lasts while @channelled@, but people tend to rationalise their love, so it has long-term secondary effect."
   },
   {
     "name": "Hoplarchy",
@@ -571,7 +638,7 @@
     "tags": [
       "combat"
     ],
-    "text": "Make someone fall asleep. Take +0*, and on a hit, instead of inflicting N damage, inflict N @fatigue@; and if the target then has 10 or more fatigue, they are @incapacitated@. Incapacitation means a magical sleep that can't be awoken by any means for at least 10 minutes."
+    "text": "Make someone fall asleep. Take +0*, and on a hit, instead of inflicting N damage, inflict N @fatigue@."
   },
   {
     "name": "Klemarchy",
@@ -636,7 +703,7 @@
     "level": "23",
     "color": "purple",
     "tags": [],
-    "text": "@Summon@ $magic shadowlings randomly around you aeor. A shadowling has all attributes equal to your POW; all skills equal to 5*; and +5 combat. They ignore all commands and are permanently enraged, attacking whoever is closest except other shadowlings. They last ueoc or are dismissed when you are incapacitated. @Wild@."
+    "text": "@Summon@ $magic shadowlings randomly around you aeor. A shadowling has all attributes equal to your POW; all skills equal to 5*; and +5 combat. They ignore all commands and are permanently enraged, attacking whoever is closest except other shadowlings. They last ueoc or are dismissed when you are incapacitated. @Unbridled@."
   },
   {
     "name": "Wrath",
@@ -644,5 +711,12 @@
     "color": "purple",
     "tags": [],
     "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies* aeor (single check), and on a fail, take \"Enraged: this must attack the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueoc."
+  },
+  {
+    "name": "Zoarchy",
+    "level": "9",
+    "color": "purple",
+    "tags": [],
+    "text": "Take +5 to taming checks."
   }
 ]

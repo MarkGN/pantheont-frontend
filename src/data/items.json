@@ -56,7 +56,7 @@
   {
     "name": "Shield",
     "price": "400c",
-    "text": "4 @armour@",
+    "text": "3 @armour@",
     "type": "armour",
     "tags": [
       "worn off hand"
@@ -65,7 +65,7 @@
   {
     "name": "Tower shield",
     "price": "1000c",
-    "text": "+4, 6 @armour@",
+    "text": "+3, 4 @armour@",
     "type": "armour",
     "tags": [
       "2H:two-handed"
@@ -74,7 +74,7 @@
   {
     "name": "Bait",
     "price": "10c",
-    "text": "Take +5 to make an animal do what you want. Comes in vegetarian, meat, and bug versions.",
+    "text": "Take +10 to make an animal do what you want. Comes in vegetarian, meat, and bug versions.",
     "type": "tool",
     "tags": [
       "concealed",
@@ -84,7 +84,7 @@
   {
     "name": "Blanket",
     "price": "30c",
-    "text": "When you check to jump through a fire, on success you may instead use this to reduce its POW by 5.",
+    "text": "When you check to jump through a fire, on success you may instead use this to extinguish it.",
     "type": "tool"
   },
   {
@@ -180,7 +180,7 @@
   {
     "name": "Rope",
     "price": "40c",
-    "text": "10m of hemp rope. Indicative uses are to safely climb up or down from a ledge, provided you can tie it off; tie someone up (they can make a @slow@ AGI+ath vs MET+knowledge check to either break free or take 1 @Injury@); to make a leash for an animal; to make a lasso (weapon with thrown net ranged +1); to make a snare trap.",
+    "text": "10m of hemp rope. Indicative uses are to safely climb up or down from a ledge, provided you can tie it off; tie someone up; to make a leash for an animal; to make a lasso (weapon with net ranged +1); to make a snare trap.",
     "type": "tool"
   },
   {
@@ -205,7 +205,7 @@
   {
     "name": "Battleaxe",
     "price": "1000c",
-    "text": "+5",
+    "text": "+4",
     "type": "weapon",
     "tags": [
       "6 AP:armour piercing",
@@ -214,9 +214,30 @@
     ]
   },
   {
+    "name": "Blast pod",
+    "price": "-1c",
+    "text": "Treat as a grenade inflicting Stunned with a TN of 15.",
+    "type": "weapon",
+    "tags": [
+      "+0 ranged:ranged",
+      "indirect",
+      "consumed"
+    ]
+  },
+  {
+    "name": "Bodkin arrow",
+    "price": "100c",
+    "text": "An armour-piercing arrow.",
+    "type": "weapon",
+    "tags": [
+      "ammo bow",
+      "+1 AP:armour piercing sharp"
+    ]
+  },
+  {
     "name": "Bolas",
     "price": "50c",
-    "text": "+2",
+    "text": "+1",
     "type": "weapon",
     "tags": [
       "thrown",
@@ -227,7 +248,7 @@
   {
     "name": "Bow",
     "price": "200c",
-    "text": "+5",
+    "text": "+4",
     "type": "weapon",
     "tags": [
       "loaded arrow",
@@ -237,7 +258,7 @@
   {
     "name": "Crossbow",
     "price": "600c",
-    "text": "+3. No, I'm not going to design separate crossbow bolts that do the exact same thing as arrows.",
+    "text": "+2. No, I'm not going to design separate crossbow bolts that do the exact same thing as arrows.",
     "type": "weapon",
     "tags": [
       "6 AP:armour piercing",
@@ -248,7 +269,7 @@
   {
     "name": "Crowbar",
     "price": "50c",
-    "text": "+4. Can be used to open locked doors quickly.",
+    "text": "+3. Can be used to open locked doors quickly.",
     "type": "weapon",
     "tags": [
       "3 AP:armour piercing",
@@ -258,7 +279,7 @@
   {
     "name": "Dagger",
     "price": "40c",
-    "text": "+3",
+    "text": "+2",
     "type": "weapon",
     "tags": [
       "concealed",
@@ -266,9 +287,20 @@
     ]
   },
   {
+    "name": "Firelace pod",
+    "price": "-1c",
+    "text": "Treat as a grenade creating a fire with POW=8 at the target's location. If you hit a target with this, they are damaged by the fire; anyone else in the area effect checks to jump out of the way.",
+    "type": "weapon",
+    "tags": [
+      "+0 ranged:ranged",
+      "indirect",
+      "consumed"
+    ]
+  },
+  {
     "name": "Grenade",
-    "price": "100c",
-    "text": "Has an associated condition, such as tangled (as for glue), fire, or poison. When you make a successful attack with this, aeor everyone within a 2m radius of the target checks END+ath vs the manufacturer's POW+knowledge, and takes the condition on a fail. You may target open space, but if you engage and hit a specific target, they take the condition automatically and do not lose focus from being hit.",
+    "price": "-1c",
+    "text": "Has an associated condition, such as tangled (as for glue), fire, or poison. You may target open space (if not intercepted) and automatically hit, or attack someone and clash as normal. If you engage and hit a specific target, they take the condition automatically and do not lose focus from being hit; and if you succeed in the clash or target open space, aeor everyone within a 2m radius of the target checks END+ath vs POW, and takes the condition on a fail.",
     "type": "weapon",
     "tags": [
       "+0 ranged:ranged",
@@ -279,7 +311,7 @@
   {
     "name": "Longsword",
     "price": "1000c",
-    "text": "+6. If you can use it two-handed, take an additional +1.",
+    "text": "+4. If your off hand is free, take an additional +1.",
     "type": "weapon",
     "tags": [
       "sharp"
@@ -288,7 +320,7 @@
   {
     "name": "Main gauche",
     "price": "400c",
-    "text": "+3. May be equipped in the off hand, giving only +1.",
+    "text": "+2. May be equipped in the off hand, giving only +1.",
     "type": "weapon",
     "tags": [
       "concealed",
@@ -308,7 +340,7 @@
   {
     "name": "Net",
     "price": "400c",
-    "text": "+4",
+    "text": "+3",
     "type": "weapon",
     "tags": [
       "thrown",
@@ -329,7 +361,7 @@
   {
     "name": "Shortsword",
     "price": "200c",
-    "text": "+5",
+    "text": "+4",
     "type": "weapon",
     "tags": [
       "sharp"
@@ -338,7 +370,7 @@
   {
     "name": "Sling",
     "price": "10c",
-    "text": "+3. Technically @loaded rock@, if there aren't any around.",
+    "text": "+2. @Loaded rock@, although that's probably not worth tracking.",
     "type": "weapon",
     "tags": [
       "ranged"
@@ -347,7 +379,7 @@
   {
     "name": "Spear",
     "price": "50c",
-    "text": "+7",
+    "text": "+5",
     "type": "weapon",
     "tags": [
       "sharp",
@@ -357,7 +389,7 @@
   {
     "name": "Staff",
     "price": "30c",
-    "text": "+5",
+    "text": "+4",
     "type": "weapon",
     "tags": [
       "innocent",
@@ -367,7 +399,7 @@
   {
     "name": "Whip",
     "price": "80c",
-    "text": "+4",
+    "text": "+3",
     "type": "weapon",
     "tags": [
       "net"
@@ -376,7 +408,7 @@
   {
     "name": "Wood axe",
     "price": "50c",
-    "text": "+4",
+    "text": "+3",
     "type": "weapon",
     "tags": [
       "3 AP:armour piercing",
