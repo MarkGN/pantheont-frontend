@@ -115,6 +115,15 @@
     ]
   },
   {
+    "name": "Cloak",
+    "price": "30c",
+    "text": "+10 vs @draining@ cold environments.",
+    "type": "tool",
+    "tags": [
+      "worn body"
+    ]
+  },
+  {
     "name": "Fishing rod",
     "price": "30c",
     "text": "By a body of water with fish, you may sacrifice a unit of bug or meat bait and check END+vig vs 12; on a pass, after 2 hours, you get a fish worth a day's supplies.",
@@ -193,6 +202,12 @@
     ]
   },
   {
+    "name": "Trap scroll",
+    "price": "-1c",
+    "text": "Teaches how to make its corresponding trap. You must be able to meet the requirement to learn it. Costs 50c*(requirement - 5).",
+    "type": "tool"
+  },
+  {
     "name": "Arrow",
     "price": "30c",
     "text": "Fired from a bow.",
@@ -205,7 +220,7 @@
   {
     "name": "Battleaxe",
     "price": "1000c",
-    "text": "+4",
+    "text": "+3",
     "type": "weapon",
     "tags": [
       "6 AP:armour piercing",
@@ -241,17 +256,17 @@
     "type": "weapon",
     "tags": [
       "thrown",
-      "net",
-      "ranged"
+      "ranged",
+      "restrain"
     ]
   },
   {
-    "name": "Bow",
-    "price": "200c",
-    "text": "+4",
+    "name": "Compound bow",
+    "price": "1200c",
+    "text": "+5",
     "type": "weapon",
     "tags": [
-      "loaded arrow",
+      "load arrow",
       "ranged"
     ]
   },
@@ -309,6 +324,16 @@
     ]
   },
   {
+    "name": "Hunting bow",
+    "price": "200c",
+    "text": "+3",
+    "type": "weapon",
+    "tags": [
+      "loaded arrow",
+      "ranged"
+    ]
+  },
+  {
     "name": "Longsword",
     "price": "1000c",
     "text": "+4. If your off hand is free, take an additional +1.",
@@ -344,8 +369,18 @@
     "type": "weapon",
     "tags": [
       "thrown",
-      "net",
-      "ranged"
+      "ranged",
+      "restrain"
+    ]
+  },
+  {
+    "name": "Recurve bow",
+    "price": "600c",
+    "text": "+4",
+    "type": "weapon",
+    "tags": [
+      "loaded arrow",
+      "@ranged@"
     ]
   },
   {
@@ -402,7 +437,7 @@
     "text": "+3",
     "type": "weapon",
     "tags": [
-      "net"
+      "restrain"
     ]
   },
   {

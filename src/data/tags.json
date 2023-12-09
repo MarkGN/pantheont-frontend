@@ -45,6 +45,11 @@
     "text": "You can easily hide this under your clothes."
   },
   {
+    "name": "Condition",
+    "type": "flat",
+    "text": "This has a maximum of 10 tokens at a time."
+  },
+  {
     "name": "Consumed",
     "type": "flat",
     "text": "Single use."
@@ -145,6 +150,11 @@
     "text": "This applies only when engaging from outside melee. You may have both a ranged and a non-ranged weapon equipped at once in the same hand slots."
   },
   {
+    "name": "Restrain",
+    "type": "flat",
+    "text": "When you hit a target with this, instead of taking damage they become Restrained: they are immobilised and take -3 to all physical actions. To maintain this, you must stay within melee range. The target can break this by successfully hitting you, and you may release at any time (modifier)."
+  },
+  {
     "name": "Sessile",
     "type": "flat",
     "text": "This can't manoeuvre around the battlefield. It can still move eg to engage in combat, as opposed to something fully paralysed."
@@ -207,7 +217,7 @@
   {
     "name": "Unseeing",
     "type": "flat",
-    "text": "This doesn't use vision for perception. It doesn't generally suffer any combat penalties, but can't do things such as read or see colour."
+    "text": "This permanently has @Blind@ 10."
   },
   {
     "name": "Veil",
@@ -247,12 +257,12 @@
   {
     "name": "Burn",
     "type": "variable",
-    "text": "(condition) Convert this to Injury aeoc. (move) First aid: Check MET+knowledge vs 15; on a pass, halve $n, rounding it up. Either way, it is immediately converted to Injury."
+    "text": "(condition) Convert this to Injury aeoc. Medical: Check MET+knowledge vs 15; on a pass, halve $n, rounding it up. Either way, it is immediately converted to Injury."
   },
   {
     "name": "Dazzle",
     "type": "variable",
-    "text": "(condition) This counts as blind $n, maxing. Decrease this by 1 aeor unless you gain Dazzle tokens this round."
+    "text": "(condition) This counts as blind $n, maxing. Decrease this by 1 aeor unless you gain this this round."
   },
   {
     "name": "Dim",
@@ -263,6 +273,11 @@
     "name": "Fatigue",
     "type": "variable",
     "text": "(condition) Take -$n to all physical actions. Remove 3 with a long rest. At END+5 fatigue, you are Incapacitated."
+  },
+  {
+    "name": "Goop",
+    "type": "variable",
+    "text": "(condition) Take -$n to athletics and melee combat. Decrease this by 1 aeor unless you gain this this round."
   },
   {
     "name": "Injury",
@@ -282,7 +297,7 @@
   {
     "name": "Nullify",
     "type": "variable",
-    "text": "Anything within melee range except you and anything tagged Nullify takes -$n magic. Multiple instances max. This affects magic items. This is always visible to anything with magic sense. Pure magic entities instead take -$n to everything."
+    "text": "Anything using magic within melee range not tagged Nullify takes -$n, and a -1 magic token aeor. Multiple instances max. This affects magic items. This is always visible to anything with magic sense. Pure magic entities always take -$n."
   },
   {
     "name": "Paralysis",

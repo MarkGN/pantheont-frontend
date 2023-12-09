@@ -50,7 +50,7 @@
     "tags": [
       "civilian"
     ],
-    "text": "Target plant grows 10% faster. @Persists@ for 24 hours."
+    "text": "Target plant grows 10% faster. @Persists:persistent@ for 24 hours."
   },
   {
     "name": "Geokinesis",
@@ -59,7 +59,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Shape crystalline (ie metal, rock, ceramic) matter. (This lacks precision: if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, digging, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes. "
+    "text": "Shape crystalline (ie metal, rock, ceramic) matter. (This lacks precision: if you try it on organic, it ruptures cell walls and you get slush.) Effective in crafting, repairs, digging, and peeling through walls. Subject matter takes on consistency of wet clay, so you can't reshape diamond into carbon nanotubes."
   },
   {
     "name": "Hydrokinesis",
@@ -132,6 +132,16 @@
     "text": "You gain fire control power, including the ability to conjure it. +2* combat, +3 @ranged@, @fiery@, and an additional +1 if there is a fire of POW at least 5 nearby. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. This can't put fires out."
   },
   {
+    "name": "Refine",
+    "level": "11",
+    "color": "red",
+    "tags": [
+      "slow",
+      "civilian"
+    ],
+    "text": "Remove oxygen from minerals, viz for converting haematite to iron."
+  },
+  {
     "name": "Soothe",
     "level": "12",
     "color": "red",
@@ -179,7 +189,7 @@
     "level": "9",
     "color": "red",
     "tags": [],
-    "text": "You and up to 0* allies don't drown or can walk on water, your choice. Lasts 3* rounds, can be refreshed. If you choose walking while submerged, you are pushed toward the surface."
+    "text": "You and up to 0* allies can breathe underwater or can walk on water, your choice. Lasts 3* rounds, can be refreshed. If you choose walking while submerged, you are pushed toward the surface."
   },
   {
     "name": "Antimagic shell",
@@ -195,7 +205,9 @@
     "name": "Appropriate",
     "level": "10",
     "color": "orange",
-    "tags": [],
+    "tags": [
+      "combat"
+    ],
     "text": "If a target casts a spell at you, +6*, and ueoc they lose access to that spell and you gain access to it. "
   },
   {
@@ -217,14 +229,14 @@
     "level": "--",
     "color": "orange",
     "tags": [],
-    "text": "Copy a spell of requirement up to this.requirement that was cast last round, of any colour. This includes combat spells. You must pay any additional costs of that spell such as manite."
+    "text": "Copy a spell of level up to this.level that was cast last round, of any colour. This includes combat spells. You must pay any additional costs of that spell such as manite."
   },
   {
     "name": "Disenchant",
     "level": "10",
     "color": "orange",
     "tags": [],
-    "text": "Break an enchantment of requirement equal or lower to [this plus 5]. Does not affect spells that are permanent without enchantment, such as curses."
+    "text": "Break an enchantment of level equal or lower to [this plus 5]. Does not affect spells that are permanent without enchantment, such as curses."
   },
   {
     "name": "Disjunction",
@@ -242,7 +254,7 @@
     "tags": [
       "slow"
     ],
-    "text": "The duration of some other spell of requirement<=this.requirement-5 becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, bound summons, etc, but not a flamethrower. This can't make enchanted wearable gear. This requires manite; say, 5*(target.requirement) grams. If Enchant is used with Inscribe, the item has enchant.level charges, and can be recharged by use of this spell, without requiring manite."
+    "text": "The duration of some other spell of level<=this.level-5 becomes permanent. The spell isn't being cast, so it doesn't give combat bonuses; you can do things like eternal fire, bound summons, etc, but not a flamethrower. This can't make enchanted wearable gear. This requires manite; say, 5*(target.level) grams. If Enchant is used with Inscribe, the item has enchant.level charges, and can be recharged by use of this spell, without requiring manite."
   },
   {
     "name": "Inscribe",
@@ -251,7 +263,7 @@
     "tags": [
       "slow"
     ],
-    "text": "Some other spell of requirement<=this.requirement-5 is inscribed onto a solid object, whence it can be 'cast' in response to a trigger, which is typically either reading a scroll or touching a glyph, customarily marked with a crossed circle. Lasts until used or until the glyph is erased. Requires target.requirement grams of manite."
+    "text": "Some other spell of level<=this.level-5 is inscribed onto a solid object, whence it can be 'cast' in response to a trigger, which is typically either reading a scroll or touching a glyph, customarily marked with a crossed circle. Lasts until used or until the glyph is erased. Requires target.level grams of manite."
   },
   {
     "name": "Loan",
@@ -274,7 +286,7 @@
     "level": "--",
     "color": "orange",
     "tags": [],
-    "text": "Magic can't affect whatever you touch while this is @channelled@, unless its requirement is at least 10 higher than this.requirement."
+    "text": "Magic can't affect whatever you touch while this is @channelled@, unless its level is at least 10 higher than this.level."
   },
   {
     "name": "Siphon",
@@ -362,6 +374,13 @@
     "color": "yellow",
     "tags": [],
     "text": "Access a pocket dimension that can fit up to -5* size categories of stuff. Its access point is locked to your position."
+  },
+  {
+    "name": "Shuffle",
+    "level": "11",
+    "color": "yellow",
+    "tags": [],
+    "text": "+10* ranged; on a hit, swap your position with the target's."
   },
   {
     "name": "Solitude",
@@ -574,7 +593,7 @@
     "level": "11",
     "color": "blue",
     "tags": [],
-    "text": "Sense all living creatures within $requirement metres, even if hidden or inaccessible; but requires a check to penetrate anyone hidden under a @veil@."
+    "text": "Sense all living creatures within $level metres, even if hidden or inaccessible; but requires a check to penetrate anyone hidden under a @veil@."
   },
   {
     "name": "Attune purple",
@@ -675,7 +694,7 @@
     "tags": [
       "combat"
     ],
-    "text": "+2*. On a hit, the target takes Subverted ueoc. If they would be incapacitated, instead their focus is fully restored and they are @dominated:dominate@ ueoc. They faint aeoc. If the target is already subverted, this is a crit."
+    "text": "+2*. On a hit, the target takes Subverted ueoc. If they would be incapacitated, instead their focus is fully restored and they are @dominated:dominate@ ueoc. They faint aeoc. If the target is already subverted, this is a @crit@."
   },
   {
     "name": "Summon lesser minion",
@@ -710,7 +729,7 @@
     "level": "14",
     "color": "purple",
     "tags": [],
-    "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies* aeor (single check), and on a fail, take \"Enraged: this must attack the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueoc."
+    "text": "Make other characters attack each other. Enemies with line of sight to you check MAS+magic+20 vs MAS+magic+num_enemies* aeor (single check), and on a fail, take \"Enraged: this attacks the nearest non-incapacitated character they are aware of each round. This expires after 3 rounds.\" Also, anyone engaging you takes -2 MAS ueoc. @Unbridled@."
   },
   {
     "name": "Zoarchy",

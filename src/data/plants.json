@@ -334,7 +334,7 @@
   {
     "name": "Limaganda",
     "colors": "red, orange",
-    "text": "Secretes lots of glue. Pods can be thrown as grenades inflicting -3 athletics",
+    "text": "Secretes lots of glue. Pods can be thrown as grenades with @goop@.",
     "tags": [
       "cornucopic"
     ],
@@ -370,7 +370,7 @@
   {
     "name": "Umberos",
     "colors": "green, blue",
-    "text": "Exudes an anti-light aura; it and everything within 1m is pitch black, and up to 2m is dim. This is a magical effect that can only be cancelled with antimagic 15+.",
+    "text": "Exudes an anti-light aura; it and everything within 1m is pitch black, and up to 2m is dim. This overrides @light@s and can only be cancelled with antimagic 15+.",
     "reagentType": "damper"
   },
   {
@@ -415,7 +415,7 @@
   {
     "name": "Nezema",
     "colors": "blue, purple",
-    "text": "Contact resin inflicts -2 athletics, cumulative to a maximum of -5.",
+    "text": "Contact resin inflicts 2 @goop@.",
     "tags": [
       "hostile"
     ],

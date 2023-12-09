@@ -36,7 +36,7 @@
     "tags": [
       "fight style"
     ],
-    "text": "If you aren't Restricted or in a choke point, add your athletics score to combat."
+    "text": "If you aren't Restrained or in a choke point, add your athletics score to combat."
   },
   {
     "name": "Jockey",
@@ -93,6 +93,14 @@
     "text": "You have +1 focus."
   },
   {
+    "name": "Tumble",
+    "skill": "athletics",
+    "tags": [
+      "move"
+    ],
+    "text": "If you would be intercepted when attacking someone, instead you aren't but you take -2 ueor."
+  },
+  {
     "name": "Warm up",
     "skill": "athletics",
     "tags": [],
@@ -137,10 +145,22 @@
     "text": "When attacked, move away from the opponent and bring them with you. Works even if you both attack each other."
   },
   {
+    "name": "Giant",
+    "skill": "fight",
+    "tags": [],
+    "text": "+1 size. Only available at character creation."
+  },
+  {
     "name": "Giant slayer",
     "skill": "fight",
     "tags": [],
     "text": "Negate up to 3 size classes for purposes of damage reduction when fighting larger opponents."
+  },
+  {
+    "name": "Juggernaut",
+    "skill": "fight",
+    "tags": [],
+    "text": "A defender smaller than you can't stop you from attacking someone behind them; and if they try, they can't block anyone else."
   },
   {
     "name": "Lancer",
@@ -417,7 +437,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Take -5 ueor. Gain a +1 magic token aeor."
+    "text": "Take -5 magic ueor. Gain a +1 magic token aeor."
   },
   {
     "name": "Gnostic",
@@ -453,7 +473,7 @@
     "tags": [
       "modifier"
     ],
-    "text": "Trade in a +1 magic token for +3 ueor."
+    "text": "Trade in a +1 magic token for +3 magic ueor."
   },
   {
     "name": "Mark magic",
@@ -479,7 +499,7 @@
     "name": "Teleurgy",
     "skill": "magic",
     "tags": [],
-    "text": "Your red spells take effect anywhere you can see. This doesn't give combt bonuses."
+    "text": "Your red spells take effect anywhere you can see. This doesn't give combat bonuses."
   },
   {
     "name": "Trance",
@@ -585,6 +605,18 @@
     "text": "You may hide any one @concealed@ item on your person such that it can't be found even by frisking."
   },
   {
+    "name": "Skulker",
+    "skill": "stealth",
+    "tags": [],
+    "text": "When you have cover, you can't be attacked at range, although opponents can shoot back if you shoot at them."
+  },
+  {
+    "name": "Tiny",
+    "skill": "stealth",
+    "tags": [],
+    "text": "-1 size. Only available at character creation."
+  },
+  {
     "name": "Trap maker",
     "skill": "stealth",
     "tags": [],
@@ -601,6 +633,12 @@
     "text": "Project voice with a MAS+stealth vs MET+vigilance check, to give a false location and/or sound like someone else."
   },
   {
+    "name": "Adaptive",
+    "skill": "vigilance",
+    "tags": [],
+    "text": "If you know how to craft a trap, take +5 to spot that type of trap."
+  },
+  {
     "name": "Botanist",
     "skill": "vigilance",
     "tags": [
@@ -615,12 +653,6 @@
       "action"
     ],
     "text": "When shooting into melee, instead of hitting either character, count as assisting one: their attribute+weapon becomes min(attribute+weapon, you.MAS+you.ranged_weapon)+5."
-  },
-  {
-    "name": "Grenadier",
-    "skill": "vigilance",
-    "tags": [],
-    "text": "When using an @indirect@ weapon from behind cover, opponents can't use ranged attacks without indirect against you."
   },
   {
     "name": "Iaido",
