@@ -34,7 +34,7 @@
     "Blue magic affects knowledge: both acquiring it for oneself, or obscuring it from others. It's governed by MET.",
     "Purple magic governs the undead, summons, and mind control. It's governed by MAS. It's illegal under Hebai's law."
   ],
-  "tags": [
+  "tag": [
     ".* means more text usually goes here.",
     "aeor: at end of round",
     "ueob: until end of battle"

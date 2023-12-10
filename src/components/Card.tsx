@@ -43,7 +43,7 @@ function styling(props : CardProps) {
 function tooltipify(tag : string, key : string) {
   let text = tag.split(":");
   const shownText = text[0];
-  const keyText = (text.length === 1) ? shownText : text[1];
+  const keyText = (text.length === 1) ? shownText.toLowerCase() : text[1];
   const toolTipText = (tags.find(t => new RegExp("^"+t.name.toLowerCase()+"$").test(keyText)) || {}).text;
   if (toolTipText) {
     return <span className="my-tooltip" key={key}><i>{shownText}</i>
