@@ -22,12 +22,12 @@
   {
     "name": "Bleeding",
     "type": "flat",
-    "text": "(condition) Each round, take 1 point of Fatigue aeor. Resolve this when you reach 10 Fatigue. Medical: Check MET+knowledge vs 15; on a pass, resolve this."
+    "text": "(condition) Each round, take 1 point of Fatigue aeor. Resolve this aeoc or when you reach 10 Fatigue. Medical: Check MET+knowledge vs 15; on a pass, resolve this."
   },
   {
     "name": "Channelled",
     "type": "flat",
-    "text": "You must constantly cast this spell to maintain its effect; the effect stops if you pick something up, are incapacitated, or cast another spell."
+    "text": "You must constantly cast this spell to maintain its effect. The effect stops if you pick something up, are incapacitated, or cast another spell. You can move around, act, and fight unarmed."
   },
   {
     "name": "Civilian",

@@ -19,24 +19,25 @@
   ],
   "plant": [
     "Also called paikera in-universe. Plants can be harvested for their respective reagents. Destroying them by fire or explosives ruins any reagents.",
-    "Active ingredients provide useful effects. They have a requirement listed: your MET+knowledge must meet this to use this reagent. Assistance counts toward this.",
+    "Active ingredients provide useful effects. They have a level listed: your MET+knowledge must meet this to use this reagent. Assistance counts toward this.",
     "Ampers amplify the active ingredient's effect. Without an amper matching the active ingredient's primary colour, there's only 1 chance in 2 of the effect working.",
     "Dampers dampen the toxicity of active ingredients. Without a damper matching the active ingredient's secondary colour, the potion inflicts 1 injury.",
     "Preservatives prolong a potion's effective life. Without a preservative matching at least one colour of all other ingredients, they spoil within 24 hours."
   ],
   "spell": [
     "You may learn as many spells as you have points of magic.",
-    "Spells have a requirement listed: your governing attribute plus magic skill must meet this to cast that spell. For each 5 points you exceed the requirement, you cast the spell at a higher level. Asterisked numbers get +1 per level.",
+    "Spells have a level listed: your governing attribute plus magic skill must meet this to cast that spell. For each 5 points you exceed the level, you upcast the spell. Asterisked numbers get +1 per upcast.",
+    "You must be attuned to a colour to cast its spells. When you attune to any colour, you lose all other attunement. You start attuned to your first spell's colour.",
     "Red magic affects matter. Telekinesis, shapeshifting, transmutation, and warping the properties of matter. It's governed by POW.",
     "Orange magic affects magic itself. Power enhancers and nullifiers, permanent enchantments, triggers. It's governed by END.",
     "Yellow magic governs pocket dimensions and teleport effects. It's governed by AGI.",
-    "Green magic is mysterious, but known to be involved in the creation of chimera. No green spells are known. It's illegal under Hebai's law.",
+    "Green magic is mysterious, but thought to be involved in the creation of chimera. No green spells are known. It's illegal under Hebai's law.",
     "Blue magic affects knowledge: both acquiring it for oneself, or obscuring it from others. It's governed by MET.",
     "Purple magic governs the undead, summons, and mind control. It's governed by MAS. It's illegal under Hebai's law."
   ],
   "tag": [
     ".* means more text usually goes here.",
     "aeor: at end of round",
-    "ueob: until end of battle"
+    "ueoc: until end of crisis"
   ]
 }

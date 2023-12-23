@@ -154,7 +154,7 @@
     "name": "Giant slayer",
     "skill": "fight",
     "tags": [],
-    "text": "Negate up to 3 size classes for purposes of damage reduction when fighting larger opponents."
+    "text": "Negate up to 3 size difference for purposes of damage reduction when fighting larger opponents."
   },
   {
     "name": "Juggernaut",

@@ -17,5 +17,3 @@ export default function Group(props : GroupProps) {
     }} type="radio" /></div>)}
   </div>
 }
-
-// TODO The radio button isn't resetting when I change tab: the same index remains selected. I want it to reset to the first each time.

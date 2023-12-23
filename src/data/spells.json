@@ -129,7 +129,7 @@
     "tags": [
       "combat"
     ],
-    "text": "You gain fire control power, including the ability to conjure it. +2* combat, +3 @ranged@, @fiery@, and an additional +1 if there is a fire of POW at least 5 nearby. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. This can't put fires out."
+    "text": "You gain fire control power, including the ability to conjure it. +3* combat, +3 @ranged@, @fiery@. Create a fire with every clash, on your position if you lose, target if you win, with POW equal to your own. This can't put fires out."
   },
   {
     "name": "Refine",
